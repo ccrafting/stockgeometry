@@ -5,20 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>StockGeometry Daily Feed</title>
   <style>
-    body { margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:#f3f5f8; color:#111827; }
+    :root {
+      --bg: #f3f5f8;
+      --text: #111827;
+      --entry-bg: #ffffff;
+      --entry-border: #d1d5db;
+      --btn-bg: #ffffff;
+      --btn-text: #111827;
+      --btn-border: #cbd5e1;
+      --btn-hover: #f3f4f6;
+    }
+    :root[data-theme="dark"] {
+      --bg: #0b1220;
+      --text: #e5e7eb;
+      --entry-bg: #0f172a;
+      --entry-border: #243041;
+      --btn-bg: #111827;
+      --btn-text: #e5e7eb;
+      --btn-border: #374151;
+      --btn-hover: #1f2937;
+    }
+    body { margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); }
     .wrap { max-width: 1280px; margin: 24px auto 80px; padding: 0 16px; }
-    h1 { margin: 0 0 16px; }
-    .entry { background:#fff; border:1px solid #d1d5db; border-radius:12px; margin:0 0 18px; padding:10px; }
-    iframe.post { width:100%; border:0; display:block; min-height:1200px; }
+    .head { display:flex; justify-content:space-between; align-items:center; margin:0 0 16px; gap:12px; }
+    h1 { margin:0; font-size: clamp(28px, 4.2vw, 48px); }
+    .mode-btn { border:1px solid var(--btn-border); color:var(--btn-text); background:var(--btn-bg); border-radius:999px; padding:8px 12px; font-size:13px; cursor:pointer; }
+    .mode-btn:hover { background:var(--btn-hover); }
+    .entry { background:var(--entry-bg); border:1px solid var(--entry-border); border-radius:12px; margin:0 0 18px; padding:10px; }
+    iframe.post { width:100%; border:0; display:block; min-height:1200px; background:transparent; }
+    @media (max-width: 820px) {
+      .wrap { margin: 14px auto 36px; padding: 0 10px; }
+      .entry { padding: 6px; border-radius: 10px; }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>StockGeometry Daily Feed</h1>
-    <section class="entry"><iframe class="post" src="posts/2026-03-23-xlk.html" loading="lazy" title="2026-03-23-xlk"></iframe></section>
-    <section class="entry"><iframe class="post" src="posts/2026-03-23-spy.html" loading="lazy" title="2026-03-23-spy"></iframe></section>
+    <div class="head">
+      <h1>StockGeometry Daily Feed</h1>
+      <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">Dark mode</button>
+    </div>
+    <section class="entry"><iframe class="post" data-base-src="posts/2026-03-23-spy.html" src="posts/2026-03-23-spy.html?embed=1&theme=light" loading="lazy" title="2026-03-23-spy"></iframe></section>
+    <section class="entry"><iframe class="post" data-base-src="posts/2026-03-23-xlk.html" src="posts/2026-03-23-xlk.html?embed=1&theme=light" loading="lazy" title="2026-03-23-xlk"></iframe></section>
   </div>
   <script>
+    const THEME_KEY = "sg_theme";
+    const root = document.documentElement;
+    const btn = document.getElementById("mode-toggle");
+
+    function setTheme(theme){
+      root.setAttribute("data-theme", theme);
+      if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+      try { localStorage.setItem(THEME_KEY, theme); } catch(e){}
+      document.querySelectorAll("iframe.post").forEach(f => {
+        const base = f.getAttribute("data-base-src") || f.getAttribute("src") || "";
+        if (!base) return;
+        const clean = base.split("?")[0];
+        const target = `${clean}?embed=1&theme=${encodeURIComponent(theme)}`;
+        if (f.getAttribute("src") !== target) f.setAttribute("src", target);
+      });
+    }
+
     function resizeFrame(f){
       try{
         const d = f.contentDocument || f.contentWindow.document;
@@ -27,10 +74,23 @@
     }
     function bind(){
       document.querySelectorAll("iframe.post").forEach(f => {
-        f.addEventListener("load", () => resizeFrame(f));
+        f.addEventListener("load", () => {
+          resizeFrame(f);
+        });
         setInterval(() => resizeFrame(f), 1500);
       });
     }
+    (function initTheme(){
+      let stored = "light";
+      try { stored = localStorage.getItem(THEME_KEY) || "light"; } catch(e){}
+      setTheme(stored);
+      if (btn){
+        btn.addEventListener("click", () => {
+          const curr = root.getAttribute("data-theme") || "light";
+          setTheme(curr === "dark" ? "light" : "dark");
+        });
+      }
+    })();
     window.addEventListener("load", bind);
   </script>
 </body>
