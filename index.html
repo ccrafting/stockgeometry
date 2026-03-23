@@ -3,175 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SPY: PAL Ablation Roles (Blog View)</title>
+  <title>StockGeometry Daily Feed</title>
   <style>
-    :root {
-      --bg: #f4f6f8;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #4b5563;
-      --line: #d1d5db;
-    }
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #f7fafc 0%, #eef3f8 100%);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-    }
-    .wrap {
-      max-width: 1200px;
-      margin: 24px auto 40px;
-      padding: 0 20px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 20px 22px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      margin-bottom: 18px;
-    }
-    h1 {
-      margin: 0 0 8px 0;
-      font-size: 34px;
-      line-height: 1.15;
-      color: #173a64;
-    }
-    .meta {
-      color: var(--muted);
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin: 10px 0;
-    }
-    .market-read {
-      font-size: 22px;
-      color: #1f3f6f;
-      margin-top: 14px;
-      margin-bottom: 14px;
-      line-height: 1.55;
-    }
-    h2 {
-      margin: 8px 0 10px 0;
-      color: #1f3f6f;
-      font-size: 24px;
-    }
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 10px 0 4px 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
-    .chip {
-      background: #eef6ff;
-      border: 1px solid #b6d1ef;
-      color: #163a63;
-      border-radius: 999px;
-      font-size: 13px;
-      padding: 6px 11px;
-      white-space: nowrap;
-    }
-    ul {
-      margin: 6px 0 0 22px;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: "Segoe UI", Arial, sans-serif;
-      font-size: 14px;
-    }
-    th, td {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 8px 10px;
-      text-align: left;
-    }
-    th {
-      color: #334155;
-      background: #f8fafc;
-    }
-    .foot {
-      color: #6b7280;
-      font-size: 13px;
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
-    details {
-      margin-top: 8px;
-    }
-    summary {
-      cursor: pointer;
-      color: #1f3f6f;
-      font-family: "Segoe UI", Arial, sans-serif;
-      font-weight: 600;
-    }
+    body { margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:#f3f5f8; color:#111827; }
+    .wrap { max-width: 1280px; margin: 24px auto 80px; padding: 0 16px; }
+    h1 { margin: 0 0 16px; }
+    .entry { background:#fff; border:1px solid #d1d5db; border-radius:12px; margin:0 0 18px; padding:10px; }
+    iframe.post { width:100%; border:0; display:block; min-height:1200px; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="card">
-      <h1>SPY: Holding Under Pressure</h1>
-      <div class="meta">Session date: 2026-03-23 | Session window (ET): 2026-03-23 09:30 to 14:32 ET</div>
-      <div class="market-read">
-        <p>SPY is carrying visible strain. The market is still holding shape, but pressure is leaning on market structure more than support is reinforcing it.</p>
-        <p>That matters because stressed structure can break quickly on weak prints or negative headlines. Until pressure cools, continuation should be treated as less durable. Current read status: early read, with structure tagged as supported, but strained.</p>
-      </div>
-      <div class="chips">
-        <span class="chip">Read status: Early read</span>
-        <span class="chip">Market tone: Under active pressure</span>
-        <span class="chip">Structure: Supported, but strained</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Ablation Impact Map</h2>
-      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title" aria-describedby="impact_map_desc"><title id="impact_map_title">Market ablation impact map</title><desc id="impact_map_desc">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="#ffffff"/><line x1="750" y1="34" x2="750" y2="330" stroke="#111827" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="#1f3f6f" font-size="18" font-weight="700">Ablation Impact Map</text><circle cx="282" cy="200" r="52.5" fill="#2ea043" fill-opacity="0.95" stroke="#111827" stroke-width="1.5"/><text x="282" y="133" text-anchor="middle" fill="#1f3f6f" font-size="14" font-weight="600">Order-Flow Pressure</text><circle cx="420" cy="200" r="42.4" fill="#2ea043" fill-opacity="0.95" stroke="#111827" stroke-width="1.5"/><text x="420" y="143" text-anchor="middle" fill="#1f3f6f" font-size="14" font-weight="600">Short Move</text><circle cx="677" cy="200" r="23.4" fill="#2ea043" fill-opacity="0.95" stroke="#111827" stroke-width="1.5"/><text x="677" y="162" text-anchor="middle" fill="#1f3f6f" font-size="14" font-weight="600">Drift</text><circle cx="777" cy="200" r="20.0" fill="#d62f2f" fill-opacity="0.95" stroke="#111827" stroke-width="1.5"/><text x="777" y="165" text-anchor="middle" fill="#1f3f6f" font-size="14" font-weight="600">Swing Move</text><circle cx="943" cy="200" r="32.2" fill="#d62f2f" fill-opacity="0.95" stroke="#111827" stroke-width="1.5"/><text x="943" y="153" text-anchor="middle" fill="#1f3f6f" font-size="14" font-weight="600">Money Flow</text><circle cx="1154" cy="200" r="47.8" fill="#d62f2f" fill-opacity="0.95" stroke="#111827" stroke-width="1.5"/><text x="1154" y="138" text-anchor="middle" fill="#1f3f6f" font-size="14" font-weight="600">Volume Shock</text><circle cx="1320" cy="200" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="#111827" stroke-width="1.5"/><text x="1320" y="126" text-anchor="middle" fill="#1f3f6f" font-size="14" font-weight="600">Volatility Pulse</text><text x="736" y="346" text-anchor="end" fill="#4b5563" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="#4b5563" font-size="12">Pressure sources</text></svg>
-      <p class="foot"><b>How to read this map:</b> Green shows what helped the market hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
-    </div>
-
-    <div class="card">
-      <details>
-        <summary>Method notes</summary>
-        <p class="foot">Strongest support source: <b>Order-Flow Pressure</b>. Strongest pressure source: <b>Volatility Pulse</b>.</p>
-        <ul>
-          <li><b>Short Move</b>: 1-bar log return, then tanh-normalized on a 64-bar rolling z-score.</li>
-<li><b>Swing Move</b>: 5-bar log return, then tanh-normalized on a 64-bar rolling z-score.</li>
-<li><b>Volatility Pulse</b>: 15-bar rolling volatility of short move, then tanh-normalized.</li>
-<li><b>Volume Shock</b>: Volume z-score vs 20-bar rolling mean/std, then tanh-normalized.</li>
-<li><b>Order-Flow Pressure</b>: 20-bar rolling sum of signed volume (OBV-like pressure), then tanh-normalized.</li>
-<li><b>Money Flow</b>: 14-bar Money Flow Index from typical price and volume, then tanh-normalized.</li>
-<li><b>Drift</b>: 20-bar linear slope of close, then tanh-normalized.</li>
-        </ul>
-        <p class="foot">Baseline structured fraction: 0.228 | Mixedness: 0.088 | Dominant-state fraction: 0.987</p>
-        <p class="foot">Run underdetermined by quality gates (coverage and/or role margin); do not treat role semantics as durable.</p>
-      </details>
-      <details>
-        <summary>Role details</summary>
-        <table>
-          <thead>
-            <tr><th>Metric</th><th>Delta</th><th>Role</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Volatility Pulse</td><td>0.2046</td><td>Destabilizing input</td></tr>
-<tr><td>Volume Shock</td><td>0.1452</td><td>Destabilizing input</td></tr>
-<tr><td>Money Flow</td><td>0.0693</td><td>Destabilizing input</td></tr>
-<tr><td>Swing Move</td><td>0.0099</td><td>Destabilizing input</td></tr>
-<tr><td>Drift</td><td>-0.0264</td><td>Stability contributor</td></tr>
-<tr><td>Short Move</td><td>-0.1188</td><td>Stability contributor</td></tr>
-<tr><td>Order-Flow Pressure</td><td>-0.1683</td><td>Stability contributor</td></tr>
-          </tbody>
-        </table>
-        <p class="foot">Delta is defined as: ablated structured fraction - baseline structured fraction.</p>
-      </details>
-    </div>
-    <div class="card">
-      <p class="foot">For informational and educational purposes only. This is general market commentary and not investment advice or a recommendation to buy, sell, or hold any security. It is not tailored to any person’s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</p>
-      <p class="foot">We may hold positions in securities discussed.</p>
-    </div>
+    <h1>StockGeometry Daily Feed</h1>
+    <section class="entry"><iframe class="post" src="posts/2026-03-23-xlk.html" loading="lazy" title="2026-03-23-xlk"></iframe></section>
+    <section class="entry"><iframe class="post" src="posts/2026-03-23-spy.html" loading="lazy" title="2026-03-23-spy"></iframe></section>
   </div>
+  <script>
+    function resizeFrame(f){
+      try{
+        const d = f.contentDocument || f.contentWindow.document;
+        if (d && d.documentElement) f.style.height = d.documentElement.scrollHeight + "px";
+      } catch(e){}
+    }
+    function bind(){
+      document.querySelectorAll("iframe.post").forEach(f => {
+        f.addEventListener("load", () => resizeFrame(f));
+        setInterval(() => resizeFrame(f), 1500);
+      });
+    }
+    window.addEventListener("load", bind);
+  </script>
 </body>
 </html>
