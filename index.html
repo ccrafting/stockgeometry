@@ -103,15 +103,15 @@
     }
     .market-read {
       margin-top: 18px;
-      max-width: 72ch;
+      max-width: 96ch;
     }
     .market-read p {
       margin: 0;
-      font-size: clamp(18px, 2vw, 20px);
-      line-height: 1.65;
+      font-size: clamp(18px, 1.2vw, 20px);
+      line-height: 1.6;
     }
     .market-read p + p {
-      margin-top: 12px;
+      margin-top: 14px;
       color: var(--muted);
     }
     .chips {
@@ -135,7 +135,7 @@
     :root[data-theme="dark"] .chip {
       background: rgba(17, 24, 39, 0.76);
     }
-    .card > h2 {
+    .card > h2:not(.post-title) {
       margin: 0 0 14px;
       font-size: 20px;
       line-height: 1.2;
@@ -154,6 +154,76 @@
       font-size: 14px;
       line-height: 1.6;
       max-width: 78ch;
+    }
+    .chart-legend {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 28px;
+      margin-top: 12px;
+    }
+    .legend-group h3 {
+      margin: 0 0 8px 0;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-top: 6px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(17, 24, 39, 0.22);
+      flex: 0 0 auto;
+    }
+    .dot.support {
+      background: #2ea043;
+    }
+    .dot.pressure {
+      background: #d62f2f;
+    }
+    .legend-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      background: var(--card-bg);
+    }
+    @media (min-width: 1100px) {
+      .entry > .card:first-child {
+        display: grid;
+        grid-template-columns: minmax(0, 1.45fr) 320px;
+        gap: 18px 28px;
+        align-items: start;
+      }
+      .entry > .card:first-child .post-title,
+      .entry > .card:first-child .meta {
+        grid-column: 1 / -1;
+      }
+      .entry > .card:first-child .market-read {
+        grid-column: 1;
+        max-width: 92ch;
+        margin-top: 10px;
+      }
+      .entry > .card:first-child .chips {
+        grid-column: 2;
+        grid-row: 3;
+        margin-top: 10px;
+        align-content: start;
+      }
     }
     details {
       border-top: 1px solid var(--line);
@@ -232,6 +302,9 @@
       }
       .chip {
         font-size: 12px;
+      }
+      .chart-legend {
+        grid-template-columns: 1fr;
       }
       h1.page-title {
         font-size: clamp(28px, 8vw, 42px);
@@ -356,6 +429,69 @@
 <tr><td>Order-Flow Pressure</td><td>-0.0692</td><td>Stability contributor</td></tr>
           </tbody>
         </table></div>
+        <p class="foot">Delta is defined as: ablated structured fraction - baseline structured fraction.</p>
+      </details>
+    </div>
+    <div class="card">
+      <p class="foot"><b>For informational and educational purposes only. This is general market commentary and not investment advice or a recommendation to buy, sell, or hold any security. It is not tailored to any person’s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
+      <p class="foot"><b>We may hold positions in securities discussed.</b></p>
+</article>
+<article class="entry" data-post="2026-03-23-qqq-123732.html">
+<div class="card">
+      <h2 class="post-title">QQQ: Held Together, Never Relaxed</h2>
+      <div class="meta">Session date: 2026-03-23 | Session time (ET): 09:30 to 15:34</div>
+      <div class="market-read">
+        <p>QQQ held shape, but pressure stayed in control. Money Flow led the strain stack, while Order-Flow Pressure was the primary support axis.</p>
+        <p>This can stay upright through containment, but continuation is more fragile when pressure breadth stays wide. Current read status: shifting read, with structure tagged as held, but fragile.</p>
+      </div>
+      <div class="chips">
+        <span class="chip">Read status: Shifting read</span>
+        <span class="chip">Market tone: Under active pressure</span>
+        <span class="chip">Structure: Held, but fragile</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Ablation Impact Map</h2>
+      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-qqq-123732" aria-describedby="impact_map_desc_2026-03-23-qqq-123732"><title id="impact_map_title_2026-03-23-qqq-123732">Market ablation impact map</title><desc id="impact_map_desc_2026-03-23-qqq-123732">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--card)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--read)" font-size="18" font-weight="700">Ablation Impact Map</text><circle cx="844.1" cy="200" r="24.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><circle cx="902.8" cy="200" r="25.7" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><circle cx="963.7" cy="200" r="27.2" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><circle cx="1026.6" cy="200" r="27.6" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><circle cx="1095.7" cy="200" r="33.4" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><circle cx="1184.0" cy="200" r="46.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><circle cx="1320.0" cy="200" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><polyline points="869.1,200.0 885.1,91.2 1492.0,91.2" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="1488.0" y="95.2" text-anchor="end" fill="var(--read)" font-size="13" font-weight="600">Order-Flow Pressure</text><polyline points="928.5,200.0 944.5,124.5 1492.0,124.5" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="1488.0" y="128.5" text-anchor="end" fill="var(--read)" font-size="13" font-weight="600">Short Move</text><polyline points="991.0,200.0 1007.0,157.8 1492.0,157.8" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="1488.0" y="161.8" text-anchor="end" fill="var(--read)" font-size="13" font-weight="600">Volatility Pulse</text><polyline points="1054.2,200.0 1070.2,191.0 1492.0,191.0" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="1488.0" y="195.0" text-anchor="end" fill="var(--read)" font-size="13" font-weight="600">Volume Shock</text><polyline points="1129.1,200.0 1145.1,224.2 1492.0,224.2" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="1488.0" y="228.2" text-anchor="end" fill="var(--read)" font-size="13" font-weight="600">Drift</text><polyline points="1230.9,200.0 1246.9,257.5 1492.0,257.5" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="1488.0" y="261.5" text-anchor="end" fill="var(--read)" font-size="13" font-weight="600">Swing Move</text><polyline points="1380.0,200.0 1396.0,290.8 1492.0,290.8" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="1488.0" y="294.8" text-anchor="end" fill="var(--read)" font-size="13" font-weight="600">Money Flow</text><text x="736" y="346" text-anchor="end" fill="var(--muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--muted)" font-size="12">Pressure sources</text></svg>
+      <p class="foot"><b>How to read this map:</b> Green shows what helped the market hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
+      
+    </div>
+
+    <div class="card">
+      <details>
+        <summary>Method notes</summary>
+        <p class="foot">Strongest support source: <b>Order-Flow Pressure</b>. Strongest pressure source: <b>Money Flow</b>.</p>
+        <ul>
+          <li><b>Short Move</b>: 1-bar log return, then tanh-normalized on a 64-bar rolling z-score.</li>
+<li><b>Swing Move</b>: 5-bar log return, then tanh-normalized on a 64-bar rolling z-score.</li>
+<li><b>Volatility Pulse</b>: 15-bar rolling volatility of short move, then tanh-normalized.</li>
+<li><b>Volume Shock</b>: Volume z-score vs 20-bar rolling mean/std, then tanh-normalized.</li>
+<li><b>Order-Flow Pressure</b>: 20-bar rolling sum of signed volume (OBV-like pressure), then tanh-normalized.</li>
+<li><b>Money Flow</b>: 14-bar Money Flow Index from typical price and volume, then tanh-normalized.</li>
+<li><b>Drift</b>: 20-bar linear slope of close, then tanh-normalized.</li>
+        </ul>
+        <p class="foot">Baseline structured fraction: 0.233 | Mixedness: 0.076 | Dominant-state fraction: 0.989</p>
+        <p class="foot">Role interpretations are strongly classifier-mediated and require recalibration.</p>
+      </details>
+      <details>
+        <summary>Role details</summary>
+        <div class="table-wrap">
+          <div class="table-wrap"><table>
+            <thead>
+              <tr><th>Metric</th><th>Delta</th><th>Role</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Money Flow</td><td>0.2986</td><td>Destabilizing input</td></tr>
+<tr><td>Swing Move</td><td>0.2055</td><td>Destabilizing input</td></tr>
+<tr><td>Drift</td><td>0.1096</td><td>Destabilizing input</td></tr>
+<tr><td>Volume Shock</td><td>0.0685</td><td>Destabilizing input</td></tr>
+<tr><td>Volatility Pulse</td><td>0.0658</td><td>Destabilizing input</td></tr>
+<tr><td>Short Move</td><td>0.0548</td><td>Destabilizing input</td></tr>
+<tr><td>Order-Flow Pressure</td><td>0.0493</td><td>Destabilizing input</td></tr>
+            </tbody>
+          </table></div>
+        </div>
         <p class="foot">Delta is defined as: ablated structured fraction - baseline structured fraction.</p>
       </details>
     </div>
