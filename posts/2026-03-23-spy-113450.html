@@ -25,7 +25,11 @@
       --btn-border: #cbd5e1;
       --btn-hover: #f3f4f6;
       --shadow: 0 8px 24px rgba(0,0,0,0.05);
-    }
+          --svg-bg: #ffffff;
+      --svg-line: #d1d5db;
+      --svg-text: #1f3f6f;
+      --svg-muted: #6b7280;
+}
     :root[data-theme="dark"] {
       --bg1: #0b1220;
       --bg2: #0f172a;
@@ -46,7 +50,11 @@
       --btn-border: #374151;
       --btn-hover: #1f2937;
       --shadow: 0 8px 24px rgba(0,0,0,0.45);
-    }
+          --svg-bg: #0f172a;
+      --svg-line: #475569;
+      --svg-text: #dbeafe;
+      --svg-muted: #94a3b8;
+}
     body {
       margin: 0;
       background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
@@ -271,6 +279,96 @@
         grid-template-columns: 1fr;
       }
     }
+  
+    .chart-legend {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 28px;
+      margin-top: 12px;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    .legend-group h3 {
+      margin: 0 0 8px 0;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-top: 6px;
+    }
+    .legend-item.metric-link {
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      padding: 4px 6px;
+      transition: background 120ms ease, border-color 120ms ease, opacity 120ms ease;
+    }
+    .legend-item.metric-link:hover {
+      border-color: var(--line);
+      background: rgba(148, 163, 184, 0.10);
+    }
+    .legend-item.metric-link:focus-visible {
+      outline: 2px solid var(--svg-text);
+      outline-offset: 1px;
+    }
+    .legend-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      background: var(--card);
+      margin-right: 2px;
+    }
+    .legend-empty {
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(17, 24, 39, 0.22);
+      flex: 0 0 auto;
+    }
+    .dot.support { background: #2ea043; }
+    .dot.pressure { background: #d62f2f; }
+    .metric-node {
+      cursor: pointer;
+      transition: opacity 120ms ease;
+    }
+    .metric-node .metric-bubble {
+      transition: opacity 120ms ease, stroke-width 120ms ease, filter 120ms ease;
+    }
+    .chart-card.is-active .metric-node.is-dim {
+      opacity: 0.35;
+    }
+    .chart-card.is-active .legend-item.metric-link.is-dim {
+      opacity: 0.45;
+    }
+    .metric-node.is-active .metric-bubble {
+      stroke: #f59e0b;
+      stroke-width: 3;
+      filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.45));
+    }
+    .legend-item.metric-link.is-active {
+      border-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.13);
+    }
+
   </style>
 </head>
 <body>
@@ -285,19 +383,19 @@
         <p>By early afternoon, SPY was still holding shape, but the balance had already tilted into strain. Volatility Pulse led the pressure side, Volume Shock reinforced it, and support narrowed toward Order-Flow Pressure and Short Move rather than a broad, easy base.</p>
         <p>That matters because this session was still organized, just no longer comfortable. The tape was being held together by a real support shelf underneath, but the stress stack was widening overhead, so this reads as containment under load rather than a settled bullish structure.</p>
       </div>
-                                          <div class="chips">
+                                                            <div class="chips">
         <span class="chip">Session: Late session</span>
         <span class="chip">Posture: Pressure-led</span>
         <span class="chip">Structure: Narrowing</span>
       </div>
     </div>
 
-                                <div class="card">
+                                            <div class="card chart-card">
       <h2>Support and Pressure Map</h2>
-      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title" aria-describedby="impact_map_desc"><title id="impact_map_title">Support and pressure map</title><desc id="impact_map_desc">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--card)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--read)" font-size="18" font-weight="700">Support and Pressure Map</text><circle cx="625.5" cy="190.0" r="52.5" fill="#2ea043" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><text x="625.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text><circle cx="518.5" cy="190.0" r="42.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><text x="518.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text><circle cx="440.7" cy="190.0" r="23.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><text x="440.7" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text><circle cx="882.0" cy="190.0" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><text x="882.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text><circle cx="1001.8" cy="190.0" r="47.8" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><text x="1001.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text><circle cx="1093.8" cy="190.0" r="32.2" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><text x="1093.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text><circle cx="1158.1" cy="190.0" r="20.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--line)" stroke-width="1.5"/><text x="1158.1" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">7</text><text x="736" y="346" text-anchor="end" fill="var(--muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--muted)" font-size="12">Pressure sources</text></svg>
+      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title" aria-describedby="impact_map_desc"><title id="impact_map_title">Support and pressure map</title><desc id="impact_map_desc">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="625.5" cy="190.0" r="58.5" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="625.5" cy="190.0" r="52.5" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="625.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Short Move"><circle class="node-hit" cx="518.5" cy="190.0" r="48.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="518.5" cy="190.0" r="42.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="518.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="440.7" cy="190.0" r="29.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="440.7" cy="190.0" r="23.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="440.7" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="882.0" cy="190.0" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="190.0" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="1001.8" cy="190.0" r="53.8" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1001.8" cy="190.0" r="47.8" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1001.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="1093.8" cy="190.0" r="38.2" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1093.8" cy="190.0" r="32.2" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1093.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="1158.1" cy="190.0" r="26.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1158.1" cy="190.0" r="20.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1158.1" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">7</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
       <p class="foot"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
       <p class="foot"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
-      <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item"><span class="dot support"></span><span class="legend-num">2</span>Order-Flow Pressure</div><div class="legend-item"><span class="dot support"></span><span class="legend-num">4</span>Short Move</div><div class="legend-item"><span class="dot support"></span><span class="legend-num">6</span>Drift</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</div><div class="legend-item"><span class="dot pressure"></span><span class="legend-num">3</span>Volume Shock</div><div class="legend-item"><span class="dot pressure"></span><span class="legend-num">5</span>Money Flow</div><div class="legend-item"><span class="dot pressure"></span><span class="legend-num">7</span>Swing Move</div></div></div>
+      <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot support"></span><span class="legend-num">2</span>Order-Flow Pressure</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Short Move"><span class="dot support"></span><span class="legend-num">4</span>Short Move</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot support"></span><span class="legend-num">6</span>Drift</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">3</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">5</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">7</span>Swing Move</div></div></div>
     </div>    <div class="card">
       <details>
         <summary>How to read this</summary>
@@ -384,5 +482,71 @@
       }
     })();
   </script>
+
+  <script>
+    (function () {
+      function wireMetricLinks(scope) {
+        const cards = scope.querySelectorAll(".chart-card");
+        cards.forEach(function (card) {
+          const nodes = Array.from(card.querySelectorAll(".metric-node[data-metric-id]"));
+          const links = Array.from(card.querySelectorAll(".legend-item.metric-link[data-metric-id]"));
+          if (!nodes.length || !links.length) return;
+
+          const map = new Map();
+          function add(id, el) {
+            if (!map.has(id)) map.set(id, []);
+            map.get(id).push(el);
+          }
+          nodes.forEach((n) => add(n.getAttribute("data-metric-id"), n));
+          links.forEach((l) => add(l.getAttribute("data-metric-id"), l));
+          const all = nodes.concat(links);
+          let active = null;
+
+          function clearActive() {
+            active = null;
+            card.classList.remove("is-active");
+            all.forEach((el) => el.classList.remove("is-active", "is-dim"));
+          }
+
+          function setActive(id) {
+            if (!id || !map.has(id)) {
+              clearActive();
+              return;
+            }
+            active = id;
+            card.classList.add("is-active");
+            all.forEach((el) => {
+              const same = el.getAttribute("data-metric-id") === id;
+              el.classList.toggle("is-active", same);
+              el.classList.toggle("is-dim", !same);
+            });
+          }
+
+          function onPick(el) {
+            const id = el.getAttribute("data-metric-id");
+            if (!id) return;
+            if (active === id) clearActive();
+            else setActive(id);
+          }
+
+          all.forEach((el) => {
+            el.addEventListener("click", function () { onPick(el); });
+            el.addEventListener("keydown", function (ev) {
+              if (ev.key === "Enter" || ev.key === " ") {
+                ev.preventDefault();
+                onPick(el);
+              }
+            });
+          });
+
+          card.addEventListener("keydown", function (ev) {
+            if (ev.key === "Escape") clearActive();
+          });
+        });
+      }
+      wireMetricLinks(document);
+    })();
+  </script>
+
 </body>
 </html>
