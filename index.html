@@ -173,6 +173,67 @@
       gap: 16px 28px;
       margin-top: 12px;
     }
+    .signal-map-desktop {
+      margin-top: 10px;
+    }
+    .signal-map-mobile {
+      display: none;
+      margin-top: 12px;
+    }
+    .signal-group + .signal-group {
+      margin-top: 18px;
+    }
+    .signal-group h3 {
+      margin: 0 0 10px 0;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .bubble-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .mobile-bubble {
+      width: var(--size);
+      height: var(--size);
+      border-radius: 999px;
+      border: 2px solid var(--svg-line);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: opacity 120ms ease, filter 120ms ease, transform 120ms ease, border-color 120ms ease;
+      background: transparent;
+    }
+    .mobile-bubble.support {
+      background: #2ea043;
+    }
+    .mobile-bubble.pressure {
+      background: #d62f2f;
+    }
+    .mobile-bubble:focus-visible {
+      outline: 2px solid var(--svg-text);
+      outline-offset: 2px;
+    }
+    .mobile-source-list {
+      display: grid;
+      gap: 8px;
+    }
+    .mobile-source-item {
+      width: 100%;
+      justify-content: flex-start;
+      text-align: left;
+      background: transparent;
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
     .legend-group h3 {
       margin: 0 0 8px 0;
       font-size: 12px;
@@ -246,6 +307,14 @@
       stroke: #f59e0b;
       stroke-width: 3;
       filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.45));
+    }
+    .metric-node.metric-node-chip.is-active {
+      border-color: #f59e0b;
+      filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.45));
+      transform: translateY(-1px);
+    }
+    .chart-card.is-active .metric-node.metric-node-chip.is-dim {
+      opacity: 0.35;
     }
     .legend-item.metric-link.is-active {
       border-color: #f59e0b;
@@ -359,6 +428,20 @@
         font-size: clamp(28px, 8vw, 42px);
       }
     }
+    @media (max-width: 767px) {
+      .signal-map-desktop {
+        display: none;
+      }
+      .signal-map-mobile {
+        display: block;
+      }
+      .metric-key {
+        display: none;
+      }
+      .map-intro {
+        margin-bottom: 4px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -375,19 +458,22 @@
         <p>XLK kept a constructive lean, but it never resolved into a clean, easy trend. Support stayed slightly ahead of pressure, led by Money Flow, while Volatility Pulse remained the clearest source of strain.</p>
         <p>What matters is the quality of that support: it was real, but it was shared and somewhat rotating rather than resting on one dominant anchor. This read more like a sector holding together through a layered support field than one pressing higher in relaxed confidence.</p>
       </div>
-                                                            <div class="chips">
+                                                                        <div class="chips">
         <span class="chip">Session: Close</span>
         <span class="chip">Posture: Support-led</span>
         <span class="chip">Structure: Narrowing</span>
       </div>
     </div>
 
-                                            <div class="card chart-card">
+                                                    <div class="card chart-card">
       <h2>Support and Pressure Map</h2>
-      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-xlk-134213" aria-describedby="impact_map_desc_2026-03-23-xlk-134213"><title id="impact_map_title_2026-03-23-xlk-134213">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-xlk-134213">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="624.3" cy="190.0" r="59.7" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="624.3" cy="190.0" r="53.7" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="624.3" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="507.0" cy="190.0" r="57.6" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="507.0" cy="190.0" r="51.6" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="507.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="395.9" cy="190.0" r="53.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="395.9" cy="190.0" r="47.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="395.9" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="882.0" cy="190.0" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="190.0" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="995.1" cy="190.0" r="47.1" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="995.1" cy="190.0" r="41.1" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="995.1" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="1076.8" cy="190.0" r="34.5" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1076.8" cy="190.0" r="28.5" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1076.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
-      <p class="foot"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
-      <p class="foot"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
-      <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot support"></span><span class="legend-num">2</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot support"></span><span class="legend-num">3</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot support"></span><span class="legend-num">4</span>Swing Move</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">5</span>Drift</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot pressure"></span><span class="legend-num">6</span>Order-Flow Pressure</div></div></div>
+      <p class="foot map-intro"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
+      <div class="signal-map-desktop">
+        <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-xlk-134213" aria-describedby="impact_map_desc_2026-03-23-xlk-134213"><title id="impact_map_title_2026-03-23-xlk-134213">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-xlk-134213">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="624.3" cy="190.0" r="59.7" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="624.3" cy="190.0" r="53.7" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="624.3" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="507.0" cy="190.0" r="57.6" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="507.0" cy="190.0" r="51.6" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="507.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="395.9" cy="190.0" r="53.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="395.9" cy="190.0" r="47.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="395.9" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="882.0" cy="190.0" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="190.0" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="995.1" cy="190.0" r="47.1" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="995.1" cy="190.0" r="41.1" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="995.1" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="1076.8" cy="190.0" r="34.5" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1076.8" cy="190.0" r="28.5" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1076.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
+        <p class="foot metric-key"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
+        <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot support"></span><span class="legend-num">2</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot support"></span><span class="legend-num">3</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot support"></span><span class="legend-num">4</span>Swing Move</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">5</span>Drift</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot pressure"></span><span class="legend-num">6</span>Order-Flow Pressure</div></div></div>
+      </div>
+      <div class="signal-map-mobile"><section class="signal-group signal-group--support"><h3>Support sources</h3><div class="bubble-wrap"><button class="mobile-bubble metric-node metric-node-chip support" data-metric-id="m2" type="button" aria-label="Highlight Money Flow" style="--size: 67px;"><span class="bubble-num">2</span></button><button class="mobile-bubble metric-node metric-node-chip support" data-metric-id="m3" type="button" aria-label="Highlight Volume Shock" style="--size: 64px;"><span class="bubble-num">3</span></button><button class="mobile-bubble metric-node metric-node-chip support" data-metric-id="m4" type="button" aria-label="Highlight Swing Move" style="--size: 59px;"><span class="bubble-num">4</span></button></div><div class="mobile-source-list"><button class="legend-item metric-link mobile-source-item" data-metric-id="m2" type="button" aria-label="Highlight Money Flow"><span class="dot support"></span><span class="legend-num">2</span>Money Flow</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m3" type="button" aria-label="Highlight Volume Shock"><span class="dot support"></span><span class="legend-num">3</span>Volume Shock</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m4" type="button" aria-label="Highlight Swing Move"><span class="dot support"></span><span class="legend-num">4</span>Swing Move</button></div></section><section class="signal-group signal-group--pressure"><h3>Pressure sources</h3><div class="bubble-wrap"><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m1" type="button" aria-label="Highlight Volatility Pulse" style="--size: 75px;"><span class="bubble-num">1</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m5" type="button" aria-label="Highlight Drift" style="--size: 51px;"><span class="bubble-num">5</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m6" type="button" aria-label="Highlight Order-Flow Pressure" style="--size: 44px;"><span class="bubble-num">6</span></button></div><div class="mobile-source-list"><button class="legend-item metric-link mobile-source-item" data-metric-id="m1" type="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m5" type="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">5</span>Drift</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m6" type="button" aria-label="Highlight Order-Flow Pressure"><span class="dot pressure"></span><span class="legend-num">6</span>Order-Flow Pressure</button></div></section></div>
     </div>    <div class="card">
       <details>
         <summary>How to read this</summary>
@@ -432,47 +518,6 @@
     </div><div class="card">
       <p class="foot"><b>For informational and educational purposes only. This is general market commentary and not investment advice or a recommendation to buy, sell, or hold any security. It is not tailored to any person’s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
       <p class="foot"><b>We may hold positions in securities discussed.</b></p>
-    </div>
-  </div>
-  <script>
-    (function () {
-      const params = new URLSearchParams(window.location.search);
-      const key = "sg_theme";
-      const root = document.documentElement;
-      const btn = document.getElementById("mode-toggle");
-      const forcedTheme = params.get("theme");
-      const embedded = params.get("embed") === "1";
-
-      function apply(theme) {
-        root.setAttribute("data-theme", theme);
-        if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-      }
-
-      if (embedded && btn) {
-        btn.style.display = "none";
-        const tb = document.querySelector(".toolbar");
-        if (tb) tb.style.display = "none";
-      }
-
-      const isForced = forcedTheme === "dark" || forcedTheme === "light";
-      if (isForced) {
-        apply(forcedTheme);
-      } else {
-        const stored = localStorage.getItem(key);
-        const preferredDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        apply(stored || (preferredDark ? "dark" : "light"));
-      }
-
-      if (btn && !embedded && !isForced) {
-        btn.addEventListener("click", function () {
-          const curr = root.getAttribute("data-theme") || "light";
-          const next = curr === "dark" ? "light" : "dark";
-          localStorage.setItem(key, next);
-          apply(next);
-        });
-      }
-    })();
-  </script>
 </article>
 <article class="entry" data-post="2026-03-23-spy-142032.html">
 <div class="card">
@@ -482,19 +527,22 @@
         <p>By the late session, SPY had narrowed into one dominant posture, but it was not an easy one. Volume Shock and Volatility Pulse were still leading the pressure side, while Money Flow and Swing Move had joined the strain stack and support had narrowed to a single Order-Flow Pressure axis.</p>
         <p>That matters because this session was no longer balancing competing influences; it was containing them inside one tight configuration. The tape stayed intact, but it did so through compression rather than relief, which makes the structure look held rather than healed.</p>
       </div>
-                                                            <div class="chips">
+                                                                        <div class="chips">
         <span class="chip">Session: Close</span>
         <span class="chip">Posture: Pressure-led</span>
         <span class="chip">Structure: Compressed</span>
       </div>
     </div>
 
-                                            <div class="card chart-card">
+                                                    <div class="card chart-card">
       <h2>Support and Pressure Map</h2>
-      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-spy-142032" aria-describedby="impact_map_desc_2026-03-23-spy-142032"><title id="impact_map_title_2026-03-23-spy-142032">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-spy-142032">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="647.3" cy="190.0" r="36.7" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="647.3" cy="190.0" r="30.7" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="647.3" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="882.0" cy="125.6" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="125.6" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="127.1" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="998.9" cy="125.6" r="50.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="998.9" cy="125.6" r="44.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="998.9" y="127.1" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="1076.2" cy="125.6" r="26.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1076.2" cy="125.6" r="20.4" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1076.2" y="127.1" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="876.8" cy="254.4" r="60.8" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="876.8" cy="254.4" r="54.8" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="876.8" y="255.9" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="980.5" cy="254.4" r="42.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="980.5" cy="254.4" r="36.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="980.5" y="255.9" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
-      <p class="foot"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
-      <p class="foot"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
-      <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot support"></span><span class="legend-num">5</span>Order-Flow Pressure</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">1</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">2</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">3</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">4</span>Swing Move</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">6</span>Drift</div></div></div>
+      <p class="foot map-intro"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
+      <div class="signal-map-desktop">
+        <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-spy-142032" aria-describedby="impact_map_desc_2026-03-23-spy-142032"><title id="impact_map_title_2026-03-23-spy-142032">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-spy-142032">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="647.3" cy="190.0" r="36.7" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="647.3" cy="190.0" r="30.7" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="647.3" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="882.0" cy="125.6" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="125.6" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="127.1" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="998.9" cy="125.6" r="50.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="998.9" cy="125.6" r="44.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="998.9" y="127.1" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="1076.2" cy="125.6" r="26.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1076.2" cy="125.6" r="20.4" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1076.2" y="127.1" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="876.8" cy="254.4" r="60.8" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="876.8" cy="254.4" r="54.8" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="876.8" y="255.9" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="980.5" cy="254.4" r="42.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="980.5" cy="254.4" r="36.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="980.5" y="255.9" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
+        <p class="foot metric-key"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
+        <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot support"></span><span class="legend-num">5</span>Order-Flow Pressure</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">1</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">2</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">3</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">4</span>Swing Move</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">6</span>Drift</div></div></div>
+      </div>
+      <div class="signal-map-mobile"><section class="signal-group signal-group--support"><h3>Support sources</h3><div class="bubble-wrap"><button class="mobile-bubble metric-node metric-node-chip support" data-metric-id="m5" type="button" aria-label="Highlight Order-Flow Pressure" style="--size: 44px;"><span class="bubble-num">5</span></button></div><div class="mobile-source-list"><button class="legend-item metric-link mobile-source-item" data-metric-id="m5" type="button" aria-label="Highlight Order-Flow Pressure"><span class="dot support"></span><span class="legend-num">5</span>Order-Flow Pressure</button></div></section><section class="signal-group signal-group--pressure"><h3>Pressure sources</h3><div class="bubble-wrap"><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m1" type="button" aria-label="Highlight Volume Shock" style="--size: 75px;"><span class="bubble-num">1</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m2" type="button" aria-label="Highlight Volatility Pulse" style="--size: 68px;"><span class="bubble-num">2</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m3" type="button" aria-label="Highlight Money Flow" style="--size: 56px;"><span class="bubble-num">3</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m4" type="button" aria-label="Highlight Swing Move" style="--size: 46px;"><span class="bubble-num">4</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m6" type="button" aria-label="Highlight Drift" style="--size: 44px;"><span class="bubble-num">6</span></button></div><div class="mobile-source-list"><button class="legend-item metric-link mobile-source-item" data-metric-id="m1" type="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">1</span>Volume Shock</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m2" type="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">2</span>Volatility Pulse</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m3" type="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">3</span>Money Flow</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m4" type="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">4</span>Swing Move</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m6" type="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">6</span>Drift</button></div></section></div>
     </div>    <div class="card">
       <details>
         <summary>How to read this</summary>
@@ -539,47 +587,6 @@
     </div><div class="card">
       <p class="foot"><b>For informational and educational purposes only. This is general market commentary and not investment advice or a recommendation to buy, sell, or hold any security. It is not tailored to any person’s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
       <p class="foot"><b>We may hold positions in securities discussed.</b></p>
-    </div>
-  </div>
-  <script>
-    (function () {
-      const params = new URLSearchParams(window.location.search);
-      const key = "sg_theme";
-      const root = document.documentElement;
-      const btn = document.getElementById("mode-toggle");
-      const forcedTheme = params.get("theme");
-      const embedded = params.get("embed") === "1";
-
-      function apply(theme) {
-        root.setAttribute("data-theme", theme);
-        if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-      }
-
-      if (embedded && btn) {
-        btn.style.display = "none";
-        const tb = document.querySelector(".toolbar");
-        if (tb) tb.style.display = "none";
-      }
-
-      const isForced = forcedTheme === "dark" || forcedTheme === "light";
-      if (isForced) {
-        apply(forcedTheme);
-      } else {
-        const stored = localStorage.getItem(key);
-        const preferredDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        apply(stored || (preferredDark ? "dark" : "light"));
-      }
-
-      if (btn && !embedded && !isForced) {
-        btn.addEventListener("click", function () {
-          const curr = root.getAttribute("data-theme") || "light";
-          const next = curr === "dark" ? "light" : "dark";
-          localStorage.setItem(key, next);
-          apply(next);
-        });
-      }
-    })();
-  </script>
 </article>
 <article class="entry" data-post="2026-03-23-spy-113450.html">
 <div class="card">
@@ -589,19 +596,22 @@
         <p>By early afternoon, SPY was still holding shape, but the balance had already tilted into strain. Volatility Pulse led the pressure side, Volume Shock reinforced it, and support narrowed toward Order-Flow Pressure and Short Move rather than a broad, easy base.</p>
         <p>That matters because this session was still organized, just no longer comfortable. The tape was being held together by a real support shelf underneath, but the stress stack was widening overhead, so this reads as containment under load rather than a settled bullish structure.</p>
       </div>
-                                                            <div class="chips">
+                                                                        <div class="chips">
         <span class="chip">Session: Late session</span>
         <span class="chip">Posture: Pressure-led</span>
         <span class="chip">Structure: Narrowing</span>
       </div>
     </div>
 
-                                            <div class="card chart-card">
+                                                    <div class="card chart-card">
       <h2>Support and Pressure Map</h2>
-      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-spy-113450" aria-describedby="impact_map_desc_2026-03-23-spy-113450"><title id="impact_map_title_2026-03-23-spy-113450">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-spy-113450">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="625.5" cy="190.0" r="58.5" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="625.5" cy="190.0" r="52.5" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="625.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Short Move"><circle class="node-hit" cx="518.5" cy="190.0" r="48.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="518.5" cy="190.0" r="42.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="518.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="440.7" cy="190.0" r="29.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="440.7" cy="190.0" r="23.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="440.7" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="882.0" cy="190.0" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="190.0" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="1001.8" cy="190.0" r="53.8" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1001.8" cy="190.0" r="47.8" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1001.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="1093.8" cy="190.0" r="38.2" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1093.8" cy="190.0" r="32.2" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1093.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="1158.1" cy="190.0" r="26.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1158.1" cy="190.0" r="20.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1158.1" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">7</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
-      <p class="foot"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
-      <p class="foot"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
-      <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot support"></span><span class="legend-num">2</span>Order-Flow Pressure</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Short Move"><span class="dot support"></span><span class="legend-num">4</span>Short Move</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot support"></span><span class="legend-num">6</span>Drift</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">3</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">5</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">7</span>Swing Move</div></div></div>
+      <p class="foot map-intro"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
+      <div class="signal-map-desktop">
+        <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-spy-113450" aria-describedby="impact_map_desc_2026-03-23-spy-113450"><title id="impact_map_title_2026-03-23-spy-113450">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-spy-113450">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="625.5" cy="190.0" r="58.5" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="625.5" cy="190.0" r="52.5" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="625.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Short Move"><circle class="node-hit" cx="518.5" cy="190.0" r="48.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="518.5" cy="190.0" r="42.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="518.5" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="440.7" cy="190.0" r="29.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="440.7" cy="190.0" r="23.4" fill="#2ea043" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="440.7" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="882.0" cy="190.0" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="190.0" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="1001.8" cy="190.0" r="53.8" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1001.8" cy="190.0" r="47.8" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1001.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="1093.8" cy="190.0" r="38.2" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1093.8" cy="190.0" r="32.2" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1093.8" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="1158.1" cy="190.0" r="26.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1158.1" cy="190.0" r="20.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1158.1" y="191.5" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">7</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
+        <p class="foot metric-key"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
+        <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot support"></span><span class="legend-num">2</span>Order-Flow Pressure</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Short Move"><span class="dot support"></span><span class="legend-num">4</span>Short Move</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot support"></span><span class="legend-num">6</span>Drift</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">3</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">5</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">7</span>Swing Move</div></div></div>
+      </div>
+      <div class="signal-map-mobile"><section class="signal-group signal-group--support"><h3>Support sources</h3><div class="bubble-wrap"><button class="mobile-bubble metric-node metric-node-chip support" data-metric-id="m2" type="button" aria-label="Highlight Order-Flow Pressure" style="--size: 65px;"><span class="bubble-num">2</span></button><button class="mobile-bubble metric-node metric-node-chip support" data-metric-id="m4" type="button" aria-label="Highlight Short Move" style="--size: 52px;"><span class="bubble-num">4</span></button><button class="mobile-bubble metric-node metric-node-chip support" data-metric-id="m6" type="button" aria-label="Highlight Drift" style="--size: 44px;"><span class="bubble-num">6</span></button></div><div class="mobile-source-list"><button class="legend-item metric-link mobile-source-item" data-metric-id="m2" type="button" aria-label="Highlight Order-Flow Pressure"><span class="dot support"></span><span class="legend-num">2</span>Order-Flow Pressure</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m4" type="button" aria-label="Highlight Short Move"><span class="dot support"></span><span class="legend-num">4</span>Short Move</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m6" type="button" aria-label="Highlight Drift"><span class="dot support"></span><span class="legend-num">6</span>Drift</button></div></section><section class="signal-group signal-group--pressure"><h3>Pressure sources</h3><div class="bubble-wrap"><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m1" type="button" aria-label="Highlight Volatility Pulse" style="--size: 75px;"><span class="bubble-num">1</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m3" type="button" aria-label="Highlight Volume Shock" style="--size: 59px;"><span class="bubble-num">3</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m5" type="button" aria-label="Highlight Money Flow" style="--size: 44px;"><span class="bubble-num">5</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m7" type="button" aria-label="Highlight Swing Move" style="--size: 44px;"><span class="bubble-num">7</span></button></div><div class="mobile-source-list"><button class="legend-item metric-link mobile-source-item" data-metric-id="m1" type="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">1</span>Volatility Pulse</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m3" type="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">3</span>Volume Shock</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m5" type="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">5</span>Money Flow</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m7" type="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">7</span>Swing Move</button></div></section></div>
     </div>    <div class="card">
       <details>
         <summary>How to read this</summary>
@@ -647,47 +657,6 @@
     </div><div class="card">
       <p class="foot"><b>For informational and educational purposes only. This is general market commentary and not investment advice or a recommendation to buy, sell, or hold any security. It is not tailored to any person’s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
       <p class="foot"><b>We may hold positions in securities discussed.</b></p>
-    </div>
-  </div>
-  <script>
-    (function () {
-      const params = new URLSearchParams(window.location.search);
-      const key = "sg_theme";
-      const root = document.documentElement;
-      const btn = document.getElementById("mode-toggle");
-      const forcedTheme = params.get("theme");
-      const embedded = params.get("embed") === "1";
-
-      function apply(theme) {
-        root.setAttribute("data-theme", theme);
-        if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-      }
-
-      if (embedded && btn) {
-        btn.style.display = "none";
-        const tb = document.querySelector(".toolbar");
-        if (tb) tb.style.display = "none";
-      }
-
-      const isForced = forcedTheme === "dark" || forcedTheme === "light";
-      if (isForced) {
-        apply(forcedTheme);
-      } else {
-        const stored = localStorage.getItem(key);
-        const preferredDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        apply(stored || (preferredDark ? "dark" : "light"));
-      }
-
-      if (btn && !embedded && !isForced) {
-        btn.addEventListener("click", function () {
-          const curr = root.getAttribute("data-theme") || "light";
-          const next = curr === "dark" ? "light" : "dark";
-          localStorage.setItem(key, next);
-          apply(next);
-        });
-      }
-    })();
-  </script>
 </article>
 <article class="entry" data-post="2026-03-23-qqq-123732.html">
 <div class="card">
@@ -697,19 +666,22 @@
         <p>QQQ stayed organized, but the organization was one-way. Every active force leaned to the pressure side, with Money Flow carrying the heaviest load and no clean support shelf separating from the rest of the stack.</p>
         <p>That matters because the session was being held together by compression rather than balance. The structure looked coherent, but it was carrying strain through the whole setup, which makes it more brittle than calm and tighter than it appears from the surface.</p>
       </div>
-                                                            <div class="chips">
+                                                                        <div class="chips">
         <span class="chip">Session: Late session</span>
         <span class="chip">Posture: Pressure-led</span>
         <span class="chip">Structure: Compressed</span>
       </div>
     </div>
 
-                                            <div class="card chart-card">
+                                                    <div class="card chart-card">
       <h2>Support and Pressure Map</h2>
-      <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-qqq-123732" aria-describedby="impact_map_desc_2026-03-23-qqq-123732"><title id="impact_map_title_2026-03-23-qqq-123732">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-qqq-123732">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="882.0" cy="129.5" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="129.5" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="987.4" cy="129.5" r="39.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="987.4" cy="129.5" r="33.4" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="987.4" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="1060.1" cy="129.5" r="33.3" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1060.1" cy="129.5" r="27.3" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1060.1" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="1124.3" cy="129.5" r="30.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1124.3" cy="129.5" r="24.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1124.3" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">7</text></g><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="868.9" cy="250.5" r="52.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="868.9" cy="250.5" r="46.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="868.9" y="252.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="955.4" cy="250.5" r="33.6" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="955.4" cy="250.5" r="27.6" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="955.4" y="252.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Short Move"><circle class="node-hit" cx="1020.8" cy="250.5" r="31.7" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1020.8" cy="250.5" r="25.7" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1020.8" y="252.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
-      <p class="foot"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
-      <p class="foot"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
-      <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-empty">No clear support source</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">1</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">2</span>Swing Move</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">3</span>Drift</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">4</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">5</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Short Move"><span class="dot pressure"></span><span class="legend-num">6</span>Short Move</div><div class="legend-item metric-link" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot pressure"></span><span class="legend-num">7</span>Order-Flow Pressure</div></div></div>
+      <p class="foot map-intro"><b>How to read this map:</b> Green shows what helped this session hold together. Red shows what strained that structure. Bigger circles had more influence.</p>
+      <div class="signal-map-desktop">
+        <svg viewBox="0 0 1500 360" width="100%" height="auto" role="img" aria-labelledby="impact_map_title_2026-03-23-qqq-123732" aria-describedby="impact_map_desc_2026-03-23-qqq-123732"><title id="impact_map_title_2026-03-23-qqq-123732">Support and pressure map</title><desc id="impact_map_desc_2026-03-23-qqq-123732">Green circles show support sources. Red circles show pressure sources. Larger circles indicate stronger influence.</desc><rect x="0" y="0" width="1500" height="360" fill="var(--svg-bg)"/><line x1="750" y1="34" x2="750" y2="330" stroke="var(--svg-line)" stroke-width="3"/><text x="750.0" y="28" text-anchor="middle" fill="var(--svg-text)" font-size="18" font-weight="700">Support and Pressure Map</text><g class="metric-node" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Money Flow"><circle class="node-hit" cx="882.0" cy="129.5" r="66.0" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="882.0" cy="129.5" r="60.0" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="882.0" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">1</text></g><g class="metric-node" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Drift"><circle class="node-hit" cx="987.4" cy="129.5" r="39.4" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="987.4" cy="129.5" r="33.4" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="987.4" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">3</text></g><g class="metric-node" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><circle class="node-hit" cx="1060.1" cy="129.5" r="33.3" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1060.1" cy="129.5" r="27.3" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1060.1" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">5</text></g><g class="metric-node" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><circle class="node-hit" cx="1124.3" cy="129.5" r="30.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1124.3" cy="129.5" r="24.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1124.3" y="131.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">7</text></g><g class="metric-node" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Swing Move"><circle class="node-hit" cx="868.9" cy="250.5" r="52.9" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="868.9" cy="250.5" r="46.9" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="868.9" y="252.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">2</text></g><g class="metric-node" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Volume Shock"><circle class="node-hit" cx="955.4" cy="250.5" r="33.6" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="955.4" cy="250.5" r="27.6" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="955.4" y="252.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">4</text></g><g class="metric-node" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Short Move"><circle class="node-hit" cx="1020.8" cy="250.5" r="31.7" fill="transparent" stroke="none"/><circle class="metric-bubble" cx="1020.8" cy="250.5" r="25.7" fill="#d62f2f" fill-opacity="0.95" stroke="var(--svg-line)" stroke-width="1.5"/><text class="metric-number" x="1020.8" y="252.0" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="12" font-weight="700">6</text></g><text x="736" y="346" text-anchor="end" fill="var(--svg-muted)" font-size="12">Support sources</text><text x="764" y="346" text-anchor="start" fill="var(--svg-muted)" font-size="12">Pressure sources</text></svg>
+        <p class="foot metric-key"><b>Metric key:</b> Short Move (r1), Swing Move (r5), Volatility Pulse (sigma15), Volume Shock (Vz), Order-Flow Pressure (OBp), Money Flow (MFI), Drift (Trend)</p>
+        <div class="chart-legend"><div class="legend-group"><h3>Support sources</h3><div class="legend-empty">No clear support source</div></div><div class="legend-group"><h3>Pressure sources</h3><div class="legend-item metric-link" data-metric-id="m1" tabindex="0" role="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">1</span>Money Flow</div><div class="legend-item metric-link" data-metric-id="m2" tabindex="0" role="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">2</span>Swing Move</div><div class="legend-item metric-link" data-metric-id="m3" tabindex="0" role="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">3</span>Drift</div><div class="legend-item metric-link" data-metric-id="m4" tabindex="0" role="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">4</span>Volume Shock</div><div class="legend-item metric-link" data-metric-id="m5" tabindex="0" role="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">5</span>Volatility Pulse</div><div class="legend-item metric-link" data-metric-id="m6" tabindex="0" role="button" aria-label="Highlight Short Move"><span class="dot pressure"></span><span class="legend-num">6</span>Short Move</div><div class="legend-item metric-link" data-metric-id="m7" tabindex="0" role="button" aria-label="Highlight Order-Flow Pressure"><span class="dot pressure"></span><span class="legend-num">7</span>Order-Flow Pressure</div></div></div>
+      </div>
+      <div class="signal-map-mobile"><section class="signal-group signal-group--support"><h3>Support sources</h3><p class="legend-empty">No clear support source</p></section><section class="signal-group signal-group--pressure"><h3>Pressure sources</h3><div class="bubble-wrap"><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m1" type="button" aria-label="Highlight Money Flow" style="--size: 75px;"><span class="bubble-num">1</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m2" type="button" aria-label="Highlight Swing Move" style="--size: 58px;"><span class="bubble-num">2</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m3" type="button" aria-label="Highlight Drift" style="--size: 44px;"><span class="bubble-num">3</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m4" type="button" aria-label="Highlight Volume Shock" style="--size: 44px;"><span class="bubble-num">4</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m5" type="button" aria-label="Highlight Volatility Pulse" style="--size: 44px;"><span class="bubble-num">5</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m6" type="button" aria-label="Highlight Short Move" style="--size: 44px;"><span class="bubble-num">6</span></button><button class="mobile-bubble metric-node metric-node-chip pressure" data-metric-id="m7" type="button" aria-label="Highlight Order-Flow Pressure" style="--size: 44px;"><span class="bubble-num">7</span></button></div><div class="mobile-source-list"><button class="legend-item metric-link mobile-source-item" data-metric-id="m1" type="button" aria-label="Highlight Money Flow"><span class="dot pressure"></span><span class="legend-num">1</span>Money Flow</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m2" type="button" aria-label="Highlight Swing Move"><span class="dot pressure"></span><span class="legend-num">2</span>Swing Move</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m3" type="button" aria-label="Highlight Drift"><span class="dot pressure"></span><span class="legend-num">3</span>Drift</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m4" type="button" aria-label="Highlight Volume Shock"><span class="dot pressure"></span><span class="legend-num">4</span>Volume Shock</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m5" type="button" aria-label="Highlight Volatility Pulse"><span class="dot pressure"></span><span class="legend-num">5</span>Volatility Pulse</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m6" type="button" aria-label="Highlight Short Move"><span class="dot pressure"></span><span class="legend-num">6</span>Short Move</button><button class="legend-item metric-link mobile-source-item" data-metric-id="m7" type="button" aria-label="Highlight Order-Flow Pressure"><span class="dot pressure"></span><span class="legend-num">7</span>Order-Flow Pressure</button></div></section></div>
     </div>    <div class="card">
       <details>
         <summary>How to read this</summary>
@@ -755,47 +727,6 @@
     </div><div class="card">
       <p class="foot"><b>For informational and educational purposes only. This is general market commentary and not investment advice or a recommendation to buy, sell, or hold any security. It is not tailored to any person’s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
       <p class="foot"><b>We may hold positions in securities discussed.</b></p>
-    </div>
-  </div>
-  <script>
-    (function () {
-      const params = new URLSearchParams(window.location.search);
-      const key = "sg_theme";
-      const root = document.documentElement;
-      const btn = document.getElementById("mode-toggle");
-      const forcedTheme = params.get("theme");
-      const embedded = params.get("embed") === "1";
-
-      function apply(theme) {
-        root.setAttribute("data-theme", theme);
-        if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-      }
-
-      if (embedded && btn) {
-        btn.style.display = "none";
-        const tb = document.querySelector(".toolbar");
-        if (tb) tb.style.display = "none";
-      }
-
-      const isForced = forcedTheme === "dark" || forcedTheme === "light";
-      if (isForced) {
-        apply(forcedTheme);
-      } else {
-        const stored = localStorage.getItem(key);
-        const preferredDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        apply(stored || (preferredDark ? "dark" : "light"));
-      }
-
-      if (btn && !embedded && !isForced) {
-        btn.addEventListener("click", function () {
-          const curr = root.getAttribute("data-theme") || "light";
-          const next = curr === "dark" ? "light" : "dark";
-          localStorage.setItem(key, next);
-          apply(next);
-        });
-      }
-    })();
-  </script>
 </article>
   </div>
   <script>
