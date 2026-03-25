@@ -74,6 +74,27 @@
       line-height: 1.05;
       letter-spacing: -0.02em;
     }
+    .deck {
+      margin: 0 0 20px;
+      max-width: 1100px;
+    }
+    .deck-kicker {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    .deck-copy {
+      margin: 8px 0 0;
+      font-size: 28px;
+      line-height: 1.28;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      font-weight: 500;
+    }
     .mode-btn {
       border: 1px solid var(--btn-border);
       color: var(--btn-text);
@@ -432,6 +453,9 @@
       h1.page-title {
         font-size: clamp(28px, 8vw, 42px);
       }
+      .deck-copy {
+        font-size: clamp(18px, 4.8vw, 24px);
+      }
     }
     @media (max-width: 767px) {
       .signal-map-desktop {
@@ -454,6 +478,10 @@
     <div class="head">
       <h1 class="page-title">StockGeometry Daily Feed</h1>
       <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">Dark mode</button>
+    </div>
+    <div class="deck">
+      <p class="deck-kicker">Regime Integrity Signal</p>
+      <p class="deck-copy">The geometry of support, pressure, participation, and instability: what is making a move cohere.</p>
     </div>
     <article class="entry" data-post="2026-03-25-spy-1559.html">
 <div class="card">
@@ -491,19 +519,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-          <li><b>Short Move (r1)</b>: Immediate price push.</li>
-<li><b>Swing Move (r5)</b>: Short-term directional move.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term instability.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Conviction behind the move.</li>
-<li><b>Drift (Trend)</b>: Background trend.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
         <div class="table-wrap">
           <div class="table-wrap"><table>
@@ -511,13 +526,13 @@
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
             <tbody>
-              <tr data-delta="0.228205"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.107692"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.007692"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="-0.038462"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="-0.046154"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
-<tr data-delta="-0.069231"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="-0.141026"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+              <tr data-delta="0.228205"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.107692"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.007692"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="-0.038462"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="-0.046154"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.069231"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="-0.141026"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
         </div>
@@ -565,19 +580,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-          <li><b>Short Move (r1)</b>: Immediate price push.</li>
-<li><b>Swing Move (r5)</b>: Short-term directional move.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term instability.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Conviction behind the move.</li>
-<li><b>Drift (Trend)</b>: Background trend.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
         <div class="table-wrap">
           <div class="table-wrap"><table>
@@ -585,13 +587,13 @@
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
             <tbody>
-              <tr data-delta="0.265625"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.179688"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.164062"><td>Drift</td><td>Background directional slope.</td><td>Pressure</td></tr>
-<tr data-delta="0.121094"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="-0.003906"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="-0.058594"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="-0.128906"><td>Swing Move</td><td>Broader directional push.</td><td>Support</td></tr>
+              <tr data-delta="0.265625"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.179688"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.164062"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Pressure</td></tr>
+<tr data-delta="0.121094"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="-0.003906"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="-0.058594"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.128906"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Support</td></tr>
             </tbody>
           </table></div>
         </div>
@@ -639,19 +641,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-          <li><b>Short Move (r1)</b>: Immediate price push.</li>
-<li><b>Swing Move (r5)</b>: Short-term directional move.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term instability.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Conviction behind the move.</li>
-<li><b>Drift (Trend)</b>: Background trend.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
         <div class="table-wrap">
           <div class="table-wrap"><table>
@@ -659,13 +648,13 @@
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
             <tbody>
-              <tr data-delta="0.108571"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.102857"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.088571"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.074286"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="-0.005714"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="-0.105714"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="-0.188571"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+              <tr data-delta="0.108571"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.102857"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.088571"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.074286"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="-0.005714"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="-0.105714"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="-0.188571"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
         </div>
@@ -712,19 +701,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-          <li><b>Short Move (r1)</b>: Immediate price push.</li>
-<li><b>Swing Move (r5)</b>: Short-term directional move.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term instability.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Conviction behind the move.</li>
-<li><b>Drift (Trend)</b>: Background trend.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
         <div class="table-wrap">
           <div class="table-wrap"><table>
@@ -732,13 +708,13 @@
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
             <tbody>
-              <tr data-delta="0.302251"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.115756"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.032154"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="-0.009646"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
-<tr data-delta="-0.038585"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="-0.048232"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="-0.176849"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+              <tr data-delta="0.302251"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.115756"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.032154"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="-0.009646"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.038585"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="-0.048232"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="-0.176849"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
         </div>
@@ -786,19 +762,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-          <li><b>Short Move (r1)</b>: Immediate price push.</li>
-<li><b>Swing Move (r5)</b>: Short-term directional move.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term instability.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Conviction behind the move.</li>
-<li><b>Drift (Trend)</b>: Background trend.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
         <div class="table-wrap">
           <div class="table-wrap"><table>
@@ -806,13 +769,13 @@
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
             <tbody>
-              <tr data-delta="0.256684"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.245989"><td>Drift</td><td>Background directional slope.</td><td>Pressure</td></tr>
-<tr data-delta="0.208556"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.155080"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.026738"><td>Short Move</td><td>Very short-term price push.</td><td>Pressure</td></tr>
-<tr data-delta="-0.048128"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="-0.090909"><td>Swing Move</td><td>Broader directional push.</td><td>Support</td></tr>
+              <tr data-delta="0.256684"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.245989"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Pressure</td></tr>
+<tr data-delta="0.208556"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.155080"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.026738"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Pressure</td></tr>
+<tr data-delta="-0.048128"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.090909"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Support</td></tr>
             </tbody>
           </table></div>
         </div>
@@ -860,19 +823,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-          <li><b>Short Move (r1)</b>: Immediate price push.</li>
-<li><b>Swing Move (r5)</b>: Short-term directional move.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term instability.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Conviction behind the move.</li>
-<li><b>Drift (Trend)</b>: Background trend.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
         <div class="table-wrap">
           <div class="table-wrap"><table>
@@ -880,13 +830,13 @@
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
             <tbody>
-              <tr data-delta="0.160976"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.102439"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.102439"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="-0.019512"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
-<tr data-delta="-0.102439"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="-0.141463"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="-0.160976"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+              <tr data-delta="0.160976"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.102439"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.102439"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="-0.019512"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
+<tr data-delta="-0.102439"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="-0.141463"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="-0.160976"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
         </div>
@@ -933,19 +883,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-          <li><b>Short Move (r1)</b>: Immediate price push.</li>
-<li><b>Swing Move (r5)</b>: Short-term directional move.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term instability.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Conviction behind the move.</li>
-<li><b>Drift (Trend)</b>: Background trend.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
         <div class="table-wrap">
           <div class="table-wrap"><table>
@@ -953,13 +890,13 @@
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
             <tbody>
-              <tr data-delta="0.234568"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.234568"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.197531"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.067901"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.037037"><td>Short Move</td><td>Very short-term price push.</td><td>Pressure</td></tr>
-<tr data-delta="-0.012346"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="-0.061728"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+              <tr data-delta="0.234568"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.234568"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.197531"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.067901"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.037037"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Pressure</td></tr>
+<tr data-delta="-0.012346"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="-0.061728"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
         </div>
@@ -1003,19 +940,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1023,12 +947,12 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="-0.192308"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="0.141026"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="-0.097436"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="0.079487"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.048718"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.030769"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="-0.192308"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="0.141026"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="-0.097436"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="0.079487"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.048718"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.030769"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1071,19 +995,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1091,13 +1002,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="-0.212903"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="-0.187097"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
-<tr data-delta="0.061290"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="-0.061290"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="0.054839"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="-0.054839"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="-0.012903"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Support</td></tr>
+<tr data-delta="-0.212903"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="-0.187097"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
+<tr data-delta="0.061290"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="-0.061290"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="0.054839"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="-0.054839"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.012903"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Support</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1140,19 +1051,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1160,13 +1058,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="0.300000"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.262162"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.221622"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="-0.121622"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="0.094595"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="-0.078378"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="-0.032432"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="0.300000"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.262162"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.221622"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="-0.121622"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="0.094595"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="-0.078378"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="-0.032432"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1210,19 +1108,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1230,13 +1115,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="-0.195584"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="0.170347"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="-0.138801"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="0.135647"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.104101"><td>Short Move</td><td>Very short-term price push.</td><td>Pressure</td></tr>
-<tr data-delta="0.075710"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="-0.059937"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
+<tr data-delta="-0.195584"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="0.170347"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="-0.138801"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="0.135647"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.104101"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Pressure</td></tr>
+<tr data-delta="0.075710"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="-0.059937"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1279,19 +1164,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1299,13 +1171,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="-0.190045"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="-0.153846"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="0.126697"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.104072"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.085973"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.072398"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="-0.040724"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.190045"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="-0.153846"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="0.126697"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.104072"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.085973"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.072398"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="-0.040724"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1348,19 +1220,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1368,13 +1227,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="0.408654"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.278846"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.225962"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.144231"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.062500"><td>Drift</td><td>Background directional slope.</td><td>Pressure</td></tr>
-<tr data-delta="-0.057692"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="-0.033654"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="0.408654"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.278846"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.225962"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.144231"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.062500"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Pressure</td></tr>
+<tr data-delta="-0.057692"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.033654"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1417,19 +1276,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1437,13 +1283,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="-0.197452"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
-<tr data-delta="-0.191083"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="-0.184713"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
-<tr data-delta="0.133758"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="-0.070064"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Support</td></tr>
-<tr data-delta="-0.063694"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="0.012739"><td>Short Move</td><td>Very short-term price push.</td><td>Pressure</td></tr>
+<tr data-delta="-0.197452"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
+<tr data-delta="-0.191083"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="-0.184713"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
+<tr data-delta="0.133758"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="-0.070064"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Support</td></tr>
+<tr data-delta="-0.063694"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="0.012739"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Pressure</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1486,19 +1332,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1506,12 +1339,12 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="0.051800"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="-0.044000"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
-<tr data-delta="-0.041500"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Support</td></tr>
-<tr data-delta="-0.036300"><td>Swing Move</td><td>Broader directional push.</td><td>Support</td></tr>
-<tr data-delta="0.028500"><td>Drift</td><td>Background directional slope.</td><td>Pressure</td></tr>
-<tr data-delta="0.013000"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.051800"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="-0.044000"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
+<tr data-delta="-0.041500"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Support</td></tr>
+<tr data-delta="-0.036300"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Support</td></tr>
+<tr data-delta="0.028500"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Pressure</td></tr>
+<tr data-delta="0.013000"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1554,19 +1387,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1574,12 +1394,12 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="0.228200"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.200000"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.146200"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.102600"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="-0.069200"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="0.012800"><td>Drift</td><td>Background directional slope.</td><td>Pressure</td></tr>
+<tr data-delta="0.228200"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.200000"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.146200"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.102600"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="-0.069200"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="0.012800"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Pressure</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1622,19 +1442,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1642,13 +1449,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="0.298600"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="0.205500"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
-<tr data-delta="0.109600"><td>Drift</td><td>Background directional slope.</td><td>Pressure</td></tr>
-<tr data-delta="0.068500"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="0.065800"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="0.054800"><td>Short Move</td><td>Very short-term price push.</td><td>Pressure</td></tr>
-<tr data-delta="0.049300"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.298600"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="0.205500"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.109600"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Pressure</td></tr>
+<tr data-delta="0.068500"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="0.065800"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="0.054800"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Pressure</td></tr>
+<tr data-delta="0.049300"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -1691,19 +1498,6 @@
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
-        <summary>Technical definitions</summary>
-        <ul>
-<li><b>Short Move (r1)</b>: Very short-term price push.</li>
-<li><b>Swing Move (r5)</b>: Broader directional push.</li>
-<li><b>Volatility Pulse (sigma15)</b>: Short-term volatility pressure.</li>
-<li><b>Volume Shock (Vz)</b>: Unusual volume participation.</li>
-<li><b>Order-Flow Pressure (OBp)</b>: Net buying/selling pressure.</li>
-<li><b>Money Flow (MFI)</b>: Price-and-volume conviction.</li>
-<li><b>Drift (Trend)</b>: Background directional slope.</li>
-        </ul>
-        <p class="foot">These are behavior labels used in the map, not trading signals by themselves.</p>
-      </details>
-      <details>
         <summary>Metric breakdown</summary>
 <div class="table-wrap">
   <div class="table-wrap"><table>
@@ -1711,13 +1505,13 @@
       <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
     </thead>
     <tbody>
-<tr data-delta="0.204600"><td>Volatility Pulse</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
-<tr data-delta="-0.168300"><td>Order-Flow Pressure</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
-<tr data-delta="0.145200"><td>Volume Shock</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
-<tr data-delta="-0.118800"><td>Short Move</td><td>Very short-term price push.</td><td>Support</td></tr>
-<tr data-delta="0.069300"><td>Money Flow</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
-<tr data-delta="-0.026400"><td>Drift</td><td>Background directional slope.</td><td>Support</td></tr>
-<tr data-delta="0.009900"><td>Swing Move</td><td>Broader directional push.</td><td>Pressure</td></tr>
+<tr data-delta="0.204600"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Pressure</td></tr>
+<tr data-delta="-0.168300"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
+<tr data-delta="0.145200"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Pressure</td></tr>
+<tr data-delta="-0.118800"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
+<tr data-delta="0.069300"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Pressure</td></tr>
+<tr data-delta="-0.026400"><td>Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
+<tr data-delta="0.009900"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Pressure</td></tr>
     </tbody>
   </table></div>
 </div>
