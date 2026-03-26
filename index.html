@@ -68,6 +68,13 @@
       gap: 12px;
       margin: 0 0 16px;
     }
+    .head-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
     h1.page-title {
       margin: 0;
       font-size: clamp(32px, 4.8vw, 56px);
@@ -106,6 +113,97 @@
     }
     .mode-btn:hover {
       background: var(--btn-hover);
+    }
+    .help-btn {
+      border: 1px solid var(--btn-border);
+      color: var(--btn-text);
+      background: var(--btn-bg);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .help-btn:hover {
+      background: var(--btn-hover);
+    }
+    .help-modal[hidden] {
+      display: none !important;
+    }
+    .help-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+    }
+    .help-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.68);
+      backdrop-filter: blur(2px);
+    }
+    .help-dialog {
+      position: relative;
+      z-index: 1;
+      width: min(760px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card-bg);
+      box-shadow: 0 24px 60px rgba(2, 6, 23, 0.45);
+      padding: 18px 18px 16px;
+      max-height: min(86vh, 860px);
+      overflow: auto;
+    }
+    .help-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .help-title {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .help-close {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: transparent;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .help-close:hover {
+      background: rgba(148, 163, 184, 0.14);
+    }
+    .help-sections {
+      margin-top: 10px;
+      display: grid;
+      gap: 14px;
+    }
+    .help-section {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 12px 10px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .help-section h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    .help-section p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    body.help-open {
+      overflow: hidden;
     }
     .entry {
       margin: 0 0 28px;
@@ -456,6 +554,16 @@
       .deck-copy {
         font-size: clamp(18px, 4.8vw, 24px);
       }
+      .help-dialog {
+        padding: 14px 14px 12px;
+        border-radius: 14px;
+      }
+      .help-title {
+        font-size: 20px;
+      }
+      .help-section p {
+        font-size: 15px;
+      }
     }
     @media (max-width: 767px) {
       .signal-map-desktop {
@@ -477,7 +585,10 @@
   <div class="wrap">
     <div class="head">
       <h1 class="page-title">StockGeometry Daily Feed</h1>
-      <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">Dark mode</button>
+      <div class="head-actions">
+        <button id="help-open" class="help-btn" type="button" aria-haspopup="dialog" aria-controls="help-modal">Help</button>
+        <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">Dark mode</button>
+      </div>
     </div>
     <div class="deck">
       <p class="deck-kicker">Regime Integrity Signal</p>
@@ -1521,12 +1632,35 @@
       <p class="foot"><b>For informational and educational purposes only. This is general market commentary and not investment advice or a recommendation to buy, sell, or hold any security. It is not tailored to any person’s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
       <p class="foot"><b>We may hold positions in securities discussed.</b></p>
 </article>
+    <div id="help-modal" class="help-modal" hidden aria-hidden="true">
+      <div class="help-backdrop" data-help-close></div>
+      <section class="help-dialog" role="dialog" aria-modal="true" aria-labelledby="help-title">
+        <div class="help-title-row">
+          <h2 id="help-title" class="help-title">Help</h2>
+          <button id="help-close" class="help-close" type="button" aria-label="Close help">Close</button>
+        </div>
+        <div class="help-sections">
+          <article class="help-section">
+            <h3>What this is</h3>
+            <p>StockGeometry reads the internal construction of the move: what is acting as the floor, what is acting as the strain, and whether those pieces are organizing into a coherent posture or fighting each other. It tracks regime integrity — the geometry of support, pressure, participation, and instability — rather than surface headlines.</p>
+          </article>
+          <article class="help-section">
+            <h3>What this is not</h3>
+            <p>This is not an order-book heatmap, a Level 2 or Level 3 execution tool, or a buy/sell signal bot. It is a structural read of how the session is being held together beneath the surface: what is making the move cohere, what is trying to tear it apart, and whether volatility is constructive, absorbed, or destructive.</p>
+          </article>
+        </div>
+      </section>
+    </div>
   </div>
   <script>
     (function () {
       const key = "sg_theme";
       const root = document.documentElement;
       const btn = document.getElementById("mode-toggle");
+      const helpModal = document.getElementById("help-modal");
+      const helpOpen = document.getElementById("help-open");
+      const helpClose = document.getElementById("help-close");
+      const helpBackdrop = helpModal ? helpModal.querySelector("[data-help-close]") : null;
       function apply(theme) {
         root.setAttribute("data-theme", theme);
         if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
@@ -1542,6 +1676,26 @@
           apply(next);
         });
       }
+
+      function openHelp() {
+        if (!helpModal) return;
+        helpModal.hidden = false;
+        helpModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("help-open");
+        if (helpClose) helpClose.focus();
+      }
+
+      function closeHelp() {
+        if (!helpModal) return;
+        helpModal.hidden = true;
+        helpModal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("help-open");
+        if (helpOpen) helpOpen.focus();
+      }
+
+      if (helpOpen) helpOpen.addEventListener("click", openHelp);
+      if (helpClose) helpClose.addEventListener("click", closeHelp);
+      if (helpBackdrop) helpBackdrop.addEventListener("click", closeHelp);
 
       function wireMetricLinks(scope) {
         const cards = scope.querySelectorAll(".chart-card");
@@ -1604,6 +1758,12 @@
       }
 
       wireMetricLinks(document);
+
+      document.addEventListener("keydown", function (ev) {
+        if (ev.key === "Escape" && helpModal && !helpModal.hidden) {
+          closeHelp();
+        }
+      });
     })();
   </script>
 </body>
