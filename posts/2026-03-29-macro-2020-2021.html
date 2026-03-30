@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>macro_market_dashboard: PAL Ablation Roles (Blog View)</title>
+  <title>2020-2021: Policy Cushion, Growth Tension</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -13,11 +13,15 @@
     :root {
       --bg1: #f7fafc;
       --bg2: #eef3f8;
-      --text: #111827;
-      --read: #1f3f6f;
-      --muted: #6b7280;
-      --line: #d1d5db;
       --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --line: #d1d5db;
+      --title: #173a64;
+      --read: #1f3f6f;
+      --chip-bg: #eef6ff;
+      --chip-border: #b6d1ef;
+      --chip-text: #163a63;
       --summary: #1f3f6f;
       --table-head: #f8fafc;
       --table-head-text: #334155;
@@ -25,36 +29,36 @@
       --svg-line: #d1d5db;
       --svg-text: #1f3f6f;
       --svg-muted: #6b7280;
-      --card-bg: rgba(255, 255, 255, 0.84);
-      --entry-bg: rgba(255, 255, 255, 0.50);
-      --entry-shadow: 0 16px 44px rgba(15, 23, 42, 0.08);
       --btn-bg: #ffffff;
-      --btn-text: #111827;
+      --btn-text: #1f2937;
       --btn-border: #cbd5e1;
       --btn-hover: #f3f4f6;
+      --shadow: 0 8px 24px rgba(0,0,0,0.05);
     }
     :root[data-theme="dark"] {
       --bg1: #0b1220;
       --bg2: #0f172a;
+      --card: #0b1220;
       --text: #e5e7eb;
       --muted: #9ca3af;
       --line: #243041;
-      --read: #1f3f6f;
-      --summary: #1f3f6f;
-      --card: #ffffff;
+      --title: #cfe0ff;
+      --read: #d7e3ff;
+      --chip-bg: #1a2437;
+      --chip-border: #334155;
+      --chip-text: #dbeafe;
+      --summary: #dbeafe;
       --table-head: #111b2d;
       --table-head-text: #cbd5e1;
       --svg-bg: #0f172a;
       --svg-line: #475569;
       --svg-text: #dbeafe;
       --svg-muted: #94a3b8;
-      --card-bg: rgba(11, 18, 32, 0.74);
-      --entry-bg: rgba(15, 23, 42, 0.42);
-      --entry-shadow: none;
       --btn-bg: #111827;
       --btn-text: #e5e7eb;
       --btn-border: #374151;
       --btn-hover: #1f2937;
+      --shadow: 0 8px 24px rgba(0,0,0,0.45);
     }
     body {
       margin: 0;
@@ -65,7 +69,6 @@
     .toolbar {
       display: flex;
       justify-content: flex-end;
-      gap: 8px;
       margin-bottom: 10px;
     }
     .mode-btn {
@@ -75,24 +78,24 @@
       border-radius: 999px;
       padding: 8px 12px;
       font-size: 13px;
-      text-decoration: none;
+      font-family: "Segoe UI", Arial, sans-serif;
       cursor: pointer;
     }
     .mode-btn:hover {
       background: var(--btn-hover);
     }
     .wrap {
-      max-width: 1280px;
-      margin: 22px auto 80px;
-      padding: 0 16px;
+      max-width: 1200px;
+      margin: 24px auto 40px;
+      padding: 0 20px;
     }
     .card {
+      background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 22px;
-      background: var(--card-bg);
-      backdrop-filter: blur(8px);
-      margin-bottom: 14px;
+      border-radius: 12px;
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
     }
     .card svg {
       display: block;
@@ -103,31 +106,31 @@
       border: 1px solid var(--svg-line);
     }
     h1 {
-      margin: 0;
-      font-size: clamp(28px, 4vw, 40px);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      color: var(--text);
+      margin: 0 0 8px 0;
+      font-size: clamp(28px, 4.2vw, 34px);
+      line-height: 1.15;
+      
+      font-family: "Segoe UI", -apple-system, Roboto, Arial, sans-serif;
+      font-weight: 800;
+color: var(--title);
     }
     .meta {
-      margin-top: 8px;
       color: var(--muted);
-      font-size: 14px;
-      line-height: 1.5;
+      font-size: 15px;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 16px;
+      font-size: 17px;
       line-height: 1.6;
       margin: 10px 0;
     }
     .market-read {
-      margin-top: 18px;
+      font-size: clamp(18px, 2.1vw, 21px);
+      color: var(--read);
+      margin-top: 14px;
+      margin-bottom: 14px;
+      line-height: 1.55;
       max-width: 96ch;
-    }
-    .market-read p {
-      margin: 0;
-      font-size: clamp(18px, 1.2vw, 20px);
-      line-height: 1.6;
     }
     .market-read p + p {
       margin-top: 14px;
@@ -142,23 +145,17 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 18px;
+      margin: 10px 0 4px 0;
+      font-family: "Segoe UI", Arial, sans-serif;
     }
     .chip {
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 12px;
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      color: var(--chip-text);
       border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.72);
-      color: var(--text);
       font-size: 13px;
-      font-weight: 600;
-      line-height: 1.2;
+      padding: 6px 11px;
       white-space: normal;
-    }
-    :root[data-theme="dark"] .chip {
-      background: rgba(17, 24, 39, 0.76);
     }
     ul {
       margin: 6px 0 0 22px;
@@ -385,7 +382,7 @@
       .wrap > .card:first-of-type {
         display: grid;
         grid-template-columns: minmax(0, 1.45fr) 320px;
-        gap: 18px 28px;
+        gap: 16px 28px;
         align-items: start;
       }
       .wrap > .card:first-of-type h1,
@@ -394,34 +391,36 @@
       }
       .wrap > .card:first-of-type .market-read {
         grid-column: 1;
-        max-width: 92ch;
-        margin-top: 10px;
+        margin-top: 8px;
       }
       .wrap > .card:first-of-type .chips {
         grid-column: 2;
         grid-row: 3;
-        margin-top: 10px;
+        margin-top: 8px;
         align-content: start;
       }
     }
     @media (max-width: 820px) {
       .wrap {
-        margin: 14px auto 36px;
+        margin: 12px auto 28px;
         padding: 0 10px;
       }
       .card {
-        padding: 16px;
-        border-radius: 16px;
+        padding: 14px 14px;
+        border-radius: 10px;
       }
       .meta {
         font-size: 14px;
       }
-      .market-read p { font-size: 17px; }
+      p {
+        font-size: 16px;
+      }
       .chips {
         gap: 8px;
       }
       .chip {
         font-size: 12px;
+        padding: 5px 9px;
       }
       ul {
         margin-left: 18px;
@@ -455,16 +454,17 @@
       <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">☀</button>
     </div>
     <div class="card">
-      <h1>macro_market_dashboard: Held Together, Never Relaxed</h1>
-      <div class="meta">Session date: n/a | Session time (ET): 00:00 to 00:00</div>
+      <h1>2020-2021: Policy Cushion, Growth Tension</h1>
+      <div class="meta">Session date: 2026-03-29 | Session time (ET): 09:30 to 23:59</div>
       <div class="market-read">
-        <p>macro_market_dashboard held shape, but pressure stayed in control. QQQ High-Frequency Response led the strain stack, while Unemployment Rate was the primary support axis.</p>
-        <p>This can stay upright through containment, but continuation is more fragile when pressure breadth stays wide. The session showed a real internal pattern, but it did not fully settle into a single clean regime.</p>
+        <p>Looking back across 2020-2021 as one macro object, the period did not read as a clean, evenly supported recovery. The clearest support came from <b>Unemployment Rate</b> and <b>Fed Funds Rate</b>, while the strongest strain came from <b>QQQ High-Frequency Response</b>. The rest of the object leaned burden-side as well: <b>DIA Low-Frequency Anchor</b>, <b>10-Year Treasury Yield</b>, <b>SPY Broad Surface Response</b>, and <b>Core PCE Inflation</b> all sat on the pressure side.</p>
+        <p>That matters because the era was not internally calm just because it often looked powerful on the surface. The regime appears to have been held together by policy and labor support, while the fast-growth layer carried the deepest internal tension and the broader market surface never fully escaped that strain. In plain English, 2020-2021 looks less like a serene expansion than like a market being stabilized from underneath while speed, sensitivity, and speculative intensity kept the structure under pressure.</p>
       </div>
       <div class="chips">
-        <span class="chip">Session: Intraday</span>
+        <span class="chip">Edition: Weekend</span>
+        <span class="chip">Window: 2020-2021 composite</span>
         <span class="chip">Posture: Pressure-led</span>
-        <span class="chip">Structure: Compressed</span>
+        <span class="chip">Structure: Policy support, growth strain</span>
       </div>
     </div>
 
@@ -510,7 +510,7 @@
       </details>
     </div>
     <div class="card">
-      <p class="foot"><b>For informational and educational purposes only. This is general market commentary based on a proprietary structural analysis of market data. It is not investment advice or a recommendation to buy, sell, or hold any security, and it is not tailored to any person's investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
+      <p class="foot"><b>For informational and educational purposes only. This is general market commentary based on a proprietary structural analysis of market data. It is not investment advice or a recommendation to buy, sell, or hold any security, and it is not tailored to any person\'s investment objectives, financial situation, or needs. Investing involves risk, including possible loss of principal.</b></p>
       <p class="foot"><b>As of publication, we and/or our affiliates may hold positions in one or more securities discussed.</b></p>
     </div>
   </div>
