@@ -126,7 +126,7 @@
       <div class="head-actions">
         <a class="archive-btn" href="../week-2026-W13.html">Back to week archive</a>
         <a class="archive-btn" href="../../index.html">Back to current feed</a>
-        <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">Dark mode</button>
+        <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">☀</button>
       </div>
     </div>
     <p class="sub">Week 2026-W13 archive post</p>
@@ -198,7 +198,7 @@
       const btn = document.getElementById("mode-toggle");
       function apply(theme) {
         root.setAttribute("data-theme", theme);
-        if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+        if (btn) btn.setAttribute("title", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
       }
       const stored = localStorage.getItem(key);
       const preferredDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
