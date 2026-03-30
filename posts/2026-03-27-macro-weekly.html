@@ -522,7 +522,7 @@
 
       function apply(theme) {
         root.setAttribute("data-theme", theme);
-        if (btn) btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+        if (btn) btn.setAttribute("title", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
       }
 
       if (embedded && btn) {
