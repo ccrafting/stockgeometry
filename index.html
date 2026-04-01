@@ -661,39 +661,26 @@
     </div>
 
     <div class="card">
+      
       <details>
-        <summary>Flow/Price Alignment</summary>
-        <p class="foot">This section validates what language is allowed from this object before leadership wording is used.</p>
-        <p class="foot diag-note"><b>Interpretation mode:</b> Mixed-structure |
-        <b>Leadership confirmed:</b> None confirmed |
-        <b>Major divergence:</b> None |
-        <b>Top strain:</b> n/a</p>
-        <p class="foot diag-note"><b>Rules:</b> Mixed-structure semantics with basket internal confirmation.
-        Leadership claims require gate pass; divergence rows remain flow-visible but are not treated as leadership.</p>
-        <p class="foot diag-note"><b>Object semantics:</b> contribution_sensitive |
-        <b>Leadership reference:</b> basket_internal |
-        <b>Price weighting:</b> none</p>
-        <div class="table-wrap"><div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Flow side</th><th>Rank</th><th>|Δ|</th><th>Support share</th><th>Open→Now</th><th>PrevClose→Now</th><th>Contribution pts</th><th>Narrative status</th><th>Conflict class</th></tr></thead><tbody><tr><td>sigma15</td><td>Supportive flow</td><td>7</td><td>0.080</td><td>0.085</td><td>n/a</td><td>n/a</td><td>n/a</td><td>flow-only</td><td>unknown / unknown</td></tr>
-<tr><td>r5</td><td>Supportive flow</td><td>6</td><td>0.090</td><td>0.097</td><td>n/a</td><td>n/a</td><td>n/a</td><td>flow-only</td><td>unknown / unknown</td></tr>
-<tr><td>TREND</td><td>Supportive flow</td><td>5</td><td>0.112</td><td>0.119</td><td>n/a</td><td>n/a</td><td>n/a</td><td>flow-only</td><td>unknown / unknown</td></tr>
-<tr><td>VZ</td><td>Supportive flow</td><td>4</td><td>0.128</td><td>0.136</td><td>n/a</td><td>n/a</td><td>n/a</td><td>flow-only</td><td>unknown / unknown</td></tr>
-<tr><td>MFI</td><td>Supportive flow</td><td>3</td><td>0.133</td><td>0.142</td><td>n/a</td><td>n/a</td><td>n/a</td><td>flow-only</td><td>unknown / unknown</td></tr>
-<tr><td>OBP</td><td>Supportive flow</td><td>2</td><td>0.191</td><td>0.205</td><td>n/a</td><td>n/a</td><td>n/a</td><td>flow-only</td><td>unknown / unknown</td></tr>
-<tr><td>r1</td><td>Supportive flow</td><td>1</td><td>0.202</td><td>0.216</td><td>n/a</td><td>n/a</td><td>n/a</td><td>flow-only</td><td>unknown / unknown</td></tr></tbody></table></div></div>
+        <summary>Read constraints</summary>
+        <p class="foot diag-note">Price-confirmation fields were not supplied in this bundle.</p>
+        <p class="foot diag-note">This read is currently structural-only.</p>
+        <p class="foot diag-note">Coverage and/or role separation are not yet strong enough to treat this as a durable object.</p>
       </details>
+
       <details>
         <summary>How to read this</summary>
         <p class="foot">This map shows what helped this session hold together and what put it under strain.</p>
         <p class="foot">Green circles supported the move. Red circles added pressure. Larger circles had more influence.</p>
         <p class="foot">The session showed a real internal pattern, but it did not fully settle into a single clean regime.</p>
         <p class="foot">Strongest support: <b>Short Move</b>. Strongest pressure: <b>No clear pressure source</b>.</p>
-        <p class="foot">This read combines structure and context metrics, with conflict gating applied before stronger leadership phrasing.</p>
+        <p class="foot">This read combines internal structure with instrument price behavior, while still flagging unresolved divergences.</p>
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -707,7 +694,6 @@
 <tr data-delta="-0.202128"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -741,24 +727,7 @@
     </div>
 
     <div class="card">
-      <details>
-        <summary>Flow/price guardrail diagnostics</summary>
-        <p class="foot">The copy layer uses an object semantics spec + conflict gates before allowing leadership phrasing.</p>
-        <p class="foot diag-note"><b>Interpretation mode:</b> Mixed-structure |
-        <b>Leadership confirmed:</b> None confirmed |
-        <b>Major divergence:</b> None |
-        <b>Top strain:</b> sigma15</p>
-        <p class="foot diag-note"><b>Object semantics:</b> contribution_sensitive |
-        <b>Leadership reference:</b> basket_internal |
-        <b>Price weighting:</b> none</p>
-        <div class="table-wrap"><div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Flow side</th><th>Rank</th><th>|Δ|</th><th>Support share</th><th>Open→Now</th><th>PrevClose→Now</th><th>Contribution pts</th><th>Conflict class</th></tr></thead><tbody><tr><td>sigma15</td><td>Pressure flow</td><td>1</td><td>0.183</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>MFI</td><td>Pressure flow</td><td>2</td><td>0.176</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>OBP</td><td>Pressure flow</td><td>3</td><td>0.080</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>r5</td><td>Pressure flow</td><td>4</td><td>0.031</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>TREND</td><td>Supportive flow</td><td>3</td><td>0.013</td><td>0.217</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>r1</td><td>Supportive flow</td><td>2</td><td>0.016</td><td>0.261</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>VZ</td><td>Supportive flow</td><td>1</td><td>0.031</td><td>0.522</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr></tbody></table></div></div>
-      </details>
+      <details><summary>Read constraints</summary><p class="foot diag-note">Price-confirmation fields were not supplied in this bundle.</p><p class="foot diag-note">This read is currently structural-only.</p></details>
       <details>
         <summary>How to read this</summary>
         <p class="foot">This map shows what helped this session hold together and what put it under strain.</p>
@@ -770,8 +739,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -785,7 +753,6 @@
 <tr data-delta="-0.031008"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -819,24 +786,7 @@
     </div>
 
     <div class="card">
-      <details>
-        <summary>Flow/price guardrail diagnostics</summary>
-        <p class="foot">The copy layer uses an object semantics spec + conflict gates before allowing leadership phrasing.</p>
-        <p class="foot diag-note"><b>Interpretation mode:</b> Mixed-structure |
-        <b>Leadership confirmed:</b> None confirmed |
-        <b>Major divergence:</b> None |
-        <b>Top strain:</b> r5</p>
-        <p class="foot diag-note"><b>Object semantics:</b> contribution_sensitive |
-        <b>Leadership reference:</b> basket_internal |
-        <b>Price weighting:</b> none</p>
-        <div class="table-wrap"><div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Flow side</th><th>Rank</th><th>|Δ|</th><th>Support share</th><th>Open→Now</th><th>PrevClose→Now</th><th>Contribution pts</th><th>Conflict class</th></tr></thead><tbody><tr><td>r5</td><td>Pressure flow</td><td>1</td><td>0.241</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>MFI</td><td>Pressure flow</td><td>2</td><td>0.217</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>sigma15</td><td>Pressure flow</td><td>3</td><td>0.152</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>VZ</td><td>Pressure flow</td><td>4</td><td>0.131</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>TREND</td><td>Pressure flow</td><td>5</td><td>0.083</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>OBP</td><td>Pressure flow</td><td>6</td><td>0.045</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>r1</td><td>Supportive flow</td><td>1</td><td>0.041</td><td>1.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr></tbody></table></div></div>
-      </details>
+      <details><summary>Read constraints</summary><p class="foot diag-note">Price-confirmation fields were not supplied in this bundle.</p><p class="foot diag-note">This read is currently structural-only.</p></details>
       <details>
         <summary>How to read this</summary>
         <p class="foot">This map shows what helped this session hold together and what put it under strain.</p>
@@ -848,8 +798,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -863,7 +812,6 @@
 <tr data-delta="-0.041379"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -908,8 +856,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -923,7 +870,6 @@
 <tr data-delta="-0.041379"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -957,24 +903,7 @@
     </div>
 
     <div class="card">
-      <details>
-        <summary>Flow/price guardrail diagnostics</summary>
-        <p class="foot">The copy layer uses an object semantics spec + conflict gates before allowing leadership phrasing.</p>
-        <p class="foot diag-note"><b>Interpretation mode:</b> Mixed-structure |
-        <b>Leadership confirmed:</b> None confirmed |
-        <b>Major divergence:</b> None |
-        <b>Top strain:</b> r5</p>
-        <p class="foot diag-note"><b>Object semantics:</b> contribution_sensitive |
-        <b>Leadership reference:</b> basket_internal |
-        <b>Price weighting:</b> none</p>
-        <div class="table-wrap"><div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Flow side</th><th>Rank</th><th>|Δ|</th><th>Support share</th><th>Open→Now</th><th>PrevClose→Now</th><th>Contribution pts</th><th>Conflict class</th></tr></thead><tbody><tr><td>r5</td><td>Pressure flow</td><td>1</td><td>0.485</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>MFI</td><td>Pressure flow</td><td>2</td><td>0.344</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>sigma15</td><td>Pressure flow</td><td>3</td><td>0.227</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>r1</td><td>Pressure flow</td><td>4</td><td>0.209</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>VZ</td><td>Pressure flow</td><td>5</td><td>0.209</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>TREND</td><td>Pressure flow</td><td>6</td><td>0.129</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>OBP</td><td>Pressure flow</td><td>7</td><td>0.018</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr></tbody></table></div></div>
-      </details>
+      <details><summary>Read constraints</summary><p class="foot diag-note">Price-confirmation fields were not supplied in this bundle.</p><p class="foot diag-note">This read is currently structural-only.</p></details>
       <details>
         <summary>How to read this</summary>
         <p class="foot">This map shows what helped this session hold together and what put it under strain.</p>
@@ -986,8 +915,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1001,7 +929,6 @@
 <tr data-delta="0.018405"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1046,8 +973,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1061,7 +987,6 @@
 <tr data-delta="0.018405"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Pressure</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1106,8 +1031,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1121,7 +1045,6 @@
 <tr data-delta="-0.058621"><td>NVDA Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1167,8 +1090,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1182,7 +1104,6 @@
 <tr data-delta="-0.219697"><td>AMZN Drift (Trend)</td><td>Background directional slope.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1227,8 +1148,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1242,7 +1162,6 @@
 <tr data-delta="-0.097166"><td>NVDA Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1287,8 +1206,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1302,7 +1220,6 @@
 <tr data-delta="-0.124444"><td>Volume Shock (Vz)</td><td>Unusual volume participation.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1347,8 +1264,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1362,7 +1278,6 @@
 <tr data-delta="-0.186603"><td>V Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1396,24 +1311,7 @@
     </div>
 
     <div class="card">
-      <details>
-        <summary>Flow/price guardrail diagnostics</summary>
-        <p class="foot">The copy layer uses an object semantics spec + conflict gates before allowing leadership phrasing.</p>
-        <p class="foot diag-note"><b>Interpretation mode:</b> Flow-first |
-        <b>Leadership confirmed:</b> None confirmed |
-        <b>Major divergence:</b> None |
-        <b>Top strain:</b> TRV</p>
-        <p class="foot diag-note"><b>Object semantics:</b> flow_only |
-        <b>Leadership reference:</b> basket_internal |
-        <b>Price weighting:</b> none</p>
-        <div class="table-wrap"><div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Flow side</th><th>Rank</th><th>|Δ|</th><th>Support share</th><th>Open→Now</th><th>PrevClose→Now</th><th>Contribution pts</th><th>Conflict class</th></tr></thead><tbody><tr><td>TRV</td><td>Pressure flow</td><td>1</td><td>0.354</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>HD</td><td>Pressure flow</td><td>2</td><td>0.316</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>JPM</td><td>Pressure flow</td><td>3</td><td>0.301</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>AXP</td><td>Pressure flow</td><td>4</td><td>0.091</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>GS</td><td>Supportive flow</td><td>3</td><td>0.124</td><td>0.252</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>CAT</td><td>Supportive flow</td><td>2</td><td>0.182</td><td>0.369</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
-<tr><td>V</td><td>Supportive flow</td><td>1</td><td>0.187</td><td>0.379</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr></tbody></table></div></div>
-      </details>
+      <details><summary>Read constraints</summary><p class="foot diag-note">Price-confirmation fields were not supplied in this bundle.</p><p class="foot diag-note">This read is currently structural-only.</p></details>
       <details>
         <summary>How to read this</summary>
         <p class="foot">This map shows what helped this session hold together and what put it under strain.</p>
@@ -1425,8 +1323,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1440,7 +1337,6 @@
 <tr data-delta="-0.186603"><td>V Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1485,8 +1381,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1500,7 +1395,6 @@
 <tr data-delta="-0.088235"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1545,8 +1439,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1560,7 +1453,6 @@
 <tr data-delta="-0.113990"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1605,8 +1497,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1620,7 +1511,6 @@
 <tr data-delta="-0.202381"><td>Swing Move (r5)</td><td>Broader directional push.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1665,8 +1555,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1680,7 +1569,6 @@
 <tr data-delta="-0.118863"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1725,8 +1613,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1740,7 +1627,6 @@
 <tr data-delta="-0.103226"><td>Short Move (r1)</td><td>Very short-term price push.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1786,8 +1672,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1801,7 +1686,6 @@
 <tr data-delta="-0.114206"><td>V Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1846,8 +1730,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1861,7 +1744,6 @@
 <tr data-delta="-0.128280"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1906,8 +1788,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1921,7 +1802,6 @@
 <tr data-delta="-0.062295"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -1967,8 +1847,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -1982,7 +1861,6 @@
 <tr data-delta="-0.101399"><td>V Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -2027,8 +1905,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -2042,7 +1919,6 @@
 <tr data-delta="-0.106383"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -2087,8 +1963,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -2102,7 +1977,6 @@
 <tr data-delta="-0.109948"><td>Volatility Pulse (sigma15)</td><td>Short-term volatility pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -2147,8 +2021,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -2162,7 +2035,6 @@
 <tr data-delta="-0.120879"><td>Order-Flow Pressure (OBp)</td><td>Net buying/selling pressure.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
@@ -2207,8 +2079,7 @@
       </details>
       <details>
         <summary>Metric breakdown</summary>
-        <div class="table-wrap">
-          <div class="table-wrap"><table>
+        <div class="table-wrap"><table>
             <thead>
               <tr><th>Metric</th><th>What it tracks</th><th>Session side</th></tr>
             </thead>
@@ -2222,7 +2093,6 @@
 <tr data-delta="-0.063830"><td>Money Flow (MFI)</td><td>Price-and-volume conviction.</td><td>Support</td></tr>
             </tbody>
           </table></div>
-        </div>
         <p class="foot">Session side shows which inputs leaned support versus pressure in this session.</p>
       </details>
     </div>
