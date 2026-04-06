@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SPY: PAL Ablation Roles (Blog View)</title>
+  <title>SPY: Structured Session Read</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -197,6 +197,9 @@
     .table-wrap {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+    }
+    .diag-note {
+      margin-top: 8px;
     }
     .chart-legend {
       display: grid;
@@ -455,16 +458,16 @@
       <button id="mode-toggle" class="mode-btn" type="button" aria-label="Toggle dark mode">☀</button>
     </div>
     <div class="card">
-      <h1>SPY: Surface Held, Internals Faded</h1>
+      <h1>SPY: Structured Session Read</h1>
       <div class="meta">Session date: 2026-03-31 | Session time (ET): 09:30 to 15:56</div>
       <div class="market-read">
-        <p>At the close, SPY finished with its heaviest strain in Volatility Pulse and Money Flow. Order-Flow Pressure and the 5-bar move leaned the same way. The only support left was small and came from the immediate move, Trend, and Volume Shock.</p>
-        <p>That left SPY in a tighter, weaker position than it had at 1:30 p.m. Earlier, swing structure and participation were still carrying the session. By the close, those supports had thinned out, and fresh sponsorship never returned. SPY held together into the bell, but it did so with money and flow pointed the wrong way.</p>
+        <p>SPY is pressure-led in this close read. Primary support is VZ; primary pressure is sigma15.</p>
+        <p>Support/pressure ordering reflects the object composition and guardrail rules, with divergence language used when price confirmation and internal structure disagree.</p>
       </div>
       <div class="chips">
         <span class="chip">Session: Close</span>
         <span class="chip">Posture: Pressure-led</span>
-        <span class="chip">Structure: Surface held, internals faded</span>
+        <span class="chip">Structure: Narrowing</span>
       </div>
     </div>
 
@@ -479,13 +482,31 @@
     </div>
 
     <div class="card">
+      <details open>
+        <summary>Flow/price guardrail diagnostics</summary>
+        <p class="foot">The copy layer uses an object semantics spec + conflict gates before allowing leadership phrasing.</p>
+        <p class="foot diag-note"><b>Interpretation mode:</b> Mixed-structure |
+        <b>Leadership confirmed:</b> None confirmed |
+        <b>Major divergence:</b> None |
+        <b>Top strain:</b> sigma15</p>
+        <p class="foot diag-note"><b>Object semantics:</b> contribution_sensitive |
+        <b>Leadership reference:</b> basket_internal |
+        <b>Price weighting:</b> none</p>
+        <div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Flow side</th><th>Rank</th><th>|Δ|</th><th>Support share</th><th>Open→Now</th><th>PrevClose→Now</th><th>Contribution pts</th><th>Conflict class</th></tr></thead><tbody><tr><td>sigma15</td><td>Pressure flow</td><td>1</td><td>0.183</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
+<tr><td>MFI</td><td>Pressure flow</td><td>2</td><td>0.176</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
+<tr><td>OBP</td><td>Pressure flow</td><td>3</td><td>0.080</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
+<tr><td>r5</td><td>Pressure flow</td><td>4</td><td>0.031</td><td>0.000</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
+<tr><td>TREND</td><td>Supportive flow</td><td>3</td><td>0.013</td><td>0.217</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
+<tr><td>r1</td><td>Supportive flow</td><td>2</td><td>0.016</td><td>0.261</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr>
+<tr><td>VZ</td><td>Supportive flow</td><td>1</td><td>0.031</td><td>0.522</td><td>n/a</td><td>n/a</td><td>n/a</td><td>unknown / unknown</td></tr></tbody></table></div>
+      </details>
       <details>
         <summary>How to read this</summary>
         <p class="foot">This map shows what helped this session hold together and what put it under strain.</p>
         <p class="foot">Green circles supported the move. Red circles added pressure. Larger circles had more influence.</p>
         <p class="foot">The session showed a real internal pattern, but it did not fully settle into a single clean regime.</p>
         <p class="foot">Strongest support: <b>Volume Shock</b>. Strongest pressure: <b>Volatility Pulse</b>.</p>
-        <p class="foot">The read is based on price movement, volatility, volume, and flow, all compared to recent behavior.</p>
+        <p class="foot">This read combines structure and context metrics, with conflict gating applied before stronger leadership phrasing.</p>
         <p class="foot">The session stayed organized around one main posture, but the internal ranking never fully settled.</p>
       </details>
       <details>
@@ -514,6 +535,8 @@
       <p class="foot"><b>As of publication, we and/or our affiliates may hold positions in one or more securities discussed.</b></p>
     </div>
   </div>
+  <script id="object-semantics-spec" type="application/json">{"version":1,"object_id":"spy__intraday","object_label":"SPY","object_kind":"custom_basket","channel_count":7,"channel_family_mode":"mixed","declared_metric_families":["MFI","OBp","Trend","Vz","r1","r5","sigma15"],"object_semantics":"contribution_sensitive","price_weighting_model":"none","reference_instrument":"","leadership_reference":"basket_internal","requires_price_confirmation_for_leadership_words":true,"requires_contribution_gate_for_leadership_words":false,"supports_divergence_language":true,"copy_policy":{"allow_center_language":true,"allow_leadership_language":true,"allow_strength_language":true,"allow_index_support_language":false},"thresholds":{"clear_center_min_share":0.33,"clear_center_min_gap_to_next":0.1,"major_support_min_share":0.15,"reinforcing_support_min_share":0.08,"reinforcing_support_min_abs_delta":0.04,"soft_price_conflict_return":-0.005,"hard_price_conflict_return":-0.015,"severe_price_conflict_return":-0.03,"hard_contribution_conflict_points":-20.0,"severe_contribution_conflict_points":-60.0},"lexical_policy":{"allowed_terms":["clear center of support","stayed underneath","reinforced support","supportive flow with weak price confirmation","internal pressure despite a green finish"],"guarded_terms":["leader","carried","center of strength","driving the close"],"forbidden_terms_when_conflicted":["leader","carried","held the dow together","where the strength lived","center of strength","strongest winner","driving the close"]},"channels":[{"channel":"c1","label":"r1","source":"alpaca","asset":"","series":"","metric":"r1"},{"channel":"c2","label":"r5","source":"alpaca","asset":"","series":"","metric":"r5"},{"channel":"c3","label":"sigma15","source":"alpaca","asset":"","series":"","metric":"sigma15"},{"channel":"c4","label":"Vz","source":"alpaca","asset":"VZ","series":"","metric":"Vz"},{"channel":"c5","label":"OBp","source":"alpaca","asset":"OBP","series":"","metric":"OBp"},{"channel":"c6","label":"MFI","source":"alpaca","asset":"MFI","series":"","metric":"MFI"},{"channel":"c7","label":"Trend","source":"alpaca","asset":"TREND","series":"","metric":"Trend"}]}</script>
+  <script id="copy-guardrail-runtime" type="application/json">{"support_total":0.05943152454780362,"pressure_total":0.4702842377260983,"session_balance":"Pressure-led","support_share_by_component":{"TREND":0.21739130434782614,"r1":0.2608695652173913,"VZ":0.5217391304347826},"support_share_by_label":{"Trend":0.21739130434782614,"r1":0.2608695652173913,"Vz":0.5217391304347826},"support_rank":{"TREND":3,"r1":2,"VZ":1},"support_rank_by_label":{"Trend":3,"r1":2,"Vz":1},"price_return_open_to_now":{"sigma15":null,"MFI":null,"OBP":null,"r5":null,"TREND":null,"r1":null,"VZ":null},"price_return_open_to_now_by_label":{"sigma15":null,"MFI":null,"OBp":null,"r5":null,"Trend":null,"r1":null,"Vz":null},"price_return_prevclose_to_now":{"sigma15":null,"MFI":null,"OBP":null,"r5":null,"TREND":null,"r1":null,"VZ":null},"price_return_prevclose_to_now_by_label":{"sigma15":null,"MFI":null,"OBp":null,"r5":null,"Trend":null,"r1":null,"Vz":null},"contribution_points":{"sigma15":null,"MFI":null,"OBP":null,"r5":null,"TREND":null,"r1":null,"VZ":null},"contribution_points_by_label":{"sigma15":null,"MFI":null,"OBp":null,"r5":null,"Trend":null,"r1":null,"Vz":null},"conflict_class":{"sigma15":{"price":"unknown","contribution":"unknown"},"MFI":{"price":"unknown","contribution":"unknown"},"OBP":{"price":"unknown","contribution":"unknown"},"r5":{"price":"unknown","contribution":"unknown"},"TREND":{"price":"unknown","contribution":"unknown"},"r1":{"price":"unknown","contribution":"unknown"},"VZ":{"price":"unknown","contribution":"unknown"}},"conflict_class_by_label":{"sigma15":{"price":"unknown","contribution":"unknown"},"MFI":{"price":"unknown","contribution":"unknown"},"OBp":{"price":"unknown","contribution":"unknown"},"r5":{"price":"unknown","contribution":"unknown"},"Trend":{"price":"unknown","contribution":"unknown"},"r1":{"price":"unknown","contribution":"unknown"},"Vz":{"price":"unknown","contribution":"unknown"}},"vocabulary_permissions":{"plural_center_allowed":false,"leadership_terms_forbidden":false,"forbidden_terms_when_conflicted":["leader","carried","held the dow together","where the strength lived","center of strength","strongest winner","driving the close"]},"component_rows":[{"label":"sigma15","asset":"sigma15","metric":"sigma15","delta":0.1834625322997416,"abs_delta":0.1834625322997416,"side":"pressure","support_rank":null,"pressure_rank":1,"support_share":0.0,"major_support":false,"reinforcing_support":false,"clear_center":false,"price_return_open_to_now":null,"price_return_prevclose_to_now":null,"contribution_points":null,"price_return_rank":null,"contribution_rank":null,"price_conflict_class":"unknown","contribution_conflict_class":"unknown","leadership_ok":false,"vocabulary_permissions":[]},{"label":"MFI","asset":"MFI","metric":"MFI","delta":0.17571059431524547,"abs_delta":0.17571059431524547,"side":"pressure","support_rank":null,"pressure_rank":2,"support_share":0.0,"major_support":false,"reinforcing_support":false,"clear_center":false,"price_return_open_to_now":null,"price_return_prevclose_to_now":null,"contribution_points":null,"price_return_rank":null,"contribution_rank":null,"price_conflict_class":"unknown","contribution_conflict_class":"unknown","leadership_ok":false,"vocabulary_permissions":[]},{"label":"OBp","asset":"OBP","metric":"OBp","delta":0.08010335917312664,"abs_delta":0.08010335917312664,"side":"pressure","support_rank":null,"pressure_rank":3,"support_share":0.0,"major_support":false,"reinforcing_support":false,"clear_center":false,"price_return_open_to_now":null,"price_return_prevclose_to_now":null,"contribution_points":null,"price_return_rank":null,"contribution_rank":null,"price_conflict_class":"unknown","contribution_conflict_class":"unknown","leadership_ok":false,"vocabulary_permissions":[]},{"label":"r5","asset":"r5","metric":"r5","delta":0.031007751937984523,"abs_delta":0.031007751937984523,"side":"pressure","support_rank":null,"pressure_rank":4,"support_share":0.0,"major_support":false,"reinforcing_support":false,"clear_center":false,"price_return_open_to_now":null,"price_return_prevclose_to_now":null,"contribution_points":null,"price_return_rank":null,"contribution_rank":null,"price_conflict_class":"unknown","contribution_conflict_class":"unknown","leadership_ok":false,"vocabulary_permissions":[]},{"label":"Trend","asset":"TREND","metric":"Trend","delta":-0.012919896640826878,"abs_delta":0.012919896640826878,"side":"support","support_rank":3,"pressure_rank":null,"support_share":0.21739130434782614,"major_support":true,"reinforcing_support":true,"clear_center":false,"price_return_open_to_now":null,"price_return_prevclose_to_now":null,"contribution_points":null,"price_return_rank":null,"contribution_rank":null,"price_conflict_class":"unknown","contribution_conflict_class":"unknown","leadership_ok":false,"vocabulary_permissions":["major_support_no_conflict"]},{"label":"r1","asset":"r1","metric":"r1","delta":-0.015503875968992248,"abs_delta":0.015503875968992248,"side":"support","support_rank":2,"pressure_rank":null,"support_share":0.2608695652173913,"major_support":true,"reinforcing_support":true,"clear_center":false,"price_return_open_to_now":null,"price_return_prevclose_to_now":null,"contribution_points":null,"price_return_rank":null,"contribution_rank":null,"price_conflict_class":"unknown","contribution_conflict_class":"unknown","leadership_ok":false,"vocabulary_permissions":["major_support_no_conflict"]},{"label":"Vz","asset":"VZ","metric":"Vz","delta":-0.031007751937984496,"abs_delta":0.031007751937984496,"side":"support","support_rank":1,"pressure_rank":null,"support_share":0.5217391304347826,"major_support":true,"reinforcing_support":true,"clear_center":true,"price_return_open_to_now":null,"price_return_prevclose_to_now":null,"contribution_points":null,"price_return_rank":null,"contribution_rank":null,"price_conflict_class":"unknown","contribution_conflict_class":"unknown","leadership_ok":false,"vocabulary_permissions":["major_support_no_conflict"]}]}</script>
   <script>
     (function () {
       const params = new URLSearchParams(window.location.search);
