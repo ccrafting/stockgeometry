@@ -472,6 +472,8 @@
     }
     const supportFieldLabel = (model.role_labels && model.role_labels.support) || "Dominant support";
     const pressureFieldLabel = (model.role_labels && model.role_labels.pressure) || "Dominant pressure";
+    let pinnedPointTs = null;
+    let pinnedEvent = null;
 
     const crosshair = createSvgEl("g", { class: "pf-crosshair", style: "display:none" });
     const crossV = createSvgEl("line", {
@@ -515,7 +517,10 @@
     gRoot.appendChild(dotPres);
     gRoot.appendChild(dotNet);
 
-    function hideInteractive() {
+    function hideInteractive(forceClear) {
+      if (pinnedPointTs && !forceClear) {
+        return;
+      }
       crosshair.style.display = "none";
       dotPrice.style.display = "none";
       dotSup.style.display = "none";
@@ -525,6 +530,11 @@
       if (typeof cfg.onLeave === "function") {
         cfg.onLeave();
       }
+    }
+
+    function clearPinned() {
+      pinnedPointTs = null;
+      pinnedEvent = null;
     }
 
     function showTooltipForPoint(point, px, py, forcedEvent) {
@@ -544,6 +554,19 @@
       }
       tooltip.setRows(rows);
       tooltip.move(px, py);
+    }
+
+    function pinPoint(point, forcedEvent, px, py, source) {
+      if (!point) {
+        return;
+      }
+      pinnedPointTs = point.ts;
+      pinnedEvent = forcedEvent || null;
+      updateForPoint(point);
+      showTooltipForPoint(point, px, py, pinnedEvent);
+      if (typeof cfg.onHoverPoint === "function") {
+        cfg.onHoverPoint(point, { source: source || "pin", event: pinnedEvent });
+      }
     }
 
     function updateForPoint(point) {
@@ -609,6 +632,9 @@
     gRoot.appendChild(overlay);
 
     overlay.addEventListener("mousemove", (evt) => {
+      if (pinnedPointTs) {
+        return;
+      }
       const rect = svg.getBoundingClientRect();
       const localX = (evt.clientX - rect.left) * (width / Math.max(1, rect.width)) - margin.left;
       const clampedX = clamp(localX, 0, innerWidth);
@@ -625,7 +651,7 @@
         cfg.onHoverPoint(point, { source: "crosshair", event: null });
       }
     });
-    overlay.addEventListener("mouseleave", hideInteractive);
+    overlay.addEventListener("mouseleave", () => hideInteractive(false));
     overlay.addEventListener("click", (evt) => {
       const rect = svg.getBoundingClientRect();
       const localX = (evt.clientX - rect.left) * (width / Math.max(1, rect.width)) - margin.left;
@@ -633,14 +659,19 @@
       const t = tMin + (clampedX / innerWidth) * (tMax - tMin);
       const idx = nearestIndexByTime(series, t);
       const point = series[idx];
-      updateForPoint(point);
       const rootRect = root.getBoundingClientRect();
       const px = evt.clientX - rootRect.left;
       const py = evt.clientY - rootRect.top;
-      showTooltipForPoint(point, px, py, null);
-      if (typeof cfg.onHoverPoint === "function") {
-        cfg.onHoverPoint(point, { source: "click", event: null });
+      if (pinnedPointTs === point.ts) {
+        clearPinned();
+        hideInteractive(true);
+        return;
       }
+      pinPoint(point, null, px, py, "click-pin");
+    });
+    overlay.addEventListener("dblclick", () => {
+      clearPinned();
+      hideInteractive(true);
     });
 
     const events = Array.isArray(model.events) ? model.events : [];
@@ -678,32 +709,65 @@
       g.appendChild(title);
 
       const showEvent = (browserEvt) => {
+        if (pinnedPointTs) {
+          return;
+        }
         const point = pointByTs[ev.ts] || null;
         if (point) {
           updateForPoint(point);
           const rootRect = root.getBoundingClientRect();
-          showTooltipForPoint(point, browserEvt.clientX - rootRect.left, browserEvt.clientY - rootRect.top, ev);
+          const px = Number.isFinite(browserEvt.clientX) ? browserEvt.clientX - rootRect.left : margin.left + x;
+          const py = Number.isFinite(browserEvt.clientY) ? browserEvt.clientY - rootRect.top : margin.top + 12;
+          showTooltipForPoint(point, px, py, ev);
           if (typeof cfg.onHoverPoint === "function") {
             cfg.onHoverPoint(point, { source: "event", event: ev });
           }
         } else {
           tooltip.setRows([{ key: "Event", value: text(ev.label || ev.short_label || "Event") }]);
           const rootRect = root.getBoundingClientRect();
-          tooltip.move(browserEvt.clientX - rootRect.left, browserEvt.clientY - rootRect.top);
+          const px = Number.isFinite(browserEvt.clientX) ? browserEvt.clientX - rootRect.left : margin.left + x;
+          const py = Number.isFinite(browserEvt.clientY) ? browserEvt.clientY - rootRect.top : margin.top + 12;
+          tooltip.move(px, py);
         }
       };
       g.addEventListener("mouseenter", showEvent);
       g.addEventListener("focus", showEvent);
+      g.addEventListener("click", (browserEvt) => {
+        browserEvt.stopPropagation();
+        const point = pointByTs[ev.ts] || null;
+        if (!point) {
+          return;
+        }
+        const rootRect = root.getBoundingClientRect();
+        const px = Number.isFinite(browserEvt.clientX) ? browserEvt.clientX - rootRect.left : margin.left + x;
+        const py = Number.isFinite(browserEvt.clientY) ? browserEvt.clientY - rootRect.top : margin.top + 12;
+        const samePinnedEvent =
+          pinnedPointTs === point.ts &&
+          pinnedEvent &&
+          String(pinnedEvent.ts || "") === String(ev.ts || "") &&
+          String(pinnedEvent.event_type || "") === String(ev.event_type || "") &&
+          String(pinnedEvent.label || "") === String(ev.label || "");
+        if (samePinnedEvent) {
+          clearPinned();
+          hideInteractive(true);
+          return;
+        }
+        pinPoint(point, ev, px, py, "event-pin");
+      });
       g.addEventListener("mouseleave", () => {
-        tooltip.hide();
-        if (typeof cfg.onLeave === "function") {
-          cfg.onLeave();
+        if (!pinnedPointTs) {
+          tooltip.hide();
+          if (typeof cfg.onLeave === "function") {
+            cfg.onLeave();
+          }
         }
       });
       g.addEventListener("blur", () => {
-        tooltip.hide();
-        if (typeof cfg.onLeave === "function") {
-          cfg.onLeave();
+        if (!pinnedPointTs) {
+          tooltip.hide();
+          if (typeof cfg.onLeave === "function") {
+            cfg.onLeave();
+          }
         }
       });
       gEvents.appendChild(g);
