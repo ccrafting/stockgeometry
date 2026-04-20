@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ITA</title>
+  <link rel="stylesheet" href="./_assets/price-first-chart.css"/>
+</head>
+<body>
+  <main class="pf-page pf-embed-mode">
+    <header class="pf-header">
+      <h1 class="pf-title">ITA</h1>
+      <p class="pf-subtitle">Is defense being accumulated or just reactively repriced?</p>
+      <div class="pf-chip-row">
+        <div class="pf-chip"><span class="pf-chip-label">Session</span><span class="pf-chip-value">Intraday</span></div><div class="pf-chip"><span class="pf-chip-label">Posture</span><span class="pf-chip-value">Support-led</span></div>
+      </div>
+    </header>
+
+    <section class="pf-main-layout">
+      <div class="pf-main-chart-col">
+        <section class="pf-chart-panel" aria-label="Price-first structural chart">
+          <div id="price-first-chart-root" class="pf-chart-root"></div>
+          <p id="pf-runtime-notice" class="pf-runtime-notice" aria-live="polite"></p>
+          <p class="pf-balance-help">This panel shows whether defense is stably sponsored or reactively repriced.</p>
+          <p id="pf-accessible-summary" class="pf-accessible-summary" role="status">ITA on 2026-04-17. Current regime is Support-led. 3 structural events are marked.</p>
+        </section>
+      </div>
+      
+    </section>
+
+    <section class="pf-secondary-stack">
+      <section class="pf-subpanel pf-heatmap-panel" aria-label="Structural heat map"><h2 class="pf-subpanel-title">Where Reactive Premium Versus Sponsorship Quality Sat</h2><div id="role-heatmap-root" class="pf-heatmap-root"></div></section>
+      
+    </section>
+
+    <section class="pf-notes-block" aria-label="Session notes"><h2 class="pf-notes-title">Session Readout</h2><p class="pf-notes-text">Defense is being traded through r1, Vz, and r5, while MFI is trying to turn that move into settled accumulation. Current posture: support-led.</p></section>
+    <p class="pf-notes-text"><a href="../../../objects/ita/2026-04-17/index.html">Open Full Session Page</a></p>
+  </main>
+
+  <script src="./_assets/semanticTemplates.js"></script>
+  <script src="./_assets/relationalReadout.js"></script>
+  <script src="./_assets/RankingList.js"></script>
+  <script src="./_assets/EventSummaryBlock.js"></script>
+  <script src="./_assets/RelationalReadoutBlock.js"></script>
+  <script src="./_assets/SnapshotLegend.js"></script>
+  <script src="./_assets/PriceFirstStructuralChart.js"></script>
+  <script src="./_assets/RoleHeatmapPanel.js"></script>
+  <script src="./_assets/RoleScatterPanel.js"></script>
+  <script>
+    const semanticRegistryUrl = "./_assets/semantic_registry.json";
+    const scriptPaths = ["./_assets/semanticTemplates.js", "./_assets/relationalReadout.js", "./_assets/RankingList.js", "./_assets/EventSummaryBlock.js", "./_assets/RelationalReadoutBlock.js", "./_assets/SnapshotLegend.js", "./_assets/PriceFirstStructuralChart.js", "./_assets/RoleHeatmapPanel.js", "./_assets/RoleScatterPanel.js"];
+    const model = {"schema_version":"1.0","object_id":"ita__intraday","object_label":"ITA","session_date":"2026-04-17","session_label":"Intraday","object_question":"Is defense being accumulated or just reactively repriced?","object_semantic_type":"reactive_premium_quality","value_kind":"price","y_axis_label":"Price","series":[{"ts":"2026-04-17T13:30:00+00:00","value":133.2,"price_value":133.2,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":null,"event_short_label":null},{"ts":"2026-04-17T13:45:00+00:00","value":133.37,"price_value":133.37,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T14:00:00+00:00","value":133.54,"price_value":133.54,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T14:15:00+00:00","value":133.71,"price_value":133.71,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T14:30:00+00:00","value":133.88,"price_value":133.88,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T14:45:00+00:00","value":134.05,"price_value":134.05,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T15:00:00+00:00","value":134.22,"price_value":134.22,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T15:15:00+00:00","value":134.39,"price_value":134.39,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T15:30:00+00:00","value":134.56,"price_value":134.56,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.15,"pressure_total":0.4,"net_balance":-0.25,"support_pressure_ratio":0.37499999999999994,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T15:45:00+00:00","value":134.79,"price_value":134.79,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.15000000000000002,"event_short_label":null},{"ts":"2026-04-17T16:00:00+00:00","value":134.85,"price_value":134.85,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T16:15:00+00:00","value":134.91,"price_value":134.91,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T16:30:00+00:00","value":134.97,"price_value":134.97,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T16:45:00+00:00","value":135.03,"price_value":135.03,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T17:00:00+00:00","value":135.09,"price_value":135.09,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T17:15:00+00:00","value":135.15,"price_value":135.15,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T17:30:00+00:00","value":135.21,"price_value":135.21,"normalized_value":null,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"Trend","dominant_pressure":"r1","support_total":0.21000000000000002,"pressure_total":0.31,"net_balance":-0.09999999999999998,"support_pressure_ratio":0.6774193548387097,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T17:45:00+00:00","value":135.32,"price_value":135.32,"normalized_value":null,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.29,"event_short_label":"Support broke decisively ahead"},{"ts":"2026-04-17T18:00:00+00:00","value":135.43,"price_value":135.43,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T18:15:00+00:00","value":135.54,"price_value":135.54,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T18:30:00+00:00","value":135.65,"price_value":135.65,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T18:45:00+00:00","value":135.76,"price_value":135.76,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T19:00:00+00:00","value":135.87,"price_value":135.87,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T19:15:00+00:00","value":135.98,"price_value":135.98,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T19:30:00+00:00","value":136.09,"price_value":136.09,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T19:45:00+00:00","value":136.2,"price_value":136.2,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T20:00:00+00:00","value":136.31,"price_value":136.31,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null},{"ts":"2026-04-17T20:15:00+00:00","value":136.42,"price_value":136.42,"normalized_value":null,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":"r1","support_total":0.33,"pressure_total":0.14,"net_balance":0.19,"support_pressure_ratio":2.357142857142857,"balance_momentum":0.0,"event_short_label":null}],"regime_segments":[{"start_ts":"2026-04-17T13:30:00+00:00","end_ts":"2026-04-17T17:45:00+00:00","regime":"pressure_led"},{"start_ts":"2026-04-17T17:45:00+00:00","end_ts":"2026-04-17T18:00:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-17T18:00:00+00:00","end_ts":"2026-04-17T20:30:00+00:00","regime":"support_led"}],"events":[{"ts":"2026-04-17T17:45:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["MFI","r1"]},{"ts":"2026-04-17T17:45:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.7841070493600784,"channels_involved":["MFI","r1"]},{"ts":"2026-04-17T17:45:00+00:00","event_type":"anchor_gained","event_family":"anchor","label":"MFI became sponsorship support","short_label":"MFI became sponsorship support","significance":0.6229166666666666,"channels_involved":["MFI"]}],"events_by_ts":{"2026-04-17T17:45:00+00:00":{"ts":"2026-04-17T17:45:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["MFI","r1"]}},"regime_summary":{"current_regime":"support_led","dominant_regime":"pressure_led","time_in_support_led":0.35714285714285715,"time_in_pressure_led":0.6071428571428571,"time_in_mixed_rotating":0.03571428571428571,"regime_flip_count":2,"longest_support_led_run":10,"longest_pressure_led_run":17,"longest_mixed_rotating_run":1},"event_summary":{"event_count":3,"regime_flip_count":1,"dominant_support_change_count":0,"dominant_pressure_change_count":0,"rotation_spike_count":0,"anchor_gain_count":1,"anchor_loss_count":0,"most_significant_event":{"ts":"2026-04-17T17:45:00+00:00","label":"Support broke decisively ahead","significance":1.0}},"channel_roles_by_ts":{"2026-04-17T13:30:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T13:45:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T14:00:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T14:15:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T14:30:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T14:45:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T15:00:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T15:15:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T15:30:00+00:00":{"r1":0.14,"r5":0.08,"sigma15":0.06,"Vz":0.12,"OBp":-0.04,"MFI":-0.05,"Trend":-0.06},"2026-04-17T15:45:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T16:00:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T16:15:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T16:30:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T16:45:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T17:00:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T17:15:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T17:30:00+00:00":{"r1":0.1,"r5":0.07,"sigma15":0.05,"Vz":0.09,"OBp":-0.06,"MFI":-0.07,"Trend":-0.08},"2026-04-17T17:45:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T18:00:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T18:15:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T18:30:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T18:45:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T19:00:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T19:15:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T19:30:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T19:45:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T20:00:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11},"2026-04-17T20:15:00+00:00":{"r1":0.05,"r5":0.03,"sigma15":0.02,"Vz":0.04,"OBp":-0.1,"MFI":-0.12,"Trend":-0.11}},"snapshot_rankings":{"support":[{"channel":"MFI","value":0.12,"rank":1},{"channel":"Trend","value":0.11,"rank":2},{"channel":"OBp","value":0.1,"rank":3}],"pressure":[{"channel":"r1","value":0.05,"rank":1},{"channel":"Vz","value":0.04,"rank":2},{"channel":"r5","value":0.03,"rank":3},{"channel":"sigma15","value":0.02,"rank":4}]},"object_metadata":{"question":"Is defense being accumulated or just reactively repriced?","semantic_type":"reactive_premium_quality","public_title_stub":"ITA reactive premium map","channel_labels":["r1","r5","sigma15","Vz","OBp","MFI","Trend"],"anchor_channels":["r1","Vz","MFI","Trend","OBp"],"source_kind":"Session replay","price_source":"dashboard_price","has_canonical_price":true},"role_labels":{"support":"Sponsorship quality","pressure":"Reactive premium"},"chips":[{"label":"Session","value":"Intraday"},{"label":"Posture","value":"Support-led"}],"balance_panel":{"title":"Support vs Pressure","show_net_balance":true,"semantic_help":"This panel shows whether defense is stably sponsored or reactively repriced."},"accessible_summary":"ITA on 2026-04-17. Current regime is Support-led. 3 structural events are marked.","developer_warnings":[],"source_files_used":["synthetic_chart_payload_seed.json"],"view_config_used":{"min_event_significance":0.6,"max_visible_events":40,"show_net_balance":true}};
+    const warnings = [];
+    const includeLegend = false;
+    const includeHeatmap = true;
+    const includeScatter = false;
+    const heatmapTitle = "Where Reactive Premium Versus Sponsorship Quality Sat";
+    const scatterTitle = "Reactive Premium Versus Sponsorship Concentration";
+
+    const chartRoot = document.getElementById("price-first-chart-root");
+    const legendRoot = document.getElementById("snapshot-legend-root");
+    const heatmapRoot = document.getElementById("role-heatmap-root");
+    const scatterRoot = document.getElementById("role-scatter-root");
+    const runtimeNotice = document.getElementById("pf-runtime-notice");
+
+    function setRuntimeNotice(message) {
+      if (!runtimeNotice) {
+        return;
+      }
+      runtimeNotice.textContent = message || "";
+    }
+
+    function showRuntimeError(title, detail) {
+      const box = document.createElement("div");
+      box.className = "pf-empty";
+      box.style.alignItems = "flex-start";
+      box.style.justifyContent = "flex-start";
+      box.style.flexDirection = "column";
+      box.style.gap = "8px";
+      const h = document.createElement("strong");
+      h.textContent = title;
+      const p = document.createElement("div");
+      p.textContent = detail;
+      p.style.whiteSpace = "pre-wrap";
+      p.style.fontFamily = "Consolas, Menlo, monospace";
+      p.style.fontSize = "12px";
+      box.appendChild(h);
+      box.appendChild(p);
+      if (chartRoot) {
+        chartRoot.innerHTML = "";
+        chartRoot.appendChild(box);
+      }
+    }
+
+    function lazyMount(target, mountFn) {
+      if (!target || typeof mountFn !== "function") {
+        return;
+      }
+      if (!("IntersectionObserver" in window)) {
+        mountFn();
+        return;
+      }
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            observer.disconnect();
+            mountFn();
+            break;
+          }
+        }
+      }, { rootMargin: "120px 0px 120px 0px" });
+      observer.observe(target);
+    }
+
+    async function loadSemanticRegistry() {
+      if (typeof window.setSemanticRegistry !== "function") {
+        return;
+      }
+      try {
+        const response = await fetch(semanticRegistryUrl, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const payload = await response.json();
+        const loaded = window.setSemanticRegistry(payload);
+        if (!loaded) {
+          console.warn("[Semantics] semantic registry loaded but empty; fallback wording will be used.");
+        }
+      } catch (err) {
+        console.warn("[Semantics] failed to load semantic registry; fallback wording will be used.", err);
+      }
+    }
+
+    async function boot() {
+      if (window.location && window.location.protocol === "file:") {
+        setRuntimeNotice("Open this page through a local HTTP server; file:// mode can block JSON fetches.");
+      }
+
+      if (Array.isArray(warnings) && warnings.length > 0) {
+        for (const warning of warnings) {
+          console.warn(`[PriceFirstStructuralChart] ${warning}`);
+        }
+      }
+
+      await loadSemanticRegistry();
+
+      try {
+        let legendController = null;
+        if (includeLegend) {
+          const renderSnapshotLegend = window.renderSnapshotLegend;
+          if (typeof renderSnapshotLegend === "function" && legendRoot) {
+            legendController = renderSnapshotLegend(legendRoot, model, { maxRowsPerSide: 4 });
+          } else {
+            console.warn("[SnapshotLegend] renderSnapshotLegend is unavailable");
+          }
+        }
+
+        const renderPriceFirstStructuralChart = window.renderPriceFirstStructuralChart;
+        if (typeof renderPriceFirstStructuralChart !== "function") {
+          throw new Error("renderPriceFirstStructuralChart is missing.");
+        }
+
+        renderPriceFirstStructuralChart(chartRoot, model, {
+          height: 520,
+          onHoverPoint: (point, ctx) => {
+            if (!legendController || !point || !point.ts) {
+              return;
+            }
+            legendController.update(point.ts, ctx && ctx.event ? ctx.event : null);
+          },
+          onLeave: () => {
+            if (legendController) {
+              legendController.clearHover();
+            }
+          },
+        });
+
+        if (includeHeatmap && heatmapRoot) {
+          lazyMount(heatmapRoot, () => {
+            const renderHeatmap = window.renderRoleHeatmapPanel;
+            if (typeof renderHeatmap !== "function") {
+              console.warn("[RoleHeatmapPanel] renderer unavailable");
+              return;
+            }
+            renderHeatmap(heatmapRoot, model, { title: heatmapTitle });
+          });
+        }
+
+        if (includeScatter && scatterRoot) {
+          lazyMount(scatterRoot, () => {
+            const renderScatter = window.renderRoleScatterPanel;
+            if (typeof renderScatter !== "function") {
+              console.warn("[RoleScatterPanel] renderer unavailable");
+              return;
+            }
+            renderScatter(scatterRoot, model, { title: scatterTitle });
+          });
+        }
+      } catch (err) {
+        console.error("[PriceFirstStructuralChart] runtime script/render failure", err);
+        const detail = err && err.stack ? err.stack : String(err);
+        showRuntimeError(
+          "Chart failed to mount",
+          `Loaded scripts: ${Array.isArray(scriptPaths) ? scriptPaths.join(", ") : "unknown"}\n${detail}\n\nCheck console for script-load/runtime errors.`
+        );
+      }
+    }
+
+    boot();
+  </script>
+</body>
+</html>

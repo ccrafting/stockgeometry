@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "example_id": "mag7-obp-2026-04-17",
+  "object_id": "mag7_obp_intraday",
+  "session_date": "2026-04-17",
+  "title": "MAG7 OBp Validation",
+  "question": "Where is sponsorship living inside the generals?",
+  "why_chosen": "Selected from real run `20260417_170419_MAG7_backfill` because it retains non-trivial structure (106 raw events, 96 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.",
+  "intended_read": "Read as underwriting concentration: who is carrying sponsorship, who is resisting it, and whether support is broadening or narrowing.",
+  "source_run_dir": "20260417_170419_MAG7_backfill",
+  "validation_notes": {
+    "who_is_carrying_it": "NVDA OBp, AAPL OBp, and MSFT OBp",
+    "who_is_fighting_it": "GOOGL OBp, TSLA OBp, and AMZN OBp",
+    "what_follows": "Current posture is mixed-rotating. Latest structural change: Support broke decisively ahead.",
+    "failure_mode": "If this reads as generic tech leadership instead of underwriting burden-sharing, semantics failed."
+  },
+  "summary": "MAG7 OBp on 2026-04-17. Current regime is Mixed / rotating. 10 structural events are marked.",
+  "source_files_used": [
+    "chart_payload.json",
+    "regime_series.json",
+    "event_markers.json",
+    "analysis_summary_20260417_101049.json",
+    "market_dashboard_source_manifest.json",
+    "market_panel7_raw.csv",
+    "MAG7_2026-04-17_baseline_as_is_all_pal_log.jsonl"
+  ]
+}

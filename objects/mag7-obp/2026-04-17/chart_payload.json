@@ -1,0 +1,1681 @@
+{
+  "schema_version": "1.0",
+  "object_id": "mag7_obp_intraday",
+  "object_label": "MAG7 OBp",
+  "session_date": "2026-04-17",
+  "session_label": "Intraday",
+  "object_question": "Where is sponsorship living inside the generals?",
+  "object_semantic_type": "underwriting",
+  "price_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.0022
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.0044
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0066
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0088
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.011
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.0132
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0154
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0176
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.0198
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.022
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0242
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0264
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.0286
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.0276
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0244
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0212
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.018
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.0148
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0116
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0084
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.0052
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.002
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": null,
+      "normalized_value": -0.0012
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": null,
+      "normalized_value": -0.0044
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": null,
+      "normalized_value": -0.0076
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": null,
+      "normalized_value": -0.0108
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": null,
+      "normalized_value": -0.014
+    }
+  ],
+  "support_total_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": 0.53
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": 0.45
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": 0.3
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": 0.3
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": 0.3
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": 0.3
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": 0.3
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": 0.3
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": 0.22
+    }
+  ],
+  "pressure_total_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": 0.16
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": 0.21000000000000002
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": 0.31
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": 0.31
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": 0.31
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": 0.31
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": 0.31
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": 0.31
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": 0.38
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": 0.38
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": 0.38
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": 0.38
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": 0.38
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": 0.38
+    }
+  ],
+  "net_balance_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": 0.37
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": -0.010000000000000009
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": -0.010000000000000009
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": -0.010000000000000009
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": -0.010000000000000009
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": -0.010000000000000009
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": -0.010000000000000009
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": -0.16
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": -0.16
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": -0.16
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": -0.16
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": -0.16
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": -0.16
+    }
+  ],
+  "dominant_support_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "channel": "AAPL OBp",
+      "value": 0.24
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "channel": "NVDA OBp",
+      "value": 0.1
+    }
+  ],
+  "dominant_pressure_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.13
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.22
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "channel": "GOOGL OBp",
+      "value": 0.22
+    }
+  ],
+  "channel_role_matrix": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.24,
+        "NVDA OBp": -0.18,
+        "MSFT OBp": -0.08,
+        "GOOGL OBp": 0.1,
+        "TSLA OBp": 0.04,
+        "AMZN OBp": 0.02,
+        "META OBp": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.15,
+        "NVDA OBp": -0.22,
+        "MSFT OBp": -0.06,
+        "GOOGL OBp": 0.13,
+        "TSLA OBp": 0.05,
+        "AMZN OBp": 0.03,
+        "META OBp": -0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.11,
+        "NVDA OBp": -0.14,
+        "MSFT OBp": -0.04,
+        "GOOGL OBp": 0.19,
+        "TSLA OBp": 0.07,
+        "AMZN OBp": 0.05,
+        "META OBp": -0.01
+      }
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.11,
+        "NVDA OBp": -0.14,
+        "MSFT OBp": -0.04,
+        "GOOGL OBp": 0.19,
+        "TSLA OBp": 0.07,
+        "AMZN OBp": 0.05,
+        "META OBp": -0.01
+      }
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.11,
+        "NVDA OBp": -0.14,
+        "MSFT OBp": -0.04,
+        "GOOGL OBp": 0.19,
+        "TSLA OBp": 0.07,
+        "AMZN OBp": 0.05,
+        "META OBp": -0.01
+      }
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.11,
+        "NVDA OBp": -0.14,
+        "MSFT OBp": -0.04,
+        "GOOGL OBp": 0.19,
+        "TSLA OBp": 0.07,
+        "AMZN OBp": 0.05,
+        "META OBp": -0.01
+      }
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.11,
+        "NVDA OBp": -0.14,
+        "MSFT OBp": -0.04,
+        "GOOGL OBp": 0.19,
+        "TSLA OBp": 0.07,
+        "AMZN OBp": 0.05,
+        "META OBp": -0.01
+      }
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.11,
+        "NVDA OBp": -0.14,
+        "MSFT OBp": -0.04,
+        "GOOGL OBp": 0.19,
+        "TSLA OBp": 0.07,
+        "AMZN OBp": 0.05,
+        "META OBp": -0.01
+      }
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.09,
+        "NVDA OBp": -0.1,
+        "MSFT OBp": -0.03,
+        "GOOGL OBp": 0.22,
+        "TSLA OBp": 0.08,
+        "AMZN OBp": 0.06,
+        "META OBp": 0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.09,
+        "NVDA OBp": -0.1,
+        "MSFT OBp": -0.03,
+        "GOOGL OBp": 0.22,
+        "TSLA OBp": 0.08,
+        "AMZN OBp": 0.06,
+        "META OBp": 0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.09,
+        "NVDA OBp": -0.1,
+        "MSFT OBp": -0.03,
+        "GOOGL OBp": 0.22,
+        "TSLA OBp": 0.08,
+        "AMZN OBp": 0.06,
+        "META OBp": 0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.09,
+        "NVDA OBp": -0.1,
+        "MSFT OBp": -0.03,
+        "GOOGL OBp": 0.22,
+        "TSLA OBp": 0.08,
+        "AMZN OBp": 0.06,
+        "META OBp": 0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.09,
+        "NVDA OBp": -0.1,
+        "MSFT OBp": -0.03,
+        "GOOGL OBp": 0.22,
+        "TSLA OBp": 0.08,
+        "AMZN OBp": 0.06,
+        "META OBp": 0.02
+      }
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "channels": {
+        "AAPL OBp": -0.09,
+        "NVDA OBp": -0.1,
+        "MSFT OBp": -0.03,
+        "GOOGL OBp": 0.22,
+        "TSLA OBp": 0.08,
+        "AMZN OBp": 0.06,
+        "META OBp": 0.02
+      }
+    }
+  ],
+  "regime_inputs": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "dominant_support": "AAPL OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "dominant_support": "NVDA OBp",
+      "dominant_pressure": "GOOGL OBp",
+      "state_transition_flag": false
+    }
+  ],
+  "event_inputs": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "dominant_support_changed": true,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "state_id": "state_1"
+    }
+  ],
+  "snapshot_rankings": {
+    "support": [
+      {
+        "channel": "NVDA OBp",
+        "value": 0.1,
+        "rank": 1
+      },
+      {
+        "channel": "AAPL OBp",
+        "value": 0.09,
+        "rank": 2
+      },
+      {
+        "channel": "MSFT OBp",
+        "value": 0.03,
+        "rank": 3
+      }
+    ],
+    "pressure": [
+      {
+        "channel": "GOOGL OBp",
+        "value": 0.22,
+        "rank": 1
+      },
+      {
+        "channel": "TSLA OBp",
+        "value": 0.08,
+        "rank": 2
+      },
+      {
+        "channel": "AMZN OBp",
+        "value": 0.06,
+        "rank": 3
+      },
+      {
+        "channel": "META OBp",
+        "value": 0.02,
+        "rank": 4
+      }
+    ]
+  },
+  "object_metadata": {
+    "question": "Where is sponsorship living inside the generals?",
+    "semantic_type": "underwriting",
+    "public_title_stub": "MAG7 underwriting map",
+    "channel_labels": [
+      "AAPL OBp",
+      "NVDA OBp",
+      "MSFT OBp",
+      "GOOGL OBp",
+      "TSLA OBp",
+      "AMZN OBp",
+      "META OBp"
+    ],
+    "anchor_channels": [
+      "NVDA OBp",
+      "AAPL OBp",
+      "GOOGL OBp"
+    ],
+    "source_kind": "Session replay",
+    "price_source": "normalized_reference",
+    "has_canonical_price": false
+  },
+  "data_quality": {
+    "quality_gate_pass": true,
+    "interpretation_status": "OK",
+    "baseline_structured_fraction": 0.71,
+    "dominant_state_fraction": 0.84,
+    "state_transition_count": 2,
+    "n_rows": 28,
+    "warnings": []
+  },
+  "provenance": {
+    "raw_bundle_object_id": "mag7_obp_intraday",
+    "raw_bundle_object_label": "MAG7 OBp",
+    "object_id_resolution": "synthetic_example",
+    "bundle_dir": null,
+    "run_root": null,
+    "protocol": {},
+    "notes": [
+      "Synthetic example for Project 4 rendering validation."
+    ]
+  },
+  "source_files_used": [
+    "synthetic_chart_payload_seed.json"
+  ]
+}

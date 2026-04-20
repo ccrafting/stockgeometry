@@ -1,0 +1,16 @@
+{
+  "object_id": "mag7_obp_intraday",
+  "object_label": "MAG7 OBp",
+  "session_date": "2026-04-17",
+  "object_question": "Where is sponsorship living inside the generals?",
+  "semantic_type": "underwriting",
+  "posture": "pressure_led",
+  "url": "index.html",
+  "embed_url": "../../../embeds/mag7-obp/2026-04-17/index.html",
+  "summary": "The market is underwriting megacap sponsorship mainly through NVDA OBp, AAPL OBp, and MSFT OBp, while GOOGL OBp is the main name resisting that bid. Current posture: pressure-led.",
+  "source_files": [
+    "chart_payload.json",
+    "regime_series.json",
+    "event_markers.json"
+  ]
+}

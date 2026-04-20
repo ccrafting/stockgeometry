@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "object_id": "mag7_obp_intraday",
+  "session_date": "2026-04-17",
+  "events": [
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "event_type": "object_specific_transition",
+      "event_family": "object_specific",
+      "label": "NVDA took over the underwriting",
+      "short_label": "NVDA took over the underwriting",
+      "significance": 0.9286083582728564,
+      "channels_involved": [
+        "NVDA OBp",
+        "GOOGL OBp"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "semantic_type": "underwriting",
+        "trigger": "regime_flip"
+      }
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.8786083582728563,
+      "channels_involved": [
+        "NVDA OBp",
+        "GOOGL OBp"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "support_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": 0.24,
+        "net_balance_after": -0.010000000000000009,
+        "confidence_before": 0.8189264405435172,
+        "confidence_after": 0.48740703530137636
+      }
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Pressure broke decisively ahead",
+      "short_label": "Pressure broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "NVDA OBp",
+        "GOOGL OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "cross_kind": "negative_margin_cross",
+        "net_balance_before": -0.010000000000000009,
+        "net_balance_after": -0.16,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "event_type": "object_specific_transition",
+      "event_family": "object_specific",
+      "label": "NVDA took over the underwriting",
+      "short_label": "NVDA took over the underwriting",
+      "significance": 0.9354066777637204,
+      "channels_involved": [
+        "NVDA OBp",
+        "GOOGL OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "semantic_type": "underwriting",
+        "trigger": "regime_flip"
+      }
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.8854066777637204,
+      "channels_involved": [
+        "NVDA OBp",
+        "GOOGL OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -0.010000000000000009,
+        "net_balance_after": -0.16,
+        "confidence_before": 0.5472628458923683,
+        "confidence_after": 0.79791816990032
+      }
+    }
+  ],
+  "event_summary": {
+    "event_count": 5,
+    "regime_flip_count": 2,
+    "dominant_support_change_count": 0,
+    "dominant_pressure_change_count": 0,
+    "rotation_spike_count": 0,
+    "anchor_gain_count": 0,
+    "anchor_loss_count": 0,
+    "most_significant_event": {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "label": "Pressure broke decisively ahead",
+      "significance": 1.0
+    }
+  },
+  "event_config_used": {
+    "min_event_significance": 0.6,
+    "dominant_change_min_margin": 0.05,
+    "balance_cross_margin": 0.05,
+    "rotation_window": 10,
+    "rotation_spike_threshold": 0.35,
+    "concentration_shift_min_delta": 0.15,
+    "anchor_role_min_abs_value": 0.08,
+    "event_merge_window": 2,
+    "epsilon": 1e-09
+  },
+  "source_files_used": [
+    "synthetic_chart_payload_seed.json"
+  ]
+}

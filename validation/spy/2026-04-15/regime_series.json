@@ -1,0 +1,3947 @@
+{
+  "schema_version": "1.0",
+  "object_id": "spy__intraday",
+  "session_date": "2026-04-15",
+  "regime_series": [
+    {
+      "ts": "2026-04-15T13:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.0,
+      "pressure_total": 0.0,
+      "net_balance": 0.0,
+      "balance_ratio": 0.0,
+      "rotation_score": 0.0,
+      "confidence": 0.5
+    },
+    {
+      "ts": "2026-04-15T13:31:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.6088593650139138,
+      "pressure_total": 0.0,
+      "net_balance": 0.6088593650139138,
+      "balance_ratio": 608859365.0139138,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T13:32:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 3.3438314977896533,
+      "net_balance": -3.3438314977896533,
+      "balance_ratio": 3343831497.7896533,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T13:33:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.6088593650139137,
+      "pressure_total": 3.4234262315196196,
+      "net_balance": -2.814566866505706,
+      "balance_ratio": 5.622687977282549,
+      "rotation_score": 0.4,
+      "confidence": 0.8171581298419308
+    },
+    {
+      "ts": "2026-04-15T13:34:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.9855006346218638,
+      "pressure_total": 2.2343377133963456,
+      "net_balance": -1.2488370787744818,
+      "balance_ratio": 2.2672108316334674,
+      "rotation_score": 0.0,
+      "confidence": 0.8239003997290046
+    },
+    {
+      "ts": "2026-04-15T13:35:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.095528176443272,
+      "pressure_total": 1.5092429288302185,
+      "net_balance": 0.5862852476130533,
+      "balance_ratio": 1.3884631403027148,
+      "rotation_score": 0.4,
+      "confidence": 0.6786769087626572
+    },
+    {
+      "ts": "2026-04-15T13:36:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.552174272201107,
+      "pressure_total": 2.9825154287160887,
+      "net_balance": -1.4303411565149817,
+      "balance_ratio": 1.9215080948910743,
+      "rotation_score": 0.2,
+      "confidence": 0.7688076714398245
+    },
+    {
+      "ts": "2026-04-15T13:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9829825318854633,
+      "pressure_total": 2.845331155444203,
+      "net_balance": -1.8623486235587399,
+      "balance_ratio": 2.8945897441194206,
+      "rotation_score": 0.4,
+      "confidence": 0.7687122183040124
+    },
+    {
+      "ts": "2026-04-15T13:38:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7497227619355612,
+      "pressure_total": 3.2892148050965067,
+      "net_balance": -2.5394920431609456,
+      "balance_ratio": 4.387241487246208,
+      "rotation_score": 0.2,
+      "confidence": 0.8375694259228552
+    },
+    {
+      "ts": "2026-04-15T13:39:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.1146399130080225,
+      "pressure_total": 2.0018461478360514,
+      "net_balance": -0.887206234828029,
+      "balance_ratio": 1.795957711969752,
+      "rotation_score": 0.2,
+      "confidence": 0.7610699131946796
+    },
+    {
+      "ts": "2026-04-15T13:40:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0520432439806378,
+      "pressure_total": 1.878217167969582,
+      "net_balance": 0.1738260760110557,
+      "balance_ratio": 1.0925484437984174,
+      "rotation_score": 0.4,
+      "confidence": 0.5111633673459975
+    },
+    {
+      "ts": "2026-04-15T13:41:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.1702267012883425,
+      "pressure_total": 1.5261212434504743,
+      "net_balance": 0.6441054578378682,
+      "balance_ratio": 1.422053923043219,
+      "rotation_score": 0.6,
+      "confidence": 0.6280724324811447
+    },
+    {
+      "ts": "2026-04-15T13:42:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.662394883434503,
+      "pressure_total": 0.03518945819630839,
+      "net_balance": 2.6272054252381944,
+      "balance_ratio": 75.65887683129505,
+      "rotation_score": 0.6,
+      "confidence": 0.8380071656704727
+    },
+    {
+      "ts": "2026-04-15T13:43:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.196250330002918,
+      "pressure_total": 1.0464521664348339,
+      "net_balance": 2.149798163568084,
+      "balance_ratio": 3.0543683051393056,
+      "rotation_score": 0.6,
+      "confidence": 0.7289667999729218
+    },
+    {
+      "ts": "2026-04-15T13:44:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.330374274666164,
+      "pressure_total": 0.9418093141529111,
+      "net_balance": 3.3885649605132535,
+      "balance_ratio": 4.597931035074781,
+      "rotation_score": 0.6,
+      "confidence": 0.7649145750931053
+    },
+    {
+      "ts": "2026-04-15T13:45:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.6813520255656567,
+      "pressure_total": 1.4098294814194259,
+      "net_balance": 2.271522544146231,
+      "balance_ratio": 2.6112037477463206,
+      "rotation_score": 0.4,
+      "confidence": 0.7585296643072859
+    },
+    {
+      "ts": "2026-04-15T13:46:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.5943902029789507,
+      "pressure_total": 1.5076357939371603,
+      "net_balance": 2.0867544090417907,
+      "balance_ratio": 2.384123683872133,
+      "rotation_score": 0.4,
+      "confidence": 0.7488723324866164
+    },
+    {
+      "ts": "2026-04-15T13:47:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.7058980171280576,
+      "pressure_total": 1.8131133643621473,
+      "net_balance": 0.8927846527659102,
+      "balance_ratio": 1.4924042094190793,
+      "rotation_score": 0.4,
+      "confidence": 0.6892438733640733
+    },
+    {
+      "ts": "2026-04-15T13:48:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.330291837896876,
+      "pressure_total": 1.2092718170024503,
+      "net_balance": 1.1210200208944259,
+      "balance_ratio": 1.9270207120787917,
+      "rotation_score": 0.6,
+      "confidence": 0.6733543796600195
+    },
+    {
+      "ts": "2026-04-15T13:49:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.7187412470977494,
+      "pressure_total": 1.5609261499288742,
+      "net_balance": 1.1578150971688752,
+      "balance_ratio": 1.7417487990842055,
+      "rotation_score": 0.2,
+      "confidence": 0.7574507980626191
+    },
+    {
+      "ts": "2026-04-15T13:50:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.8055384250702953,
+      "pressure_total": 1.4913352158963824,
+      "net_balance": 1.3142032091739129,
+      "balance_ratio": 1.8812258941957576,
+      "rotation_score": 0.2,
+      "confidence": 0.7664174478906981
+    },
+    {
+      "ts": "2026-04-15T13:51:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.9690772524652433,
+      "pressure_total": 1.1496122994441222,
+      "net_balance": 1.819464953021121,
+      "balance_ratio": 2.5826770067621023,
+      "rotation_score": 0.2,
+      "confidence": 0.7987437973652557
+    },
+    {
+      "ts": "2026-04-15T13:52:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.5434976996010823,
+      "pressure_total": 0.6991445968920846,
+      "net_balance": 2.8443531027089977,
+      "balance_ratio": 5.068333096405282,
+      "rotation_score": 0.2,
+      "confidence": 0.8453502664672041
+    },
+    {
+      "ts": "2026-04-15T13:53:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.237601093208097,
+      "pressure_total": 1.175552374305639,
+      "net_balance": 2.062048718902458,
+      "balance_ratio": 2.7541104624287316,
+      "rotation_score": 0.2,
+      "confidence": 0.8044198203292248
+    },
+    {
+      "ts": "2026-04-15T13:54:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.1983094528795046,
+      "pressure_total": 0.6856660363976258,
+      "net_balance": 2.512643416481879,
+      "balance_ratio": 4.664529498475504,
+      "rotation_score": 0.2,
+      "confidence": 0.841001132560336
+    },
+    {
+      "ts": "2026-04-15T13:55:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.9866462203519615,
+      "pressure_total": 1.0510327983436398,
+      "net_balance": 1.9356134220083216,
+      "balance_ratio": 2.841629894955442,
+      "rotation_score": 0.2,
+      "confidence": 0.8070792989341542
+    },
+    {
+      "ts": "2026-04-15T13:56:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.7226666420088206,
+      "pressure_total": 1.4044252661259247,
+      "net_balance": 1.318241375882896,
+      "balance_ratio": 1.93863405029677,
+      "rotation_score": 0.0,
+      "confidence": 0.8095634922244571
+    },
+    {
+      "ts": "2026-04-15T13:57:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.487501773328181,
+      "pressure_total": 2.6780664951262807,
+      "net_balance": -1.1905647217980997,
+      "balance_ratio": 1.8003786907321089,
+      "rotation_score": 0.4,
+      "confidence": 0.7150696586184857
+    },
+    {
+      "ts": "2026-04-15T13:58:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4267659397557086,
+      "pressure_total": 1.6515877871413285,
+      "net_balance": -0.22482184738561983,
+      "balance_ratio": 1.1575744423953056,
+      "rotation_score": 0.2,
+      "confidence": 0.6570371911016772
+    },
+    {
+      "ts": "2026-04-15T13:59:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.227387202413498,
+      "pressure_total": 1.7351339030313497,
+      "net_balance": 0.49225329938214846,
+      "balance_ratio": 1.2836975858302129,
+      "rotation_score": 0.2,
+      "confidence": 0.7178695309152936
+    },
+    {
+      "ts": "2026-04-15T14:00:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.630329268181312,
+      "pressure_total": 1.0349526917469167,
+      "net_balance": 1.5953765764343952,
+      "balance_ratio": 2.541497103352162,
+      "rotation_score": 0.2,
+      "confidence": 0.7972789808219832
+    },
+    {
+      "ts": "2026-04-15T14:01:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5617590259797978,
+      "pressure_total": 0.8944814288040546,
+      "net_balance": 0.6672775971757432,
+      "balance_ratio": 1.7459937967274637,
+      "rotation_score": 0.6,
+      "confidence": 0.659335127517656
+    },
+    {
+      "ts": "2026-04-15T14:02:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9519392145721417,
+      "pressure_total": 0.6437845570337344,
+      "net_balance": 1.3081546575384073,
+      "balance_ratio": 3.031975826766935,
+      "rotation_score": 0.4,
+      "confidence": 0.7730390155367296
+    },
+    {
+      "ts": "2026-04-15T14:03:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9393937803612756,
+      "pressure_total": 1.945691511978704,
+      "net_balance": -1.0062977316174284,
+      "balance_ratio": 2.0712203472652573,
+      "rotation_score": 0.6,
+      "confidence": 0.6831552613732733
+    },
+    {
+      "ts": "2026-04-15T14:04:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.1844106700152426,
+      "pressure_total": 1.1055980449444651,
+      "net_balance": 1.0788126250707775,
+      "balance_ratio": 1.9757729131340558,
+      "rotation_score": 0.6,
+      "confidence": 0.6767920168534552
+    },
+    {
+      "ts": "2026-04-15T14:05:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.3700459328545425,
+      "pressure_total": 1.0887967700912708,
+      "net_balance": 0.2812491627632716,
+      "balance_ratio": 1.2583119003371908,
+      "rotation_score": 0.4,
+      "confidence": 0.6637690135583701
+    },
+    {
+      "ts": "2026-04-15T14:06:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.859781776415041,
+      "pressure_total": 2.0835479280878837,
+      "net_balance": -1.2237661516728426,
+      "balance_ratio": 2.4233450687632345,
+      "rotation_score": 0.4,
+      "confidence": 0.7506508567054863
+    },
+    {
+      "ts": "2026-04-15T14:07:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.235892925789197,
+      "pressure_total": 1.5945656189677013,
+      "net_balance": -0.35867269317850425,
+      "balance_ratio": 1.29021340416644,
+      "rotation_score": 0.4,
+      "confidence": 0.6676125113146498
+    },
+    {
+      "ts": "2026-04-15T14:08:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.0232327250109163,
+      "pressure_total": 2.6410240601087693,
+      "net_balance": -1.617791335097853,
+      "balance_ratio": 2.581059025531649,
+      "rotation_score": 0.2,
+      "confidence": 0.7986870278796568
+    },
+    {
+      "ts": "2026-04-15T14:09:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9976256138948414,
+      "pressure_total": 2.523769608241557,
+      "net_balance": -1.5261439943467154,
+      "balance_ratio": 2.5297762738754064,
+      "rotation_score": 0.4,
+      "confidence": 0.7552383642048718
+    },
+    {
+      "ts": "2026-04-15T14:10:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8084697053175051,
+      "pressure_total": 2.7458691601359893,
+      "net_balance": -1.9373994548184843,
+      "balance_ratio": 3.39637854340828,
+      "rotation_score": 0.4,
+      "confidence": 0.7829790705440631
+    },
+    {
+      "ts": "2026-04-15T14:11:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.9571316115163986,
+      "pressure_total": 2.140945863613063,
+      "net_balance": -1.1838142520966646,
+      "balance_ratio": 2.2368353921788553,
+      "rotation_score": 0.2,
+      "confidence": 0.7849851247893317
+    },
+    {
+      "ts": "2026-04-15T14:12:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.8306171866846362,
+      "pressure_total": 2.6012359205442275,
+      "net_balance": -1.7706187338595911,
+      "balance_ratio": 3.1316904613145806,
+      "rotation_score": 0.2,
+      "confidence": 0.8149214328377885
+    },
+    {
+      "ts": "2026-04-15T14:13:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.1969384563140788,
+      "pressure_total": 3.004402116019154,
+      "net_balance": -1.8074636597050753,
+      "balance_ratio": 2.510072343461236,
+      "rotation_score": 0.2,
+      "confidence": 0.7961325466209164
+    },
+    {
+      "ts": "2026-04-15T14:14:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7893832147567628,
+      "pressure_total": 3.136161616346304,
+      "net_balance": -2.3467784015895417,
+      "balance_ratio": 3.9729266568109987,
+      "rotation_score": 0.2,
+      "confidence": 0.8315918527312962
+    },
+    {
+      "ts": "2026-04-15T14:15:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.9356135402722472,
+      "pressure_total": 3.558378450086418,
+      "net_balance": -2.6227649098141708,
+      "balance_ratio": 3.803256683364151,
+      "rotation_score": 0.0,
+      "confidence": 0.8602132378843609
+    },
+    {
+      "ts": "2026-04-15T14:16:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.1156548071642223,
+      "pressure_total": 3.5758425054625564,
+      "net_balance": -2.460187698298334,
+      "balance_ratio": 3.2051513447530007,
+      "rotation_score": 0.0,
+      "confidence": 0.84994248205322
+    },
+    {
+      "ts": "2026-04-15T14:17:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.5408739339380129,
+      "pressure_total": 2.8052754844224985,
+      "net_balance": -1.2644015504844857,
+      "balance_ratio": 1.820574300490017,
+      "rotation_score": 0.2,
+      "confidence": 0.7626556114678532
+    },
+    {
+      "ts": "2026-04-15T14:18:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.5968629064285664,
+      "pressure_total": 2.470148154536511,
+      "net_balance": -0.8732852481079447,
+      "balance_ratio": 1.5468755298857022,
+      "rotation_score": 0.0,
+      "confidence": 0.7859382539472565
+    },
+    {
+      "ts": "2026-04-15T14:19:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.74596392936415,
+      "pressure_total": 2.2528866739803215,
+      "net_balance": -0.5069227446161715,
+      "balance_ratio": 1.290339757935769,
+      "rotation_score": 0.0,
+      "confidence": 0.7644933106827213
+    },
+    {
+      "ts": "2026-04-15T14:20:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.008381707382413,
+      "pressure_total": 2.3027647291263653,
+      "net_balance": -0.29438302174395226,
+      "balance_ratio": 1.1465772271584922,
+      "rotation_score": 0.4,
+      "confidence": 0.5862498955884806
+    },
+    {
+      "ts": "2026-04-15T14:21:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8354495333492868,
+      "pressure_total": 3.411773948507407,
+      "net_balance": -2.57632441515812,
+      "balance_ratio": 4.083758279006667,
+      "rotation_score": 0.6,
+      "confidence": 0.7556961002122032
+    },
+    {
+      "ts": "2026-04-15T14:22:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.7531585668359302,
+      "pressure_total": 2.847191975696025,
+      "net_balance": -2.0940334088600947,
+      "balance_ratio": 3.7803353783218188,
+      "rotation_score": 0.4,
+      "confidence": 0.7915455769983701
+    },
+    {
+      "ts": "2026-04-15T14:23:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.7464942817932083,
+      "pressure_total": 3.447417638079622,
+      "net_balance": -2.700923356286414,
+      "balance_ratio": 4.618143396622314,
+      "rotation_score": 0.4,
+      "confidence": 0.8055914279214788
+    },
+    {
+      "ts": "2026-04-15T14:24:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7084123910517076,
+      "pressure_total": 4.886267809747806,
+      "net_balance": -4.177855418696098,
+      "balance_ratio": 6.897490602181114,
+      "rotation_score": 0.2,
+      "confidence": 0.858811914886699
+    },
+    {
+      "ts": "2026-04-15T14:25:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.7047872105032663,
+      "pressure_total": 3.3105471281304943,
+      "net_balance": -2.605759917627228,
+      "balance_ratio": 4.697229289627059,
+      "rotation_score": 0.4,
+      "confidence": 0.8066726423864478
+    },
+    {
+      "ts": "2026-04-15T14:26:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7080416057170621,
+      "pressure_total": 4.457273215149249,
+      "net_balance": -3.7492316094321874,
+      "balance_ratio": 6.295213698120452,
+      "rotation_score": 0.2,
+      "confidence": 0.8552253623928346
+    },
+    {
+      "ts": "2026-04-15T14:27:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.996615466809754,
+      "pressure_total": 3.4238440722123857,
+      "net_balance": -2.4272286054026315,
+      "balance_ratio": 3.4354715396625193,
+      "rotation_score": 0.2,
+      "confidence": 0.821819765710028
+    },
+    {
+      "ts": "2026-04-15T14:28:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.1734786299188142,
+      "pressure_total": 2.5382269075803445,
+      "net_balance": -1.3647482776615303,
+      "balance_ratio": 2.1629937204360923,
+      "rotation_score": 0.2,
+      "confidence": 0.7815569545381352
+    },
+    {
+      "ts": "2026-04-15T14:29:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.1267613795112115,
+      "pressure_total": 2.3879972412676023,
+      "net_balance": -1.2612358617563908,
+      "balance_ratio": 2.1193460165483433,
+      "rotation_score": 0.2,
+      "confidence": 0.7794348434372407
+    },
+    {
+      "ts": "2026-04-15T14:30:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.1252607291511039,
+      "pressure_total": 1.6586631151846039,
+      "net_balance": -0.5334023860335,
+      "balance_ratio": 1.4740255944379206,
+      "rotation_score": 0.2,
+      "confidence": 0.7365747923747435
+    },
+    {
+      "ts": "2026-04-15T14:31:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.237890269569254,
+      "pressure_total": 2.2524597960041723,
+      "net_balance": -1.0145695264349184,
+      "balance_ratio": 1.819595687417396,
+      "rotation_score": 0.0,
+      "confidence": 0.8032844046595967
+    },
+    {
+      "ts": "2026-04-15T14:32:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.418130665913007,
+      "pressure_total": 2.089773247855843,
+      "net_balance": -0.671642581942836,
+      "balance_ratio": 1.473611210931981,
+      "rotation_score": 0.0,
+      "confidence": 0.7804090490139135
+    },
+    {
+      "ts": "2026-04-15T14:33:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.200968487680251,
+      "pressure_total": 1.723494514963452,
+      "net_balance": 0.4774739727167989,
+      "balance_ratio": 1.2770382896907126,
+      "rotation_score": 0.4,
+      "confidence": 0.6660408871028242
+    },
+    {
+      "ts": "2026-04-15T14:34:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.3669386043636567,
+      "pressure_total": 1.2445806803678656,
+      "net_balance": 1.122357923995791,
+      "balance_ratio": 1.9017960359661468,
+      "rotation_score": 0.0,
+      "confidence": 0.8076916599869083
+    },
+    {
+      "ts": "2026-04-15T14:35:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9864891934580395,
+      "pressure_total": 2.076421475191347,
+      "net_balance": -1.0899322817333075,
+      "balance_ratio": 2.1048598291408123,
+      "rotation_score": 0.4,
+      "confidence": 0.7346194843090802
+    },
+    {
+      "ts": "2026-04-15T14:36:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9914256089562954,
+      "pressure_total": 0.9336658756735359,
+      "net_balance": 1.0577597332827595,
+      "balance_ratio": 2.1329103492399826,
+      "rotation_score": 0.4,
+      "confidence": 0.7361906288960743
+    },
+    {
+      "ts": "2026-04-15T14:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4167020444245413,
+      "pressure_total": 1.1919558280030558,
+      "net_balance": 0.2247462164214855,
+      "balance_ratio": 1.188552470772356,
+      "rotation_score": 0.0,
+      "confidence": 0.7433355376735449
+    },
+    {
+      "ts": "2026-04-15T14:38:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.1471223129577046,
+      "pressure_total": 0.6006982134176009,
+      "net_balance": 2.5464240995401037,
+      "balance_ratio": 5.23910716339995,
+      "rotation_score": 0.4,
+      "confidence": 0.8132424208821141
+    },
+    {
+      "ts": "2026-04-15T14:39:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.178204196585678,
+      "pressure_total": 1.3273119397965112,
+      "net_balance": 1.8508922567891668,
+      "balance_ratio": 2.3944666670239743,
+      "rotation_score": 0.4,
+      "confidence": 0.749346155105944
+    },
+    {
+      "ts": "2026-04-15T14:40:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.709730948740651,
+      "pressure_total": 2.91151538663643,
+      "net_balance": -1.2017844378957792,
+      "balance_ratio": 1.7029085124656522,
+      "rotation_score": 0.6,
+      "confidence": 0.6556749152125445
+    },
+    {
+      "ts": "2026-04-15T14:41:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9274358534024203,
+      "pressure_total": 1.7546525337934802,
+      "net_balance": -0.8272166803910599,
+      "balance_ratio": 1.8919395097313811,
+      "rotation_score": 0.6,
+      "confidence": 0.6707969265814702
+    },
+    {
+      "ts": "2026-04-15T14:42:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.1106763655195393,
+      "pressure_total": 0.8969387845380017,
+      "net_balance": 1.2137375809815376,
+      "balance_ratio": 2.35320001978364,
+      "rotation_score": 0.6,
+      "confidence": 0.6995123393026426
+    },
+    {
+      "ts": "2026-04-15T14:43:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.030611434902802,
+      "pressure_total": 2.2537606698383077,
+      "net_balance": -1.2231492349355058,
+      "balance_ratio": 2.186819002305037,
+      "rotation_score": 0.8,
+      "confidence": 0.636771996820916
+    },
+    {
+      "ts": "2026-04-15T14:44:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4536890747842277,
+      "pressure_total": 1.5783542627977,
+      "net_balance": -0.12466518801347237,
+      "balance_ratio": 1.0857578076191956,
+      "rotation_score": 0.4,
+      "confidence": 0.5015878188804924
+    },
+    {
+      "ts": "2026-04-15T14:45:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7809124949303188,
+      "pressure_total": 1.4867938183120437,
+      "net_balance": -0.7058813233817249,
+      "balance_ratio": 1.9039185926263238,
+      "rotation_score": 0.2,
+      "confidence": 0.7677742244638515
+    },
+    {
+      "ts": "2026-04-15T14:46:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.634920969827503,
+      "pressure_total": 0.7743452443754295,
+      "net_balance": 0.8605757254520734,
+      "balance_ratio": 2.1113592182595444,
+      "rotation_score": 0.8,
+      "confidence": 0.6318291126743752
+    },
+    {
+      "ts": "2026-04-15T14:47:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.2471847055716756,
+      "pressure_total": 0.860525689940166,
+      "net_balance": 0.3866590156315096,
+      "balance_ratio": 1.4493288464849838,
+      "rotation_score": 0.4,
+      "confidence": 0.6849964391391267
+    },
+    {
+      "ts": "2026-04-15T14:48:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.0836445878269674,
+      "pressure_total": 1.1945983135812064,
+      "net_balance": -0.11095372575423901,
+      "balance_ratio": 1.1023894060844566,
+      "rotation_score": 0.6,
+      "confidence": 0.4650891614384988
+    },
+    {
+      "ts": "2026-04-15T14:49:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9282919152596805,
+      "pressure_total": 1.443778628834068,
+      "net_balance": -0.5154867135743875,
+      "balance_ratio": 1.5553066929708046,
+      "rotation_score": 0.4,
+      "confidence": 0.6951358698012451
+    },
+    {
+      "ts": "2026-04-15T14:50:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.7683296059787948,
+      "pressure_total": 0.5937755255152912,
+      "net_balance": 0.17455408046350362,
+      "balance_ratio": 1.2939731817205193,
+      "rotation_score": 0.8,
+      "confidence": 0.5546335790148613
+    },
+    {
+      "ts": "2026-04-15T14:51:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9343559625822626,
+      "pressure_total": 0.3129385769078854,
+      "net_balance": 1.6214173856743772,
+      "balance_ratio": 6.18126400936388,
+      "rotation_score": 0.4,
+      "confidence": 0.8220204322995569
+    },
+    {
+      "ts": "2026-04-15T14:52:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9110070037559357,
+      "pressure_total": 0.36305142874472546,
+      "net_balance": 0.5479555750112102,
+      "balance_ratio": 2.5093056565175993,
+      "rotation_score": 0.4,
+      "confidence": 0.7543819961972451
+    },
+    {
+      "ts": "2026-04-15T14:53:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.2921389790225692,
+      "pressure_total": 0.6954966697706174,
+      "net_balance": 1.5966423092519517,
+      "balance_ratio": 3.295686490890808,
+      "rotation_score": 0.4,
+      "confidence": 0.7804316079108197
+    },
+    {
+      "ts": "2026-04-15T14:54:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.7537624469767064,
+      "pressure_total": 0.2351632983283808,
+      "net_balance": 1.5185991486483257,
+      "balance_ratio": 7.457636712203967,
+      "rotation_score": 0.4,
+      "confidence": 0.8304666700194465
+    },
+    {
+      "ts": "2026-04-15T14:55:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.0237342885739458,
+      "pressure_total": 0.2583239882520765,
+      "net_balance": 2.7654103003218693,
+      "balance_ratio": 11.705201321153883,
+      "rotation_score": 0.4,
+      "confidence": 0.8454848130551613
+    },
+    {
+      "ts": "2026-04-15T14:56:00+00:00",
+      "regime": "support_led",
+      "support_total": 1.6144563218947017,
+      "pressure_total": 0.8571801991471041,
+      "net_balance": 0.7572761227475976,
+      "balance_ratio": 1.8834503217655854,
+      "rotation_score": 0.2,
+      "confidence": 0.7665516333773672
+    },
+    {
+      "ts": "2026-04-15T14:57:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.883427161396472,
+      "pressure_total": 0.21607685560092926,
+      "net_balance": 1.6673503057955426,
+      "balance_ratio": 8.716468759037106,
+      "rotation_score": 0.4,
+      "confidence": 0.8364201030398186
+    },
+    {
+      "ts": "2026-04-15T14:58:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0291492696728106,
+      "pressure_total": 1.240827317597266,
+      "net_balance": 0.7883219520755447,
+      "balance_ratio": 1.6353196298112205,
+      "rotation_score": 0.6,
+      "confidence": 0.649652090412062
+    },
+    {
+      "ts": "2026-04-15T14:59:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.9477503771598697,
+      "pressure_total": 0.38708991960500394,
+      "net_balance": 3.5606604575548655,
+      "balance_ratio": 10.198535733475703,
+      "rotation_score": 0.4,
+      "confidence": 0.8415714628415515
+    },
+    {
+      "ts": "2026-04-15T15:00:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.698714203845878,
+      "pressure_total": 0.0,
+      "net_balance": 4.698714203845878,
+      "balance_ratio": 4698714203.845878,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T15:01:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.59736397440694,
+      "pressure_total": 1.47586357956886,
+      "net_balance": 2.12150039483808,
+      "balance_ratio": 2.437463749500363,
+      "rotation_score": 0.4,
+      "confidence": 0.751279122278084
+    },
+    {
+      "ts": "2026-04-15T15:02:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.064680083415573,
+      "pressure_total": 1.4348919458845,
+      "net_balance": 1.6297881375310732,
+      "balance_ratio": 2.13582638902223,
+      "rotation_score": 0.4,
+      "confidence": 0.7363520077898502
+    },
+    {
+      "ts": "2026-04-15T15:03:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.369236050760732,
+      "pressure_total": 0.0,
+      "net_balance": 4.369236050760732,
+      "balance_ratio": 4369236050.760732,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T15:04:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.720921259793075,
+      "pressure_total": 0.02784183798637266,
+      "net_balance": 3.6930794218067025,
+      "balance_ratio": 133.64495769332115,
+      "rotation_score": 0.4,
+      "confidence": 0.8698014719978722
+    },
+    {
+      "ts": "2026-04-15T15:05:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.5819192508776405,
+      "pressure_total": 1.3694107580600159,
+      "net_balance": 2.2125084928176246,
+      "balance_ratio": 2.615664605959419,
+      "rotation_score": 0.2,
+      "confidence": 0.7998875806638215
+    },
+    {
+      "ts": "2026-04-15T15:06:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.695115059639439,
+      "pressure_total": 0.005443723320448925,
+      "net_balance": 4.68967133631899,
+      "balance_ratio": 862.4823091215166,
+      "rotation_score": 0.6,
+      "confidence": 0.8424746687457875
+    },
+    {
+      "ts": "2026-04-15T15:07:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.912374628143161,
+      "pressure_total": 0.9265396555879922,
+      "net_balance": 3.985834972555169,
+      "balance_ratio": 5.301850383323004,
+      "rotation_score": 0.4,
+      "confidence": 0.8139201004789685
+    },
+    {
+      "ts": "2026-04-15T15:08:00+00:00",
+      "regime": "support_led",
+      "support_total": 5.121299120405736,
+      "pressure_total": 0.0,
+      "net_balance": 5.121299120405736,
+      "balance_ratio": 5121299120.405735,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T15:09:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.304744135020143,
+      "pressure_total": 0.552801784909379,
+      "net_balance": 3.751942350110764,
+      "balance_ratio": 7.787138631844,
+      "rotation_score": 0.6,
+      "confidence": 0.7959794219873564
+    },
+    {
+      "ts": "2026-04-15T15:10:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.128060529829702,
+      "pressure_total": 0.8057892702689188,
+      "net_balance": 3.3222712595607837,
+      "balance_ratio": 5.1230026039587635,
+      "rotation_score": 0.4,
+      "confidence": 0.8119465096133687
+    },
+    {
+      "ts": "2026-04-15T15:11:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.6431931950503604,
+      "pressure_total": 0.14203698662030642,
+      "net_balance": 3.501156208430054,
+      "balance_ratio": 25.649609173907304,
+      "rotation_score": 0.4,
+      "confidence": 0.8599569907801922
+    },
+    {
+      "ts": "2026-04-15T15:12:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.8854236916546903,
+      "pressure_total": 2.9115503484689937,
+      "net_balance": -1.0261266568143035,
+      "balance_ratio": 1.5442419448510014,
+      "rotation_score": 0.8,
+      "confidence": 0.5840631667310057
+    },
+    {
+      "ts": "2026-04-15T15:13:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0045474122981215,
+      "pressure_total": 1.264558925681398,
+      "net_balance": 0.7399884866167235,
+      "balance_ratio": 1.585175171823635,
+      "rotation_score": 0.6,
+      "confidence": 0.644947041245898
+    },
+    {
+      "ts": "2026-04-15T15:14:00+00:00",
+      "regime": "support_led",
+      "support_total": 1.8205662333675425,
+      "pressure_total": 1.448003313871147,
+      "net_balance": 0.37256291949639553,
+      "balance_ratio": 1.2572942450665887,
+      "rotation_score": 0.2,
+      "confidence": 0.7149558815523431
+    },
+    {
+      "ts": "2026-04-15T15:15:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.189675535820636,
+      "pressure_total": 1.1220378352701754,
+      "net_balance": 0.06763770055046048,
+      "balance_ratio": 1.0602811228145208,
+      "rotation_score": 0.2,
+      "confidence": 0.5255696192445435
+    },
+    {
+      "ts": "2026-04-15T15:16:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.024936093696135,
+      "pressure_total": 0.8179837797646591,
+      "net_balance": 1.2069523139314762,
+      "balance_ratio": 2.4755210846341313,
+      "rotation_score": 0.2,
+      "confidence": 0.7948424031674458
+    },
+    {
+      "ts": "2026-04-15T15:17:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.2064593641896684,
+      "pressure_total": 0.2544540228069602,
+      "net_balance": 1.952005341382708,
+      "balance_ratio": 8.671347930952475,
+      "rotation_score": 0.4,
+      "confidence": 0.8362360722765093
+    },
+    {
+      "ts": "2026-04-15T15:18:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.2396406416988457,
+      "pressure_total": 1.3257317849704333,
+      "net_balance": -0.08609114327158762,
+      "balance_ratio": 1.06944846786695,
+      "rotation_score": 0.4,
+      "confidence": 0.4785693467541465
+    },
+    {
+      "ts": "2026-04-15T15:19:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.512479256521603,
+      "pressure_total": 0.49685647299644525,
+      "net_balance": 2.0156227835251577,
+      "balance_ratio": 5.056750577021422,
+      "rotation_score": 0.4,
+      "confidence": 0.8111815488203563
+    },
+    {
+      "ts": "2026-04-15T15:20:00+00:00",
+      "regime": "support_led",
+      "support_total": 1.4750618307801084,
+      "pressure_total": 1.0078196376873825,
+      "net_balance": 0.46724219309272597,
+      "balance_ratio": 1.463616877088141,
+      "rotation_score": 0.2,
+      "confidence": 0.7356459483269115
+    },
+    {
+      "ts": "2026-04-15T15:21:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.2931217725739446,
+      "pressure_total": 1.3806864449888994,
+      "net_balance": 0.9124353275850452,
+      "balance_ratio": 1.6608562942706235,
+      "rotation_score": 0.4,
+      "confidence": 0.7042683839127979
+    },
+    {
+      "ts": "2026-04-15T15:22:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.7520415743178304,
+      "pressure_total": 3.039524282987134,
+      "net_balance": -1.2874827086693035,
+      "balance_ratio": 1.7348471220898933,
+      "rotation_score": 0.8,
+      "confidence": 0.60256802475378
+    },
+    {
+      "ts": "2026-04-15T15:23:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.0478718820121222,
+      "pressure_total": 2.2682621113781787,
+      "net_balance": 0.7796097706339435,
+      "balance_ratio": 1.343703563500542,
+      "rotation_score": 0.6,
+      "confidence": 0.6190008880484258
+    },
+    {
+      "ts": "2026-04-15T15:24:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.1776473387325486,
+      "pressure_total": 1.0367923363134488,
+      "net_balance": 1.1408550024190998,
+      "balance_ratio": 2.100369825721966,
+      "rotation_score": 0.6,
+      "confidence": 0.6850077106364391
+    },
+    {
+      "ts": "2026-04-15T15:25:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.4302538951881543,
+      "pressure_total": 1.3499403888611905,
+      "net_balance": 1.0803135063269638,
+      "balance_ratio": 1.8002675638428125,
+      "rotation_score": 0.2,
+      "confidence": 0.7613500762306041
+    },
+    {
+      "ts": "2026-04-15T15:26:00+00:00",
+      "regime": "support_led",
+      "support_total": 1.7230499996748097,
+      "pressure_total": 1.4113544176987274,
+      "net_balance": 0.31169558197608227,
+      "balance_ratio": 1.2208485537490399,
+      "rotation_score": 0.2,
+      "confidence": 0.710789319267777
+    },
+    {
+      "ts": "2026-04-15T15:27:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9505743008683276,
+      "pressure_total": 1.3721203954248324,
+      "net_balance": 0.5784539054434952,
+      "balance_ratio": 1.4215766396099634,
+      "rotation_score": 0.4,
+      "confidence": 0.6821626883481546
+    },
+    {
+      "ts": "2026-04-15T15:28:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.438774183097548,
+      "pressure_total": 1.1622337893222796,
+      "net_balance": 0.2765403937752684,
+      "balance_ratio": 1.2379386972878532,
+      "rotation_score": 0.4,
+      "confidence": 0.661245306992626
+    },
+    {
+      "ts": "2026-04-15T15:29:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.1262802811390986,
+      "pressure_total": 0.4699282512572207,
+      "net_balance": 1.656352029881878,
+      "balance_ratio": 4.524691323517075,
+      "rotation_score": 0.4,
+      "confidence": 0.8042677141276008
+    },
+    {
+      "ts": "2026-04-15T15:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.385873865474076,
+      "pressure_total": 0.9968354543749289,
+      "net_balance": 3.389038411099147,
+      "balance_ratio": 4.399797224532168,
+      "rotation_score": 0.4,
+      "confidence": 0.8024157849503808
+    },
+    {
+      "ts": "2026-04-15T15:31:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.344589047697646,
+      "pressure_total": 0.039705687525779035,
+      "net_balance": 4.304883360171867,
+      "balance_ratio": 109.41981661637035,
+      "rotation_score": 0.6,
+      "confidence": 0.8395174748263792
+    },
+    {
+      "ts": "2026-04-15T15:32:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.9789750197817355,
+      "pressure_total": 0.5320440970729856,
+      "net_balance": 4.44693092270875,
+      "balance_ratio": 9.358199907062819,
+      "rotation_score": 0.4,
+      "confidence": 0.8388481700553919
+    },
+    {
+      "ts": "2026-04-15T15:33:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.834795221638979,
+      "pressure_total": 0.25382151796085234,
+      "net_balance": 4.580973703678127,
+      "balance_ratio": 19.048011612572044,
+      "rotation_score": 0.4,
+      "confidence": 0.8557382608187224
+    },
+    {
+      "ts": "2026-04-15T15:34:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.9762297721622937,
+      "pressure_total": 0.3209683764149506,
+      "net_balance": 3.655261395747343,
+      "balance_ratio": 12.38822907282863,
+      "rotation_score": 0.6,
+      "confidence": 0.8131882280488575
+    },
+    {
+      "ts": "2026-04-15T15:35:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.873009678788165,
+      "pressure_total": 1.3052943160534136,
+      "net_balance": 1.5677153627347513,
+      "balance_ratio": 2.201043583392574,
+      "rotation_score": 0.2,
+      "confidence": 0.7833481017821611
+    },
+    {
+      "ts": "2026-04-15T15:36:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.120739387367317,
+      "pressure_total": 0.0,
+      "net_balance": 4.120739387367317,
+      "balance_ratio": 4120739387.367317,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T15:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.3868816318951165,
+      "pressure_total": 1.5038267235381775,
+      "net_balance": 0.883054908356939,
+      "balance_ratio": 1.587205224202495,
+      "rotation_score": 0.4,
+      "confidence": 0.697991361023311
+    },
+    {
+      "ts": "2026-04-15T15:38:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.3311654775260977,
+      "pressure_total": 0.6918743761331843,
+      "net_balance": 1.6392911013929135,
+      "balance_ratio": 3.36934790178926,
+      "rotation_score": 0.4,
+      "confidence": 0.7823088181424955
+    },
+    {
+      "ts": "2026-04-15T15:39:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.703067992283568,
+      "pressure_total": 0.5019347222848081,
+      "net_balance": 2.20113326999876,
+      "balance_ratio": 5.385297872956858,
+      "rotation_score": 0.2,
+      "confidence": 0.84832100018884
+    },
+    {
+      "ts": "2026-04-15T15:40:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.6706207750826905,
+      "pressure_total": 1.4822828855970376,
+      "net_balance": 0.1883378894856529,
+      "balance_ratio": 1.1270593429335816,
+      "rotation_score": 0.2,
+      "confidence": 0.6174940808395851
+    },
+    {
+      "ts": "2026-04-15T15:41:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.3784015995711383,
+      "pressure_total": 2.0996620518286955,
+      "net_balance": -0.7212604522575572,
+      "balance_ratio": 1.5232585717268194,
+      "rotation_score": 0.4,
+      "confidence": 0.6921784984325328
+    },
+    {
+      "ts": "2026-04-15T15:42:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.6689899375162089,
+      "pressure_total": 1.7764855811159297,
+      "net_balance": -1.1074956435997207,
+      "balance_ratio": 2.65547429265016,
+      "rotation_score": 0.2,
+      "confidence": 0.8012341178192408
+    },
+    {
+      "ts": "2026-04-15T15:43:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8711643892837633,
+      "pressure_total": 2.477881131685783,
+      "net_balance": -1.60671674240202,
+      "balance_ratio": 2.844332438476966,
+      "rotation_score": 0.6,
+      "confidence": 0.7214479062615975
+    },
+    {
+      "ts": "2026-04-15T15:44:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.827501883924417,
+      "pressure_total": 1.5579647894837751,
+      "net_balance": 0.2695370944406419,
+      "balance_ratio": 1.1730058960638974,
+      "rotation_score": 0.6,
+      "confidence": 0.5637737011795625
+    },
+    {
+      "ts": "2026-04-15T15:45:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9079952327615044,
+      "pressure_total": 2.247489890812388,
+      "net_balance": -0.33949465805088375,
+      "balance_ratio": 1.1779326552926037,
+      "rotation_score": 0.6,
+      "confidence": 0.5705365072855717
+    },
+    {
+      "ts": "2026-04-15T15:46:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.80769911617507,
+      "pressure_total": 1.5732773954141157,
+      "net_balance": 0.23442172076095424,
+      "balance_ratio": 1.1490021540030135,
+      "rotation_score": 0.6,
+      "confidence": 0.5304822712967008
+    },
+    {
+      "ts": "2026-04-15T15:47:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.827505988134628,
+      "pressure_total": 1.5811129416344296,
+      "net_balance": 2.246393046500198,
+      "balance_ratio": 2.420766972015329,
+      "rotation_score": 0.4,
+      "confidence": 0.7505354593030849
+    },
+    {
+      "ts": "2026-04-15T15:48:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.896646159426421,
+      "pressure_total": 2.3171736204132114,
+      "net_balance": -0.4205274609867904,
+      "balance_ratio": 1.2217216210291777,
+      "rotation_score": 0.6,
+      "confidence": 0.6034153119364826
+    },
+    {
+      "ts": "2026-04-15T15:49:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.703041390095359,
+      "pressure_total": 1.8089413371341108,
+      "net_balance": -0.10589994703875183,
+      "balance_ratio": 1.062182838100501,
+      "rotation_score": 0.4,
+      "confidence": 0.4683248854705114
+    },
+    {
+      "ts": "2026-04-15T15:50:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.1514444469092195,
+      "pressure_total": 2.229072184596692,
+      "net_balance": -1.0776277376874726,
+      "balance_ratio": 1.9358920793618046,
+      "rotation_score": 0.6,
+      "confidence": 0.673989835489033
+    },
+    {
+      "ts": "2026-04-15T15:51:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.11936647945896,
+      "pressure_total": 2.003829194244096,
+      "net_balance": 0.11553728521486395,
+      "balance_ratio": 1.0576582502873695,
+      "rotation_score": 0.4,
+      "confidence": 0.4619539514730302
+    },
+    {
+      "ts": "2026-04-15T15:52:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8872581375360997,
+      "pressure_total": 3.019153001577976,
+      "net_balance": -2.1318948640418762,
+      "balance_ratio": 3.402789868980082,
+      "rotation_score": 0.6,
+      "confidence": 0.7396286975145122
+    },
+    {
+      "ts": "2026-04-15T15:53:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9950051947025205,
+      "pressure_total": 1.951490911350111,
+      "net_balance": 0.043514283352409366,
+      "balance_ratio": 1.0222979687475484,
+      "rotation_score": 0.4,
+      "confidence": 0.41263726086233343
+    },
+    {
+      "ts": "2026-04-15T15:54:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.198805085810019,
+      "pressure_total": 1.261018461549598,
+      "net_balance": 1.9377866242604211,
+      "balance_ratio": 2.5366837864365435,
+      "rotation_score": 0.4,
+      "confidence": 0.7555246447942465
+    },
+    {
+      "ts": "2026-04-15T15:55:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.144259840252916,
+      "pressure_total": 0.9975454459587315,
+      "net_balance": 3.1467143942941846,
+      "balance_ratio": 4.154457179913149,
+      "rotation_score": 0.2,
+      "confidence": 0.8343506869942743
+    },
+    {
+      "ts": "2026-04-15T15:56:00+00:00",
+      "regime": "support_led",
+      "support_total": 5.062092508623681,
+      "pressure_total": 0.5061435163777727,
+      "net_balance": 4.555948992245908,
+      "balance_ratio": 10.001298732127715,
+      "rotation_score": 0.2,
+      "confidence": 0.8705110152303464
+    },
+    {
+      "ts": "2026-04-15T15:57:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.401367394919094,
+      "pressure_total": 0.8849487419564288,
+      "net_balance": 3.5164186529626655,
+      "balance_ratio": 4.973584554952449,
+      "rotation_score": 0.4,
+      "confidence": 0.810193767210716
+    },
+    {
+      "ts": "2026-04-15T15:58:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.9458816441059135,
+      "pressure_total": 0.5751802562718222,
+      "net_balance": 4.3707013878340915,
+      "balance_ratio": 8.59883765163274,
+      "rotation_score": 0.2,
+      "confidence": 0.8662612207251433
+    },
+    {
+      "ts": "2026-04-15T15:59:00+00:00",
+      "regime": "support_led",
+      "support_total": 5.845233855326169,
+      "pressure_total": 0.0,
+      "net_balance": 5.845233855326169,
+      "balance_ratio": 5845233855.326169,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T16:00:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.454450310234353,
+      "pressure_total": 0.32635127424915744,
+      "net_balance": 4.128099035985196,
+      "balance_ratio": 13.649250552132182,
+      "rotation_score": 0.4,
+      "confidence": 0.8492670483218083
+    },
+    {
+      "ts": "2026-04-15T16:01:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.428447932466342,
+      "pressure_total": 0.32783413062755007,
+      "net_balance": 4.100613801838792,
+      "balance_ratio": 13.508196733480043,
+      "rotation_score": 0.4,
+      "confidence": 0.8490290091915595
+    },
+    {
+      "ts": "2026-04-15T16:02:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.737452706968959,
+      "pressure_total": 0.0,
+      "net_balance": 4.737452706968959,
+      "balance_ratio": 4737452706.968959,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T16:03:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.860618596534119,
+      "pressure_total": 1.23101936063646,
+      "net_balance": 2.6295992358976594,
+      "balance_ratio": 3.136115255358866,
+      "rotation_score": 0.2,
+      "confidence": 0.8150307537855197
+    },
+    {
+      "ts": "2026-04-15T16:04:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.9536794380348654,
+      "pressure_total": 0.15278849158509564,
+      "net_balance": 3.80089094644977,
+      "balance_ratio": 25.876814392351413,
+      "rotation_score": 0.4,
+      "confidence": 0.8600639226121298
+    },
+    {
+      "ts": "2026-04-15T16:05:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.956560404906156,
+      "pressure_total": 0.1776570785708501,
+      "net_balance": 3.7789033263353056,
+      "balance_ratio": 22.27077264094641,
+      "rotation_score": 0.2,
+      "confidence": 0.8849004141080912
+    },
+    {
+      "ts": "2026-04-15T16:06:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.8673246567206965,
+      "pressure_total": 1.1576028496363169,
+      "net_balance": 2.70972180708438,
+      "balance_ratio": 3.34080436821289,
+      "rotation_score": 0.4,
+      "confidence": 0.7815903387859591
+    },
+    {
+      "ts": "2026-04-15T16:07:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.739589074912596,
+      "pressure_total": 1.494251046243381,
+      "net_balance": 2.2453380286692153,
+      "balance_ratio": 2.5026511336994566,
+      "rotation_score": 0.2,
+      "confidence": 0.7958580921054296
+    },
+    {
+      "ts": "2026-04-15T16:08:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.6985597101367595,
+      "pressure_total": 1.3818838177757704,
+      "net_balance": 1.3166758923609891,
+      "balance_ratio": 1.9528122953782485,
+      "rotation_score": 0.4,
+      "confidence": 0.7254684597290127
+    },
+    {
+      "ts": "2026-04-15T16:09:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.7707328620281397,
+      "pressure_total": 1.9201642772098872,
+      "net_balance": 0.8505685848182525,
+      "balance_ratio": 1.4429665705760235,
+      "rotation_score": 0.2,
+      "confidence": 0.7337734147427867
+    },
+    {
+      "ts": "2026-04-15T16:10:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.0372391619021153,
+      "pressure_total": 1.3309225848641666,
+      "net_balance": 1.7063165770379487,
+      "balance_ratio": 2.2820554677206073,
+      "rotation_score": 0.2,
+      "confidence": 0.7869899428551055
+    },
+    {
+      "ts": "2026-04-15T16:11:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5825919650169564,
+      "pressure_total": 1.4071495683550312,
+      "net_balance": 0.17544239666192518,
+      "balance_ratio": 1.1246792811563158,
+      "rotation_score": 0.6,
+      "confidence": 0.4963876751163111
+    },
+    {
+      "ts": "2026-04-15T16:12:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0741159805273446,
+      "pressure_total": 1.1383020433900475,
+      "net_balance": 0.9358139371372971,
+      "balance_ratio": 1.822113904276489,
+      "rotation_score": 0.6,
+      "confidence": 0.6654853471886598
+    },
+    {
+      "ts": "2026-04-15T16:13:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9529330695228688,
+      "pressure_total": 1.597297954342753,
+      "net_balance": 0.3556351151801158,
+      "balance_ratio": 1.2226479500666803,
+      "rotation_score": 0.6,
+      "confidence": 0.6035409993119761
+    },
+    {
+      "ts": "2026-04-15T16:14:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.08362559909141,
+      "pressure_total": 1.234190198406548,
+      "net_balance": 1.849435400684862,
+      "balance_ratio": 2.498501124926005,
+      "rotation_score": 0.4,
+      "confidence": 0.7539251349028339
+    },
+    {
+      "ts": "2026-04-15T16:15:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.054580463686989,
+      "pressure_total": 1.4399679307412998,
+      "net_balance": 0.6146125329456891,
+      "balance_ratio": 1.4268237644912583,
+      "rotation_score": 0.4,
+      "confidence": 0.682704486914448
+    },
+    {
+      "ts": "2026-04-15T16:16:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.1232736812842372,
+      "pressure_total": 2.3116856813684903,
+      "net_balance": -1.188412000084253,
+      "balance_ratio": 2.057989713357784,
+      "rotation_score": 0.6,
+      "confidence": 0.6823008423424392
+    },
+    {
+      "ts": "2026-04-15T16:17:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.933007244530957,
+      "pressure_total": 1.453458420755995,
+      "net_balance": 0.4795488237749619,
+      "balance_ratio": 1.3299363895979437,
+      "rotation_score": 0.6,
+      "confidence": 0.6173346597778144
+    },
+    {
+      "ts": "2026-04-15T16:18:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9303835583774865,
+      "pressure_total": 3.658791339800568,
+      "net_balance": -2.7284077814230816,
+      "balance_ratio": 3.932562336098462,
+      "rotation_score": 0.6,
+      "confidence": 0.7525657945429889
+    },
+    {
+      "ts": "2026-04-15T16:19:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.7705943058934634,
+      "pressure_total": 2.0168106762885634,
+      "net_balance": -0.24621637039509991,
+      "balance_ratio": 1.1390586028519143,
+      "rotation_score": 0.6,
+      "confidence": 0.5165704217535547
+    },
+    {
+      "ts": "2026-04-15T16:20:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9471837713264348,
+      "pressure_total": 3.586363628337436,
+      "net_balance": -2.639179857011001,
+      "balance_ratio": 3.7863440410461187,
+      "rotation_score": 0.6,
+      "confidence": 0.7493225264573672
+    },
+    {
+      "ts": "2026-04-15T16:21:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.8631247147689901,
+      "pressure_total": 2.5226026488735274,
+      "net_balance": -1.6594779341045371,
+      "balance_ratio": 2.9226398059389207,
+      "rotation_score": 0.2,
+      "confidence": 0.8094121462797937
+    },
+    {
+      "ts": "2026-04-15T16:22:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.6927679998581742,
+      "pressure_total": 2.2689338326300437,
+      "net_balance": -0.5761658327718695,
+      "balance_ratio": 1.3403690481035455,
+      "rotation_score": 0.4,
+      "confidence": 0.6734009157360732
+    },
+    {
+      "ts": "2026-04-15T16:23:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.625274000248787,
+      "pressure_total": 2.298783415782221,
+      "net_balance": -0.6735094155334338,
+      "balance_ratio": 1.4143974587856183,
+      "rotation_score": 0.4,
+      "confidence": 0.6814167714642257
+    },
+    {
+      "ts": "2026-04-15T16:24:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.6942820113326416,
+      "pressure_total": 2.244736312132511,
+      "net_balance": -0.5504543007998695,
+      "balance_ratio": 1.32488942048491,
+      "rotation_score": 0.2,
+      "confidence": 0.7222483416597969
+    },
+    {
+      "ts": "2026-04-15T16:25:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0505928044402957,
+      "pressure_total": 1.3351858601088828,
+      "net_balance": 0.7154069443314128,
+      "balance_ratio": 1.5358107554202771,
+      "rotation_score": 0.8,
+      "confidence": 0.5831739820897841
+    },
+    {
+      "ts": "2026-04-15T16:26:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9614800696015939,
+      "pressure_total": 1.9054540809178602,
+      "net_balance": -0.9439740113162662,
+      "balance_ratio": 1.9817925936909107,
+      "rotation_score": 0.6,
+      "confidence": 0.6772073968811326
+    },
+    {
+      "ts": "2026-04-15T16:27:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.45817761236172033,
+      "pressure_total": 2.4197486254992664,
+      "net_balance": -1.9615710131375461,
+      "balance_ratio": 5.281245875429052,
+      "rotation_score": 0.2,
+      "confidence": 0.8473839442494719
+    },
+    {
+      "ts": "2026-04-15T16:28:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.7928337127320393,
+      "pressure_total": 1.6949923176567334,
+      "net_balance": 0.09784139507530587,
+      "balance_ratio": 1.057723798542384,
+      "rotation_score": 0.6,
+      "confidence": 0.40320998276015346
+    },
+    {
+      "ts": "2026-04-15T16:29:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.498780478266002,
+      "pressure_total": 1.4509302467667424,
+      "net_balance": 1.0478502314992595,
+      "balance_ratio": 1.7221920101495523,
+      "rotation_score": 0.6,
+      "confidence": 0.6573297444193713
+    },
+    {
+      "ts": "2026-04-15T16:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.3313599791830844,
+      "pressure_total": 0.7621297224574201,
+      "net_balance": 1.5692302567256644,
+      "balance_ratio": 3.05900676812055,
+      "rotation_score": 0.4,
+      "confidence": 0.7738493891811276
+    },
+    {
+      "ts": "2026-04-15T16:31:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.685262008846734,
+      "pressure_total": 1.3422246034090337,
+      "net_balance": 0.34303740543770034,
+      "balance_ratio": 1.2555737725015923,
+      "rotation_score": 0.4,
+      "confidence": 0.6634330188148991
+    },
+    {
+      "ts": "2026-04-15T16:32:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.4935982293132546,
+      "pressure_total": 0.7360842051683806,
+      "net_balance": 2.757514024144874,
+      "balance_ratio": 4.746193716402443,
+      "rotation_score": 0.4,
+      "confidence": 0.8073249122951016
+    },
+    {
+      "ts": "2026-04-15T16:33:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.31622354306828,
+      "pressure_total": 0.7170853222521579,
+      "net_balance": 1.5991382208161222,
+      "balance_ratio": 3.230052925631905,
+      "rotation_score": 0.4,
+      "confidence": 0.7786936466507796
+    },
+    {
+      "ts": "2026-04-15T16:34:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.7608528088859474,
+      "pressure_total": 0.3866561481116722,
+      "net_balance": 2.3741966607742753,
+      "balance_ratio": 7.140330814262835,
+      "rotation_score": 0.2,
+      "confidence": 0.8600895137031414
+    },
+    {
+      "ts": "2026-04-15T16:35:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4845757751851776,
+      "pressure_total": 3.083417703832915,
+      "net_balance": -1.5988419286477373,
+      "balance_ratio": 2.0769688926443024,
+      "rotation_score": 0.6,
+      "confidence": 0.6835238248223909
+    },
+    {
+      "ts": "2026-04-15T16:36:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.6915342928941564,
+      "pressure_total": 0.8112318941974683,
+      "net_balance": 0.880302398696688,
+      "balance_ratio": 2.0851427378450764,
+      "rotation_score": 0.8,
+      "confidence": 0.6300484075531408
+    },
+    {
+      "ts": "2026-04-15T16:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.314471441176818,
+      "pressure_total": 2.287004763207506,
+      "net_balance": 0.027466677969311792,
+      "balance_ratio": 1.0120098910204236,
+      "rotation_score": 0.6,
+      "confidence": 0.3426304674021366
+    },
+    {
+      "ts": "2026-04-15T16:38:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.55447529977451,
+      "pressure_total": 1.0739770435419809,
+      "net_balance": 2.4804982562325293,
+      "balance_ratio": 3.3096380608395832,
+      "rotation_score": 0.6,
+      "confidence": 0.736972786711362
+    },
+    {
+      "ts": "2026-04-15T16:39:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.470977887386475,
+      "pressure_total": 1.6741760015774183,
+      "net_balance": 1.7968018858090566,
+      "balance_ratio": 2.073245515475135,
+      "rotation_score": 0.4,
+      "confidence": 0.7328069877997777
+    },
+    {
+      "ts": "2026-04-15T16:40:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.602617155710303,
+      "pressure_total": 1.851560301635187,
+      "net_balance": 2.7510568540751157,
+      "balance_ratio": 2.4858046219966736,
+      "rotation_score": 0.4,
+      "confidence": 0.7533839148822256
+    },
+    {
+      "ts": "2026-04-15T16:41:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.803800808204541,
+      "pressure_total": 1.7969117607325933,
+      "net_balance": 3.0068890474719483,
+      "balance_ratio": 2.673364888126756,
+      "rotation_score": 0.4,
+      "confidence": 0.7609247463873433
+    },
+    {
+      "ts": "2026-04-15T16:42:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.233280561979482,
+      "pressure_total": 1.5742784633029545,
+      "net_balance": 2.6590020986765275,
+      "balance_ratio": 2.689029076277739,
+      "rotation_score": 0.2,
+      "confidence": 0.802341367751809
+    },
+    {
+      "ts": "2026-04-15T16:43:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.053958862624096,
+      "pressure_total": 1.763302374159398,
+      "net_balance": 2.2906564884646983,
+      "balance_ratio": 2.2990718563267976,
+      "rotation_score": 0.2,
+      "confidence": 0.7877266726268196
+    },
+    {
+      "ts": "2026-04-15T16:44:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.54058511094829,
+      "pressure_total": 1.0452022457583299,
+      "net_balance": 3.49538286518996,
+      "balance_ratio": 4.344216757450555,
+      "rotation_score": 0.2,
+      "confidence": 0.8369993568107995
+    },
+    {
+      "ts": "2026-04-15T16:45:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.970565738774507,
+      "pressure_total": 1.4305296194257386,
+      "net_balance": 2.5400361193487684,
+      "balance_ratio": 2.775591420727396,
+      "rotation_score": 0.4,
+      "confidence": 0.7646589774630053
+    },
+    {
+      "ts": "2026-04-15T16:46:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.900658828482868,
+      "pressure_total": 0.9881657507809158,
+      "net_balance": 2.912493077701952,
+      "balance_ratio": 3.947373024616874,
+      "rotation_score": 0.2,
+      "confidence": 0.8311841759431741
+    },
+    {
+      "ts": "2026-04-15T16:47:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.395476461231945,
+      "pressure_total": 1.8453079370011596,
+      "net_balance": 2.550168524230785,
+      "balance_ratio": 2.381974505770081,
+      "rotation_score": 0.2,
+      "confidence": 0.7911846947015856
+    },
+    {
+      "ts": "2026-04-15T16:48:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.099976731450493,
+      "pressure_total": 2.6929844776797447,
+      "net_balance": 0.4069922537707482,
+      "balance_ratio": 1.1511305605895692,
+      "rotation_score": 0.2,
+      "confidence": 0.6488553763448827
+    },
+    {
+      "ts": "2026-04-15T16:49:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.9712024296599788,
+      "pressure_total": 3.6414542336210123,
+      "net_balance": -1.6702518039610335,
+      "balance_ratio": 1.8473263723853781,
+      "rotation_score": 0.2,
+      "confidence": 0.7643397675237128
+    },
+    {
+      "ts": "2026-04-15T16:50:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.626523218711104,
+      "pressure_total": 3.793310911373282,
+      "net_balance": -2.166787692662178,
+      "balance_ratio": 2.332159091082138,
+      "rotation_score": 0.0,
+      "confidence": 0.8263108728927666
+    },
+    {
+      "ts": "2026-04-15T16:51:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.8255058323906663,
+      "pressure_total": 1.6571239876574972,
+      "net_balance": 1.168381844733169,
+      "balance_ratio": 1.705066038169412,
+      "rotation_score": 0.4,
+      "confidence": 0.7078376507660615
+    },
+    {
+      "ts": "2026-04-15T16:52:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.4428717116812013,
+      "pressure_total": 1.3707454933961105,
+      "net_balance": 2.072126218285091,
+      "balance_ratio": 2.511678300799125,
+      "rotation_score": 0.2,
+      "confidence": 0.7961917501507584
+    },
+    {
+      "ts": "2026-04-15T16:53:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.205164678946757,
+      "pressure_total": 1.3321005186529278,
+      "net_balance": 0.8730641602938292,
+      "balance_ratio": 1.6554041140804494,
+      "rotation_score": 0.0,
+      "confidence": 0.7934005916746845
+    },
+    {
+      "ts": "2026-04-15T16:54:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.4021109360712507,
+      "pressure_total": 0.9836079362002909,
+      "net_balance": 2.41850299987096,
+      "balance_ratio": 3.458807936436254,
+      "rotation_score": 0.0,
+      "confidence": 0.8547098734793297
+    },
+    {
+      "ts": "2026-04-15T16:55:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.926365596264421,
+      "pressure_total": 1.0515530831076163,
+      "net_balance": 1.8748125131568047,
+      "balance_ratio": 2.782898593779251,
+      "rotation_score": 0.2,
+      "confidence": 0.8053112692016124
+    },
+    {
+      "ts": "2026-04-15T16:56:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.891389619485131,
+      "pressure_total": 0.8759197368968424,
+      "net_balance": 2.0154698825882886,
+      "balance_ratio": 3.300975531991753,
+      "rotation_score": 0.4,
+      "confidence": 0.7805689306510561
+    },
+    {
+      "ts": "2026-04-15T16:57:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.952284843828936,
+      "pressure_total": 2.1665056341400475,
+      "net_balance": -0.21422079031111152,
+      "balance_ratio": 1.1097282453368684,
+      "rotation_score": 0.4,
+      "confidence": 0.5353051676865186
+    },
+    {
+      "ts": "2026-04-15T16:58:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.42076112289691253,
+      "pressure_total": 3.0627631534177744,
+      "net_balance": -2.642002030520862,
+      "balance_ratio": 7.279102052801011,
+      "rotation_score": 0.4,
+      "confidence": 0.8294591595136904
+    },
+    {
+      "ts": "2026-04-15T16:59:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.7657150815232949,
+      "pressure_total": 3.3802812926050927,
+      "net_balance": -2.6145662110817978,
+      "balance_ratio": 4.41454187617729,
+      "rotation_score": 0.6,
+      "confidence": 0.7618545561425024
+    },
+    {
+      "ts": "2026-04-15T17:00:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7242044674204188,
+      "pressure_total": 4.650594526995192,
+      "net_balance": -3.9263900595747736,
+      "balance_ratio": 6.421659539826349,
+      "rotation_score": 0.2,
+      "confidence": 0.8560331318086524
+    },
+    {
+      "ts": "2026-04-15T17:01:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5472643980352658,
+      "pressure_total": 4.090237259416727,
+      "net_balance": -2.5429728613814615,
+      "balance_ratio": 2.6435283230264703,
+      "rotation_score": 0.4,
+      "confidence": 0.7597873719593369
+    },
+    {
+      "ts": "2026-04-15T17:02:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.43477710237968925,
+      "pressure_total": 4.058291627575259,
+      "net_balance": -3.62351452519557,
+      "balance_ratio": 9.334188956508495,
+      "rotation_score": 0.4,
+      "confidence": 0.8387632485424047
+    },
+    {
+      "ts": "2026-04-15T17:03:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.0,
+      "pressure_total": 5.950316098568073,
+      "net_balance": -5.950316098568073,
+      "balance_ratio": 5950316098.568072,
+      "rotation_score": 0.4,
+      "confidence": 0.8721384336809187
+    },
+    {
+      "ts": "2026-04-15T17:04:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.07259707346320628,
+      "pressure_total": 4.616663973951079,
+      "net_balance": -4.544066900487873,
+      "balance_ratio": 63.592976324188896,
+      "rotation_score": 0.4,
+      "confidence": 0.8672260525783064
+    },
+    {
+      "ts": "2026-04-15T17:05:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 5.406434946166446,
+      "net_balance": -5.406434946166446,
+      "balance_ratio": 5406434946.166446,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T17:06:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.0,
+      "pressure_total": 5.624162357152175,
+      "net_balance": -5.624162357152175,
+      "balance_ratio": 5624162357.152174,
+      "rotation_score": 0.4,
+      "confidence": 0.8721384336809187
+    },
+    {
+      "ts": "2026-04-15T17:07:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.575009310426243,
+      "pressure_total": 4.036923308559998,
+      "net_balance": -3.4619139981337548,
+      "balance_ratio": 7.020622510559884,
+      "rotation_score": 0.4,
+      "confidence": 0.8279118604274591
+    },
+    {
+      "ts": "2026-04-15T17:08:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.7530076995079479,
+      "pressure_total": 3.49414284473897,
+      "net_balance": -2.741135145231022,
+      "balance_ratio": 4.6402484954964125,
+      "rotation_score": 0.4,
+      "confidence": 0.8058971525255517
+    },
+    {
+      "ts": "2026-04-15T17:09:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.5874164996817655,
+      "pressure_total": 3.242047542218537,
+      "net_balance": -2.6546310425367716,
+      "balance_ratio": 5.51916322400703,
+      "rotation_score": 0.6,
+      "confidence": 0.777385886702544
+    },
+    {
+      "ts": "2026-04-15T17:10:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.5964919374428649,
+      "pressure_total": 3.0514407904180265,
+      "net_balance": -2.4549488529751615,
+      "balance_ratio": 5.115644653135499,
+      "rotation_score": 0.2,
+      "confidence": 0.8458163502365083
+    },
+    {
+      "ts": "2026-04-15T17:11:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.6493687289042006,
+      "pressure_total": 3.197833472383058,
+      "net_balance": -2.5484647434788577,
+      "balance_ratio": 4.924526436281203,
+      "rotation_score": 0.6,
+      "confidence": 0.7698365279090066
+    },
+    {
+      "ts": "2026-04-15T17:12:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.1168943756226497,
+      "pressure_total": 2.817613609589266,
+      "net_balance": -0.7007192339666162,
+      "balance_ratio": 1.331012846949679,
+      "rotation_score": 0.6,
+      "confidence": 0.6174657522117002
+    },
+    {
+      "ts": "2026-04-15T17:13:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9997297283063081,
+      "pressure_total": 3.2523740844371467,
+      "net_balance": -2.2526443561308387,
+      "balance_ratio": 3.253253346729176,
+      "rotation_score": 0.4,
+      "confidence": 0.7793152453401673
+    },
+    {
+      "ts": "2026-04-15T17:14:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.5599065879045102,
+      "pressure_total": 2.784477583354816,
+      "net_balance": -2.2245709954503057,
+      "balance_ratio": 4.97311095012459,
+      "rotation_score": 0.4,
+      "confidence": 0.810188051859427
+    },
+    {
+      "ts": "2026-04-15T17:15:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9717782649615689,
+      "pressure_total": 3.7734301417216347,
+      "net_balance": -2.801651876760066,
+      "balance_ratio": 3.8830155785289797,
+      "rotation_score": 0.4,
+      "confidence": 0.7935705680664795
+    },
+    {
+      "ts": "2026-04-15T17:16:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.0281803280695674,
+      "pressure_total": 3.9932027328998574,
+      "net_balance": -2.96502240483029,
+      "balance_ratio": 3.8837571813858656,
+      "rotation_score": 0.4,
+      "confidence": 0.7935848318034258
+    },
+    {
+      "ts": "2026-04-15T17:17:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5524519775368448,
+      "pressure_total": 3.207232081252952,
+      "net_balance": -1.654780103716107,
+      "balance_ratio": 2.0659138753790107,
+      "rotation_score": 0.4,
+      "confidence": 0.7323801755974513
+    },
+    {
+      "ts": "2026-04-15T17:18:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8020340313327271,
+      "pressure_total": 2.970963919149519,
+      "net_balance": -2.168929887816792,
+      "balance_ratio": 3.7042866051615237,
+      "rotation_score": 0.4,
+      "confidence": 0.7899788891853329
+    },
+    {
+      "ts": "2026-04-15T17:19:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.6802838361790482,
+      "pressure_total": 2.5643977910926337,
+      "net_balance": -0.8841139549135855,
+      "balance_ratio": 1.5261694101182652,
+      "rotation_score": 0.2,
+      "confidence": 0.7410824936859243
+    },
+    {
+      "ts": "2026-04-15T17:20:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5775415167734912,
+      "pressure_total": 1.4048641265378237,
+      "net_balance": 0.17267739023566753,
+      "balance_ratio": 1.1229139437571214,
+      "rotation_score": 0.4,
+      "confidence": 0.5536990702228027
+    },
+    {
+      "ts": "2026-04-15T17:21:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.6197305756110625,
+      "pressure_total": 1.3983936843005194,
+      "net_balance": 1.2213368913105431,
+      "balance_ratio": 1.873385588781073,
+      "rotation_score": 0.2,
+      "confidence": 0.7659424056401849
+    },
+    {
+      "ts": "2026-04-15T17:22:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.505052894025812,
+      "pressure_total": 1.0155578300503019,
+      "net_balance": 1.4894950639755102,
+      "balance_ratio": 2.466676756262845,
+      "rotation_score": 0.2,
+      "confidence": 0.7945070353702703
+    },
+    {
+      "ts": "2026-04-15T17:23:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.602245612133756,
+      "pressure_total": 0.6126998688536441,
+      "net_balance": 1.9895457432801118,
+      "balance_ratio": 4.247178340355342,
+      "rotation_score": 0.2,
+      "confidence": 0.8356731132331926
+    },
+    {
+      "ts": "2026-04-15T17:24:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.6555241176369913,
+      "pressure_total": 1.4375899782264103,
+      "net_balance": 0.21793413941058093,
+      "balance_ratio": 1.1515968688648286,
+      "rotation_score": 0.4,
+      "confidence": 0.5930589142216993
+    },
+    {
+      "ts": "2026-04-15T17:25:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5357231010821666,
+      "pressure_total": 0.9208937899135455,
+      "net_balance": 0.614829311168621,
+      "balance_ratio": 1.6676441060877845,
+      "rotation_score": 0.4,
+      "confidence": 0.7048257451186621
+    },
+    {
+      "ts": "2026-04-15T17:26:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8537851987869538,
+      "pressure_total": 2.3895332148831647,
+      "net_balance": -1.535748016096211,
+      "balance_ratio": 2.7987522134117344,
+      "rotation_score": 0.6,
+      "confidence": 0.719688271528292
+    },
+    {
+      "ts": "2026-04-15T17:27:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.372504284608722,
+      "pressure_total": 2.229630123284166,
+      "net_balance": -0.8571258386754441,
+      "balance_ratio": 1.6244977507810086,
+      "rotation_score": 0.4,
+      "confidence": 0.7012231525258157
+    },
+    {
+      "ts": "2026-04-15T17:28:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.6990418909438034,
+      "pressure_total": 2.0727117626795866,
+      "net_balance": -0.37366987173578314,
+      "balance_ratio": 1.219929757899149,
+      "rotation_score": 0.4,
+      "confidence": 0.6589680382156192
+    },
+    {
+      "ts": "2026-04-15T17:29:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9743755848605078,
+      "pressure_total": 0.8032258092016826,
+      "net_balance": 1.1711497756588252,
+      "balance_ratio": 2.458057948639397,
+      "rotation_score": 0.6,
+      "confidence": 0.7048074874559578
+    },
+    {
+      "ts": "2026-04-15T17:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.441145084136283,
+      "pressure_total": 0.8730432028961443,
+      "net_balance": 1.5681018812401386,
+      "balance_ratio": 2.796133199409007,
+      "rotation_score": 0.4,
+      "confidence": 0.7653803730476249
+    },
+    {
+      "ts": "2026-04-15T17:31:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.494838462998483,
+      "pressure_total": 0.43301359004471995,
+      "net_balance": 2.061824872953763,
+      "balance_ratio": 5.76157081522736,
+      "rotation_score": 0.2,
+      "confidence": 0.8514342983867446
+    },
+    {
+      "ts": "2026-04-15T17:32:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.6623474439157613,
+      "pressure_total": 2.3972081295840306,
+      "net_balance": -0.7348606856682693,
+      "balance_ratio": 1.4420620300274052,
+      "rotation_score": 0.6,
+      "confidence": 0.6302822778713011
+    },
+    {
+      "ts": "2026-04-15T17:33:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.9807869076334804,
+      "pressure_total": 2.360673147584326,
+      "net_balance": -1.3798862399508454,
+      "balance_ratio": 2.406917475356949,
+      "rotation_score": 0.2,
+      "confidence": 0.7921843430940106
+    },
+    {
+      "ts": "2026-04-15T17:34:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.9041393169811442,
+      "pressure_total": 3.3575371246232892,
+      "net_balance": -2.453397807642145,
+      "balance_ratio": 3.713517443123547,
+      "rotation_score": 0.2,
+      "confidence": 0.8272074542893733
+    },
+    {
+      "ts": "2026-04-15T17:35:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8439535038350431,
+      "pressure_total": 2.624638055389675,
+      "net_balance": -1.7806845515546321,
+      "balance_ratio": 3.1099320560468695,
+      "rotation_score": 0.4,
+      "confidence": 0.7753417481687899
+    },
+    {
+      "ts": "2026-04-15T17:36:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.8254105853904974,
+      "pressure_total": 4.141731481660093,
+      "net_balance": -3.3163208962695956,
+      "balance_ratio": 5.017783337126288,
+      "rotation_score": 0.2,
+      "confidence": 0.844842880795259
+    },
+    {
+      "ts": "2026-04-15T17:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.689285270564714,
+      "pressure_total": 2.7543353943713926,
+      "net_balance": -1.0650501238066787,
+      "balance_ratio": 1.6304738118332385,
+      "rotation_score": 0.6,
+      "confidence": 0.649206469759229
+    },
+    {
+      "ts": "2026-04-15T17:38:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4511751832721738,
+      "pressure_total": 1.6485596682599497,
+      "net_balance": -0.19738448498777594,
+      "balance_ratio": 1.1360169931673616,
+      "rotation_score": 0.6,
+      "confidence": 0.5123060071098566
+    },
+    {
+      "ts": "2026-04-15T17:39:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.428570523105994,
+      "pressure_total": 1.6884250173638033,
+      "net_balance": 0.7401455057421908,
+      "balance_ratio": 1.438364450970885,
+      "rotation_score": 0.8,
+      "confidence": 0.5724096501003045
+    },
+    {
+      "ts": "2026-04-15T17:40:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.351151717824963,
+      "pressure_total": 1.5991946629840879,
+      "net_balance": 1.751957054840875,
+      "balance_ratio": 2.095524575833522,
+      "rotation_score": 0.2,
+      "confidence": 0.7782450204983207
+    },
+    {
+      "ts": "2026-04-15T17:41:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.46182787939148,
+      "pressure_total": 0.7167130438943837,
+      "net_balance": 2.7451148354970965,
+      "balance_ratio": 4.8301449358044914,
+      "rotation_score": 0.6,
+      "confidence": 0.7684780823745618
+    },
+    {
+      "ts": "2026-04-15T17:42:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.7439631231794124,
+      "pressure_total": 0.3630021862271287,
+      "net_balance": 3.3809609369522837,
+      "balance_ratio": 10.313885880667486,
+      "rotation_score": 0.4,
+      "confidence": 0.8419110484981587
+    },
+    {
+      "ts": "2026-04-15T17:43:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.2970646416501364,
+      "pressure_total": 0.2819697930466268,
+      "net_balance": 3.0150948486035096,
+      "balance_ratio": 11.692971101712766,
+      "rotation_score": 0.4,
+      "confidence": 0.8454570698724703
+    },
+    {
+      "ts": "2026-04-15T17:44:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.1965184547514034,
+      "pressure_total": 0.5707355290242851,
+      "net_balance": 2.625782925727118,
+      "balance_ratio": 5.600699960305764,
+      "rotation_score": 0.4,
+      "confidence": 0.8169476087901162
+    },
+    {
+      "ts": "2026-04-15T17:45:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.893848268703079,
+      "pressure_total": 0.8402938011744486,
+      "net_balance": 2.0535544675286306,
+      "balance_ratio": 3.443852929366432,
+      "rotation_score": 0.2,
+      "confidence": 0.8219940443944064
+    },
+    {
+      "ts": "2026-04-15T17:46:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.3449428404612154,
+      "pressure_total": 0.18022765798615217,
+      "net_balance": 3.1647151824750632,
+      "balance_ratio": 18.55954229132925,
+      "rotation_score": 0.4,
+      "confidence": 0.8553071427710865
+    },
+    {
+      "ts": "2026-04-15T17:47:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.78909183777872,
+      "pressure_total": 0.6761265630351457,
+      "net_balance": 2.1129652747435745,
+      "balance_ratio": 4.125103183727068,
+      "rotation_score": 0.4,
+      "confidence": 0.7979723754032035
+    },
+    {
+      "ts": "2026-04-15T17:48:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.140167601620786,
+      "pressure_total": 0.4044336641870736,
+      "net_balance": 2.7357339374337126,
+      "balance_ratio": 7.764357618282437,
+      "rotation_score": 0.2,
+      "confidence": 0.8630106940189638
+    },
+    {
+      "ts": "2026-04-15T17:49:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.2573366247571793,
+      "pressure_total": 0.15478475866808944,
+      "net_balance": 3.10255186608909,
+      "balance_ratio": 21.04429824219324,
+      "rotation_score": 0.2,
+      "confidence": 0.8842168229353222
+    },
+    {
+      "ts": "2026-04-15T17:50:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.2158435291437524,
+      "pressure_total": 0.4304692543940012,
+      "net_balance": 2.785374274749751,
+      "balance_ratio": 7.470553346883969,
+      "rotation_score": 0.4,
+      "confidence": 0.8305377343129114
+    },
+    {
+      "ts": "2026-04-15T17:51:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.264549806751928,
+      "pressure_total": 0.3084000900040335,
+      "net_balance": 2.9561497167478947,
+      "balance_ratio": 10.58543726984396,
+      "rotation_score": 0.4,
+      "confidence": 0.8426815825654214
+    },
+    {
+      "ts": "2026-04-15T17:52:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.5487063559907033,
+      "pressure_total": 0.036585842645329415,
+      "net_balance": 3.5121205133453737,
+      "balance_ratio": 96.99670963964348,
+      "rotation_score": 0.2,
+      "confidence": 0.8939204601790056
+    },
+    {
+      "ts": "2026-04-15T17:53:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.7583906046026594,
+      "pressure_total": 1.1855963310182953,
+      "net_balance": 1.572794273584364,
+      "balance_ratio": 2.3265849703106865,
+      "rotation_score": 0.6,
+      "confidence": 0.6981062047196085
+    },
+    {
+      "ts": "2026-04-15T17:54:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.053041327558118,
+      "pressure_total": 0.2637112796830268,
+      "net_balance": 2.789330047875091,
+      "balance_ratio": 11.577211756841738,
+      "rotation_score": 0.4,
+      "confidence": 0.8451916021660036
+    },
+    {
+      "ts": "2026-04-15T17:55:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.2724364872850664,
+      "pressure_total": 0.7726907966529828,
+      "net_balance": 1.4997456906320836,
+      "balance_ratio": 2.940938985074547,
+      "rotation_score": 0.4,
+      "confidence": 0.7702121361918909
+    },
+    {
+      "ts": "2026-04-15T17:56:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.643527374720736,
+      "pressure_total": 0.6022007251000246,
+      "net_balance": 2.041326649620711,
+      "balance_ratio": 4.389777800884663,
+      "rotation_score": 0.2,
+      "confidence": 0.8376026977323745
+    },
+    {
+      "ts": "2026-04-15T17:57:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.260420695082443,
+      "pressure_total": 0.7197031822392387,
+      "net_balance": 2.5407175128432042,
+      "balance_ratio": 4.530229649587178,
+      "rotation_score": 0.2,
+      "confidence": 0.8393893987985631
+    },
+    {
+      "ts": "2026-04-15T17:58:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.4873344421346273,
+      "pressure_total": 0.3922278916274712,
+      "net_balance": 3.095106550507156,
+      "balance_ratio": 8.891092440327562,
+      "rotation_score": 0.2,
+      "confidence": 0.8672566066253983
+    },
+    {
+      "ts": "2026-04-15T17:59:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.2168095413736486,
+      "pressure_total": 0.07459790332453803,
+      "net_balance": 3.1422116380491105,
+      "balance_ratio": 43.12198329997192,
+      "rotation_score": 0.4,
+      "confidence": 0.8648930967516839
+    },
+    {
+      "ts": "2026-04-15T18:00:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.4887627139894555,
+      "pressure_total": 0.9975676344502771,
+      "net_balance": 3.491195079539178,
+      "balance_ratio": 4.499707647855925,
+      "rotation_score": 0.6,
+      "confidence": 0.7633044095684389
+    },
+    {
+      "ts": "2026-04-15T18:01:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.708279089967737,
+      "pressure_total": 2.205596631852279,
+      "net_balance": 0.5026824581154581,
+      "balance_ratio": 1.227912235109509,
+      "rotation_score": 0.6,
+      "confidence": 0.6042530314196952
+    },
+    {
+      "ts": "2026-04-15T18:02:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.954945966265935,
+      "pressure_total": 3.2565424624116135,
+      "net_balance": -2.3015964961456783,
+      "balance_ratio": 3.4101850549151655,
+      "rotation_score": 0.6,
+      "confidence": 0.7398340113514935
+    },
+    {
+      "ts": "2026-04-15T18:03:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.1107486090910197,
+      "pressure_total": 3.262435921066639,
+      "net_balance": -2.1516873119756195,
+      "balance_ratio": 2.937150579676576,
+      "rotation_score": 0.6,
+      "confidence": 0.7248853886005459
+    },
+    {
+      "ts": "2026-04-15T18:04:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.2516854669748403,
+      "pressure_total": 2.020873255266098,
+      "net_balance": -0.7691877882912577,
+      "balance_ratio": 1.6145216259083712,
+      "rotation_score": 0.4,
+      "confidence": 0.7003695809458325
+    },
+    {
+      "ts": "2026-04-15T18:05:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.43270484017775945,
+      "pressure_total": 3.7548876328510175,
+      "net_balance": -3.322182792673258,
+      "balance_ratio": 8.677711188320593,
+      "rotation_score": 0.4,
+      "confidence": 0.8362621396455918
+    },
+    {
+      "ts": "2026-04-15T18:06:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.7480754691797835,
+      "pressure_total": 3.4349031243011137,
+      "net_balance": -2.68682765512133,
+      "balance_ratio": 4.591653203208579,
+      "rotation_score": 0.6,
+      "confidence": 0.7648135793238049
+    },
+    {
+      "ts": "2026-04-15T18:07:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.181722028074448,
+      "pressure_total": 1.8954888798367395,
+      "net_balance": -0.7137668517622915,
+      "balance_ratio": 1.6040057092997884,
+      "rotation_score": 0.2,
+      "confidence": 0.7473887162643452
+    },
+    {
+      "ts": "2026-04-15T18:08:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.4258520802155273,
+      "pressure_total": 1.8656396912940076,
+      "net_balance": -1.4397876110784804,
+      "balance_ratio": 4.380957092776891,
+      "rotation_score": 0.4,
+      "confidence": 0.8021277832245872
+    },
+    {
+      "ts": "2026-04-15T18:09:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.5270207555704997,
+      "pressure_total": 1.5289193825998704,
+      "net_balance": -1.0018986270293708,
+      "balance_ratio": 2.9010610425481556,
+      "rotation_score": 0.2,
+      "confidence": 0.8088023023909827
+    },
+    {
+      "ts": "2026-04-15T18:10:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.3998770551735302,
+      "pressure_total": 1.1414903147244104,
+      "net_balance": 1.2583867404491198,
+      "balance_ratio": 2.102406848500446,
+      "rotation_score": 0.4,
+      "confidence": 0.7344804520685844
+    },
+    {
+      "ts": "2026-04-15T18:11:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.3517049731099773,
+      "pressure_total": 2.212483731190577,
+      "net_balance": -0.8607787580805999,
+      "balance_ratio": 1.636809640568338,
+      "rotation_score": 0.6,
+      "confidence": 0.6497887300486944
+    },
+    {
+      "ts": "2026-04-15T18:12:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.023530080470057023,
+      "pressure_total": 2.7517349046629356,
+      "net_balance": -2.7282048241928787,
+      "balance_ratio": 116.9454098622667,
+      "rotation_score": 0.2,
+      "confidence": 0.8943778471580597
+    },
+    {
+      "ts": "2026-04-15T18:13:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 4.159426741909554,
+      "net_balance": -4.159426741909554,
+      "balance_ratio": 4159426741.909554,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T18:14:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.2615133920496744,
+      "pressure_total": 3.4520767085074953,
+      "net_balance": -2.190563316457821,
+      "balance_ratio": 2.7364566482315738,
+      "rotation_score": 0.4,
+      "confidence": 0.7632583170635824
+    },
+    {
+      "ts": "2026-04-15T18:15:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.5182251732197568,
+      "pressure_total": 4.856726406568427,
+      "net_balance": -4.33850123334867,
+      "balance_ratio": 9.371845787408132,
+      "rotation_score": 0.6,
+      "confidence": 0.8037720015247721
+    },
+    {
+      "ts": "2026-04-15T18:16:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.0,
+      "pressure_total": 4.8460466752676,
+      "net_balance": -4.8460466752676,
+      "balance_ratio": 4846046675.2676,
+      "rotation_score": 0.4,
+      "confidence": 0.8721384336809187
+    },
+    {
+      "ts": "2026-04-15T18:17:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.3576369241835602,
+      "pressure_total": 3.2571822667103296,
+      "net_balance": -1.8995453425267694,
+      "balance_ratio": 2.3991556274657864,
+      "rotation_score": 0.4,
+      "confidence": 0.7495598162789674
+    },
+    {
+      "ts": "2026-04-15T18:18:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.441551501817985,
+      "pressure_total": 2.7884436455571517,
+      "net_balance": -1.3468921437391668,
+      "balance_ratio": 1.9343350841371671,
+      "rotation_score": 0.2,
+      "confidence": 0.7695514910710702
+    },
+    {
+      "ts": "2026-04-15T18:19:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.3509819256192581,
+      "pressure_total": 2.359879024682098,
+      "net_balance": -1.0088970990628399,
+      "balance_ratio": 1.7467880065089585,
+      "rotation_score": 0.4,
+      "confidence": 0.7110784487516364
+    },
+    {
+      "ts": "2026-04-15T18:20:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.4334972397078074,
+      "pressure_total": 2.301397700826263,
+      "net_balance": 0.13209953888154446,
+      "balance_ratio": 1.0573997005533278,
+      "rotation_score": 0.8,
+      "confidence": 0.34661708341084907
+    },
+    {
+      "ts": "2026-04-15T18:21:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.7132679255716043,
+      "pressure_total": 2.7516188192121342,
+      "net_balance": -1.03835089364053,
+      "balance_ratio": 1.6060645145703645,
+      "rotation_score": 0.6,
+      "confidence": 0.6469325690089065
+    },
+    {
+      "ts": "2026-04-15T18:22:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.2744871955504107,
+      "pressure_total": 1.7544804047604736,
+      "net_balance": -0.47999320921006294,
+      "balance_ratio": 1.3766167372146638,
+      "rotation_score": 0.2,
+      "confidence": 0.7274760608647078
+    },
+    {
+      "ts": "2026-04-15T18:23:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.20774127903801626,
+      "pressure_total": 3.0704268765518457,
+      "net_balance": -2.8626855975138294,
+      "balance_ratio": 14.780051854739776,
+      "rotation_score": 0.6,
+      "confidence": 0.8179560977624458
+    },
+    {
+      "ts": "2026-04-15T18:24:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.658908211368324,
+      "pressure_total": 3.012573134358159,
+      "net_balance": -2.353664922989835,
+      "balance_ratio": 4.572067979092397,
+      "rotation_score": 0.4,
+      "confidence": 0.8049451861807592
+    },
+    {
+      "ts": "2026-04-15T18:25:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.0582138811672734,
+      "pressure_total": 1.2676279087878797,
+      "net_balance": -0.20941402762060624,
+      "balance_ratio": 1.1978938580824605,
+      "rotation_score": 0.4,
+      "confidence": 0.6537405975932877
+    },
+    {
+      "ts": "2026-04-15T18:26:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8969333304234653,
+      "pressure_total": 1.4457144321803086,
+      "net_balance": -0.5487811017568432,
+      "balance_ratio": 1.6118415752236006,
+      "rotation_score": 0.4,
+      "confidence": 0.7001389217679532
+    },
+    {
+      "ts": "2026-04-15T18:27:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8818442338373912,
+      "pressure_total": 1.4888375057227814,
+      "net_balance": -0.6069932718853902,
+      "balance_ratio": 1.6883225501674228,
+      "rotation_score": 0.4,
+      "confidence": 0.7065026441504816
+    },
+    {
+      "ts": "2026-04-15T18:28:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8822691728727086,
+      "pressure_total": 1.1507174027627907,
+      "net_balance": -0.2684482298900821,
+      "balance_ratio": 1.3042702138350843,
+      "rotation_score": 0.6,
+      "confidence": 0.6141675897814882
+    },
+    {
+      "ts": "2026-04-15T18:29:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.036973392899449,
+      "pressure_total": 1.1575752638092138,
+      "net_balance": 0.8793981290902353,
+      "balance_ratio": 1.7596898072928877,
+      "rotation_score": 0.8,
+      "confidence": 0.6047730761153952
+    },
+    {
+      "ts": "2026-04-15T18:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.7401625622710208,
+      "pressure_total": 2.2100143124400935,
+      "net_balance": -0.46985175016907266,
+      "balance_ratio": 1.2700045158745898,
+      "rotation_score": 0.4,
+      "confidence": 0.6651928440851046
+    },
+    {
+      "ts": "2026-04-15T18:31:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9531774138163338,
+      "pressure_total": 4.182965350153467,
+      "net_balance": -3.2297879363371336,
+      "balance_ratio": 4.388443630242666,
+      "rotation_score": 0.6,
+      "confidence": 0.7613998368984226
+    },
+    {
+      "ts": "2026-04-15T18:32:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.638808244254182,
+      "pressure_total": 2.2017515689230316,
+      "net_balance": -0.5629433246688496,
+      "balance_ratio": 1.343507745120628,
+      "rotation_score": 0.6,
+      "confidence": 0.6189773449940728
+    },
+    {
+      "ts": "2026-04-15T18:33:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.6433083635829555,
+      "pressure_total": 4.238062624144999,
+      "net_balance": -3.5947542605620435,
+      "balance_ratio": 6.587917807473826,
+      "rotation_score": 0.2,
+      "confidence": 0.857048893894102
+    },
+    {
+      "ts": "2026-04-15T18:34:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.5288262629067146,
+      "pressure_total": 3.943112808447557,
+      "net_balance": -3.4142865455408424,
+      "balance_ratio": 7.456348303834383,
+      "rotation_score": 0.2,
+      "confidence": 0.861629180125734
+    },
+    {
+      "ts": "2026-04-15T18:35:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7374940249702056,
+      "pressure_total": 4.275026158734846,
+      "net_balance": -3.537532133764641,
+      "balance_ratio": 5.7966926022316665,
+      "rotation_score": 0.2,
+      "confidence": 0.8517047767078723
+    },
+    {
+      "ts": "2026-04-15T18:36:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.8797521890605012,
+      "pressure_total": 3.9155337126819365,
+      "net_balance": -3.035781523621435,
+      "balance_ratio": 4.450723466642789,
+      "rotation_score": 0.2,
+      "confidence": 0.8383912685109581
+    },
+    {
+      "ts": "2026-04-15T18:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5088974051180604,
+      "pressure_total": 3.2005212864742227,
+      "net_balance": -1.6916238813561624,
+      "balance_ratio": 2.121099337581408,
+      "rotation_score": 0.6,
+      "confidence": 0.6863005316880166
+    },
+    {
+      "ts": "2026-04-15T18:38:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.5918090482357288,
+      "pressure_total": 2.7383834796136686,
+      "net_balance": -1.1465744313779398,
+      "balance_ratio": 1.7202964656148538,
+      "rotation_score": 0.2,
+      "confidence": 0.7559681366073461
+    },
+    {
+      "ts": "2026-04-15T18:39:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.1496697750650993,
+      "pressure_total": 3.4856574745800395,
+      "net_balance": -2.3359876995149405,
+      "balance_ratio": 3.0318771095662376,
+      "rotation_score": 0.4,
+      "confidence": 0.7730360323509984
+    },
+    {
+      "ts": "2026-04-15T18:40:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0201417575184784,
+      "pressure_total": 3.0638992321756517,
+      "net_balance": -1.0437574746571734,
+      "balance_ratio": 1.5166753623960105,
+      "rotation_score": 0.4,
+      "confidence": 0.6915596763135597
+    },
+    {
+      "ts": "2026-04-15T18:41:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.2834192794352388,
+      "pressure_total": 3.0983886022881615,
+      "net_balance": -1.8149693228529227,
+      "balance_ratio": 2.414167101846553,
+      "rotation_score": 0.4,
+      "confidence": 0.7502390872119268
+    },
+    {
+      "ts": "2026-04-15T18:42:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.8508072479133038,
+      "pressure_total": 2.43267064857362,
+      "net_balance": -1.5818634006603163,
+      "balance_ratio": 2.859250029357421,
+      "rotation_score": 0.2,
+      "confidence": 0.8075969056220562
+    },
+    {
+      "ts": "2026-04-15T18:43:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8484635153399696,
+      "pressure_total": 3.2063291445379623,
+      "net_balance": -2.3578656291979927,
+      "balance_ratio": 3.7789829339370273,
+      "rotation_score": 0.6,
+      "confidence": 0.7491532317333447
+    },
+    {
+      "ts": "2026-04-15T18:44:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.2515956904337635,
+      "pressure_total": 2.213682850961364,
+      "net_balance": -0.9620871605276005,
+      "balance_ratio": 1.7686884573677075,
+      "rotation_score": 0.4,
+      "confidence": 0.7127321932989106
+    },
+    {
+      "ts": "2026-04-15T18:45:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.349693042157692,
+      "pressure_total": 3.6994907179123495,
+      "net_balance": -3.3497976757546577,
+      "balance_ratio": 10.579251720553497,
+      "rotation_score": 0.2,
+      "confidence": 0.8719362553115347
+    },
+    {
+      "ts": "2026-04-15T18:46:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.8317699960472623,
+      "pressure_total": 2.5746311760308425,
+      "net_balance": -1.74286117998358,
+      "balance_ratio": 3.0953643294011632,
+      "rotation_score": 0.2,
+      "confidence": 0.8140130888637402
+    },
+    {
+      "ts": "2026-04-15T18:47:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.4156827958966683,
+      "pressure_total": 2.7820797794793046,
+      "net_balance": -2.366396983582636,
+      "balance_ratio": 6.692795099874383,
+      "rotation_score": 0.4,
+      "confidence": 0.8257819475006953
+    },
+    {
+      "ts": "2026-04-15T18:48:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.42527702904090225,
+      "pressure_total": 1.870293070909749,
+      "net_balance": -1.4450160418688467,
+      "balance_ratio": 4.39782293233117,
+      "rotation_score": 0.4,
+      "confidence": 0.8023857138033529
+    },
+    {
+      "ts": "2026-04-15T18:49:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.571567540905296,
+      "pressure_total": 2.442519581457945,
+      "net_balance": -1.8709520405526487,
+      "balance_ratio": 4.273369998564439,
+      "rotation_score": 0.4,
+      "confidence": 0.8004373814378767
+    },
+    {
+      "ts": "2026-04-15T18:50:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.2804145544796338,
+      "pressure_total": 2.972631658438512,
+      "net_balance": -2.6922171039588783,
+      "balance_ratio": 10.60084653578283,
+      "rotation_score": 0.2,
+      "confidence": 0.8719865098824601
+    },
+    {
+      "ts": "2026-04-15T18:51:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.6471360007959192,
+      "pressure_total": 3.148925765610143,
+      "net_balance": -2.501789764814224,
+      "balance_ratio": 4.865941257691192,
+      "rotation_score": 0.4,
+      "confidence": 0.8088675053534221
+    },
+    {
+      "ts": "2026-04-15T18:52:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.6159263436551844,
+      "pressure_total": 2.1101692321128085,
+      "net_balance": -1.4942428884576242,
+      "balance_ratio": 3.4260090574955986,
+      "rotation_score": 0.4,
+      "confidence": 0.7837027017288507
+    },
+    {
+      "ts": "2026-04-15T18:53:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8992805854258966,
+      "pressure_total": 2.2312033272784024,
+      "net_balance": -1.3319227418525057,
+      "balance_ratio": 2.481098072657391,
+      "rotation_score": 0.4,
+      "confidence": 0.7531820789087325
+    },
+    {
+      "ts": "2026-04-15T18:54:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 3.3776266689638597,
+      "net_balance": -3.3776266689638597,
+      "balance_ratio": 3377626668.9638596,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T18:55:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9136618286021642,
+      "pressure_total": 2.751204547679998,
+      "net_balance": -1.8375427190778337,
+      "balance_ratio": 3.011184731104658,
+      "rotation_score": 0.6,
+      "confidence": 0.7274953383159528
+    },
+    {
+      "ts": "2026-04-15T18:56:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.0270684497169607,
+      "pressure_total": 3.6309853853345477,
+      "net_balance": -2.603916935617587,
+      "balance_ratio": 3.535290550824703,
+      "rotation_score": 0.2,
+      "confidence": 0.8238451991657368
+    },
+    {
+      "ts": "2026-04-15T18:57:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.904332056808217,
+      "pressure_total": 3.7056377969182357,
+      "net_balance": -2.8013057401100188,
+      "balance_ratio": 4.09765170771127,
+      "rotation_score": 0.2,
+      "confidence": 0.8335123629464471
+    },
+    {
+      "ts": "2026-04-15T18:58:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.9519590711811614,
+      "pressure_total": 4.173811211380288,
+      "net_balance": -3.2218521401991267,
+      "balance_ratio": 4.384443972156862,
+      "rotation_score": 0.2,
+      "confidence": 0.83753268489126
+    },
+    {
+      "ts": "2026-04-15T18:59:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 2.173390431178913,
+      "pressure_total": 2.6728808537380644,
+      "net_balance": -0.49949042255915144,
+      "balance_ratio": 1.2298208436890066,
+      "rotation_score": 0.2,
+      "confidence": 0.7118310669450025
+    },
+    {
+      "ts": "2026-04-15T19:00:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 2.181157946356273,
+      "pressure_total": 3.0743699262105144,
+      "net_balance": -0.8932119798542413,
+      "balance_ratio": 1.409512745900128,
+      "rotation_score": 0.2,
+      "confidence": 0.7306532331247773
+    },
+    {
+      "ts": "2026-04-15T19:01:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.9013612435303147,
+      "pressure_total": 1.7158135967717685,
+      "net_balance": 1.1855476467585462,
+      "balance_ratio": 1.690953637964581,
+      "rotation_score": 0.6,
+      "confidence": 0.6546351549476755
+    },
+    {
+      "ts": "2026-04-15T19:02:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.381408095917631,
+      "pressure_total": 2.0941133398443323,
+      "net_balance": 0.2872947560732988,
+      "balance_ratio": 1.1371915982802798,
+      "rotation_score": 0.6,
+      "confidence": 0.5139532370109251
+    },
+    {
+      "ts": "2026-04-15T19:03:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.3904033843931503,
+      "pressure_total": 1.2461637826865584,
+      "net_balance": 1.144239601706592,
+      "balance_ratio": 1.918209642748378,
+      "rotation_score": 0.4,
+      "confidence": 0.7232234217943707
+    },
+    {
+      "ts": "2026-04-15T19:04:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.2572409294910387,
+      "pressure_total": 0.8633162795610602,
+      "net_balance": 1.3939246499299784,
+      "balance_ratio": 2.614616430769379,
+      "rotation_score": 0.2,
+      "confidence": 0.7998516327415752
+    },
+    {
+      "ts": "2026-04-15T19:05:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4948123914006186,
+      "pressure_total": 1.7895541759342874,
+      "net_balance": -0.29474178453366884,
+      "balance_ratio": 1.1971764391499993,
+      "rotation_score": 0.8,
+      "confidence": 0.537807534911694
+    },
+    {
+      "ts": "2026-04-15T19:06:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.3581521246519328,
+      "pressure_total": 1.798337005724044,
+      "net_balance": -0.4401848810721112,
+      "balance_ratio": 1.3241057265105127,
+      "rotation_score": 0.4,
+      "confidence": 0.6715569871154761
+    },
+    {
+      "ts": "2026-04-15T19:07:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5296149816044338,
+      "pressure_total": 1.4197002285248639,
+      "net_balance": 0.10991475307956988,
+      "balance_ratio": 1.0774210998006082,
+      "rotation_score": 0.6,
+      "confidence": 0.43027740071249143
+    },
+    {
+      "ts": "2026-04-15T19:08:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.0448759809115153,
+      "pressure_total": 0.0812922267689036,
+      "net_balance": 2.9635837541426118,
+      "balance_ratio": 37.45593031382258,
+      "rotation_score": 0.4,
+      "confidence": 0.8637967665505509
+    },
+    {
+      "ts": "2026-04-15T19:09:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.8844390821081705,
+      "pressure_total": 0.0,
+      "net_balance": 2.8844390821081705,
+      "balance_ratio": 2884439082.1081705,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T19:10:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.482468407511891,
+      "pressure_total": 1.1012113386798907,
+      "net_balance": 1.381257068832,
+      "balance_ratio": 2.2543069802457922,
+      "rotation_score": 0.4,
+      "confidence": 0.742614433661821
+    },
+    {
+      "ts": "2026-04-15T19:11:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.748604851334631,
+      "pressure_total": 0.9803823038633828,
+      "net_balance": 3.7682225474712476,
+      "balance_ratio": 4.843625627086342,
+      "rotation_score": 0.4,
+      "confidence": 0.8085855349795672
+    },
+    {
+      "ts": "2026-04-15T19:12:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.141370354380246,
+      "pressure_total": 0.0,
+      "net_balance": 4.141370354380246,
+      "balance_ratio": 4141370354.380246,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T19:13:00+00:00",
+      "regime": "support_led",
+      "support_total": 5.018742396049536,
+      "pressure_total": 0.0,
+      "net_balance": 5.018742396049536,
+      "balance_ratio": 5018742396.049536,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T19:14:00+00:00",
+      "regime": "support_led",
+      "support_total": 5.118330327494689,
+      "pressure_total": 0.0,
+      "net_balance": 5.118330327494689,
+      "balance_ratio": 5118330327.494689,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T19:15:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.828664359338538,
+      "pressure_total": 0.20017662164888592,
+      "net_balance": 4.628487737689652,
+      "balance_ratio": 24.12201944245077,
+      "rotation_score": 0.6,
+      "confidence": 0.8275759437416788
+    },
+    {
+      "ts": "2026-04-15T19:16:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 5.404358869487706,
+      "pressure_total": 0.0,
+      "net_balance": 5.404358869487706,
+      "balance_ratio": 5404358869.487706,
+      "rotation_score": 0.4,
+      "confidence": 0.8721384336809187
+    },
+    {
+      "ts": "2026-04-15T19:17:00+00:00",
+      "regime": "support_led",
+      "support_total": 5.1562135643045295,
+      "pressure_total": 0.1180701921784646,
+      "net_balance": 5.038143372126065,
+      "balance_ratio": 43.67074762198106,
+      "rotation_score": 0.2,
+      "confidence": 0.8906423421306519
+    },
+    {
+      "ts": "2026-04-15T19:18:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.148750892494347,
+      "pressure_total": 1.4018564950067716,
+      "net_balance": 2.746894397487575,
+      "balance_ratio": 2.95946903785919,
+      "rotation_score": 0.4,
+      "confidence": 0.7708000924892997
+    },
+    {
+      "ts": "2026-04-15T19:19:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.26309181366208,
+      "pressure_total": 0.24387443420768967,
+      "net_balance": 4.019217379454391,
+      "balance_ratio": 17.48068356370444,
+      "rotation_score": 0.6,
+      "confidence": 0.8217853420646172
+    },
+    {
+      "ts": "2026-04-15T19:20:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.286964920319084,
+      "pressure_total": 0.13710769564302872,
+      "net_balance": 4.1498572246760554,
+      "balance_ratio": 31.26713566451116,
+      "rotation_score": 0.2,
+      "confidence": 0.8882733641620219
+    },
+    {
+      "ts": "2026-04-15T19:21:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.515036285483395,
+      "pressure_total": 0.006243763822144668,
+      "net_balance": 4.508792521661251,
+      "balance_ratio": 723.1273337838278,
+      "rotation_score": 0.2,
+      "confidence": 0.8962405191374856
+    },
+    {
+      "ts": "2026-04-15T19:22:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.892809146797701,
+      "pressure_total": 1.9326613419720151,
+      "net_balance": 0.9601478048256857,
+      "balance_ratio": 1.4968008538143507,
+      "rotation_score": 0.4,
+      "confidence": 0.6896674255318759
+    },
+    {
+      "ts": "2026-04-15T19:23:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.3806958721178244,
+      "pressure_total": 1.4122297695736288,
+      "net_balance": 0.9684661025441956,
+      "balance_ratio": 1.6857709159017293,
+      "rotation_score": 0.4,
+      "confidence": 0.7062974179442275
+    },
+    {
+      "ts": "2026-04-15T19:24:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.153247913435816,
+      "pressure_total": 0.26809766705439686,
+      "net_balance": 2.8851502463814187,
+      "balance_ratio": 11.761564164584929,
+      "rotation_score": 0.4,
+      "confidence": 0.8456119279366948
+    },
+    {
+      "ts": "2026-04-15T19:25:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4291532145869459,
+      "pressure_total": 1.5851431671075529,
+      "net_balance": -0.155989952520607,
+      "balance_ratio": 1.1091485160082653,
+      "rotation_score": 0.6,
+      "confidence": 0.4745701190515667
+    },
+    {
+      "ts": "2026-04-15T19:26:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.7015159879417165,
+      "pressure_total": 1.0527740954821614,
+      "net_balance": 1.6487418924595552,
+      "balance_ratio": 2.56609276342846,
+      "rotation_score": 0.8,
+      "confidence": 0.6580973746472824
+    },
+    {
+      "ts": "2026-04-15T19:27:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.1267195197846185,
+      "pressure_total": 0.9371656269649522,
+      "net_balance": 0.18955389281966628,
+      "balance_ratio": 1.2022629590391019,
+      "rotation_score": 0.6,
+      "confidence": 0.600747468237202
+    },
+    {
+      "ts": "2026-04-15T19:28:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.6198253336921712,
+      "pressure_total": 2.128130302115054,
+      "net_balance": -1.5083049684228826,
+      "balance_ratio": 3.43343549615538,
+      "rotation_score": 0.6,
+      "confidence": 0.7404743795672264
+    },
+    {
+      "ts": "2026-04-15T19:29:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.043194095654671,
+      "pressure_total": 2.155104995859071,
+      "net_balance": -1.1119109002043999,
+      "balance_ratio": 2.0658715428279,
+      "rotation_score": 0.6,
+      "confidence": 0.6828108779945079
+    },
+    {
+      "ts": "2026-04-15T19:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.6525640492981304,
+      "pressure_total": 0.9875736686038366,
+      "net_balance": 1.6649903806942938,
+      "balance_ratio": 2.685940435256989,
+      "rotation_score": 0.8,
+      "confidence": 0.6638183018247081
+    },
+    {
+      "ts": "2026-04-15T19:31:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.468445161489713,
+      "pressure_total": 0.8325697542283227,
+      "net_balance": 1.6358754072613904,
+      "balance_ratio": 2.9648508715976853,
+      "rotation_score": 0.2,
+      "confidence": 0.8105817047363798
+    },
+    {
+      "ts": "2026-04-15T19:32:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.695227225634383,
+      "pressure_total": 0.522403678497698,
+      "net_balance": 2.1728235471366855,
+      "balance_ratio": 5.159280718285103,
+      "rotation_score": 0.6,
+      "confidence": 0.7730127095453893
+    },
+    {
+      "ts": "2026-04-15T19:33:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.98730134549682,
+      "pressure_total": 1.1824436181047568,
+      "net_balance": 1.8048577273920632,
+      "balance_ratio": 2.5263795243657565,
+      "rotation_score": 0.6,
+      "confidence": 0.7080608198535863
+    },
+    {
+      "ts": "2026-04-15T19:34:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.6132227262817596,
+      "pressure_total": 0.9404971165299587,
+      "net_balance": 1.6727256097518008,
+      "balance_ratio": 2.7785547455195387,
+      "rotation_score": 0.4,
+      "confidence": 0.7647636240690685
+    },
+    {
+      "ts": "2026-04-15T19:35:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.8810786228000549,
+      "pressure_total": 0.8600898163432131,
+      "net_balance": 0.020988806456841758,
+      "balance_ratio": 1.0244030403081372,
+      "rotation_score": 0.4,
+      "confidence": 0.41554021350407966
+    },
+    {
+      "ts": "2026-04-15T19:36:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.2538590536373744,
+      "pressure_total": 1.149770298453512,
+      "net_balance": 1.1040887551838623,
+      "balance_ratio": 1.9602689830037414,
+      "rotation_score": 0.2,
+      "confidence": 0.7710306557035648
+    },
+    {
+      "ts": "2026-04-15T19:37:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.987890721114064,
+      "pressure_total": 0.0,
+      "net_balance": 3.987890721114064,
+      "balance_ratio": 3987890721.1140637,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T19:38:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.756330040020831,
+      "pressure_total": 0.034931164068340445,
+      "net_balance": 4.721398875952491,
+      "balance_ratio": 136.16294122679093,
+      "rotation_score": 0.4,
+      "confidence": 0.8698446983845757
+    },
+    {
+      "ts": "2026-04-15T19:39:00+00:00",
+      "regime": "support_led",
+      "support_total": 4.723814909538784,
+      "pressure_total": 0.33219753051726897,
+      "net_balance": 4.391617379021515,
+      "balance_ratio": 14.219897728268094,
+      "rotation_score": 0.2,
+      "confidence": 0.8782573533957263
+    },
+    {
+      "ts": "2026-04-15T19:40:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.769877519753286,
+      "pressure_total": 0.6062872247722402,
+      "net_balance": 4.163590294981046,
+      "balance_ratio": 7.867356138907848,
+      "rotation_score": 0.4,
+      "confidence": 0.8326094639885379
+    },
+    {
+      "ts": "2026-04-15T19:41:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.9264664304235595,
+      "pressure_total": 0.07553695253538346,
+      "net_balance": 4.850929477888176,
+      "balance_ratio": 65.21929022905545,
+      "rotation_score": 0.4,
+      "confidence": 0.8673485897846278
+    },
+    {
+      "ts": "2026-04-15T19:42:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.9165182354830304,
+      "pressure_total": 1.5603102459908926,
+      "net_balance": 2.3562079894921375,
+      "balance_ratio": 2.510089416861966,
+      "rotation_score": 0.6,
+      "confidence": 0.707298512152001
+    },
+    {
+      "ts": "2026-04-15T19:43:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.2410240712187317,
+      "pressure_total": 1.3668479960551354,
+      "net_balance": 1.8741760751635963,
+      "balance_ratio": 2.37116642126459,
+      "rotation_score": 0.4,
+      "confidence": 0.7482737958878073
+    },
+    {
+      "ts": "2026-04-15T19:44:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.455999537427412,
+      "pressure_total": 0.10154331484768905,
+      "net_balance": 3.354456222579723,
+      "balance_ratio": 34.03473229735778,
+      "rotation_score": 0.4,
+      "confidence": 0.862958086938007
+    },
+    {
+      "ts": "2026-04-15T19:45:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 4.4050302006466175,
+      "pressure_total": 0.18453581765366248,
+      "net_balance": 4.220494382992955,
+      "balance_ratio": 23.87086830435268,
+      "rotation_score": 0.6,
+      "confidence": 0.827415281617267
+    },
+    {
+      "ts": "2026-04-15T19:46:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.021137351948753,
+      "pressure_total": 3.2899406208516107,
+      "net_balance": -1.2688032689028574,
+      "balance_ratio": 1.6277669687710707,
+      "rotation_score": 0.8,
+      "confidence": 0.5925353866395231
+    },
+    {
+      "ts": "2026-04-15T19:47:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0376924935828424,
+      "pressure_total": 2.15203415623031,
+      "net_balance": -0.11434166264746759,
+      "balance_ratio": 1.05611330610853,
+      "rotation_score": 0.4,
+      "confidence": 0.459780552504029
+    },
+    {
+      "ts": "2026-04-15T19:48:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.1212204875663865,
+      "pressure_total": 1.9964368257172287,
+      "net_balance": 0.12478366184915779,
+      "balance_ratio": 1.06250318579669,
+      "rotation_score": 0.4,
+      "confidence": 0.4687762499729481
+    },
+    {
+      "ts": "2026-04-15T19:49:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.433804515704292,
+      "pressure_total": 1.4211974023598464,
+      "net_balance": 2.012607113344446,
+      "balance_ratio": 2.416134809986695,
+      "rotation_score": 0.4,
+      "confidence": 0.7503275930169127
+    },
+    {
+      "ts": "2026-04-15T19:50:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.5411772979543141,
+      "pressure_total": 3.2459773273853756,
+      "net_balance": -1.7048000294310615,
+      "balance_ratio": 2.1061673641922525,
+      "rotation_score": 0.6,
+      "confidence": 0.6853713100556896
+    },
+    {
+      "ts": "2026-04-15T19:51:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.7629574321056447,
+      "pressure_total": 2.369260908726137,
+      "net_balance": -1.6063034766204924,
+      "balance_ratio": 3.105364479099893,
+      "rotation_score": 0.2,
+      "confidence": 0.8142650925418408
+    },
+    {
+      "ts": "2026-04-15T19:52:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.742758694956012,
+      "pressure_total": 1.5565283361311906,
+      "net_balance": 1.1862303588248215,
+      "balance_ratio": 1.7621000731494818,
+      "rotation_score": 0.6,
+      "confidence": 0.660669371521604
+    },
+    {
+      "ts": "2026-04-15T19:53:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.766965427129537,
+      "pressure_total": 1.6790628390459448,
+      "net_balance": 1.0879025880835922,
+      "balance_ratio": 1.6479224974699256,
+      "rotation_score": 0.2,
+      "confidence": 0.7507408195624911
+    },
+    {
+      "ts": "2026-04-15T19:54:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3055528949885135,
+      "pressure_total": 4.193323115994477,
+      "net_balance": -3.887770221005963,
+      "balance_ratio": 13.723722421782696,
+      "rotation_score": 0.6,
+      "confidence": 0.8160528600782866
+    },
+    {
+      "ts": "2026-04-15T19:55:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 5.339426299240885,
+      "net_balance": -5.339426299240885,
+      "balance_ratio": 5339426299.240885,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-15T19:56:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9029899157170502,
+      "pressure_total": 3.4649492216914015,
+      "net_balance": -2.5619593059743515,
+      "balance_ratio": 3.8371959214405393,
+      "rotation_score": 0.4,
+      "confidence": 0.7926793638360856
+    },
+    {
+      "ts": "2026-04-15T19:57:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.22342468073641808,
+      "pressure_total": 5.146298053087921,
+      "net_balance": -4.9228733723515035,
+      "balance_ratio": 23.033704406001544,
+      "rotation_score": 0.4,
+      "confidence": 0.8585740829379744
+    },
+    {
+      "ts": "2026-04-15T19:58:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3754220760684049,
+      "pressure_total": 4.921775138960022,
+      "net_balance": -4.546353062891617,
+      "balance_ratio": 13.10997794936075,
+      "rotation_score": 0.4,
+      "confidence": 0.8483295194051383
+    },
+    {
+      "ts": "2026-04-15T19:59:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.7214466290767207,
+      "pressure_total": 2.779155934606691,
+      "net_balance": -0.05770930552997022,
+      "balance_ratio": 1.0212053783871369,
+      "rotation_score": 0.2,
+      "confidence": 0.47021404119381593
+    },
+    {
+      "ts": "2026-04-15T20:00:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.4342920205523644,
+      "pressure_total": 1.6473641193338304,
+      "net_balance": 1.786927901218534,
+      "balance_ratio": 2.0847194498452115,
+      "rotation_score": 0.6,
+      "confidence": 0.6840182088976047
+    }
+  ],
+  "regime_summary": {
+    "current_regime": "mixed_rotating",
+    "dominant_regime": "mixed_rotating",
+    "time_in_support_led": 0.17902813299232737,
+    "time_in_pressure_led": 0.1534526854219949,
+    "time_in_mixed_rotating": 0.6675191815856778,
+    "regime_flip_count": 149,
+    "longest_support_led_run": 8,
+    "longest_pressure_led_run": 9,
+    "longest_mixed_rotating_run": 12
+  },
+  "regime_config_used": {
+    "support_pressure_margin": 0.05,
+    "balance_ratio_threshold": 1.2,
+    "rotation_override_threshold": 0.35,
+    "dominant_channel_churn_window": 10,
+    "dominant_channel_churn_threshold": 3,
+    "epsilon": 1e-09,
+    "confidence_balance_weight": 1.4,
+    "confidence_ratio_weight": 1.0,
+    "confidence_rotation_weight": 1.2
+  },
+  "source_files_used": [
+    "SPY_2026-04-15_baseline_as_is_all_pal_log.jsonl",
+    "analysis_summary_20260415_141130.json",
+    "channel_labels_map.generated.json",
+    "copy_guardrail_runtime.generated.json",
+    "market_dashboard_source_manifest.json",
+    "market_panel7_raw.csv"
+  ]
+}

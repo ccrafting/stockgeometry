@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Market Structure Dashboard (Latest)</title>
+  <style>
+    :root {
+      --bg: #0a1018;
+      --panel: #121a27;
+      --border: #273346;
+      --text: #e8eef8;
+      --muted: #9db0c8;
+      --chip: #1a2435;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 8% 0%, #162133 0%, var(--bg) 58%);
+      color: var(--text);
+      font-family: "Aptos", "Segoe UI Variable", "Segoe UI", "Helvetica Neue", sans-serif;
+    }
+    .pf-d-page { max-width: 1280px; margin: 0 auto; padding: 16px 12px 24px 12px; }
+    .pf-d-head { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    .pf-d-head h1 { margin: 0; font-size: clamp(1.1rem, 0.8rem + 1.2vw, 1.8rem); }
+    .pf-d-head p { margin: 6px 0 0 0; color: var(--muted); font-size: 0.92rem; }
+    .pf-d-grid { margin-top: 12px; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .pf-d-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 10px; }
+    .pf-d-title { margin: 0; font-size: 1rem; line-height: 1.25; }
+    .pf-d-title a { color: #ddecff; text-decoration: none; }
+    .pf-d-title a:hover { text-decoration: underline; }
+    .pf-d-question { margin: 5px 0 0 0; color: #a4b8d6; font-size: 0.82rem; line-height: 1.35; min-height: 2.35em; }
+    .pf-d-chip-row { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+    .pf-d-chip { display: inline-flex; gap: 4px; border: 1px solid #34465f; border-radius: 999px; background: var(--chip); padding: 2px 8px; color: #d3e3fb; font-size: 0.72rem; }
+    .pf-d-chip span { color: #8da4c6; text-transform: uppercase; letter-spacing: 0.04em; }
+    .pf-mini-svg { margin-top: 8px; width: 100%; max-width: 100%; display: block; }
+    .pf-d-summary { margin: 8px 0 0 0; color: #d8e6fb; font-size: 0.79rem; line-height: 1.4; }
+    .pf-d-foot { margin-top: 10px; color: #8fa7ca; font-size: 0.75rem; }
+    .pf-d-foot a { color: #9cc5ff; text-decoration: none; }
+    @media (max-width: 720px) {
+      .pf-d-page { padding: 10px 8px 16px 8px; }
+      .pf-d-card { padding: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="pf-d-page">
+    <header class="pf-d-head">
+      <h1>Latest Object Sessions</h1>
+      <p>Static dashboard surface generated from object/session artifacts. Open any card for full chart, legend, and heat map.</p>
+    </header>
+    <section class="pf-d-grid">
+      <article class='pf-d-card'><h2 class='pf-d-title'><a href='../../objects/hormuz/2026-04-17/index.html'>Hormuz Transmission</a></h2><p class='pf-d-question'>How is the event being transmitted across crude, gas, credit, dollar, airlines, defense, and energy equities?</p><div class='pf-d-chip-row'><span class='pf-d-chip'><span>Session:</span> 2026-04-17</span><span class='pf-d-chip'><span>Posture:</span> pressure-led</span><span class='pf-d-chip'><span>Structure:</span> transmission routing</span></div><svg class='pf-mini-svg' width='180' height='54' viewBox='0 0 180 54' preserveAspectRatio='none'><rect x='0' y='0' width='100%' height='100%' rx='8' ry='8' fill='rgba(17,28,43,0.78)' stroke='rgba(58,77,106,0.85)'/><polyline points='1.00,18.67 7.59,16.81 14.19,14.96 20.78,13.11 27.37,11.26 33.96,9.41 40.56,7.56 47.15,5.70 53.74,3.85 60.33,2.00 66.93,3.03 73.52,5.91 80.11,8.79 86.70,11.67 93.30,14.55 99.89,17.43 106.48,20.31 113.07,23.19 119.67,26.07 126.26,28.95 132.85,31.84 139.44,34.72 146.04,37.60 152.63,40.48 159.22,43.36 165.81,46.24 172.41,49.12 179.00,52.00' fill='none' stroke='rgba(218,232,252,0.92)' stroke-width='2'/></svg><p class='pf-d-summary'>The market is routing the event through no stable support anchor, while XLE Energy Equity Response, Broad Dollar Index (FRED), and High-Yield Spread (FRED) are fighting that transmission. Current posture: pressure-led.</p></article><article class='pf-d-card'><h2 class='pf-d-title'><a href='../../objects/ita/2026-04-17/index.html'>ITA</a></h2><p class='pf-d-question'>Is defense being accumulated or just reactively repriced?</p><div class='pf-d-chip-row'><span class='pf-d-chip'><span>Session:</span> 2026-04-17</span><span class='pf-d-chip'><span>Posture:</span> support-led</span><span class='pf-d-chip'><span>Structure:</span> reactive premium quality</span></div><svg class='pf-mini-svg' width='180' height='54' viewBox='0 0 180 54' preserveAspectRatio='none'><rect x='0' y='0' width='100%' height='100%' rx='8' ry='8' fill='rgba(17,28,43,0.78)' stroke='rgba(58,77,106,0.85)'/><polyline points='1.00,52.00 7.59,49.36 14.19,46.72 20.78,44.08 27.37,41.44 33.96,38.80 40.56,36.16 47.15,33.52 53.74,30.88 60.33,27.31 66.93,26.38 73.52,25.45 80.11,24.52 86.70,23.58 93.30,22.65 99.89,21.72 106.48,20.79 113.07,19.08 119.67,17.37 126.26,15.66 132.85,13.96 139.44,12.25 146.04,10.54 152.63,8.83 159.22,7.12 165.81,5.42 172.41,3.71 179.00,2.00' fill='none' stroke='rgba(218,232,252,0.92)' stroke-width='2'/></svg><p class='pf-d-summary'>Defense is being traded through r1, Vz, and r5, while MFI is trying to turn that move into settled accumulation. Current posture: support-led.</p></article><article class='pf-d-card'><h2 class='pf-d-title'><a href='../../objects/mag7-obp/2026-04-17/index.html'>MAG7 OBp</a></h2><p class='pf-d-question'>Where is sponsorship living inside the generals?</p><div class='pf-d-chip-row'><span class='pf-d-chip'><span>Session:</span> 2026-04-17</span><span class='pf-d-chip'><span>Posture:</span> pressure-led</span><span class='pf-d-chip'><span>Structure:</span> underwriting</span></div><svg class='pf-mini-svg' width='180' height='54' viewBox='0 0 180 54' preserveAspectRatio='none'><rect x='0' y='0' width='100%' height='100%' rx='8' ry='8' fill='rgba(17,28,43,0.78)' stroke='rgba(58,77,106,0.85)'/><polyline points='1.00,35.57 7.59,32.99 14.19,30.40 20.78,27.82 27.37,25.24 33.96,22.66 40.56,20.08 47.15,17.49 53.74,14.91 60.33,12.33 66.93,9.75 73.52,7.16 80.11,4.58 86.70,2.00 93.30,3.17 99.89,6.93 106.48,10.69 113.07,14.44 119.67,18.20 126.26,21.95 132.85,25.71 139.44,29.46 146.04,33.22 152.63,36.98 159.22,40.73 165.81,44.49 172.41,48.24 179.00,52.00' fill='none' stroke='rgba(218,232,252,0.92)' stroke-width='2'/></svg><p class='pf-d-summary'>The market is underwriting megacap sponsorship mainly through NVDA OBp, AAPL OBp, and MSFT OBp, while GOOGL OBp is the main name resisting that bid. Current posture: pressure-led.</p></article><article class='pf-d-card'><h2 class='pf-d-title'><a href='../../objects/spy/2026-04-17/index.html'>SPY</a></h2><p class='pf-d-question'>How is broad internal market quality organizing the tape?</p><div class='pf-d-chip-row'><span class='pf-d-chip'><span>Session:</span> 2026-04-17</span><span class='pf-d-chip'><span>Posture:</span> mixed-rotating</span><span class='pf-d-chip'><span>Structure:</span> broad market quality</span></div><svg class='pf-mini-svg' width='180' height='54' viewBox='0 0 180 54' preserveAspectRatio='none'><rect x='0' y='0' width='100%' height='100%' rx='8' ry='8' fill='rgba(17,28,43,0.78)' stroke='rgba(58,77,106,0.85)'/><polyline points='1.00,2.00 7.59,5.95 14.19,9.89 20.78,13.84 27.37,17.79 33.96,21.74 40.56,25.68 47.15,29.63 53.74,33.58 60.33,37.53 66.93,42.79 73.52,44.11 80.11,45.42 86.70,46.74 93.30,48.05 99.89,49.37 106.48,50.68 113.07,52.00 119.67,49.37 126.26,46.50 132.85,43.63 139.44,40.76 146.04,37.89 152.63,35.01 159.22,32.14 165.81,29.27 172.41,26.40 179.00,23.53' fill='none' stroke='rgba(218,232,252,0.92)' stroke-width='2'/></svg><p class='pf-d-summary'>The tape is being pressured by MFI, r5, and sigma15, while OBp is absorbing that strain. Current posture: mixed-rotating.</p></article>
+    </section>
+    <footer class="pf-d-foot">Manifest: <a href="manifest.json">manifest.json</a></footer>
+  </main>
+</body>
+</html>

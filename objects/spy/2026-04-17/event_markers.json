@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "object_id": "spy__intraday",
+  "session_date": "2026-04-17",
+  "events": [
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.8849827398961025,
+      "channels_involved": [
+        "OBp",
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "pressure_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": -0.42000000000000004,
+        "net_balance_after": 0.0,
+        "confidence_before": 0.9024721629592075,
+        "confidence_after": 0.44028635073280703
+      }
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "MFI lost stabilizer role",
+      "short_label": "MFI lost stabilizer role",
+      "significance": 0.7229166666666667,
+      "channels_involved": [
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "MFI",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.14,
+        "new_value": 0.08
+      }
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "OBp became a stabilizer",
+      "short_label": "OBp became a stabilizer",
+      "significance": 0.6979166666666666,
+      "channels_involved": [
+        "OBp"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "OBp",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": -0.02,
+        "new_value": -0.1
+      }
+    }
+  ],
+  "event_summary": {
+    "event_count": 3,
+    "regime_flip_count": 1,
+    "dominant_support_change_count": 0,
+    "dominant_pressure_change_count": 0,
+    "rotation_spike_count": 0,
+    "anchor_gain_count": 1,
+    "anchor_loss_count": 1,
+    "most_significant_event": {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "label": "Object moved into mixed rotation",
+      "significance": 0.8849827398961025
+    }
+  },
+  "event_config_used": {
+    "min_event_significance": 0.6,
+    "dominant_change_min_margin": 0.05,
+    "balance_cross_margin": 0.05,
+    "rotation_window": 10,
+    "rotation_spike_threshold": 0.35,
+    "concentration_shift_min_delta": 0.15,
+    "anchor_role_min_abs_value": 0.08,
+    "event_merge_window": 2,
+    "epsilon": 1e-09
+  },
+  "source_files_used": [
+    "synthetic_chart_payload_seed.json"
+  ]
+}

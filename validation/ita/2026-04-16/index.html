@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ITA Validation</title>
+  <link rel="stylesheet" href="./_assets/price-first-chart.css"/>
+</head>
+<body>
+  <main class="pf-page pf-object-mode">
+    <header class="pf-header">
+      <h1 class="pf-title">ITA Validation</h1>
+      <p class="pf-subtitle">Is defense being accumulated or just reactively repriced?</p>
+      <div class="pf-chip-row">
+        <div class="pf-chip"><span class="pf-chip-label">Session</span><span class="pf-chip-value">Intraday</span></div><div class="pf-chip"><span class="pf-chip-label">What we pulled</span><span class="pf-chip-value">1min</span></div><div class="pf-chip"><span class="pf-chip-label">Why</span><span class="pf-chip-value">Is defense being accumulated or just reactively repriced?</span></div><div class="pf-chip"><span class="pf-chip-label">Posture</span><span class="pf-chip-value">Mixed / rotating</span></div><div class="pf-chip"><span class="pf-chip-label">Structure</span><span class="pf-chip-value">Reactive premium quality</span></div><div class="pf-chip"><span class="pf-chip-label">Price mode</span><span class="pf-chip-value">Raw price</span></div>
+      </div>
+    </header>
+
+    <section class="pf-main-layout">
+      <div class="pf-main-chart-col">
+        <section class="pf-chart-panel" aria-label="Price-first structural chart">
+          <div id="price-first-chart-root" class="pf-chart-root"></div>
+          <p id="pf-runtime-notice" class="pf-runtime-notice" aria-live="polite"></p>
+          <p class="pf-balance-help">This panel shows whether defense is stably sponsored or reactively repriced.</p>
+          <p id="pf-accessible-summary" class="pf-accessible-summary" role="status">ITA on 2026-04-16. Current regime is Mixed / rotating. 10 structural events are marked.</p>
+        </section>
+      </div>
+      <aside class="pf-legend-panel" aria-label="Snapshot legend and relational readout"><div id="snapshot-legend-root" class="pf-legend-shell"></div></aside>
+    </section>
+
+    <section class="pf-secondary-stack">
+      <section class="pf-subpanel pf-heatmap-panel" aria-label="Structural heat map"><h2 class="pf-subpanel-title">Where Reactive Premium Versus Sponsorship Quality Sat</h2><div id="role-heatmap-root" class="pf-heatmap-root"></div></section>
+      
+    </section>
+
+    <section class="pf-notes-block" aria-label="Session notes"><h2 class="pf-notes-title">Session Readout</h2><p class="pf-notes-text">Selected from real run `20260416_171508_ITA_backfill` because it retains non-trivial structure (17 raw events, 10 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible. Intended read: Read as reactive premium versus sponsorship quality: whether defense is being chased reactively or settled through sponsorship support. Carrying side: MFI, sigma15, and Trend. Fighting side: Vz, r5, and r1. Failure mode: If this reads like a generic single-ticker move with no quality-of-move distinction, semantics failed.</p></section>
+    
+  </main>
+
+  <script src="./_assets/semanticTemplates.js"></script>
+  <script src="./_assets/relationalReadout.js"></script>
+  <script src="./_assets/RankingList.js"></script>
+  <script src="./_assets/EventSummaryBlock.js"></script>
+  <script src="./_assets/RelationalReadoutBlock.js"></script>
+  <script src="./_assets/SnapshotLegend.js"></script>
+  <script src="./_assets/PriceFirstStructuralChart.js"></script>
+  <script src="./_assets/RoleHeatmapPanel.js"></script>
+  <script src="./_assets/RoleScatterPanel.js"></script>
+  <script>
+    const semanticRegistryUrl = "./_assets/semantic_registry.json";
+    const scriptPaths = ["./_assets/semanticTemplates.js", "./_assets/relationalReadout.js", "./_assets/RankingList.js", "./_assets/EventSummaryBlock.js", "./_assets/RelationalReadoutBlock.js", "./_assets/SnapshotLegend.js", "./_assets/PriceFirstStructuralChart.js", "./_assets/RoleHeatmapPanel.js", "./_assets/RoleScatterPanel.js"];
+    const model = {"schema_version":"1.0","object_id":"ita__intraday","object_label":"ITA","session_date":"2026-04-16","session_label":"Intraday","object_question":"Is defense being accumulated or just reactively repriced?","object_semantic_type":"reactive_premium_quality","value_kind":"price","y_axis_label":"Price","series":[{"ts":"2026-04-16T13:35:00+00:00","value":234.77,"price_value":234.77,"normalized_value":0.0,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":null,"dominant_pressure":null,"support_total":0.0,"pressure_total":0.0,"net_balance":0.0,"support_pressure_ratio":null,"balance_momentum":null,"event_short_label":null},{"ts":"2026-04-16T13:36:00+00:00","value":234.545,"price_value":234.545,"normalized_value":-0.0009583848021468278,"regime":"support_led","regime_label":"Support-led","dominant_support":"OBp","dominant_pressure":null,"support_total":0.6088593650139137,"pressure_total":0.0,"net_balance":0.6088593650139137,"support_pressure_ratio":null,"balance_momentum":0.6088593650139137,"event_short_label":"Support broke decisively ahead"},{"ts":"2026-04-16T13:41:00+00:00","value":234.02,"price_value":234.02,"normalized_value":-0.0031946160071559815,"regime":"support_led","regime_label":"Support-led","dominant_support":"OBp","dominant_pressure":"Vz","support_total":2.0316158317396145,"pressure_total":0.6088593650139138,"net_balance":1.4227564667257007,"support_pressure_ratio":3.336757137164487,"balance_momentum":0.813897101711787,"event_short_label":"Pressure narrowed into Vz"},{"ts":"2026-04-16T13:51:00+00:00","value":232.07,"price_value":232.07,"normalized_value":-0.011500617625761489,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"r1","dominant_pressure":"sigma15","support_total":2.852612704631369,"pressure_total":0.6088593650139137,"net_balance":2.2437533396174554,"support_pressure_ratio":4.685175047880196,"balance_momentum":0.8209968728917547,"event_short_label":null},{"ts":"2026-04-16T14:07:00+00:00","value":231.04,"price_value":231.04,"normalized_value":-0.0158878902755889,"regime":"support_led","regime_label":"Support-led","dominant_support":"OBp","dominant_pressure":"sigma15","support_total":1.723418395386029,"pressure_total":0.3725400300262396,"net_balance":1.3508783653597893,"support_pressure_ratio":4.6261294263186725,"balance_momentum":-0.892874974257666,"event_short_label":null},{"ts":"2026-04-16T14:08:00+00:00","value":231.14,"price_value":231.14,"normalized_value":-0.015461941474634866,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"Trend","dominant_pressure":"MFI","support_total":0.922102440493702,"pressure_total":2.54408641971468,"net_balance":-1.6219839792209778,"support_pressure_ratio":0.36244933872848395,"balance_momentum":-2.972862344580767,"event_short_label":"Object moved into mixed rotation"},{"ts":"2026-04-16T14:10:00+00:00","value":231.095,"price_value":231.095,"normalized_value":-0.015653618435064187,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Vz","support_total":1.1777151247321607,"pressure_total":2.8449659672526395,"net_balance":-1.6672508425204788,"support_pressure_ratio":0.4139645740189541,"balance_momentum":-0.045266863299501026,"event_short_label":"OBp main support"},{"ts":"2026-04-16T14:11:00+00:00","value":231.23,"price_value":231.23,"normalized_value":-0.015078587553776113,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"r5","support_total":1.4847264111801888,"pressure_total":2.5910834454499128,"net_balance":-1.106357034269724,"support_pressure_ratio":0.5730137382443052,"balance_momentum":0.5608938082507549,"event_short_label":null},{"ts":"2026-04-16T14:21:00+00:00","value":230.88,"price_value":230.88,"normalized_value":-0.01656940835711551,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"r5","support_total":1.4254998431121182,"pressure_total":2.1020885340994884,"net_balance":-0.6765886909873702,"support_pressure_ratio":0.6781350166694033,"balance_momentum":0.4297683432823538,"event_short_label":null},{"ts":"2026-04-16T14:22:00+00:00","value":230.88,"price_value":230.88,"normalized_value":-0.01656940835711551,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"r5","support_total":0.9252761677863944,"pressure_total":2.6881377035915177,"net_balance":-1.7628615358051234,"support_pressure_ratio":0.3442071314092907,"balance_momentum":-1.0862728448177532,"event_short_label":null},{"ts":"2026-04-16T14:23:00+00:00","value":230.845,"price_value":230.845,"normalized_value":-0.01671849043744944,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"r5","support_total":1.6310176183082379,"pressure_total":2.4633395004601963,"net_balance":-0.8323218821519585,"support_pressure_ratio":0.6621164553255994,"balance_momentum":0.9305396536531649,"event_short_label":null},{"ts":"2026-04-16T14:50:00+00:00","value":230.75,"price_value":230.75,"normalized_value":-0.017123141798355834,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Trend","support_total":1.587123831426723,"pressure_total":2.267089811886467,"net_balance":-0.6799659804597438,"support_pressure_ratio":0.7000709998807071,"balance_momentum":0.1523559016922147,"event_short_label":null},{"ts":"2026-04-16T14:51:00+00:00","value":230.74,"price_value":230.74,"normalized_value":-0.017165736678451227,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"Trend","support_total":1.7593480155834864,"pressure_total":2.2425074819793567,"net_balance":-0.48315946639587026,"support_pressure_ratio":0.7845449924789513,"balance_momentum":0.1968065140638735,"event_short_label":null},{"ts":"2026-04-16T15:01:00+00:00","value":230.08,"price_value":230.08,"normalized_value":-0.019976998764748455,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Trend","support_total":2.2569709508841553,"pressure_total":1.5213537415651979,"net_balance":0.7356172093189575,"support_pressure_ratio":1.483528050854327,"balance_momentum":1.2187766757148277,"event_short_label":"Support broke decisively ahead"},{"ts":"2026-04-16T15:08:00+00:00","value":230.3,"price_value":230.3,"normalized_value":-0.01903991140264938,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Trend","support_total":1.6519888062504768,"pressure_total":2.583958582971696,"net_balance":-0.931969776721219,"support_pressure_ratio":0.6393248007677422,"balance_momentum":-1.6675869860401764,"event_short_label":null},{"ts":"2026-04-16T15:09:00+00:00","value":230.44,"price_value":230.44,"normalized_value":-0.018443583081313664,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"Trend","support_total":1.5932553760056585,"pressure_total":2.718741191117224,"net_balance":-1.1254858151115654,"support_pressure_ratio":0.5860268646428001,"balance_momentum":-0.19351603839034648,"event_short_label":null},{"ts":"2026-04-16T15:14:00+00:00","value":230.63,"price_value":230.63,"normalized_value":-0.017634280359500876,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"MFI","support_total":1.420818004215785,"pressure_total":2.9948657560232177,"net_balance":-1.5740477518074327,"support_pressure_ratio":0.47441792720033027,"balance_momentum":-0.4485619366958673,"event_short_label":null},{"ts":"2026-04-16T15:15:00+00:00","value":230.575,"price_value":230.575,"normalized_value":-0.0178685522000257,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"Vz","support_total":1.3076261908124722,"pressure_total":3.3378736622263054,"net_balance":-2.0302474714138334,"support_pressure_ratio":0.3917542493026257,"balance_momentum":-0.4561997196064007,"event_short_label":"Support narrowed into OBp and sigma15"},{"ts":"2026-04-16T15:16:00+00:00","value":230.59,"price_value":230.59,"normalized_value":-0.017804659879882445,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"r5","support_total":2.329367770042059,"pressure_total":2.8075565854029074,"net_balance":-0.47818881536084845,"support_pressure_ratio":0.8296779420770874,"balance_momentum":1.552058656052985,"event_short_label":"Object moved into mixed rotation"},{"ts":"2026-04-16T15:17:00+00:00","value":230.56,"price_value":230.56,"normalized_value":-0.017932444520168733,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Vz","support_total":1.9247114602202777,"pressure_total":2.759468463179326,"net_balance":-0.8347570029590483,"support_pressure_ratio":0.6974935520744159,"balance_momentum":-0.35656818759819986,"event_short_label":null},{"ts":"2026-04-16T15:26:00+00:00","value":230.42,"price_value":230.42,"normalized_value":-0.01852877284150456,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Trend","support_total":2.2394201939500133,"pressure_total":2.1340862227005264,"net_balance":0.10533397124948696,"support_pressure_ratio":1.0493578797937202,"balance_momentum":0.9400909742085353,"event_short_label":null},{"ts":"2026-04-16T15:27:00+00:00","value":230.59,"price_value":230.59,"normalized_value":-0.017804659879882445,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Trend","support_total":2.434950425955547,"pressure_total":2.4525547685853666,"net_balance":-0.01760434262981958,"support_pressure_ratio":0.9928220389386151,"balance_momentum":-0.12293831387930654,"event_short_label":null},{"ts":"2026-04-16T15:34:00+00:00","value":230.22,"price_value":230.22,"normalized_value":-0.01938067044341274,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Trend","support_total":2.581413079853144,"pressure_total":1.6240782240533678,"net_balance":0.9573348557997763,"support_pressure_ratio":1.5894635132847628,"balance_momentum":0.9749391984295959,"event_short_label":"Support broke decisively ahead"},{"ts":"2026-04-16T15:39:00+00:00","value":230.755,"price_value":230.755,"normalized_value":-0.017101844358308194,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"r1","support_total":2.0328664469147366,"pressure_total":3.1436264600842283,"net_balance":-1.1107600131694917,"support_pressure_ratio":0.6466628502866938,"balance_momentum":-2.068094868969268,"event_short_label":null},{"ts":"2026-04-16T16:21:00+00:00","value":230.17,"price_value":230.17,"normalized_value":-0.019593644843889813,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Trend","support_total":2.359617649099541,"pressure_total":1.7950502138489082,"net_balance":0.5645674352506327,"support_pressure_ratio":1.314513449760327,"balance_momentum":1.6753274484201244,"event_short_label":null},{"ts":"2026-04-16T16:28:00+00:00","value":230.02,"price_value":230.02,"normalized_value":-0.02023256804532092,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Trend","support_total":1.8857110118439606,"pressure_total":1.8116406973370194,"net_balance":0.07407031450694124,"support_pressure_ratio":1.040885764277552,"balance_momentum":-0.49049712074369145,"event_short_label":null},{"ts":"2026-04-16T16:37:00+00:00","value":229.2,"price_value":229.2,"normalized_value":-0.02372534821314487,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"r1","dominant_pressure":"Trend","support_total":2.219593366771165,"pressure_total":1.3813858192479476,"net_balance":0.8382075475232176,"support_pressure_ratio":1.6067874274107965,"balance_momentum":0.7641372330162763,"event_short_label":null},{"ts":"2026-04-16T16:42:00+00:00","value":229.065,"price_value":229.065,"normalized_value":-0.024300379094432945,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Trend","support_total":1.4366501216721745,"pressure_total":1.8533468061849299,"net_balance":-0.4166966845127553,"support_pressure_ratio":0.7751652938769105,"balance_momentum":-1.254904232035973,"event_short_label":"Stress broadened beyond Trend"}],"regime_segments":[{"start_ts":"2026-04-16T13:35:00+00:00","end_ts":"2026-04-16T13:36:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-16T13:36:00+00:00","end_ts":"2026-04-16T13:51:00+00:00","regime":"support_led"},{"start_ts":"2026-04-16T13:51:00+00:00","end_ts":"2026-04-16T14:07:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-16T14:07:00+00:00","end_ts":"2026-04-16T14:08:00+00:00","regime":"support_led"},{"start_ts":"2026-04-16T14:08:00+00:00","end_ts":"2026-04-16T14:21:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-16T14:21:00+00:00","end_ts":"2026-04-16T14:50:00+00:00","regime":"pressure_led"},{"start_ts":"2026-04-16T14:50:00+00:00","end_ts":"2026-04-16T14:51:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-16T14:51:00+00:00","end_ts":"2026-04-16T15:01:00+00:00","regime":"pressure_led"},{"start_ts":"2026-04-16T15:01:00+00:00","end_ts":"2026-04-16T15:09:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-16T15:09:00+00:00","end_ts":"2026-04-16T15:16:00+00:00","regime":"pressure_led"},{"start_ts":"2026-04-16T15:16:00+00:00","end_ts":"2026-04-16T16:43:00+00:00","regime":"mixed_rotating"}],"events":[{"ts":"2026-04-16T13:36:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["OBp"]},{"ts":"2026-04-16T13:36:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into OBp","short_label":"Support narrowed into OBp","significance":1.0,"channels_involved":["OBp"]},{"ts":"2026-04-16T13:41:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Pressure narrowed into Vz","short_label":"Pressure narrowed into Vz","significance":1.0,"channels_involved":["Vz"]},{"ts":"2026-04-16T14:08:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.9138396096407742,"channels_involved":["Trend","MFI"]},{"ts":"2026-04-16T14:10:00+00:00","event_type":"dominant_support_changed","event_family":"support","label":"OBp became stabilizing support","short_label":"OBp main support","significance":0.9999999999999999,"channels_involved":["Trend","OBp"]},{"ts":"2026-04-16T15:01:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["OBp","Trend"]},{"ts":"2026-04-16T15:15:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into OBp and sigma15","short_label":"Support narrowed into OBp and sigma15","significance":0.9762206175641601,"channels_involved":["OBp","sigma15"]},{"ts":"2026-04-16T15:16:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.8947977612345219,"channels_involved":["sigma15","r5"]},{"ts":"2026-04-16T15:34:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["sigma15","Trend"]},{"ts":"2026-04-16T16:42:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Stress broadened beyond Trend","short_label":"Stress broadened beyond Trend","significance":0.9383107453762918,"channels_involved":["Trend","Vz"]}],"events_by_ts":{"2026-04-16T13:36:00+00:00":{"ts":"2026-04-16T13:36:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["OBp"]},"2026-04-16T13:41:00+00:00":{"ts":"2026-04-16T13:41:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Pressure narrowed into Vz","short_label":"Pressure narrowed into Vz","significance":1.0,"channels_involved":["Vz"]},"2026-04-16T14:08:00+00:00":{"ts":"2026-04-16T14:08:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.9138396096407742,"channels_involved":["Trend","MFI"]},"2026-04-16T14:10:00+00:00":{"ts":"2026-04-16T14:10:00+00:00","event_type":"dominant_support_changed","event_family":"support","label":"OBp became stabilizing support","short_label":"OBp main support","significance":0.9999999999999999,"channels_involved":["Trend","OBp"]},"2026-04-16T15:01:00+00:00":{"ts":"2026-04-16T15:01:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["OBp","Trend"]},"2026-04-16T15:15:00+00:00":{"ts":"2026-04-16T15:15:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into OBp and sigma15","short_label":"Support narrowed into OBp and sigma15","significance":0.9762206175641601,"channels_involved":["OBp","sigma15"]},"2026-04-16T15:16:00+00:00":{"ts":"2026-04-16T15:16:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.8947977612345219,"channels_involved":["sigma15","r5"]},"2026-04-16T15:34:00+00:00":{"ts":"2026-04-16T15:34:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["sigma15","Trend"]},"2026-04-16T16:42:00+00:00":{"ts":"2026-04-16T16:42:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Stress broadened beyond Trend","short_label":"Stress broadened beyond Trend","significance":0.9383107453762918,"channels_involved":["Trend","Vz"]}},"regime_summary":{"current_regime":"mixed_rotating","dominant_regime":"mixed_rotating","time_in_support_led":0.10714285714285714,"time_in_pressure_led":0.25,"time_in_mixed_rotating":0.6428571428571429,"regime_flip_count":10,"longest_support_led_run":2,"longest_pressure_led_run":3,"longest_mixed_rotating_run":10},"event_summary":{"event_count":10,"regime_flip_count":2,"dominant_support_change_count":1,"dominant_pressure_change_count":0,"rotation_spike_count":0,"anchor_gain_count":0,"anchor_loss_count":0,"most_significant_event":{"ts":"2026-04-16T13:36:00+00:00","label":"Support broke decisively ahead","significance":1.0}},"channel_roles_by_ts":{"2026-04-16T13:35:00+00:00":{"r1":0.0,"r5":0.0,"sigma15":0.0,"Vz":0.0,"OBp":0.0,"MFI":0.0,"Trend":0.0},"2026-04-16T13:36:00+00:00":{"r1":0.0,"r5":0.0,"sigma15":0.0,"Vz":0.0,"OBp":-0.6088593650139137,"MFI":0.0,"Trend":0.0},"2026-04-16T13:41:00+00:00":{"r1":-0.6088593650139138,"r5":0.0,"sigma15":0.0,"Vz":0.6088593650139138,"OBp":-0.8138971017117871,"MFI":0.0,"Trend":-0.6088593650139137},"2026-04-16T13:51:00+00:00":{"r1":-0.8142349473756864,"r5":0.0,"sigma15":0.6088593650139137,"Vz":-0.46449930892325514,"OBp":-0.7645470516753181,"MFI":0.0,"Trend":-0.8093313966571094},"2026-04-16T14:07:00+00:00":{"r1":-0.13601634468518758,"r5":0.0,"sigma15":0.3270769908075436,"Vz":0.045463039218695975,"OBp":-0.8170004038568295,"MFI":0.0,"Trend":-0.7704016468440118},"2026-04-16T14:08:00+00:00":{"r1":0.7744782624196616,"r5":0.0,"sigma15":0.3866683519508719,"Vz":0.4161114243409153,"OBp":-0.37841275661092066,"MFI":0.9668283810032314,"Trend":-0.5436896838827814},"2026-04-16T14:10:00+00:00":{"r1":0.6277130393729282,"r5":0.6088593650139138,"sigma15":0.2708453308190347,"Vz":0.9253694167299261,"OBp":-0.971537194511713,"MFI":0.4121788153168365,"Trend":-0.20617793022044759},"2026-04-16T14:11:00+00:00":{"r1":0.6899310323935027,"r5":0.8113183509620512,"sigma15":0.2134396231863847,"Vz":-0.5852101148199743,"OBp":-0.8995162963602146,"MFI":0.6856017280713667,"Trend":0.1907927108366073},"2026-04-16T14:21:00+00:00":{"r1":0.18791920267092171,"r5":0.88932535591234,"sigma15":-0.00038873615819667824,"Vz":-0.5581902215967288,"OBp":-0.8669208853571926,"MFI":0.6152829136504248,"Trend":0.4095610618658018},"2026-04-16T14:22:00+00:00":{"r1":0.5640226304452818,"r5":0.8813106572855397,"sigma15":-0.106665753545487,"Vz":0.095356928883687,"OBp":-0.8186104142409074,"MFI":0.5822122466679228,"Trend":0.5652352403090865},"2026-04-16T14:23:00+00:00":{"r1":0.5000625051661176,"r5":0.7765199937883636,"sigma15":-0.21700726474802798,"Vz":-0.6108357306012586,"OBp":-0.8031746229589513,"MFI":0.5268754778626509,"Trend":0.6598815236430643},"2026-04-16T14:50:00+00:00":{"r1":0.40759378034132115,"r5":0.7017387315641089,"sigma15":-0.32582505956581503,"Vz":-0.4433675985009466,"OBp":-0.8179311733599616,"MFI":0.44603229544781503,"Trend":0.7117250045332215},"2026-04-16T14:51:00+00:00":{"r1":0.4931978187290937,"r5":0.6065935612320432,"sigma15":-0.3995198700405144,"Vz":-0.5513764918047728,"OBp":-0.8084516537381992,"MFI":0.39841167686497714,"Trend":0.7443044251532425},"2026-04-16T15:01:00+00:00":{"r1":-0.479643624965265,"r5":0.4315227020786201,"sigma15":-0.4613558165218598,"Vz":-0.5132669793491829,"OBp":-0.8027045300478475,"MFI":0.3529572753079394,"Trend":0.7368737641786384},"2026-04-16T15:08:00+00:00":{"r1":0.7305882851383217,"r5":0.5212438063070066,"sigma15":-0.4503473146771836,"Vz":-0.4628220870940558,"OBp":-0.7388194044792376,"MFI":0.5866934804915448,"Trend":0.7454330110348228},"2026-04-16T15:09:00+00:00":{"r1":0.6348499853356463,"r5":0.5792223885207525,"sigma15":-0.47259751618943513,"Vz":-0.44734173589315823,"OBp":-0.6733161239230652,"MFI":0.7472598389385049,"Trend":0.7574089783223206},"2026-04-16T15:14:00+00:00":{"r1":0.66069601374663,"r5":0.6726044787842296,"sigma15":-0.39344426648864067,"Vz":-0.4230150601398042,"OBp":-0.6043586775873401,"MFI":0.8908954982700328,"Trend":0.7706697652223254},"2026-04-16T15:15:00+00:00":{"r1":0.33354994683549005,"r5":0.6256784057305603,"sigma15":-0.3934872316826195,"Vz":0.9589765398136786,"OBp":-0.9141389591298528,"MFI":0.6427027441432288,"Trend":0.7769660257033478},"2026-04-16T15:16:00+00:00":{"r1":0.42947652670127545,"r5":0.8185489340862014,"sigma15":-0.9393106144632921,"Vz":-0.5150267680829622,"OBp":-0.8750303874958043,"MFI":0.779159586382637,"Trend":0.7803715382327934},"2026-04-16T15:17:00+00:00":{"r1":0.34880895376231397,"r5":0.7163932376312482,"sigma15":-0.9670772732067461,"Vz":0.9013050769906599,"OBp":-0.9576341870135318,"MFI":0.012177077306205033,"Trend":0.7807841174888991},"2026-04-16T15:26:00+00:00":{"r1":0.14790420018395928,"r5":0.5737115436683793,"sigma15":-0.9469297425483959,"Vz":-0.3399863850270186,"OBp":-0.9525040663745987,"MFI":0.5997641400576691,"Trend":0.8127063387905185},"2026-04-16T15:27:00+00:00":{"r1":0.6245965726704005,"r5":0.545334544568854,"sigma15":-0.9212456567240032,"Vz":-0.5955496731066097,"OBp":-0.9181550961249343,"MFI":0.4395923000955765,"Trend":0.8430313512505355},"2026-04-16T15:34:00+00:00":{"r1":-0.3243911111094477,"r5":0.3339861402702507,"sigma15":-0.8914637112085272,"Vz":-0.5091439133974216,"OBp":-0.8564143441377476,"MFI":0.4307306528164281,"Trend":0.8593614309666889},"2026-04-16T15:39:00+00:00":{"r1":0.8866163009744895,"r5":0.6321751295103645,"sigma15":-0.8353496697359428,"Vz":-0.41506451098271674,"OBp":-0.7824522661960773,"MFI":0.7665727273520169,"Trend":0.8582623022473573},"2026-04-16T16:21:00+00:00":{"r1":-0.6588220430782433,"r5":0.266872809287854,"sigma15":-0.7560952683814612,"Vz":-0.1575223482904803,"OBp":-0.7871779893493559,"MFI":0.691004790652545,"Trend":0.8371726139085093},"2026-04-16T16:28:00+00:00":{"r1":0.07792352363262824,"r5":0.25260133467966994,"sigma15":-0.7364463426571787,"Vz":-0.285376359408572,"OBp":-0.86388830977821,"MFI":0.6634327903611494,"Trend":0.8176830486635719},"2026-04-16T16:37:00+00:00":{"r1":-0.8433154934437139,"r5":-0.533644893929448,"sigma15":-0.5774516581910488,"Vz":-0.05847401198889577,"OBp":-0.2067073092180589,"MFI":0.5955186226934914,"Trend":0.785867196554456},"2026-04-16T16:42:00+00:00":{"r1":0.15158868202575485,"r5":-0.359962438600449,"sigma15":-0.5679948117613749,"Vz":0.47883008488699064,"OBp":-0.5086928713103507,"MFI":0.46542600885458146,"Trend":0.757502030417603}},"snapshot_rankings":{"support":[{"channel":"MFI","value":0.25,"rank":1},{"channel":"sigma15","value":0.17857142857142858,"rank":2},{"channel":"Trend","value":0.17857142857142858,"rank":3},{"channel":"OBp","value":0.035714285714285726,"rank":4}],"pressure":[{"channel":"Vz","value":0.5714285714285714,"rank":1},{"channel":"r5","value":0.3928571428571429,"rank":2},{"channel":"r1","value":0.17857142857142855,"rank":3}]},"object_metadata":{"question":"Is defense being accumulated or just reactively repriced?","semantic_type":"reactive_premium_quality","public_title_stub":"Defense Reactive Premium Versus Sponsorship","channel_labels":["r1","r5","sigma15","Vz","OBp","MFI","Trend"],"anchor_channels":["MFI","Trend","OBp","r1","Vz","r5","sigma15"],"source_kind":"1min","price_source":"baseline_close","has_canonical_price":true},"role_labels":{"support":"Sponsorship quality","pressure":"Reactive premium"},"chips":[{"label":"Session","value":"Intraday"},{"label":"What we pulled","value":"1min"},{"label":"Why","value":"Is defense being accumulated or just reactively repriced?"},{"label":"Posture","value":"Mixed / rotating"},{"label":"Structure","value":"Reactive premium quality"},{"label":"Price mode","value":"Raw price"}],"balance_panel":{"title":"Support vs Pressure","show_net_balance":true,"semantic_help":"This panel shows whether defense is stably sponsored or reactively repriced."},"accessible_summary":"ITA on 2026-04-16. Current regime is Mixed / rotating. 10 structural events are marked.","developer_warnings":[],"source_files_used":["ITA_2026-04-16_baseline_as_is_all_pal_log.jsonl","analysis_summary_20260416_101628.json","channel_labels_map.generated.json","copy_guardrail_runtime.generated.json","market_dashboard_source_manifest.json","market_panel7_raw.csv"],"view_config_used":{"min_event_significance":0.85,"max_visible_events":12,"show_net_balance":true}};
+    const warnings = [];
+    const includeLegend = true;
+    const includeHeatmap = true;
+    const includeScatter = false;
+    const heatmapTitle = "Where Reactive Premium Versus Sponsorship Quality Sat";
+    const scatterTitle = "Reactive Premium Versus Sponsorship Concentration";
+
+    const chartRoot = document.getElementById("price-first-chart-root");
+    const legendRoot = document.getElementById("snapshot-legend-root");
+    const heatmapRoot = document.getElementById("role-heatmap-root");
+    const scatterRoot = document.getElementById("role-scatter-root");
+    const runtimeNotice = document.getElementById("pf-runtime-notice");
+
+    function setRuntimeNotice(message) {
+      if (!runtimeNotice) {
+        return;
+      }
+      runtimeNotice.textContent = message || "";
+    }
+
+    function showRuntimeError(title, detail) {
+      const box = document.createElement("div");
+      box.className = "pf-empty";
+      box.style.alignItems = "flex-start";
+      box.style.justifyContent = "flex-start";
+      box.style.flexDirection = "column";
+      box.style.gap = "8px";
+      const h = document.createElement("strong");
+      h.textContent = title;
+      const p = document.createElement("div");
+      p.textContent = detail;
+      p.style.whiteSpace = "pre-wrap";
+      p.style.fontFamily = "Consolas, Menlo, monospace";
+      p.style.fontSize = "12px";
+      box.appendChild(h);
+      box.appendChild(p);
+      if (chartRoot) {
+        chartRoot.innerHTML = "";
+        chartRoot.appendChild(box);
+      }
+    }
+
+    function lazyMount(target, mountFn) {
+      if (!target || typeof mountFn !== "function") {
+        return;
+      }
+      if (!("IntersectionObserver" in window)) {
+        mountFn();
+        return;
+      }
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            observer.disconnect();
+            mountFn();
+            break;
+          }
+        }
+      }, { rootMargin: "120px 0px 120px 0px" });
+      observer.observe(target);
+    }
+
+    async function loadSemanticRegistry() {
+      if (typeof window.setSemanticRegistry !== "function") {
+        return;
+      }
+      try {
+        const response = await fetch(semanticRegistryUrl, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const payload = await response.json();
+        const loaded = window.setSemanticRegistry(payload);
+        if (!loaded) {
+          console.warn("[Semantics] semantic registry loaded but empty; fallback wording will be used.");
+        }
+      } catch (err) {
+        console.warn("[Semantics] failed to load semantic registry; fallback wording will be used.", err);
+      }
+    }
+
+    async function boot() {
+      if (window.location && window.location.protocol === "file:") {
+        setRuntimeNotice("Open this page through a local HTTP server; file:// mode can block JSON fetches.");
+      }
+
+      if (Array.isArray(warnings) && warnings.length > 0) {
+        for (const warning of warnings) {
+          console.warn(`[PriceFirstStructuralChart] ${warning}`);
+        }
+      }
+
+      await loadSemanticRegistry();
+
+      try {
+        let legendController = null;
+        if (includeLegend) {
+          const renderSnapshotLegend = window.renderSnapshotLegend;
+          if (typeof renderSnapshotLegend === "function" && legendRoot) {
+            legendController = renderSnapshotLegend(legendRoot, model, { maxRowsPerSide: 4 });
+          } else {
+            console.warn("[SnapshotLegend] renderSnapshotLegend is unavailable");
+          }
+        }
+
+        const renderPriceFirstStructuralChart = window.renderPriceFirstStructuralChart;
+        if (typeof renderPriceFirstStructuralChart !== "function") {
+          throw new Error("renderPriceFirstStructuralChart is missing.");
+        }
+
+        renderPriceFirstStructuralChart(chartRoot, model, {
+          height: 520,
+          onHoverPoint: (point, ctx) => {
+            if (!legendController || !point || !point.ts) {
+              return;
+            }
+            legendController.update(point.ts, ctx && ctx.event ? ctx.event : null);
+          },
+          onLeave: () => {
+            if (legendController) {
+              legendController.clearHover();
+            }
+          },
+        });
+
+        if (includeHeatmap && heatmapRoot) {
+          lazyMount(heatmapRoot, () => {
+            const renderHeatmap = window.renderRoleHeatmapPanel;
+            if (typeof renderHeatmap !== "function") {
+              console.warn("[RoleHeatmapPanel] renderer unavailable");
+              return;
+            }
+            renderHeatmap(heatmapRoot, model, { title: heatmapTitle });
+          });
+        }
+
+        if (includeScatter && scatterRoot) {
+          lazyMount(scatterRoot, () => {
+            const renderScatter = window.renderRoleScatterPanel;
+            if (typeof renderScatter !== "function") {
+              console.warn("[RoleScatterPanel] renderer unavailable");
+              return;
+            }
+            renderScatter(scatterRoot, model, { title: scatterTitle });
+          });
+        }
+      } catch (err) {
+        console.error("[PriceFirstStructuralChart] runtime script/render failure", err);
+        const detail = err && err.stack ? err.stack : String(err);
+        showRuntimeError(
+          "Chart failed to mount",
+          `Loaded scripts: ${Array.isArray(scriptPaths) ? scriptPaths.join(", ") : "unknown"}\n${detail}\n\nCheck console for script-load/runtime errors.`
+        );
+      }
+    }
+
+    boot();
+  </script>
+</body>
+</html>

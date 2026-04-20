@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Project 9 Validation Pages</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #061017;
+      --panel: #0d1b27;
+      --line: #1f3345;
+      --text: #d9e7f5;
+      --muted: #9fb5ca;
+      --link: #9ad0ff;
+    }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 18% 2%, #122537 0%, var(--bg) 62%);
+      color: var(--text);
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 18px 44px;
+    }
+    .v-intro {
+      color: var(--muted);
+      margin: 8px 0 20px;
+      line-height: 1.45;
+    }
+    .v-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .v-card {
+      background: color-mix(in srgb, var(--panel) 92%, #0d2234);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 14px 12px;
+    }
+    .v-card h2 {
+      margin: 0 0 8px;
+      font-size: 1.02rem;
+      line-height: 1.2;
+    }
+    .v-card a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    .v-card a:hover { text-decoration: underline; }
+    .v-question {
+      margin: 0 0 10px;
+      color: #bfd2e4;
+      line-height: 1.4;
+      font-size: 0.94rem;
+    }
+    .v-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+    }
+    .v-meta span {
+      background: rgba(23, 40, 58, 0.9);
+      border: 1px solid #213a51;
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+    .v-card p {
+      margin: 0 0 8px;
+      line-height: 1.4;
+      font-size: 0.9rem;
+    }
+    .v-manifest {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+    .v-manifest a {
+      color: var(--link);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Project 9: Validation Examples and Real-Session Proof Pages</h1>
+    <p class="v-intro">
+      These pages are semantic regression references built from real PAL market sessions. Each one validates that
+      chart stack, legend/readout, and heat map preserve object-specific arrangement language.
+    </p>
+    <section class="v-grid">
+      <article class='v-card'><h2><a href='mag7-obp/2026-04-17/index.html'>MAG7 OBp</a></h2><p class='v-question'>Where is sponsorship living inside the generals?</p><div class='v-meta'><span>Session: 2026-04-17</span><span>Posture: mixed_rotating</span><span>Structure: underwriting</span></div><p>Selected from real run `20260417_170419_MAG7_backfill` because it retains non-trivial structure (106 raw events, 96 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as underwriting concentration: who is carrying sponsorship, who is resisting it, and whether support is broadening or narrowing.</p><p><strong>Failure mode:</strong> If this reads as generic tech leadership instead of underwriting burden-sharing, semantics failed.</p></article><article class='v-card'><h2><a href='hormuz/2026-04-20/index.html'>Hormuz Transmission</a></h2><p class='v-question'>How is the event being transmitted across crude, gas, credit, dollar, airlines, defense, and energy equities?</p><div class='v-meta'><span>Session: 2026-04-20</span><span>Posture: pressure_led</span><span>Structure: transmission_routing</span></div><p>Selected from real run `20260420_190248_HORMUZ_backfill` because it retains non-trivial structure (164 raw events, 107 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as routing/anchor structure: which channels are transmitting support and which stress channels are vetoing transmission.</p><p><strong>Failure mode:</strong> If this reads as generic risk-on/risk-off instead of routing and anchors, semantics failed.</p></article><article class='v-card'><h2><a href='spy/2026-04-15/index.html'>SPY</a></h2><p class='v-question'>How is broad internal market quality organizing the tape?</p><div class='v-meta'><span>Session: 2026-04-15</span><span>Posture: mixed_rotating</span><span>Structure: broad_market_quality</span></div><p>Selected from real run `20260415_205941_SPY_backfill` because it retains non-trivial structure (217 raw events, 149 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as broad internal market quality: where internal pressure accumulates, where stabilization appears, and whether strain is being absorbed.</p><p><strong>Failure mode:</strong> If this reads like a generic oscillator panel without internal quality structure, semantics failed.</p></article><article class='v-card'><h2><a href='ita/2026-04-16/index.html'>ITA</a></h2><p class='v-question'>Is defense being accumulated or just reactively repriced?</p><div class='v-meta'><span>Session: 2026-04-16</span><span>Posture: mixed_rotating</span><span>Structure: reactive_premium_quality</span></div><p>Selected from real run `20260416_171508_ITA_backfill` because it retains non-trivial structure (17 raw events, 10 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as reactive premium versus sponsorship quality: whether defense is being chased reactively or settled through sponsorship support.</p><p><strong>Failure mode:</strong> If this reads like a generic single-ticker move with no quality-of-move distinction, semantics failed.</p></article>
+    </section>
+    <p class="v-manifest">Manifest: <a href="./manifest.json">./manifest.json</a></p>
+  </main>
+</body>
+</html>

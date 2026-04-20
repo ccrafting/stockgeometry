@@ -1,0 +1,1684 @@
+{
+  "schema_version": "1.0",
+  "object_id": "hormuz_transmission_intraday",
+  "object_label": "Hormuz Transmission",
+  "session_date": "2026-04-17",
+  "session_label": "Intraday",
+  "object_question": "How is the event being transmitted across crude, gas, credit, dollar, airlines, defense, and energy equities?",
+  "object_semantic_type": "transmission_routing",
+  "price_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.0018
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.0036
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0054
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0072
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.009
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.0108
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0126
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0144
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.0162
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.0152
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0124
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": null,
+      "normalized_value": 0.0096
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": null,
+      "normalized_value": 0.0068
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": null,
+      "normalized_value": 0.004
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": null,
+      "normalized_value": 0.0012
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": null,
+      "normalized_value": -0.0016
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": null,
+      "normalized_value": -0.0044
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": null,
+      "normalized_value": -0.0072
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": null,
+      "normalized_value": -0.01
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": null,
+      "normalized_value": -0.0128
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": null,
+      "normalized_value": -0.0156
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": null,
+      "normalized_value": -0.0184
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": null,
+      "normalized_value": -0.0212
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": null,
+      "normalized_value": -0.024
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": null,
+      "normalized_value": -0.0268
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": null,
+      "normalized_value": -0.0296
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": null,
+      "normalized_value": -0.0324
+    }
+  ],
+  "support_total_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": 0.4
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": 0
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": 0
+    }
+  ],
+  "pressure_total_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": 0.23
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": 0.49
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": 0.75
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": 0.75
+    }
+  ],
+  "net_balance_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "value": 0.17
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "value": -0.35
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "value": -0.75
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "value": -0.75
+    }
+  ],
+  "dominant_support_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.25
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "channel": "Brent Crude (FRED)",
+      "value": 0.1
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "channel": null,
+      "value": null
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "channel": null,
+      "value": null
+    }
+  ],
+  "dominant_pressure_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.08
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.14
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "channel": "XLE Energy Equity Response",
+      "value": 0.19
+    }
+  ],
+  "channel_role_matrix": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.25,
+        "Henry Hub Gas (FRED)": -0.12,
+        "XLE Energy Equity Response": 0.08,
+        "Broad Dollar Index (FRED)": 0.06,
+        "High-Yield Spread (FRED)": 0.05,
+        "JETS Fuel-Cost Stress Response": 0.04,
+        "ITA Defense Conflict-Premium Anchor": -0.03
+      }
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": -0.1,
+        "Henry Hub Gas (FRED)": -0.04,
+        "XLE Energy Equity Response": 0.14,
+        "Broad Dollar Index (FRED)": 0.11,
+        "High-Yield Spread (FRED)": 0.1,
+        "JETS Fuel-Cost Stress Response": 0.09,
+        "ITA Defense Conflict-Premium Anchor": 0.05
+      }
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "channels": {
+        "Brent Crude (FRED)": 0.02,
+        "Henry Hub Gas (FRED)": 0.06,
+        "XLE Energy Equity Response": 0.19,
+        "Broad Dollar Index (FRED)": 0.15,
+        "High-Yield Spread (FRED)": 0.14,
+        "JETS Fuel-Cost Stress Response": 0.12,
+        "ITA Defense Conflict-Premium Anchor": 0.07
+      }
+    }
+  ],
+  "regime_inputs": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "net_balance": 0.17,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "net_balance": -0.35,
+      "dominant_support": "Brent Crude (FRED)",
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "net_balance": -0.75,
+      "dominant_support": null,
+      "dominant_pressure": "XLE Energy Equity Response",
+      "state_transition_flag": false
+    }
+  ],
+  "event_inputs": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.4,
+      "pressure_total": 0.23,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0.14,
+      "pressure_total": 0.49,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "dominant_support_changed": false,
+      "dominant_pressure_changed": false,
+      "support_total": 0,
+      "pressure_total": 0.75,
+      "state_id": "state_1"
+    }
+  ],
+  "snapshot_rankings": {
+    "support": [],
+    "pressure": [
+      {
+        "channel": "XLE Energy Equity Response",
+        "value": 0.19,
+        "rank": 1
+      },
+      {
+        "channel": "Broad Dollar Index (FRED)",
+        "value": 0.15,
+        "rank": 2
+      },
+      {
+        "channel": "High-Yield Spread (FRED)",
+        "value": 0.14,
+        "rank": 3
+      },
+      {
+        "channel": "JETS Fuel-Cost Stress Response",
+        "value": 0.12,
+        "rank": 4
+      },
+      {
+        "channel": "ITA Defense Conflict-Premium Anchor",
+        "value": 0.07,
+        "rank": 5
+      },
+      {
+        "channel": "Henry Hub Gas (FRED)",
+        "value": 0.06,
+        "rank": 6
+      },
+      {
+        "channel": "Brent Crude (FRED)",
+        "value": 0.02,
+        "rank": 7
+      }
+    ]
+  },
+  "object_metadata": {
+    "question": "How is the event being transmitted across crude, gas, credit, dollar, airlines, defense, and energy equities?",
+    "semantic_type": "transmission_routing",
+    "public_title_stub": "Hormuz transmission routing map",
+    "channel_labels": [
+      "Brent Crude (FRED)",
+      "Henry Hub Gas (FRED)",
+      "XLE Energy Equity Response",
+      "Broad Dollar Index (FRED)",
+      "High-Yield Spread (FRED)",
+      "JETS Fuel-Cost Stress Response",
+      "ITA Defense Conflict-Premium Anchor"
+    ],
+    "anchor_channels": [
+      "Brent Crude (FRED)",
+      "Henry Hub Gas (FRED)",
+      "XLE Energy Equity Response",
+      "Broad Dollar Index (FRED)",
+      "High-Yield Spread (FRED)",
+      "JETS Fuel-Cost Stress Response",
+      "ITA Defense Conflict-Premium Anchor"
+    ],
+    "source_kind": "Session replay",
+    "price_source": "normalized_reference",
+    "has_canonical_price": false
+  },
+  "data_quality": {
+    "quality_gate_pass": true,
+    "interpretation_status": "OK",
+    "baseline_structured_fraction": 0.71,
+    "dominant_state_fraction": 0.84,
+    "state_transition_count": 2,
+    "n_rows": 28,
+    "warnings": []
+  },
+  "provenance": {
+    "raw_bundle_object_id": "hormuz_transmission_intraday",
+    "raw_bundle_object_label": "Hormuz Transmission",
+    "object_id_resolution": "synthetic_example",
+    "bundle_dir": null,
+    "run_root": null,
+    "protocol": {},
+    "notes": [
+      "Synthetic example for Project 4 rendering validation."
+    ]
+  },
+  "source_files_used": [
+    "synthetic_chart_payload_seed.json"
+  ]
+}

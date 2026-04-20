@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.0",
+  "object_id": "mag7_obp_intraday",
+  "session_date": "2026-04-17",
+  "regime_series": [
+    {
+      "ts": "2026-04-17T13:30:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T13:45:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T14:00:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T14:15:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T14:30:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T14:45:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T15:00:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.53,
+      "pressure_total": 0.16,
+      "net_balance": 0.37,
+      "balance_ratio": 3.3125,
+      "rotation_score": 0.0,
+      "confidence": 0.8520441766495378
+    },
+    {
+      "ts": "2026-04-17T15:30:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.2,
+      "confidence": 0.7805870868226518
+    },
+    {
+      "ts": "2026-04-17T15:45:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.0,
+      "confidence": 0.8189264405435172
+    },
+    {
+      "ts": "2026-04-17T16:00:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.0,
+      "confidence": 0.8189264405435172
+    },
+    {
+      "ts": "2026-04-17T16:15:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.0,
+      "confidence": 0.8189264405435172
+    },
+    {
+      "ts": "2026-04-17T16:30:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.0,
+      "confidence": 0.8189264405435172
+    },
+    {
+      "ts": "2026-04-17T16:45:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.0,
+      "confidence": 0.8189264405435172
+    },
+    {
+      "ts": "2026-04-17T17:00:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.0,
+      "confidence": 0.8189264405435172
+    },
+    {
+      "ts": "2026-04-17T17:15:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.45,
+      "pressure_total": 0.21000000000000002,
+      "net_balance": 0.24,
+      "balance_ratio": 2.142857142857143,
+      "rotation_score": 0.0,
+      "confidence": 0.8189264405435172
+    },
+    {
+      "ts": "2026-04-17T17:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "balance_ratio": 1.0333333333333334,
+      "rotation_score": 0.2,
+      "confidence": 0.48740703530137636
+    },
+    {
+      "ts": "2026-04-17T17:45:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "balance_ratio": 1.0333333333333334,
+      "rotation_score": 0.0,
+      "confidence": 0.5472628458923683
+    },
+    {
+      "ts": "2026-04-17T18:00:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "balance_ratio": 1.0333333333333334,
+      "rotation_score": 0.0,
+      "confidence": 0.5472628458923683
+    },
+    {
+      "ts": "2026-04-17T18:15:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "balance_ratio": 1.0333333333333334,
+      "rotation_score": 0.0,
+      "confidence": 0.5472628458923683
+    },
+    {
+      "ts": "2026-04-17T18:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "balance_ratio": 1.0333333333333334,
+      "rotation_score": 0.0,
+      "confidence": 0.5472628458923683
+    },
+    {
+      "ts": "2026-04-17T18:45:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.3,
+      "pressure_total": 0.31,
+      "net_balance": -0.010000000000000009,
+      "balance_ratio": 1.0333333333333334,
+      "rotation_score": 0.0,
+      "confidence": 0.5472628458923683
+    },
+    {
+      "ts": "2026-04-17T19:00:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "balance_ratio": 1.7272727272727273,
+      "rotation_score": 0.0,
+      "confidence": 0.79791816990032
+    },
+    {
+      "ts": "2026-04-17T19:15:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "balance_ratio": 1.7272727272727273,
+      "rotation_score": 0.0,
+      "confidence": 0.79791816990032
+    },
+    {
+      "ts": "2026-04-17T19:30:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "balance_ratio": 1.7272727272727273,
+      "rotation_score": 0.0,
+      "confidence": 0.79791816990032
+    },
+    {
+      "ts": "2026-04-17T19:45:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "balance_ratio": 1.7272727272727273,
+      "rotation_score": 0.0,
+      "confidence": 0.79791816990032
+    },
+    {
+      "ts": "2026-04-17T20:00:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "balance_ratio": 1.7272727272727273,
+      "rotation_score": 0.0,
+      "confidence": 0.79791816990032
+    },
+    {
+      "ts": "2026-04-17T20:15:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.22,
+      "pressure_total": 0.38,
+      "net_balance": -0.16,
+      "balance_ratio": 1.7272727272727273,
+      "rotation_score": 0.0,
+      "confidence": 0.79791816990032
+    }
+  ],
+  "regime_summary": {
+    "current_regime": "pressure_led",
+    "dominant_regime": "support_led",
+    "time_in_support_led": 0.5714285714285714,
+    "time_in_pressure_led": 0.21428571428571427,
+    "time_in_mixed_rotating": 0.21428571428571427,
+    "regime_flip_count": 2,
+    "longest_support_led_run": 16,
+    "longest_pressure_led_run": 6,
+    "longest_mixed_rotating_run": 6
+  },
+  "regime_config_used": {
+    "support_pressure_margin": 0.05,
+    "balance_ratio_threshold": 1.2,
+    "rotation_override_threshold": 0.35,
+    "dominant_channel_churn_window": 10,
+    "dominant_channel_churn_threshold": 3,
+    "epsilon": 1e-09,
+    "confidence_balance_weight": 1.4,
+    "confidence_ratio_weight": 1.0,
+    "confidence_rotation_weight": 1.2
+  },
+  "source_files_used": [
+    "synthetic_chart_payload_seed.json"
+  ]
+}
