@@ -1,0 +1,16 @@
+{
+  "object_id": "spy__intraday",
+  "object_label": "SPY",
+  "session_date": "2026-04-15",
+  "object_question": "How is broad internal market quality organizing the tape?",
+  "semantic_type": "broad_market_quality",
+  "posture": "mixed_rotating",
+  "url": "index.html",
+  "embed_url": "../../../embeds/spy/2026-04-15/index.html",
+  "summary": "The tape is being pressured by r5, MFI, and sigma15, while OBp is absorbing that strain. Current posture: Mixed / rotating.",
+  "source_files": [
+    "chart_payload.json",
+    "regime_series.json",
+    "event_markers.json"
+  ]
+}

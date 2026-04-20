@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0",
+  "object_id": "ita__intraday",
+  "session_date": "2026-04-16",
+  "regime_series": [
+    {
+      "ts": "2026-04-16T13:35:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.0,
+      "pressure_total": 0.0,
+      "net_balance": 0.0,
+      "balance_ratio": 0.0,
+      "rotation_score": 0.0,
+      "confidence": 0.5
+    },
+    {
+      "ts": "2026-04-16T13:36:00+00:00",
+      "regime": "support_led",
+      "support_total": 0.6088593650139137,
+      "pressure_total": 0.0,
+      "net_balance": 0.6088593650139137,
+      "balance_ratio": 608859365.0139136,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-16T13:41:00+00:00",
+      "regime": "support_led",
+      "support_total": 2.0316158317396145,
+      "pressure_total": 0.6088593650139138,
+      "net_balance": 1.4227564667257007,
+      "balance_ratio": 3.336757137164487,
+      "rotation_score": 0.0,
+      "confidence": 0.852501414499274
+    },
+    {
+      "ts": "2026-04-16T13:51:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.852612704631369,
+      "pressure_total": 0.6088593650139137,
+      "net_balance": 2.2437533396174554,
+      "balance_ratio": 4.685175047880196,
+      "rotation_score": 0.4,
+      "confidence": 0.8065100800987316
+    },
+    {
+      "ts": "2026-04-16T14:07:00+00:00",
+      "regime": "support_led",
+      "support_total": 1.723418395386029,
+      "pressure_total": 0.3725400300262396,
+      "net_balance": 1.3508783653597893,
+      "balance_ratio": 4.6261294263186725,
+      "rotation_score": 0.2,
+      "confidence": 0.8405494777537804
+    },
+    {
+      "ts": "2026-04-16T14:08:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.922102440493702,
+      "pressure_total": 2.54408641971468,
+      "net_balance": -1.6219839792209778,
+      "balance_ratio": 2.7590062752166156,
+      "rotation_score": 0.8,
+      "confidence": 0.6671054344792146
+    },
+    {
+      "ts": "2026-04-16T14:10:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.1777151247321607,
+      "pressure_total": 2.8449659672526395,
+      "net_balance": -1.6672508425204788,
+      "balance_ratio": 2.415665645713474,
+      "rotation_score": 0.6,
+      "confidence": 0.7027123892536549
+    },
+    {
+      "ts": "2026-04-16T14:11:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4847264111801888,
+      "pressure_total": 2.5910834454499128,
+      "net_balance": -1.106357034269724,
+      "balance_ratio": 1.7451588561627969,
+      "rotation_score": 0.4,
+      "confidence": 0.710954146363035
+    },
+    {
+      "ts": "2026-04-16T14:21:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.4254998431121182,
+      "pressure_total": 2.1020885340994884,
+      "net_balance": -0.6765886909873702,
+      "balance_ratio": 1.47463259589721,
+      "rotation_score": 0.2,
+      "confidence": 0.7366286538826751
+    },
+    {
+      "ts": "2026-04-16T14:22:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.9252761677863944,
+      "pressure_total": 2.6881377035915177,
+      "net_balance": -1.7628615358051234,
+      "balance_ratio": 2.9052274306627233,
+      "rotation_score": 0.2,
+      "confidence": 0.8089206912976354
+    },
+    {
+      "ts": "2026-04-16T14:23:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.6310176183082379,
+      "pressure_total": 2.4633395004601963,
+      "net_balance": -0.8323218821519585,
+      "balance_ratio": 1.5103083331590732,
+      "rotation_score": 0.2,
+      "confidence": 0.7397364435879586
+    },
+    {
+      "ts": "2026-04-16T14:50:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.587123831426723,
+      "pressure_total": 2.267089811886467,
+      "net_balance": -0.6799659804597438,
+      "balance_ratio": 1.4284265455509528,
+      "rotation_score": 0.4,
+      "confidence": 0.6828694190454938
+    },
+    {
+      "ts": "2026-04-16T14:51:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.7593480155834864,
+      "pressure_total": 2.2425074819793567,
+      "net_balance": -0.48315946639587026,
+      "balance_ratio": 1.2746241574243802,
+      "rotation_score": 0.2,
+      "confidence": 0.7168779255535331
+    },
+    {
+      "ts": "2026-04-16T15:01:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.2569709508841553,
+      "pressure_total": 1.5213537415651979,
+      "net_balance": 0.7356172093189575,
+      "balance_ratio": 1.483528050854327,
+      "rotation_score": 0.4,
+      "confidence": 0.6883832409799165
+    },
+    {
+      "ts": "2026-04-16T15:08:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.6519888062504768,
+      "pressure_total": 2.583958582971696,
+      "net_balance": -0.931969776721219,
+      "balance_ratio": 1.5641501765599206,
+      "rotation_score": 0.4,
+      "confidence": 0.6959361651180936
+    },
+    {
+      "ts": "2026-04-16T15:09:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.5932553760056585,
+      "pressure_total": 2.718741191117224,
+      "net_balance": -1.1254858151115654,
+      "balance_ratio": 1.7064064129714056,
+      "rotation_score": 0.2,
+      "confidence": 0.7549922725226053
+    },
+    {
+      "ts": "2026-04-16T15:14:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.420818004215785,
+      "pressure_total": 2.9948657560232177,
+      "net_balance": -1.5740477518074327,
+      "balance_ratio": 2.107846147175072,
+      "rotation_score": 0.2,
+      "confidence": 0.7788633023358984
+    },
+    {
+      "ts": "2026-04-16T15:15:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 1.3076261908124722,
+      "pressure_total": 3.3378736622263054,
+      "net_balance": -2.0302474714138334,
+      "balance_ratio": 2.5526206844728097,
+      "rotation_score": 0.2,
+      "confidence": 0.7976787932702194
+    },
+    {
+      "ts": "2026-04-16T15:16:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.329367770042059,
+      "pressure_total": 2.8075565854029074,
+      "net_balance": -0.47818881536084845,
+      "balance_ratio": 1.2052869544735798,
+      "rotation_score": 0.6,
+      "confidence": 0.6011655566413342
+    },
+    {
+      "ts": "2026-04-16T15:17:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.9247114602202777,
+      "pressure_total": 2.759468463179326,
+      "net_balance": -0.8347570029590483,
+      "balance_ratio": 1.4337050099257542,
+      "rotation_score": 0.4,
+      "confidence": 0.6834107336149067
+    },
+    {
+      "ts": "2026-04-16T15:26:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.2394201939500133,
+      "pressure_total": 2.1340862227005264,
+      "net_balance": 0.10533397124948696,
+      "balance_ratio": 1.0493578797937202,
+      "rotation_score": 0.8,
+      "confidence": 0.33637464345317786
+    },
+    {
+      "ts": "2026-04-16T15:27:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.434950425955547,
+      "pressure_total": 2.4525547685853666,
+      "net_balance": -0.01760434262981958,
+      "balance_ratio": 1.0072298566911937,
+      "rotation_score": 0.6,
+      "confidence": 0.3365273863333374
+    },
+    {
+      "ts": "2026-04-16T15:34:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.581413079853144,
+      "pressure_total": 1.6240782240533678,
+      "net_balance": 0.9573348557997763,
+      "balance_ratio": 1.5894635132847628,
+      "rotation_score": 0.4,
+      "confidence": 0.6981902840792554
+    },
+    {
+      "ts": "2026-04-16T15:39:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0328664469147366,
+      "pressure_total": 3.1436264600842283,
+      "net_balance": -1.1107600131694917,
+      "balance_ratio": 1.5464008788453774,
+      "rotation_score": 0.6,
+      "confidence": 0.6411614656077568
+    },
+    {
+      "ts": "2026-04-16T16:21:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.359617649099541,
+      "pressure_total": 1.7950502138489082,
+      "net_balance": 0.5645674352506327,
+      "balance_ratio": 1.314513449760327,
+      "rotation_score": 0.8,
+      "confidence": 0.5573076845191661
+    },
+    {
+      "ts": "2026-04-16T16:28:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.8857110118439606,
+      "pressure_total": 1.8116406973370194,
+      "net_balance": 0.07407031450694124,
+      "balance_ratio": 1.040885764277552,
+      "rotation_score": 0.2,
+      "confidence": 0.49811888422742395
+    },
+    {
+      "ts": "2026-04-16T16:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.219593366771165,
+      "pressure_total": 1.3813858192479476,
+      "net_balance": 0.8382075475232176,
+      "balance_ratio": 1.6067874274107965,
+      "rotation_score": 0.4,
+      "confidence": 0.699702367351727
+    },
+    {
+      "ts": "2026-04-16T16:42:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.4366501216721745,
+      "pressure_total": 1.8533468061849299,
+      "net_balance": -0.4166966845127553,
+      "balance_ratio": 1.290047436203705,
+      "rotation_score": 0.6,
+      "confidence": 0.6123777157984968
+    }
+  ],
+  "regime_summary": {
+    "current_regime": "mixed_rotating",
+    "dominant_regime": "mixed_rotating",
+    "time_in_support_led": 0.10714285714285714,
+    "time_in_pressure_led": 0.25,
+    "time_in_mixed_rotating": 0.6428571428571429,
+    "regime_flip_count": 10,
+    "longest_support_led_run": 2,
+    "longest_pressure_led_run": 3,
+    "longest_mixed_rotating_run": 10
+  },
+  "regime_config_used": {
+    "support_pressure_margin": 0.05,
+    "balance_ratio_threshold": 1.2,
+    "rotation_override_threshold": 0.35,
+    "dominant_channel_churn_window": 10,
+    "dominant_channel_churn_threshold": 3,
+    "epsilon": 1e-09,
+    "confidence_balance_weight": 1.4,
+    "confidence_ratio_weight": 1.0,
+    "confidence_rotation_weight": 1.2
+  },
+  "source_files_used": [
+    "ITA_2026-04-16_baseline_as_is_all_pal_log.jsonl",
+    "analysis_summary_20260416_101628.json",
+    "channel_labels_map.generated.json",
+    "copy_guardrail_runtime.generated.json",
+    "market_dashboard_source_manifest.json",
+    "market_panel7_raw.csv"
+  ]
+}

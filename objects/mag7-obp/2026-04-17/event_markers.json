@@ -4,32 +4,144 @@
   "session_date": "2026-04-17",
   "events": [
     {
-      "ts": "2026-04-17T17:30:00+00:00",
-      "event_type": "object_specific_transition",
-      "event_family": "object_specific",
-      "label": "NVDA took over the underwriting",
-      "short_label": "NVDA took over the underwriting",
-      "significance": 0.9286083582728564,
+      "ts": "2026-04-17T13:31:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Pressure broke decisively ahead",
+      "short_label": "Pressure broke decisively ahead",
+      "significance": 1.0,
       "channels_involved": [
-        "NVDA OBp",
-        "GOOGL OBp"
+        "AMZN OBp",
+        "MSFT OBp"
       ],
-      "regime_before": "support_led",
-      "regime_after": "mixed_rotating",
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
       "details": {
-        "semantic_type": "underwriting",
-        "trigger": "regime_flip"
+        "cross_kind": "negative_margin_cross",
+        "net_balance_before": 0.0,
+        "net_balance_after": -1.8265780950417416,
+        "threshold": 0.1
       }
     },
     {
-      "ts": "2026-04-17T17:30:00+00:00",
+      "ts": "2026-04-17T13:39:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "AAPL became main support",
+      "short_label": "AAPL main support",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "GOOGL OBp",
+        "AAPL OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "GOOGL OBp",
+        "new_channel": "AAPL OBp",
+        "old_value": 0.661355577520998,
+        "new_value": 0.380179228124774,
+        "net_balance_before": -1.3769496780047898,
+        "net_balance_after": -2.427514135465052,
+        "top_margin_after": 0.262179541697896
+      }
+    },
+    {
+      "ts": "2026-04-17T14:02:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond MSFT",
+      "short_label": "Support broadened beyond MSFT",
+      "significance": 1.0,
+      "channels_involved": [
+        "MSFT OBp",
+        "TSLA OBp"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.7655013663599954,
+        "top2_support_share_before": 1.0,
+        "support_hhi_before": 0.640981951078049,
+        "top1_support_share_after": 0.40323207443295794,
+        "top2_support_share_after": 0.7394747213680157,
+        "support_hhi_after": 0.34352864427567353
+      }
+    },
+    {
+      "ts": "2026-04-17T14:20:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Support regained control",
+      "short_label": "Support regained control",
+      "significance": 0.952331501045782,
+      "channels_involved": [
+        "NVDA OBp",
+        "META OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "support_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "support_led",
+        "net_balance_before": 3.5504845328264567,
+        "net_balance_after": 4.1386047035005875,
+        "confidence_before": 0.835811317967526,
+        "confidence_after": 0.8917972594369425
+      }
+    },
+    {
+      "ts": "2026-04-17T14:49:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "AMZN became main support",
+      "short_label": "AMZN main support",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "GOOGL OBp",
+        "AMZN OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "GOOGL OBp",
+        "new_channel": "AMZN OBp",
+        "old_value": 0.43169195605058513,
+        "new_value": 0.7190427045419742,
+        "net_balance_before": -2.1977211687838927,
+        "net_balance_after": -1.831618220457863,
+        "top_margin_after": 0.5259843457625658
+      }
+    },
+    {
+      "ts": "2026-04-17T15:15:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Pressure broke decisively ahead",
+      "short_label": "Pressure broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "META OBp",
+        "AAPL OBp"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "pressure_led",
+      "details": {
+        "cross_kind": "negative_margin_cross",
+        "net_balance_before": 1.2737775235634379,
+        "net_balance_after": -0.9449626156550406,
+        "threshold": 0.1
+      }
+    },
+    {
+      "ts": "2026-04-17T15:49:00+00:00",
       "event_type": "regime_flip",
       "event_family": "balance",
       "label": "Object moved into mixed rotation",
       "short_label": "Object moved into mixed rotation",
-      "significance": 0.8786083582728563,
+      "significance": 0.9446873089642662,
       "channels_involved": [
-        "NVDA OBp",
+        "TSLA OBp",
         "GOOGL OBp"
       ],
       "regime_before": "support_led",
@@ -37,99 +149,105 @@
       "details": {
         "regime_before": "support_led",
         "regime_after": "mixed_rotating",
-        "net_balance_before": 0.24,
-        "net_balance_after": -0.010000000000000009,
-        "confidence_before": 0.8189264405435172,
-        "confidence_after": 0.48740703530137636
+        "net_balance_before": 4.086669221873931,
+        "net_balance_after": 2.3485936475540807,
+        "confidence_before": 0.8965995485417504,
+        "confidence_after": 0.7873279312540574
       }
     },
     {
-      "ts": "2026-04-17T19:00:00+00:00",
-      "event_type": "balance_threshold_cross",
-      "event_family": "balance",
-      "label": "Pressure broke decisively ahead",
-      "short_label": "Pressure broke decisively ahead",
-      "significance": 1.0,
+      "ts": "2026-04-17T16:11:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "TSLA lost underwriting role",
+      "short_label": "TSLA lost underwriting role",
+      "significance": 0.8666666666666667,
       "channels_involved": [
-        "NVDA OBp",
-        "GOOGL OBp"
+        "TSLA OBp"
       ],
       "regime_before": "mixed_rotating",
-      "regime_after": "pressure_led",
+      "regime_after": "mixed_rotating",
       "details": {
-        "cross_kind": "negative_margin_cross",
-        "net_balance_before": -0.010000000000000009,
-        "net_balance_after": -0.16,
-        "threshold": 0.05
+        "anchor": "TSLA OBp",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.3075728508579423,
+        "new_value": -0.06039527527165225
       }
     },
     {
-      "ts": "2026-04-17T19:00:00+00:00",
-      "event_type": "object_specific_transition",
-      "event_family": "object_specific",
-      "label": "NVDA took over the underwriting",
-      "short_label": "NVDA took over the underwriting",
-      "significance": 0.9354066777637204,
-      "channels_involved": [
-        "NVDA OBp",
-        "GOOGL OBp"
-      ],
-      "regime_before": "mixed_rotating",
-      "regime_after": "pressure_led",
-      "details": {
-        "semantic_type": "underwriting",
-        "trigger": "regime_flip"
-      }
-    },
-    {
-      "ts": "2026-04-17T19:00:00+00:00",
+      "ts": "2026-04-17T16:36:00+00:00",
       "event_type": "regime_flip",
       "event_family": "balance",
       "label": "Structure flipped to pressure-led",
       "short_label": "Structure flipped to pressure-led",
-      "significance": 0.8854066777637204,
+      "significance": 0.9535922705573172,
       "channels_involved": [
-        "NVDA OBp",
-        "GOOGL OBp"
+        "AMZN OBp"
       ],
       "regime_before": "mixed_rotating",
       "regime_after": "pressure_led",
       "details": {
         "regime_before": "mixed_rotating",
         "regime_after": "pressure_led",
-        "net_balance_before": -0.010000000000000009,
-        "net_balance_after": -0.16,
-        "confidence_before": 0.5472628458923683,
-        "confidence_after": 0.79791816990032
+        "net_balance_before": -3.3630923637074464,
+        "net_balance_after": -4.861615727895238,
+        "confidence_before": 0.8382134260714916,
+        "confidence_after": 0.8965995485417504
+      }
+    },
+    {
+      "ts": "2026-04-17T16:52:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "AAPL OBp",
+        "NVDA OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -0.3076699427152767,
+        "net_balance_after": 1.2051348497510037,
+        "threshold": 0.1
       }
     }
   ],
   "event_summary": {
-    "event_count": 5,
-    "regime_flip_count": 2,
-    "dominant_support_change_count": 0,
+    "event_count": 10,
+    "regime_flip_count": 3,
+    "dominant_support_change_count": 2,
     "dominant_pressure_change_count": 0,
     "rotation_spike_count": 0,
     "anchor_gain_count": 0,
-    "anchor_loss_count": 0,
+    "anchor_loss_count": 1,
     "most_significant_event": {
-      "ts": "2026-04-17T19:00:00+00:00",
+      "ts": "2026-04-17T13:31:00+00:00",
       "label": "Pressure broke decisively ahead",
       "significance": 1.0
     }
   },
   "event_config_used": {
-    "min_event_significance": 0.6,
-    "dominant_change_min_margin": 0.05,
-    "balance_cross_margin": 0.05,
-    "rotation_window": 10,
-    "rotation_spike_threshold": 0.35,
-    "concentration_shift_min_delta": 0.15,
-    "anchor_role_min_abs_value": 0.08,
-    "event_merge_window": 2,
+    "min_event_significance": 0.85,
+    "dominant_change_min_margin": 0.12,
+    "balance_cross_margin": 0.1,
+    "rotation_window": 14,
+    "rotation_spike_threshold": 0.55,
+    "concentration_shift_min_delta": 0.25,
+    "anchor_role_min_abs_value": 0.12,
+    "event_merge_window": 8,
     "epsilon": 1e-09
   },
   "source_files_used": [
-    "synthetic_chart_payload_seed.json"
+    "MAG7_2026-04-17_baseline_as_is_all_pal_log.jsonl",
+    "analysis_summary_20260417_101049.json",
+    "channel_labels_map.generated.json",
+    "copy_guardrail_runtime.generated.json",
+    "market_dashboard_source_manifest.json",
+    "market_panel7_raw.csv"
   ]
 }

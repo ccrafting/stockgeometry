@@ -1,0 +1,16 @@
+{
+  "object_id": "ita__intraday",
+  "object_label": "ITA",
+  "session_date": "2026-04-16",
+  "object_question": "Is defense being accumulated or just reactively repriced?",
+  "semantic_type": "reactive_premium_quality",
+  "posture": "mixed_rotating",
+  "url": "index.html",
+  "embed_url": "../../../embeds/ita/2026-04-16/index.html",
+  "summary": "Defense is being traded through Vz, r5, and r1, while MFI is trying to turn that move into settled accumulation. Current posture: Mixed / rotating.",
+  "source_files": [
+    "chart_payload.json",
+    "regime_series.json",
+    "event_markers.json"
+  ]
+}

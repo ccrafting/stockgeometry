@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "object_id": "hormuz_transmission_intraday",
+  "session_date": "2026-04-20",
+  "events": [
+    {
+      "ts": "2026-04-20T13:35:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.9260788056968063,
+      "channels_involved": [
+        "XLE Energy Equity Response",
+        "Brent Crude (FRED)"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "support_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": 1.8050286758659624,
+        "net_balance_after": 0.541352412451225,
+        "confidence_before": 0.8599777306402742,
+        "confidence_after": 0.7176154447700485
+      }
+    },
+    {
+      "ts": "2026-04-20T13:56:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "Brent became largest stress channel",
+      "short_label": "Brent stress",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "JETS Fuel-Cost Stress Response",
+        "Brent Crude (FRED)"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "JETS Fuel-Cost Stress Response",
+        "new_channel": "Brent Crude (FRED)",
+        "old_value": 0.9234066722824238,
+        "new_value": 0.5994071568882177,
+        "net_balance_before": -0.46345117683490944,
+        "net_balance_after": 0.7962777920876827,
+        "top_margin_after": 0.5511970171478204
+      }
+    },
+    {
+      "ts": "2026-04-20T14:32:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "Credit became support anchor",
+      "short_label": "Credit main support",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "JETS Fuel-Cost Stress Response",
+        "High-Yield Spread (FRED)"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "JETS Fuel-Cost Stress Response",
+        "new_channel": "High-Yield Spread (FRED)",
+        "old_value": 0.6762508843832744,
+        "new_value": 0.4043294133853269,
+        "net_balance_before": 0.8410236540473954,
+        "net_balance_after": 0.11031192099581899,
+        "top_margin_after": 0.12225140982486854
+      }
+    },
+    {
+      "ts": "2026-04-20T15:10:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "XLE became support anchor",
+      "short_label": "XLE main support",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "JETS Fuel-Cost Stress Response",
+        "XLE Energy Equity Response"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "JETS Fuel-Cost Stress Response",
+        "new_channel": "XLE Energy Equity Response",
+        "old_value": 0.49328098989268326,
+        "new_value": 0.8067493947313962,
+        "net_balance_before": 0.7346463904623532,
+        "net_balance_after": 0.634983312166757,
+        "top_margin_after": 0.40241998134606927
+      }
+    },
+    {
+      "ts": "2026-04-20T15:41:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Pressure broke decisively ahead",
+      "short_label": "Pressure broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "High-Yield Spread (FRED)",
+        "Brent Crude (FRED)"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "negative_margin_cross",
+        "net_balance_before": 0.030452870399026333,
+        "net_balance_after": -1.126681211261153,
+        "threshold": 0.1
+      }
+    },
+    {
+      "ts": "2026-04-20T16:10:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "JETS lost anchor role",
+      "short_label": "JETS lost anchor role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "JETS Fuel-Cost Stress Response"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "JETS Fuel-Cost Stress Response",
+        "old_side": "support",
+        "new_side": "inactive",
+        "old_value": -0.9765739112737851,
+        "new_value": 0.0
+      }
+    },
+    {
+      "ts": "2026-04-20T16:45:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "JETS Fuel-Cost Stress Response",
+        "Brent Crude (FRED)"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -0.12935779395378955,
+        "net_balance_after": 0.41800683808453143,
+        "threshold": 0.1
+      }
+    },
+    {
+      "ts": "2026-04-20T17:17:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.9278979134837502,
+      "channels_involved": [
+        "High-Yield Spread (FRED)",
+        "XLE Energy Equity Response"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -0.7869083980730497,
+        "net_balance_after": -1.3073102216843022,
+        "confidence_before": 0.7601770783400297,
+        "confidence_after": 0.827810998709971
+      }
+    },
+    {
+      "ts": "2026-04-20T17:33:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "JETS became support anchor",
+      "short_label": "JETS main support",
+      "significance": 0.9333333333333332,
+      "channels_involved": [
+        "High-Yield Spread (FRED)",
+        "JETS Fuel-Cost Stress Response"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "High-Yield Spread (FRED)",
+        "new_channel": "JETS Fuel-Cost Stress Response",
+        "old_value": 0.4043294133853269,
+        "new_value": 0.952514595896274,
+        "net_balance_before": -1.0735662028302815,
+        "net_balance_after": -0.15045240447845654,
+        "top_margin_after": 0.5481851825109471
+      }
+    },
+    {
+      "ts": "2026-04-20T18:23:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Support regained control",
+      "short_label": "Support regained control",
+      "significance": 0.9216338361629028,
+      "channels_involved": [
+        "XLE Energy Equity Response",
+        "Brent Crude (FRED)"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "support_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "support_led",
+        "net_balance_before": 0.7792275921180616,
+        "net_balance_after": 1.3117587472889993,
+        "confidence_before": 0.7399830038149778,
+        "confidence_after": 0.8122103456873238
+      }
+    }
+  ],
+  "event_summary": {
+    "event_count": 10,
+    "regime_flip_count": 3,
+    "dominant_support_change_count": 3,
+    "dominant_pressure_change_count": 1,
+    "rotation_spike_count": 0,
+    "anchor_gain_count": 0,
+    "anchor_loss_count": 1,
+    "most_significant_event": {
+      "ts": "2026-04-20T15:41:00+00:00",
+      "label": "Pressure broke decisively ahead",
+      "significance": 1.0
+    }
+  },
+  "event_config_used": {
+    "min_event_significance": 0.85,
+    "dominant_change_min_margin": 0.12,
+    "balance_cross_margin": 0.1,
+    "rotation_window": 14,
+    "rotation_spike_threshold": 0.55,
+    "concentration_shift_min_delta": 0.25,
+    "anchor_role_min_abs_value": 0.12,
+    "event_merge_window": 8,
+    "epsilon": 1e-09
+  },
+  "source_files_used": [
+    "HORMUZ_2026-04-20_baseline_as_is_all_pal_log.jsonl",
+    "analysis_summary_20260420_121507.json",
+    "channel_labels_map.generated.json",
+    "copy_guardrail_runtime.generated.json",
+    "market_dashboard_source_manifest.json",
+    "market_panel7_raw.csv"
+  ]
+}
