@@ -20,7 +20,6 @@
       <div class="pf-main-chart-col">
         <section class="pf-chart-panel" aria-label="Price-first structural chart">
           <div id="price-first-chart-root" class="pf-chart-root"></div>
-          <p id="pf-runtime-notice" class="pf-runtime-notice" aria-live="polite"></p>
           <p class="pf-balance-help">This panel shows whether broad internal market quality is improving or deteriorating.</p>
           <p id="pf-accessible-summary" class="pf-accessible-summary" role="status">SPY on 2026-04-17. Current regime is Mixed / rotating.</p>
         </section>
@@ -61,14 +60,6 @@
     const legendRoot = document.getElementById("snapshot-legend-root");
     const heatmapRoot = document.getElementById("role-heatmap-root");
     const scatterRoot = document.getElementById("role-scatter-root");
-    const runtimeNotice = document.getElementById("pf-runtime-notice");
-
-    function setRuntimeNotice(message) {
-      if (!runtimeNotice) {
-        return;
-      }
-      runtimeNotice.textContent = message || "";
-    }
 
     function showRuntimeError(title, detail) {
       const box = document.createElement("div");
@@ -132,10 +123,6 @@
     }
 
     async function boot() {
-      if (window.location && window.location.protocol === "file:") {
-        setRuntimeNotice("Open this page through a local HTTP server; file:// mode can block JSON fetches.");
-      }
-
       if (Array.isArray(warnings) && warnings.length > 0) {
         for (const warning of warnings) {
           console.warn(`[PriceFirstStructuralChart] ${warning}`);
