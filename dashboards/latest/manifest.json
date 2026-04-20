@@ -9,7 +9,9 @@
       "embed_url": "../../embeds/hormuz/2026-04-17/index.html",
       "posture": "pressure_led",
       "structure": "transmission_routing",
-      "summary": "The market is routing the event through no stable support anchor, while XLE Energy Equity Response, Broad Dollar Index (FRED), and High-Yield Spread (FRED) are fighting that transmission. Current posture: pressure-led.",
+      "posture_label": "Pressure-led",
+      "structure_label": "Transmission routing",
+      "summary": "The market is routing the event through no stable support anchor, while XLE Energy Equity Response, Broad Dollar Index (FRED), and High-Yield Spread (FRED) are fighting that transmission. Current posture: Pressure-led.",
       "preview_image": ""
     },
     {
@@ -20,7 +22,9 @@
       "embed_url": "../../embeds/ita/2026-04-17/index.html",
       "posture": "support_led",
       "structure": "reactive_premium_quality",
-      "summary": "Defense is being traded through r1, Vz, and r5, while MFI is trying to turn that move into settled accumulation. Current posture: support-led.",
+      "posture_label": "Support-led",
+      "structure_label": "Reactive premium quality",
+      "summary": "Defense is being traded through r1, Vz, and r5, while MFI is trying to turn that move into settled accumulation. Current posture: Support-led.",
       "preview_image": ""
     },
     {
@@ -31,7 +35,9 @@
       "embed_url": "../../embeds/mag7-obp/2026-04-17/index.html",
       "posture": "pressure_led",
       "structure": "underwriting",
-      "summary": "The market is underwriting megacap sponsorship mainly through NVDA OBp, AAPL OBp, and MSFT OBp, while GOOGL OBp is the main name resisting that bid. Current posture: pressure-led.",
+      "posture_label": "Pressure-led",
+      "structure_label": "Underwriting",
+      "summary": "The market is underwriting megacap sponsorship mainly through NVDA OBp, AAPL OBp, and MSFT OBp, while GOOGL OBp is the main name resisting that bid. Current posture: Pressure-led.",
       "preview_image": ""
     },
     {
@@ -42,7 +48,9 @@
       "embed_url": "../../embeds/spy/2026-04-17/index.html",
       "posture": "mixed_rotating",
       "structure": "broad_market_quality",
-      "summary": "The tape is being pressured by MFI, r5, and sigma15, while OBp is absorbing that strain. Current posture: mixed-rotating.",
+      "posture_label": "Mixed / rotating",
+      "structure_label": "Broad market quality",
+      "summary": "The tape is being pressured by MFI, r5, and sigma15, while OBp is absorbing that strain. Current posture: Mixed / rotating.",
       "preview_image": ""
     }
   ]

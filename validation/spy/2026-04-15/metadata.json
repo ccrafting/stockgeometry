@@ -6,14 +6,6 @@
   "title": "SPY Validation",
   "question": "How is broad internal market quality organizing the tape?",
   "why_chosen": "Selected from real run `20260415_205941_SPY_backfill` because it retains non-trivial structure (217 raw events, 149 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.",
-  "intended_read": "Read as broad internal market quality: where internal pressure accumulates, where stabilization appears, and whether strain is being absorbed.",
-  "source_run_dir": "20260415_205941_SPY_backfill",
-  "validation_notes": {
-    "who_is_carrying_it": "OBp",
-    "who_is_fighting_it": "r5, MFI, and sigma15",
-    "what_follows": "Current posture is mixed-rotating. Latest structural change: Object moved into mixed rotation.",
-    "failure_mode": "If this reads like a generic oscillator panel without internal quality structure, semantics failed."
-  },
   "summary": "SPY on 2026-04-15. Current regime is Mixed / rotating. 10 structural events are marked.",
   "source_files_used": [
     "chart_payload.json",
@@ -23,5 +15,13 @@
     "market_dashboard_source_manifest.json",
     "market_panel7_raw.csv",
     "SPY_2026-04-15_baseline_as_is_all_pal_log.jsonl"
-  ]
+  ],
+  "intended_read": "Read as broad internal market quality: where internal pressure accumulates, where stabilization appears, and whether strain is being absorbed.",
+  "source_run_dir": "20260415_205941_SPY_backfill",
+  "validation_notes": {
+    "who_is_carrying_it": "OBp",
+    "who_is_fighting_it": "r5, MFI, and sigma15",
+    "what_follows": "Current posture is mixed-rotating. Latest structural change: Object moved into mixed rotation.",
+    "failure_mode": "If this reads like a generic oscillator panel without internal quality structure, semantics failed."
+  }
 }

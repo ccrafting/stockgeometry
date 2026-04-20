@@ -3,96 +3,61 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Market Structure Hub</title>
+  <title>StockGeometry</title>
   <style>
     :root {
-      color-scheme: dark;
-      --bg: #061018;
-      --panel: #0d1c2a;
-      --line: #1e3448;
-      --text: #deebf8;
-      --muted: #9fb5ca;
-      --link: #9ad0ff;
+      --bg: #0a1018;
+      --panel: #121a27;
+      --line: #29374e;
+      --text: #e7eef8;
+      --muted: #9ab0cc;
+      --link: #a7ceff;
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       min-height: 100vh;
-      background: radial-gradient(circle at 18% 4%, #13283d 0%, var(--bg) 66%);
+      background: radial-gradient(circle at 10% 0%, #18263a 0%, var(--bg) 58%);
       color: var(--text);
-      font-family: "Segoe UI", Tahoma, sans-serif;
+      font-family: "Aptos", "Segoe UI Variable", "Segoe UI", "Helvetica Neue", sans-serif;
       display: grid;
       place-items: center;
-      padding: 20px;
+      padding: 18px 12px;
     }
-    .hub {
-      width: min(900px, 100%);
-      background: color-mix(in srgb, var(--panel) 92%, #13263b);
+    .pf-home {
+      width: 100%;
+      max-width: 880px;
+      background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 14px;
-      padding: 22px;
-      box-shadow: 0 18px 44px rgba(3, 8, 14, 0.45);
+      padding: 18px 16px;
     }
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.3rem, 1.05rem + 1vw, 2rem);
+    .pf-home h1 {
+      margin: 0;
+      font-size: clamp(1.25rem, 0.9rem + 1.6vw, 2.0rem);
     }
-    p {
-      margin: 0 0 14px;
+    .pf-home p {
+      margin: 8px 0 0 0;
       color: var(--muted);
       line-height: 1.45;
-      max-width: 72ch;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
+    .pf-home a {
       margin-top: 14px;
-    }
-    .card {
-      background: #101f2d;
-      border: 1px solid #284055;
-      border-radius: 12px;
-      padding: 12px;
-    }
-    .card h2 {
-      margin: 0 0 8px;
-      font-size: 0.98rem;
-    }
-    .card p {
-      margin: 0 0 10px;
-      font-size: 0.88rem;
-      color: #adc0d3;
-    }
-    a {
-      color: var(--link);
+      display: inline-block;
+      color: #08121d;
+      background: var(--link);
+      border-radius: 999px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9rem;
+      padding: 9px 14px;
     }
-    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <main class="hub">
-    <h1>Market Structure Hub</h1>
-    <p>Static object surfaces generated from PAL session outputs. Validation pages are real-session proof references for MAG7 OBp, Hormuz, SPY, and ITA.</p>
-    <section class="grid">
-      <article class="card">
-        <h2>Validation Proof Pages</h2>
-        <p>Real-session semantic regression references with full chart stack, legend, and heat map.</p>
-        <a href="validation/index.html">Open Validation Index</a>
-      </article>
-      <article class="card">
-        <h2>Object Dashboard</h2>
-        <p>Static multi-object landing page for object cards and deep links into full session pages.</p>
-        <a href="dashboards/latest/index.html">Open Latest Dashboard</a>
-      </article>
-      <article class="card">
-        <h2>Site Manifest</h2>
-        <p>Artifact manifest with object/session coverage and generated paths.</p>
-        <a href="site_manifest.json">Open Manifest</a>
-      </article>
-    </section>
+  <main class="pf-home">
+    <h1>Current Object Dashboard</h1>
+    <p>Explore current structural reads across object pages with price-first context, support versus pressure balance, and relational mapping.</p>
+    <a href="dashboards/latest/index.html">Open latest dashboard</a>
   </main>
 </body>
 </html>

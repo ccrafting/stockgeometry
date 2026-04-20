@@ -1,5 +1,6 @@
 {
   "schema_version": "1.0",
+  "mode": "internal",
   "generated_examples": 4,
   "run_root": "pal_market_eth_out",
   "entries": [

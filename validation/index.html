@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Project 9 Validation Pages</title>
+  <title>Internal Validation Surface</title>
+  <meta name="robots" content="noindex"/>
   <style>
     :root {
       color-scheme: dark;
@@ -24,6 +25,18 @@
       max-width: 1080px;
       margin: 0 auto;
       padding: 28px 18px 44px;
+    }
+    .v-banner {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #2f4c66;
+      background: #13273a;
+      color: #c4dcf5;
+      font-size: 0.78rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
     }
     .v-intro {
       color: var(--muted);
@@ -89,15 +102,15 @@
 </head>
 <body>
   <main>
-    <h1>Project 9: Validation Examples and Real-Session Proof Pages</h1>
+    <p class='v-banner'>Internal validation surface</p>
+    <h1>Internal Validation Surface</h1>
     <p class="v-intro">
-      These pages are semantic regression references built from real PAL market sessions. Each one validates that
-      chart stack, legend/readout, and heat map preserve object-specific arrangement language.
+      Internal QA and semantic regression surface. Not for public distribution.
     </p>
     <section class="v-grid">
       <article class='v-card'><h2><a href='mag7-obp/2026-04-17/index.html'>MAG7 OBp</a></h2><p class='v-question'>Where is sponsorship living inside the generals?</p><div class='v-meta'><span>Session: 2026-04-17</span><span>Posture: mixed_rotating</span><span>Structure: underwriting</span></div><p>Selected from real run `20260417_170419_MAG7_backfill` because it retains non-trivial structure (106 raw events, 96 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as underwriting concentration: who is carrying sponsorship, who is resisting it, and whether support is broadening or narrowing.</p><p><strong>Failure mode:</strong> If this reads as generic tech leadership instead of underwriting burden-sharing, semantics failed.</p></article><article class='v-card'><h2><a href='hormuz/2026-04-20/index.html'>Hormuz Transmission</a></h2><p class='v-question'>How is the event being transmitted across crude, gas, credit, dollar, airlines, defense, and energy equities?</p><div class='v-meta'><span>Session: 2026-04-20</span><span>Posture: pressure_led</span><span>Structure: transmission_routing</span></div><p>Selected from real run `20260420_190248_HORMUZ_backfill` because it retains non-trivial structure (164 raw events, 107 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as routing/anchor structure: which channels are transmitting support and which stress channels are vetoing transmission.</p><p><strong>Failure mode:</strong> If this reads as generic risk-on/risk-off instead of routing and anchors, semantics failed.</p></article><article class='v-card'><h2><a href='spy/2026-04-15/index.html'>SPY</a></h2><p class='v-question'>How is broad internal market quality organizing the tape?</p><div class='v-meta'><span>Session: 2026-04-15</span><span>Posture: mixed_rotating</span><span>Structure: broad_market_quality</span></div><p>Selected from real run `20260415_205941_SPY_backfill` because it retains non-trivial structure (217 raw events, 149 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as broad internal market quality: where internal pressure accumulates, where stabilization appears, and whether strain is being absorbed.</p><p><strong>Failure mode:</strong> If this reads like a generic oscillator panel without internal quality structure, semantics failed.</p></article><article class='v-card'><h2><a href='ita/2026-04-16/index.html'>ITA</a></h2><p class='v-question'>Is defense being accumulated or just reactively repriced?</p><div class='v-meta'><span>Session: 2026-04-16</span><span>Posture: mixed_rotating</span><span>Structure: reactive_premium_quality</span></div><p>Selected from real run `20260416_171508_ITA_backfill` because it retains non-trivial structure (17 raw events, 10 regime flips). This validation page surfaces the top 10 markers to keep the read sparse and legible.</p><p><strong>Intended read:</strong> Read as reactive premium versus sponsorship quality: whether defense is being chased reactively or settled through sponsorship support.</p><p><strong>Failure mode:</strong> If this reads like a generic single-ticker move with no quality-of-move distinction, semantics failed.</p></article>
     </section>
-    <p class="v-manifest">Manifest: <a href="./manifest.json">./manifest.json</a></p>
+    <p class='v-manifest'>Manifest: <a href="./manifest.json">./manifest.json</a></p>
   </main>
 </body>
 </html>
