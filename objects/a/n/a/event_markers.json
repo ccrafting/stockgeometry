@@ -1,0 +1,2385 @@
+{
+  "schema_version": "1.0",
+  "object_id": "nvno__intraday",
+  "session_date": "n/a",
+  "events": [
+    {
+      "ts": "2025-01-10T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "OBp",
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -1.0406089207439595,
+        "net_balance_after": 1.8067850184740872,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-01-10T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond Trend",
+      "short_label": "Support broadened beyond Trend",
+      "significance": 1.0,
+      "channels_involved": [
+        "OBp",
+        "Trend"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.5427957626975181,
+        "top2_support_share_before": 1.0,
+        "support_hhi_before": 0.5036629546097247,
+        "top1_support_share_after": 0.3097218683473169,
+        "top2_support_share_after": 0.5630791919415707,
+        "support_hhi_after": 0.22583313524576987
+      }
+    },
+    {
+      "ts": "2025-01-10T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Pressure narrowed into MFI and r5",
+      "short_label": "Pressure narrowed into MFI and r5",
+      "significance": 1.0,
+      "channels_involved": [
+        "MFI",
+        "r5"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.35925334213219984,
+        "top2_pressure_share_before": 0.640950547573125,
+        "pressure_hhi_before": 0.27151145437971613,
+        "top1_pressure_share_after": 0.6168542310473224,
+        "top2_pressure_share_after": 1.0,
+        "pressure_hhi_after": 0.5273098226273221
+      }
+    },
+    {
+      "ts": "2025-01-10T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.9179504988512679,
+      "channels_involved": [
+        "OBp",
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "pressure_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": -1.0406089207439595,
+        "net_balance_after": 1.8067850184740872,
+        "confidence_before": 0.7981621074328135,
+        "confidence_after": 0.7329836002887182
+      }
+    },
+    {
+      "ts": "2025-01-10T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "MFI gained structural role",
+      "short_label": "MFI gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "MFI",
+        "old_side": "inactive",
+        "new_side": "pressure",
+        "old_value": 0.0095761915250837,
+        "new_value": 0.5117326500002554
+      }
+    },
+    {
+      "ts": "2025-01-10T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "MFI became main pressure",
+      "short_label": "MFI pressure",
+      "significance": 0.8666666666666666,
+      "channels_involved": [
+        "sigma15",
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "sigma15",
+        "new_channel": "MFI",
+        "old_value": 0.8850450535882648,
+        "new_value": 0.5117326500002554,
+        "net_balance_before": -1.0406089207439595,
+        "net_balance_after": 1.8067850184740872,
+        "top_margin_after": 0.19388089538126535
+      }
+    },
+    {
+      "ts": "2025-01-17T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "r5 became main pressure",
+      "short_label": "r5 pressure",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "MFI",
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "MFI",
+        "new_channel": "r5",
+        "old_value": 0.5117326500002554,
+        "new_value": 2.124299896057037,
+        "net_balance_before": 1.8067850184740872,
+        "net_balance_after": -4.538764669066101,
+        "top_margin_after": 0.5981747351495179
+      }
+    },
+    {
+      "ts": "2025-01-17T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "Trend lost structural role",
+      "short_label": "Trend lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "Trend",
+        "old_side": "support",
+        "new_side": "inactive",
+        "old_value": -0.6679435010406536,
+        "new_value": 0.02213416564243742
+      }
+    },
+    {
+      "ts": "2025-01-31T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.8257842557659552,
+      "channels_involved": [
+        "Trend",
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -3.0363384825835826,
+        "net_balance_after": -3.9060959459605478,
+        "confidence_before": 0.8703993604216017,
+        "confidence_after": 0.8959868630029046
+      }
+    },
+    {
+      "ts": "2025-02-07T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "OBp became main support",
+      "short_label": "OBp main support",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "Trend",
+        "OBp"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "Trend",
+        "new_channel": "OBp",
+        "old_value": 0.009238806945165101,
+        "new_value": 0.2774909804324628,
+        "net_balance_before": -3.9060959459605478,
+        "net_balance_after": -2.599044339015458,
+        "top_margin_after": 0.1694875924634921
+      }
+    },
+    {
+      "ts": "2025-02-07T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.9518471779167514,
+      "channels_involved": [
+        "OBp",
+        "r5"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "pressure_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": -3.9060959459605478,
+        "net_balance_after": -2.599044339015458,
+        "confidence_before": 0.8959868630029046,
+        "confidence_after": 0.8288541536642469
+      }
+    },
+    {
+      "ts": "2025-02-07T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "OBp gained structural role",
+      "short_label": "OBp gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "OBp"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "OBp",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": 0.05557055082972151,
+        "new_value": -0.2774909804324628
+      }
+    },
+    {
+      "ts": "2025-02-07T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "MFI lost structural role",
+      "short_label": "MFI lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "MFI",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.18240474780655125,
+        "new_value": -0.03534532649497213
+      }
+    },
+    {
+      "ts": "2025-02-07T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond Trend",
+      "short_label": "Support broadened beyond Trend",
+      "significance": 0.601962875106205,
+      "channels_involved": [
+        "OBp",
+        "Trend"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 1.0,
+        "top2_support_share_before": 1.0,
+        "support_hhi_before": 1.0,
+        "top1_support_share_after": 0.6593745404666979,
+        "top2_support_share_after": 0.9160123749645983,
+        "support_hhi_after": 0.507691683870528
+      }
+    },
+    {
+      "ts": "2025-02-21T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "r5 became main pressure",
+      "short_label": "r5 pressure",
+      "significance": 0.7166666666666666,
+      "channels_involved": [
+        "r1",
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r1",
+        "new_channel": "r5",
+        "old_value": 1.1647692916444647,
+        "new_value": 0.6427515672113702,
+        "net_balance_before": -1.3260825128719482,
+        "net_balance_after": -0.14204080052394308,
+        "top_margin_after": 0.19074633837460608
+      }
+    },
+    {
+      "ts": "2025-02-28T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "MFI lost structural role",
+      "short_label": "MFI lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "MFI"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "MFI",
+        "old_side": "support",
+        "new_side": "inactive",
+        "old_value": -0.16085915320522734,
+        "new_value": -0.0007243443855983744
+      }
+    },
+    {
+      "ts": "2025-02-28T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "Trend gained structural role",
+      "short_label": "Trend gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "Trend",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": -0.03434205724504574,
+        "new_value": -0.1847716578958361
+      }
+    },
+    {
+      "ts": "2025-03-07T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "OBp",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -0.2770799422777812,
+        "net_balance_after": 1.0539776611707525,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-03-07T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "sigma15 became main pressure",
+      "short_label": "sigma15 pressure",
+      "significance": 0.8666666666666666,
+      "channels_involved": [
+        "r1",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r1",
+        "new_channel": "sigma15",
+        "old_value": 0.7442186102964023,
+        "new_value": 0.12500730432304902,
+        "net_balance_before": -0.2770799422777812,
+        "net_balance_after": 1.0539776611707525,
+        "top_margin_after": 0.10231894176319734
+      }
+    },
+    {
+      "ts": "2025-03-07T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Pressure narrowed into sigma15 and r1",
+      "short_label": "Pressure narrowed into sigma15 and r1",
+      "significance": 0.6910929280968661,
+      "channels_involved": [
+        "sigma15",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.5469386792123746,
+        "top2_pressure_share_before": 0.8863023573010447,
+        "pressure_hhi_before": 0.42723677877974664,
+        "top1_pressure_share_after": 0.8463843724146629,
+        "top2_pressure_share_after": 1.0,
+        "pressure_hhi_after": 0.7399642669061999
+      }
+    },
+    {
+      "ts": "2025-03-14T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond sigma15",
+      "short_label": "Stress broadened beyond sigma15",
+      "significance": 1.0,
+      "channels_involved": [
+        "MFI",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.8463843724146629,
+        "top2_pressure_share_before": 1.0,
+        "pressure_hhi_before": 0.7399642669061999,
+        "top1_pressure_share_after": 0.3447736540238733,
+        "top2_pressure_share_after": 0.6673401023297073,
+        "pressure_hhi_after": 0.26766487989400267
+      }
+    },
+    {
+      "ts": "2025-03-21T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond r5",
+      "short_label": "Support broadened beyond r5",
+      "significance": 1.0,
+      "channels_involved": [
+        "r5",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.5003480759236029,
+        "top2_support_share_before": 1.0,
+        "support_hhi_before": 0.5000002423136972,
+        "top1_support_share_after": 0.478334207873128,
+        "top2_support_share_after": 0.73982115140536,
+        "support_hhi_after": 0.34037150992823534
+      }
+    },
+    {
+      "ts": "2025-03-21T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "sigma15 lost structural role",
+      "short_label": "sigma15 lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.33574991716263075,
+        "new_value": -0.07636622429065132
+      }
+    },
+    {
+      "ts": "2025-03-28T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "Trend gained structural role",
+      "short_label": "Trend gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "Trend",
+        "old_side": "inactive",
+        "new_side": "pressure",
+        "old_value": -0.018028070490258508,
+        "new_value": 0.534802981037209
+      }
+    },
+    {
+      "ts": "2025-03-28T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "r1 became main pressure",
+      "short_label": "r1 pressure",
+      "significance": 0.8666666666666666,
+      "channels_involved": [
+        "Vz",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "Vz",
+        "new_channel": "r1",
+        "old_value": 0.1558206429632612,
+        "new_value": 0.8849479501054375,
+        "net_balance_before": -0.15476811595845058,
+        "net_balance_after": -1.8963129389365356,
+        "top_margin_after": 0.35014496906822845
+      }
+    },
+    {
+      "ts": "2025-04-04T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond r1",
+      "short_label": "Stress broadened beyond r1",
+      "significance": 0.9123488949284573,
+      "channels_involved": [
+        "Trend",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.42135793603512467,
+        "top2_pressure_share_before": 0.6759983137527312,
+        "pressure_hhi_before": 0.2921124461400309,
+        "top1_pressure_share_after": 0.2386381512944163,
+        "top2_pressure_share_after": 0.44382572281151744,
+        "pressure_hhi_after": 0.17967720545640636
+      }
+    },
+    {
+      "ts": "2025-04-11T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.8210798806065187,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -3.810704701951409,
+        "net_balance_after": -5.781168550279228,
+        "confidence_before": 0.8429045311145473,
+        "confidence_after": 0.8965995485417504
+      }
+    },
+    {
+      "ts": "2025-04-18T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "OBp became main pressure",
+      "short_label": "OBp pressure",
+      "significance": 0.7833333333333332,
+      "channels_involved": [
+        "Trend",
+        "OBp"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "Trend",
+        "new_channel": "OBp",
+        "old_value": 1.2131639051604213,
+        "new_value": 1.009857149676341,
+        "net_balance_before": -5.781168550279228,
+        "net_balance_after": -4.188753926138664,
+        "top_margin_after": 0.10964809619711124
+      }
+    },
+    {
+      "ts": "2025-05-02T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.9595291468889671,
+      "channels_involved": [
+        "MFI"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "pressure_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": -6.5121842110162005,
+        "net_balance_after": -5.942041556139603,
+        "confidence_before": 0.8965995485417504,
+        "confidence_after": 0.8721384336809187
+      }
+    },
+    {
+      "ts": "2025-05-09T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support narrowed into sigma15",
+      "short_label": "Support narrowed into sigma15",
+      "significance": 1.0,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.0,
+        "top2_support_share_before": 0.0,
+        "support_hhi_before": 0.0,
+        "top1_support_share_after": 1.0,
+        "top2_support_share_after": 1.0,
+        "support_hhi_after": 1.0
+      }
+    },
+    {
+      "ts": "2025-05-09T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "sigma15 lost structural role",
+      "short_label": "sigma15 lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.6157847295098832,
+        "new_value": -0.04405337429740619
+      }
+    },
+    {
+      "ts": "2025-05-16T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "sigma15",
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -3.069254668417813,
+        "net_balance_after": 1.0934891187564324,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-05-16T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Pressure narrowed into r5 and MFI",
+      "short_label": "Pressure narrowed into r5 and MFI",
+      "significance": 1.0,
+      "channels_involved": [
+        "r5",
+        "MFI"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.2501602387607646,
+        "top2_pressure_share_before": 0.4919532279658061,
+        "pressure_hhi_before": 0.19125139195536806,
+        "top1_pressure_share_after": 0.8440255925027624,
+        "top2_pressure_share_after": 0.9860210026376831,
+        "pressure_hhi_after": 0.7327373096662791
+      }
+    },
+    {
+      "ts": "2025-05-16T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "sigma15 gained structural role",
+      "short_label": "sigma15 gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": -0.04405337429740619,
+        "new_value": -0.8336730921084121
+      }
+    },
+    {
+      "ts": "2025-05-16T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "r5 became main pressure",
+      "short_label": "r5 pressure",
+      "significance": 0.7202930212747306,
+      "channels_involved": [
+        "MFI",
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "MFI",
+        "new_channel": "r5",
+        "old_value": 0.778825883301448,
+        "new_value": 0.8179572227132758,
+        "net_balance_before": -3.069254668417813,
+        "net_balance_after": 1.0934891187564324,
+        "top_margin_after": 0.6803474483845285
+      }
+    },
+    {
+      "ts": "2025-05-23T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Support regained control",
+      "short_label": "Support regained control",
+      "significance": 0.7856763941743268,
+      "channels_involved": [
+        "sigma15",
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "support_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "support_led",
+        "net_balance_before": 1.0934891187564324,
+        "net_balance_after": 2.2017025675497814,
+        "confidence_before": 0.6867473159780368,
+        "confidence_after": 0.8504511269228784
+      }
+    },
+    {
+      "ts": "2025-05-30T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.877603455796436,
+      "channels_involved": [
+        "sigma15",
+        "r1"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "support_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": 2.2017025675497814,
+        "net_balance_after": 2.8223339329479638,
+        "confidence_before": 0.8504511269228784,
+        "confidence_after": 0.8310924300091369
+      }
+    },
+    {
+      "ts": "2025-06-06T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond r1",
+      "short_label": "Stress broadened beyond r1",
+      "significance": 1.0,
+      "channels_involved": [],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.5259834375433731,
+        "top2_pressure_share_before": 0.9471473139561855,
+        "pressure_hhi_before": 0.4568309937870562,
+        "top1_pressure_share_after": 0.0,
+        "top2_pressure_share_after": 0.0,
+        "pressure_hhi_after": 0.0
+      }
+    },
+    {
+      "ts": "2025-06-06T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond sigma15",
+      "short_label": "Support broadened beyond sigma15",
+      "significance": 0.9414696563770331,
+      "channels_involved": [
+        "sigma15",
+        "OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.37196344792251423,
+        "top2_support_share_before": 0.6693943087643373,
+        "support_hhi_before": 0.30871039725613214,
+        "top1_support_share_after": 0.2828115856558899,
+        "top2_support_share_after": 0.47377446303187465,
+        "support_hhi_after": 0.18379483023740367
+      }
+    },
+    {
+      "ts": "2025-06-06T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "Trend gained structural role",
+      "short_label": "Trend gained structural role",
+      "significance": 0.6448208182808861,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "Trend",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": 0.022694388424583774,
+        "new_value": -0.09425281404824673
+      }
+    },
+    {
+      "ts": "2025-06-20T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.9374874440505205,
+      "channels_involved": [
+        "r5",
+        "OBp"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "support_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": 3.408475424717736,
+        "net_balance_after": 1.3930766978720028,
+        "confidence_before": 0.8965995485417504,
+        "confidence_after": 0.7461858460326533
+      }
+    },
+    {
+      "ts": "2025-06-20T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "r5 became main support",
+      "short_label": "r5 main support",
+      "significance": 0.6205329764544881,
+      "channels_involved": [
+        "sigma15",
+        "r5"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "sigma15",
+        "new_channel": "r5",
+        "old_value": 1.1796723231690185,
+        "new_value": 0.5965783857404677,
+        "net_balance_before": 3.408475424717736,
+        "net_balance_after": 1.3930766978720028,
+        "top_margin_after": 0.03397771829797025
+      }
+    },
+    {
+      "ts": "2025-06-27T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support narrowed into sigma15 and Trend",
+      "short_label": "Support narrowed into sigma15 and Trend",
+      "significance": 1.0,
+      "channels_involved": [
+        "sigma15",
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.31104750652549373,
+        "top2_support_share_before": 0.6043795127804044,
+        "support_hhi_before": 0.25357755572853324,
+        "top1_support_share_after": 0.6709607603407377,
+        "top2_support_share_after": 0.8547685948187654,
+        "support_hhi_after": 0.4976562036162016
+      }
+    },
+    {
+      "ts": "2025-06-27T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "sigma15 became main support",
+      "short_label": "sigma15 main support",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "r5",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r5",
+        "new_channel": "sigma15",
+        "old_value": 0.5965783857404677,
+        "new_value": 0.7786530111027649,
+        "net_balance_before": 1.3930766978720028,
+        "net_balance_after": 0.7519194108539353,
+        "top_margin_after": 0.5653431840006371
+      }
+    },
+    {
+      "ts": "2025-06-27T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "r5 lost structural role",
+      "short_label": "r5 lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "r5",
+        "old_side": "support",
+        "new_side": "inactive",
+        "old_value": -0.5965783857404677,
+        "new_value": -0.03831383870150697
+      }
+    },
+    {
+      "ts": "2025-07-04T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "Vz became main pressure",
+      "short_label": "Vz pressure",
+      "significance": 0.8666666666666666,
+      "channels_involved": [
+        "OBp",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "OBp",
+        "new_channel": "Vz",
+        "old_value": 0.3076906019061389,
+        "new_value": 0.43122925245805044,
+        "net_balance_before": 0.7519194108539353,
+        "net_balance_after": 0.8546980888584716,
+        "top_margin_after": 0.3671764818844493
+      }
+    },
+    {
+      "ts": "2025-07-11T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond Vz",
+      "short_label": "Stress broadened beyond Vz",
+      "significance": 1.0,
+      "channels_involved": [
+        "r1",
+        "MFI"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.8286831086895803,
+        "top2_pressure_share_before": 0.951771810897406,
+        "pressure_hhi_before": 0.704192481462749,
+        "top1_pressure_share_after": 0.5247552939647295,
+        "top2_pressure_share_after": 0.755478575906368,
+        "pressure_hhi_after": 0.3585050884849903
+      }
+    },
+    {
+      "ts": "2025-07-11T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "r1 became main pressure",
+      "short_label": "r1 pressure",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "Vz",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "Vz",
+        "new_channel": "r1",
+        "old_value": 0.43122925245805044,
+        "new_value": 0.5456496478692833,
+        "net_balance_before": 0.8546980888584716,
+        "net_balance_after": -0.022892373097352703,
+        "top_margin_after": 0.30573958122560657
+      }
+    },
+    {
+      "ts": "2025-07-11T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "r5 gained structural role",
+      "short_label": "r5 gained structural role",
+      "significance": 0.7802004563504588,
+      "channels_involved": [
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "r5",
+        "old_side": "inactive",
+        "new_side": "pressure",
+        "old_value": 0.02509693478247016,
+        "new_value": 0.12925645855423723
+      }
+    },
+    {
+      "ts": "2025-07-18T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "Vz",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -0.022892373097352703,
+        "net_balance_after": 0.823082657279057,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-07-18T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond sigma15",
+      "short_label": "Support broadened beyond sigma15",
+      "significance": 1.0,
+      "channels_involved": [
+        "Vz",
+        "MFI"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.6349917989766293,
+        "top2_support_share_before": 0.8460171370179042,
+        "support_hhi_before": 0.4714570001551732,
+        "top1_support_share_after": 0.4123801573929821,
+        "top2_support_share_after": 0.5931050359998788,
+        "support_hhi_after": 0.2639980807421322
+      }
+    },
+    {
+      "ts": "2025-07-25T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "sigma15 became main support",
+      "short_label": "sigma15 main support",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "Vz",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "Vz",
+        "new_channel": "sigma15",
+        "old_value": 0.627882356966119,
+        "new_value": 0.48076113983084556,
+        "net_balance_before": 0.823082657279057,
+        "net_balance_after": 0.8596120908965414,
+        "top_margin_after": 0.06994562094568235
+      }
+    },
+    {
+      "ts": "2025-07-25T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "OBp lost structural role",
+      "short_label": "OBp lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "OBp",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.2289573655767701,
+        "new_value": 0.05590002898054605
+      }
+    },
+    {
+      "ts": "2025-08-01T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Support regained control",
+      "short_label": "Support regained control",
+      "significance": 0.780952703283575,
+      "channels_involved": [
+        "sigma15",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "support_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "support_led",
+        "net_balance_before": 0.8596120908965414,
+        "net_balance_after": 0.41298183305011327,
+        "confidence_before": 0.7639275123776035,
+        "confidence_after": 0.7462784111475874
+      }
+    },
+    {
+      "ts": "2025-08-08T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Pressure broke decisively ahead",
+      "short_label": "Pressure broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "sigma15",
+        "r1"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "negative_margin_cross",
+        "net_balance_before": 0.41298183305011327,
+        "net_balance_after": -0.6196198709080698,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-08-08T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support narrowed into sigma15 and Trend",
+      "short_label": "Support narrowed into sigma15 and Trend",
+      "significance": 1.0,
+      "channels_involved": [
+        "sigma15",
+        "Trend"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.36755996804487684,
+        "top2_support_share_before": 0.6630153487477731,
+        "support_hhi_before": 0.28707791533802823,
+        "top1_support_share_after": 0.692957667795669,
+        "top2_support_share_after": 0.8895238016686626,
+        "support_hhi_after": 0.525431400481414
+      }
+    },
+    {
+      "ts": "2025-08-08T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "MFI gained structural role",
+      "short_label": "MFI gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "MFI"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "MFI",
+        "old_side": "inactive",
+        "new_side": "pressure",
+        "old_value": 0.03264922140394555,
+        "new_value": 0.2567409641476124
+      }
+    },
+    {
+      "ts": "2025-08-08T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond r1",
+      "short_label": "Stress broadened beyond r1",
+      "significance": 0.7932147839339359,
+      "channels_involved": [
+        "r1",
+        "OBp"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.8052347395028984,
+        "top2_pressure_share_before": 0.9533671392209203,
+        "pressure_hhi_before": 0.6725208172529614,
+        "top1_pressure_share_after": 0.5367940377611434,
+        "top2_pressure_share_after": 0.8056288779096084,
+        "pressure_hhi_after": 0.39820014335624054
+      }
+    },
+    {
+      "ts": "2025-08-15T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond r1",
+      "short_label": "Stress broadened beyond r1",
+      "significance": 0.8895773746139632,
+      "channels_involved": [
+        "Vz",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.5367940377611434,
+        "top2_pressure_share_before": 0.8056288779096084,
+        "pressure_hhi_before": 0.39820014335624054,
+        "top1_pressure_share_after": 0.33835893198523903,
+        "top2_pressure_share_after": 0.6388107695299201,
+        "pressure_hhi_after": 0.29552412566454206
+      }
+    },
+    {
+      "ts": "2025-08-15T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "MFI became main support",
+      "short_label": "MFI main support",
+      "significance": 0.8499999999999999,
+      "channels_involved": [
+        "sigma15",
+        "MFI"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "sigma15",
+        "new_channel": "MFI",
+        "old_value": 0.48594371334729486,
+        "new_value": 0.29984504112424215,
+        "net_balance_before": -0.6196198709080698,
+        "net_balance_after": -0.5415713275510234,
+        "top_margin_after": 0.09139042328853669
+      }
+    },
+    {
+      "ts": "2025-08-15T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "Vz became main pressure",
+      "short_label": "Vz pressure",
+      "significance": 0.7541753703703847,
+      "channels_involved": [
+        "r1",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r1",
+        "new_channel": "Vz",
+        "old_value": 0.7090406091260533,
+        "new_value": 0.40292291694134286,
+        "net_balance_before": -0.6196198709080698,
+        "net_balance_after": -0.5415713275510234,
+        "top_margin_after": 0.04514033950617524
+      }
+    },
+    {
+      "ts": "2025-08-22T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.7823267700158012,
+      "channels_involved": [
+        "MFI",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -0.5415713275510234,
+        "net_balance_after": -2.103581282894681,
+        "confidence_before": 0.666423241641654,
+        "confidence_after": 0.8516344917819715
+      }
+    },
+    {
+      "ts": "2025-08-29T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.9465121328652881,
+      "channels_involved": [
+        "MFI",
+        "r5"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "pressure_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": -2.103581282894681,
+        "net_balance_after": -2.312920099416667,
+        "confidence_before": 0.8516344917819715,
+        "confidence_after": 0.842720553162532
+      }
+    },
+    {
+      "ts": "2025-08-29T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "sigma15 lost structural role",
+      "short_label": "sigma15 lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "support",
+        "new_side": "inactive",
+        "old_value": -0.16344388348495226,
+        "new_value": -0.011645808573925456
+      }
+    },
+    {
+      "ts": "2025-09-05T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond MFI",
+      "short_label": "Support broadened beyond MFI",
+      "significance": 1.0,
+      "channels_involved": [
+        "MFI",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.9516652165089671,
+        "top2_support_share_before": 1.0,
+        "support_hhi_before": 0.9080029356081842,
+        "top1_support_share_after": 0.389783551841425,
+        "top2_support_share_after": 0.7795508627417118,
+        "support_hhi_after": 0.35244759605048126
+      }
+    },
+    {
+      "ts": "2025-09-05T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "sigma15 gained structural role",
+      "short_label": "sigma15 gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": -0.011645808573925456,
+        "new_value": -0.25469282379441893
+      }
+    },
+    {
+      "ts": "2025-09-05T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "OBp became main pressure",
+      "short_label": "OBp pressure",
+      "significance": 0.8499999999999999,
+      "channels_involved": [
+        "r5",
+        "OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r5",
+        "new_channel": "OBp",
+        "old_value": 0.7065448288817717,
+        "new_value": 0.516821359098441,
+        "net_balance_before": -2.312920099416667,
+        "net_balance_after": -0.913540363086703,
+        "top_margin_after": 0.0727125978945779
+      }
+    },
+    {
+      "ts": "2025-09-12T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "sigma15 became main support",
+      "short_label": "sigma15 main support",
+      "significance": 0.8499999999999999,
+      "channels_involved": [
+        "MFI",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "MFI",
+        "new_channel": "sigma15",
+        "old_value": 0.2547034364113416,
+        "new_value": 0.4586358178590734,
+        "net_balance_before": -0.913540363086703,
+        "net_balance_after": -0.7244208136550594,
+        "top_margin_after": 0.14595423182380768
+      }
+    },
+    {
+      "ts": "2025-09-19T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.7734438586261878,
+      "channels_involved": [
+        "sigma15",
+        "OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -0.7244208136550594,
+        "net_balance_after": -0.4159385118442298,
+        "confidence_before": 0.7245929011506965,
+        "confidence_after": 0.742705338617996
+      }
+    },
+    {
+      "ts": "2025-09-26T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Pressure narrowed into r5 and r1",
+      "short_label": "Pressure narrowed into r5 and r1",
+      "significance": 1.0,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.3642112205579852,
+        "top2_pressure_share_before": 0.7098173138918425,
+        "pressure_hhi_before": 0.29955404524521184,
+        "top1_pressure_share_after": 0.8467191392804758,
+        "top2_pressure_share_after": 0.9051506705569278,
+        "pressure_hhi_after": 0.7234123787551076
+      }
+    },
+    {
+      "ts": "2025-09-26T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "r5 became main pressure",
+      "short_label": "r5 pressure",
+      "significance": 0.9999999999999999,
+      "channels_involved": [
+        "OBp",
+        "r5"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "OBp",
+        "new_channel": "r5",
+        "old_value": 0.429128986076623,
+        "new_value": 0.7237952879846327,
+        "net_balance_before": -0.4159385118442298,
+        "net_balance_after": -0.08044392323086436,
+        "top_margin_after": 0.673846650891627
+      }
+    },
+    {
+      "ts": "2025-09-26T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "OBp lost structural role",
+      "short_label": "OBp lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "OBp"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "OBp",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.429128986076623,
+        "new_value": 0.022600817569966014
+      }
+    },
+    {
+      "ts": "2025-09-26T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.8617301412030822,
+      "channels_involved": [
+        "sigma15",
+        "r5"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "pressure_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": -0.4159385118442298,
+        "net_balance_after": -0.08044392323086436,
+        "confidence_before": 0.742705338617996,
+        "confidence_after": 0.46718118254247354
+      }
+    },
+    {
+      "ts": "2025-10-10T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "OBp became main support",
+      "short_label": "OBp main support",
+      "significance": 0.9036377427119707,
+      "channels_involved": [
+        "sigma15",
+        "OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "sigma15",
+        "new_channel": "OBp",
+        "old_value": 0.5792160006139532,
+        "new_value": 0.6516839271030876,
+        "net_balance_before": -0.10133926041279784,
+        "net_balance_after": -0.2485159535504049,
+        "top_margin_after": 0.42188786718890636
+      }
+    },
+    {
+      "ts": "2025-10-10T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "OBp gained structural role",
+      "short_label": "OBp gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "OBp",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": 0.019759631095877417,
+        "new_value": -0.6516839271030876
+      }
+    },
+    {
+      "ts": "2025-10-17T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "OBp",
+        "r5"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -0.2485159535504049,
+        "net_balance_after": 0.5576966736807987,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-10-17T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "Vz lost structural role",
+      "short_label": "Vz lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "Vz",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.2113204638009477,
+        "new_value": 0.018366419482217067
+      }
+    },
+    {
+      "ts": "2025-10-17T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Pressure narrowed into r5 and r1",
+      "short_label": "Pressure narrowed into r5 and r1",
+      "significance": 0.8168140122749252,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.6014208069748701,
+        "top2_pressure_share_before": 0.7884307387935517,
+        "pressure_hhi_before": 0.42640407612593056,
+        "top1_pressure_share_after": 0.6276256700316115,
+        "top2_pressure_share_after": 0.9487223192504173,
+        "pressure_hhi_after": 0.49789579567232706
+      }
+    },
+    {
+      "ts": "2025-10-31T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "sigma15 gained structural role",
+      "short_label": "sigma15 gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": 0.02701231988330014,
+        "new_value": -0.17367456155848154
+      }
+    },
+    {
+      "ts": "2025-10-31T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "r1 became main pressure",
+      "short_label": "r1 pressure",
+      "significance": 0.7833333333333332,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r5",
+        "new_channel": "r1",
+        "old_value": 1.077825733446836,
+        "new_value": 0.5014367086481044,
+        "net_balance_before": -0.11988830433111608,
+        "net_balance_after": 0.6991160865290627,
+        "top_margin_after": 0.056796831262817093
+      }
+    },
+    {
+      "ts": "2025-10-31T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond OBp",
+      "short_label": "Support broadened beyond OBp",
+      "significance": 0.6501613460345298,
+      "channels_involved": [
+        "OBp",
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.9176311351195445,
+        "top2_support_share_before": 1.0,
+        "support_hhi_before": 0.8488315300424785,
+        "top1_support_share_after": 0.7367370493678902,
+        "top2_support_share_after": 0.8999462179884901,
+        "support_hhi_after": 0.5794294719279393
+      }
+    },
+    {
+      "ts": "2025-11-14T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Pressure broke decisively ahead",
+      "short_label": "Pressure broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "OBp",
+        "r5"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "negative_margin_cross",
+        "net_balance_before": 0.642837331638,
+        "net_balance_after": -0.25342778933438326,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-11-14T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond r1",
+      "short_label": "Stress broadened beyond r1",
+      "significance": 0.9096935262275081,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.5636471373352137,
+        "top2_pressure_share_before": 0.9213793374678235,
+        "pressure_hhi_before": 0.44876102672639806,
+        "top1_pressure_share_after": 0.3748274351933284,
+        "top2_pressure_share_after": 0.7282961340714869,
+        "pressure_hhi_after": 0.33746380120032315
+      }
+    },
+    {
+      "ts": "2025-11-14T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.8861614303519869,
+      "channels_involved": [
+        "OBp",
+        "r5"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "support_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": 0.642837331638,
+        "net_balance_after": -0.25342778933438326,
+        "confidence_before": 0.7401068587621334,
+        "confidence_after": 0.6093870289635067
+      }
+    },
+    {
+      "ts": "2025-11-21T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "OBp lost structural role",
+      "short_label": "OBp lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "OBp"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "OBp",
+        "old_side": "support",
+        "new_side": "inactive",
+        "old_value": -0.6246718423421183,
+        "new_value": 0.03286603286223594
+      }
+    },
+    {
+      "ts": "2025-11-21T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support narrowed into Trend",
+      "short_label": "Support narrowed into Trend",
+      "significance": 0.621428637850638,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_support_share_before": 0.6574420599867203,
+        "top2_support_share_before": 0.9095237873831207,
+        "support_hhi_before": 0.5039612045762302,
+        "top1_support_share_after": 1.0,
+        "top2_support_share_after": 1.0,
+        "support_hhi_after": 1.0
+      }
+    },
+    {
+      "ts": "2025-11-28T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Pressure narrowed into Vz and r1",
+      "short_label": "Pressure narrowed into Vz and r1",
+      "significance": 1.0,
+      "channels_involved": [
+        "Vz",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.41961094398691184,
+        "top2_pressure_share_before": 0.7074244460497741,
+        "pressure_hhi_before": 0.3207883807063671,
+        "top1_pressure_share_after": 0.6680461851143807,
+        "top2_pressure_share_after": 0.8872162689248843,
+        "pressure_hhi_after": 0.4989010146896324
+      }
+    },
+    {
+      "ts": "2025-11-28T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "sigma15 became main support",
+      "short_label": "sigma15 main support",
+      "significance": 0.9333333333333332,
+      "channels_involved": [
+        "Trend",
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "Trend",
+        "new_channel": "sigma15",
+        "old_value": 0.2469371905829121,
+        "new_value": 0.41728035315815576,
+        "net_balance_before": -0.9168649483093836,
+        "net_balance_after": -0.2685389327592127,
+        "top_margin_after": 0.3046718273339059
+      }
+    },
+    {
+      "ts": "2025-11-28T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "sigma15 gained structural role",
+      "short_label": "sigma15 gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": 0.011117176118136174,
+        "new_value": -0.41728035315815576
+      }
+    },
+    {
+      "ts": "2025-11-28T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "Vz became main pressure",
+      "short_label": "Vz pressure",
+      "significance": 0.8076488886301975,
+      "channels_involved": [
+        "r5",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r5",
+        "new_channel": "Vz",
+        "old_value": 0.4883441141145833,
+        "new_value": 0.5333866537232111,
+        "net_balance_before": -0.9168649483093836,
+        "net_balance_after": -0.2685389327592127,
+        "top_margin_after": 0.3583951633071637
+      }
+    },
+    {
+      "ts": "2025-12-05T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support broadened beyond sigma15",
+      "short_label": "Support broadened beyond sigma15",
+      "significance": 1.0,
+      "channels_involved": [
+        "sigma15",
+        "MFI"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "top1_support_share_before": 0.7874865272875656,
+        "top2_support_share_before": 0.9999999999999999,
+        "support_hhi_before": 0.6652970067437284,
+        "top1_support_share_after": 0.46298317012661283,
+        "top2_support_share_after": 0.6684031420098269,
+        "support_hhi_after": 0.31232668942348896
+      }
+    },
+    {
+      "ts": "2025-12-05T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.7725275394926043,
+      "channels_involved": [
+        "sigma15",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -0.2685389327592127,
+        "net_balance_after": -0.4469802320404764,
+        "confidence_before": 0.6371535133059449,
+        "confidence_after": 0.8249086171279846
+      }
+    },
+    {
+      "ts": "2025-12-19T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Support broke decisively ahead",
+      "short_label": "Support broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "Trend",
+        "Vz"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "positive_margin_cross",
+        "net_balance_before": -0.401861905293888,
+        "net_balance_after": 0.2835803438861534,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2025-12-19T00:00:00+00:00",
+      "event_type": "dominant_support_changed",
+      "event_family": "support",
+      "label": "Trend became main support",
+      "short_label": "Trend main support",
+      "significance": 0.9333333333333332,
+      "channels_involved": [
+        "r1",
+        "Trend"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "r1",
+        "new_channel": "Trend",
+        "old_value": 0.08434045782443866,
+        "new_value": 0.23797229176065332,
+        "net_balance_before": -0.401861905293888,
+        "net_balance_after": 0.2835803438861534,
+        "top_margin_after": 0.0853736958673681
+      }
+    },
+    {
+      "ts": "2025-12-19T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "sigma15 gained structural role",
+      "short_label": "sigma15 gained structural role",
+      "significance": 0.8458502176165313,
+      "channels_involved": [
+        "sigma15"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "sigma15",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": -0.07002574407832896,
+        "new_value": -0.15259859589328523
+      }
+    },
+    {
+      "ts": "2026-01-02T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "Vz lost structural role",
+      "short_label": "Vz lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "Vz"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "Vz",
+        "old_side": "pressure",
+        "new_side": "inactive",
+        "old_value": 0.17042800036080125,
+        "new_value": -0.03262188631740315
+      }
+    },
+    {
+      "ts": "2026-01-02T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.8640275195382392,
+      "channels_involved": [
+        "r5",
+        "sigma15"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "support_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": 0.299330462261456,
+        "net_balance_after": 0.6662571029724552,
+        "confidence_before": 0.7931814638601901,
+        "confidence_after": 0.8107853144535582
+      }
+    },
+    {
+      "ts": "2026-01-02T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "sigma15 became main pressure",
+      "short_label": "sigma15 pressure",
+      "significance": 0.7421479911865609,
+      "channels_involved": [
+        "Vz",
+        "sigma15"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "old_channel": "Vz",
+        "new_channel": "sigma15",
+        "old_value": 0.17042800036080125,
+        "new_value": 0.04649829061115335,
+        "net_balance_before": 0.299330462261456,
+        "net_balance_after": 0.6662571029724552,
+        "top_margin_after": 0.02924688741998238
+      }
+    },
+    {
+      "ts": "2026-01-09T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "MFI gained structural role",
+      "short_label": "MFI gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "MFI"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "anchor": "MFI",
+        "old_side": "inactive",
+        "new_side": "support",
+        "old_value": 0.017251403191170966,
+        "new_value": -0.27558797443501487
+      }
+    },
+    {
+      "ts": "2026-01-16T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Support regained control",
+      "short_label": "Support regained control",
+      "significance": 0.9528860305216185,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "support_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "support_led",
+        "net_balance_before": 1.316827234059895,
+        "net_balance_after": 1.8136178922474042,
+        "confidence_before": 0.8681130021760985,
+        "confidence_after": 0.8626643150902933
+      }
+    },
+    {
+      "ts": "2026-01-23T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond r1",
+      "short_label": "Stress broadened beyond r1",
+      "significance": 1.0,
+      "channels_involved": [],
+      "regime_before": "support_led",
+      "regime_after": "support_led",
+      "details": {
+        "top1_pressure_share_before": 0.9273390083821051,
+        "top2_pressure_share_before": 1.0,
+        "pressure_hhi_before": 0.8652372561700019,
+        "top1_pressure_share_after": 0.0,
+        "top2_pressure_share_after": 0.0,
+        "pressure_hhi_after": 0.0
+      }
+    },
+    {
+      "ts": "2026-02-13T00:00:00+00:00",
+      "event_type": "balance_threshold_cross",
+      "event_family": "balance",
+      "label": "Pressure broke decisively ahead",
+      "short_label": "Pressure broke decisively ahead",
+      "significance": 1.0,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "cross_kind": "negative_margin_cross",
+        "net_balance_before": 1.7658072676801966,
+        "net_balance_after": -0.5133526329873117,
+        "threshold": 0.05
+      }
+    },
+    {
+      "ts": "2026-02-13T00:00:00+00:00",
+      "event_type": "pressure_concentration_shift",
+      "event_family": "pressure",
+      "label": "Stress broadened beyond r1",
+      "short_label": "Stress broadened beyond r1",
+      "significance": 1.0,
+      "channels_involved": [
+        "r1",
+        "sigma15"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "top1_pressure_share_before": 0.6603006631226255,
+        "top2_pressure_share_before": 0.9999999999999999,
+        "pressure_hhi_before": 0.5513926051951068,
+        "top1_pressure_share_after": 0.47233806254751776,
+        "top2_pressure_share_after": 0.782906150234754,
+        "pressure_hhi_after": 0.3666855220267448
+      }
+    },
+    {
+      "ts": "2026-02-13T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Object moved into mixed rotation",
+      "short_label": "Object moved into mixed rotation",
+      "significance": 0.7640111316980663,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "support_led",
+      "regime_after": "mixed_rotating",
+      "details": {
+        "regime_before": "support_led",
+        "regime_after": "mixed_rotating",
+        "net_balance_before": 1.7658072676801966,
+        "net_balance_after": -0.5133526329873117,
+        "confidence_before": 0.8047723476371743,
+        "confidence_after": 0.6086245953993953
+      }
+    },
+    {
+      "ts": "2026-02-20T00:00:00+00:00",
+      "event_type": "regime_flip",
+      "event_family": "balance",
+      "label": "Structure flipped to pressure-led",
+      "short_label": "Structure flipped to pressure-led",
+      "significance": 0.8982875974364322,
+      "channels_involved": [
+        "r5",
+        "r1"
+      ],
+      "regime_before": "mixed_rotating",
+      "regime_after": "pressure_led",
+      "details": {
+        "regime_before": "mixed_rotating",
+        "regime_after": "pressure_led",
+        "net_balance_before": -0.5133526329873117,
+        "net_balance_after": -2.902019550256453,
+        "confidence_before": 0.6086245953993953,
+        "confidence_after": 0.8101616756659317
+      }
+    },
+    {
+      "ts": "2026-02-27T00:00:00+00:00",
+      "event_type": "support_concentration_shift",
+      "event_family": "support",
+      "label": "Support narrowed into r5 and OBp",
+      "short_label": "Support narrowed into r5 and OBp",
+      "significance": 0.880833440758223,
+      "channels_involved": [
+        "r5",
+        "OBp"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "pressure_led",
+      "details": {
+        "top1_support_share_before": 0.3669000303863049,
+        "top2_support_share_before": 0.7172540149449755,
+        "support_hhi_before": 0.3062952369526453,
+        "top1_support_share_after": 0.45249146867671103,
+        "top2_support_share_after": 0.8852937290747805,
+        "support_hhi_after": 0.40522385442045517
+      }
+    },
+    {
+      "ts": "2026-02-27T00:00:00+00:00",
+      "event_type": "anchor_lost",
+      "event_family": "anchor",
+      "label": "Trend lost structural role",
+      "short_label": "Trend lost structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "pressure_led",
+      "details": {
+        "anchor": "Trend",
+        "old_side": "support",
+        "new_side": "inactive",
+        "old_value": -0.31006780694959435,
+        "new_value": -0.0644190340636106
+      }
+    },
+    {
+      "ts": "2026-03-06T00:00:00+00:00",
+      "event_type": "anchor_gained",
+      "event_family": "anchor",
+      "label": "Trend gained structural role",
+      "short_label": "Trend gained structural role",
+      "significance": 0.8666666666666667,
+      "channels_involved": [
+        "Trend"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "pressure_led",
+      "details": {
+        "anchor": "Trend",
+        "old_side": "inactive",
+        "new_side": "pressure",
+        "old_value": -0.0644190340636106,
+        "new_value": 0.3744615190427567
+      }
+    },
+    {
+      "ts": "2026-03-13T00:00:00+00:00",
+      "event_type": "dominant_pressure_changed",
+      "event_family": "pressure",
+      "label": "sigma15 became main pressure",
+      "short_label": "sigma15 pressure",
+      "significance": 0.8499999999999999,
+      "channels_involved": [
+        "r1",
+        "sigma15"
+      ],
+      "regime_before": "pressure_led",
+      "regime_after": "pressure_led",
+      "details": {
+        "old_channel": "r1",
+        "new_channel": "sigma15",
+        "old_value": 2.4901756130137387,
+        "new_value": 2.2088503905231183,
+        "net_balance_before": -6.616561553064926,
+        "net_balance_after": -5.355527847051906,
+        "top_margin_after": 0.342933902468018
+      }
+    }
+  ],
+  "event_summary": {
+    "event_count": 109,
+    "regime_flip_count": 19,
+    "dominant_support_change_count": 9,
+    "dominant_pressure_change_count": 16,
+    "rotation_spike_count": 0,
+    "anchor_gain_count": 15,
+    "anchor_loss_count": 13,
+    "most_significant_event": {
+      "ts": "2025-01-10T00:00:00+00:00",
+      "label": "Support broke decisively ahead",
+      "significance": 1.0
+    }
+  },
+  "event_config_used": {
+    "min_event_significance": 0.6,
+    "dominant_change_min_margin": 0.05,
+    "balance_cross_margin": 0.05,
+    "rotation_window": 10,
+    "rotation_spike_threshold": 0.35,
+    "concentration_shift_min_delta": 0.15,
+    "anchor_role_min_abs_value": 0.08,
+    "event_merge_window": 2,
+    "epsilon": 1e-09
+  },
+  "source_files_used": [
+    "NVNO_2025-01-01_to_2026-04-21_baseline_as_is_all_pal_log.jsonl",
+    "analysis_summary.json",
+    "channel_labels_map.json",
+    "chart_payload.json",
+    "config.json",
+    "copy_guardrail_runtime.json",
+    "dashboard_timeseries.csv",
+    "market_dashboard_source_manifest.json",
+    "object_semantics_spec.json",
+    "regime_series.json",
+    "role_vector_timeseries.csv",
+    "state_membership_timeseries.csv"
+  ]
+}
