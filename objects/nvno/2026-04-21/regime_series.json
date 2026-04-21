@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "object_id": "nvno__intraday",
+  "session_date": "2026-04-21",
+  "regime_series": [
+    {
+      "ts": "2026-04-21T13:30:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.0,
+      "pressure_total": 0.0,
+      "net_balance": 0.0,
+      "balance_ratio": 0.0,
+      "rotation_score": 0.0,
+      "confidence": 0.5
+    },
+    {
+      "ts": "2026-04-21T13:33:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 0.6088593650139138,
+      "net_balance": -0.6088593650139138,
+      "balance_ratio": 608859365.0139138,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-21T14:42:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.0,
+      "pressure_total": 0.0,
+      "net_balance": 0.0,
+      "balance_ratio": 0.0,
+      "rotation_score": 0.2,
+      "confidence": 0.44028635073280703
+    },
+    {
+      "ts": "2026-04-21T14:55:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.02420406827816901,
+      "pressure_total": 1.2988776062225589,
+      "net_balance": -1.2746735379443899,
+      "balance_ratio": 53.66360693148798,
+      "rotation_score": 0.4,
+      "confidence": 0.866316774646836
+    },
+    {
+      "ts": "2026-04-21T15:34:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 5.051005916440604,
+      "net_balance": -5.051005916440604,
+      "balance_ratio": 5051005916.440604,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-21T15:35:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0,
+      "pressure_total": 6.275405577958477,
+      "net_balance": -6.275405577958477,
+      "balance_ratio": 6275405577.958476,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-21T16:15:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.07166425401156296,
+      "pressure_total": 3.8886697009409805,
+      "net_balance": -3.8170054469294175,
+      "balance_ratio": 54.26233419402576,
+      "rotation_score": 0.6,
+      "confidence": 0.8360781881572641
+    },
+    {
+      "ts": "2026-04-21T16:55:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 0.0791987489026083,
+      "pressure_total": 3.862944997318375,
+      "net_balance": -3.783746248415767,
+      "balance_ratio": 48.77532853541268,
+      "rotation_score": 0.2,
+      "confidence": 0.891266856785641
+    },
+    {
+      "ts": "2026-04-21T17:19:00+00:00",
+      "regime": "pressure_led",
+      "support_total": 2.071719445402647,
+      "pressure_total": 2.9041830803366695,
+      "net_balance": -0.8324636349340224,
+      "balance_ratio": 1.4018225714786539,
+      "rotation_score": 0.2,
+      "confidence": 0.729920375661828
+    },
+    {
+      "ts": "2026-04-21T18:11:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 3.450229109276992,
+      "pressure_total": 1.4521853018027364,
+      "net_balance": 1.9980438074742557,
+      "balance_ratio": 2.375887639816966,
+      "rotation_score": 0.8,
+      "confidence": 0.6480750373019678
+    },
+    {
+      "ts": "2026-04-21T18:15:00+00:00",
+      "regime": "support_led",
+      "support_total": 6.708619571812706,
+      "pressure_total": 0.0,
+      "net_balance": 6.708619571812706,
+      "balance_ratio": 6708619571.812706,
+      "rotation_score": 0.2,
+      "confidence": 0.8965995485417504
+    },
+    {
+      "ts": "2026-04-21T18:31:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.361580458139015,
+      "pressure_total": 0.0,
+      "net_balance": 2.361580458139015,
+      "balance_ratio": 2361580458.139015,
+      "rotation_score": 0.4,
+      "confidence": 0.8721384336809187
+    },
+    {
+      "ts": "2026-04-21T19:35:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.365002620226495,
+      "pressure_total": 0.18014515478370097,
+      "net_balance": 2.184857465442794,
+      "balance_ratio": 13.128316568192673,
+      "rotation_score": 0.6,
+      "confidence": 0.8148467872726746
+    },
+    {
+      "ts": "2026-04-21T19:37:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 0.9836203595787232,
+      "pressure_total": 1.0968132808089346,
+      "net_balance": -0.11319292123021141,
+      "balance_ratio": 1.1150778551174876,
+      "rotation_score": 0.4,
+      "confidence": 0.5427853437326505
+    },
+    {
+      "ts": "2026-04-21T19:53:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.0989592825891075,
+      "pressure_total": 0.7772807039428788,
+      "net_balance": 1.3216785786462286,
+      "balance_ratio": 2.700387738871949,
+      "rotation_score": 0.4,
+      "confidence": 0.7619359131411882
+    },
+    {
+      "ts": "2026-04-21T19:54:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 1.2015021043241203,
+      "pressure_total": 1.12387106436499,
+      "net_balance": 0.07763103995913023,
+      "balance_ratio": 1.0690746851846331,
+      "rotation_score": 0.4,
+      "confidence": 0.4780420067175457
+    },
+    {
+      "ts": "2026-04-21T19:58:00+00:00",
+      "regime": "mixed_rotating",
+      "support_total": 2.8147992646995945,
+      "pressure_total": 0.5865273591575927,
+      "net_balance": 2.2282719055420017,
+      "balance_ratio": 4.799092865407652,
+      "rotation_score": 0.6,
+      "confidence": 0.7680202226022963
+    },
+    {
+      "ts": "2026-04-21T19:59:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.9312931048861333,
+      "pressure_total": 0.4554420952752801,
+      "net_balance": 3.475851009610853,
+      "balance_ratio": 8.631817624389694,
+      "rotation_score": 0.2,
+      "confidence": 0.8663768928656383
+    },
+    {
+      "ts": "2026-04-21T20:00:00+00:00",
+      "regime": "support_led",
+      "support_total": 3.2306461957424992,
+      "pressure_total": 0.30219968909359,
+      "net_balance": 2.928446506648909,
+      "balance_ratio": 10.690435206708573,
+      "rotation_score": 0.2,
+      "confidence": 0.8721928375329319
+    }
+  ],
+  "regime_summary": {
+    "current_regime": "support_led",
+    "dominant_regime": "mixed_rotating",
+    "time_in_support_led": 0.15789473684210525,
+    "time_in_pressure_led": 0.2631578947368421,
+    "time_in_mixed_rotating": 0.5789473684210527,
+    "regime_flip_count": 9,
+    "longest_support_led_run": 2,
+    "longest_pressure_led_run": 2,
+    "longest_mixed_rotating_run": 6
+  },
+  "regime_config_used": {
+    "support_pressure_margin": 0.05,
+    "balance_ratio_threshold": 1.2,
+    "rotation_override_threshold": 0.35,
+    "dominant_channel_churn_window": 10,
+    "dominant_channel_churn_threshold": 3,
+    "epsilon": 1e-09,
+    "confidence_balance_weight": 1.4,
+    "confidence_ratio_weight": 1.0,
+    "confidence_rotation_weight": 1.2
+  },
+  "source_files_used": [
+    "NVNO_2026-04-21_baseline_as_is_all_pal_log.jsonl",
+    "analysis_summary.json",
+    "channel_labels_map.json",
+    "chart_payload.json",
+    "config.json",
+    "copy_guardrail_runtime.json",
+    "dashboard_timeseries.csv",
+    "market_dashboard_source_manifest.json",
+    "object_semantics_spec.json",
+    "role_vector_timeseries.csv",
+    "state_membership_timeseries.csv"
+  ]
+}

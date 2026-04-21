@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NVNO</title>
+  <link rel="stylesheet" href="./_assets/price-first-chart.css"/>
+</head>
+<body>
+  <main class="pf-page pf-object-mode">
+    <header class="pf-header">
+      <h1 class="pf-title">NVNO</h1>
+      <p class="pf-subtitle">How is NVNO internal structure organizing the tape?</p>
+      <div class="pf-chip-row">
+        <div class="pf-chip"><span class="pf-chip-label">Session</span><span class="pf-chip-value">Intraday</span></div><div class="pf-chip"><span class="pf-chip-label">What we pulled</span><span class="pf-chip-value">single_ticker</span></div><div class="pf-chip"><span class="pf-chip-label">Why</span><span class="pf-chip-value">How is NVNO internal structure organizing the tape?</span></div><div class="pf-chip"><span class="pf-chip-label">Posture</span><span class="pf-chip-value">Support-led</span></div><div class="pf-chip"><span class="pf-chip-label">Structure</span><span class="pf-chip-value">Single ticker price behavior</span></div><div class="pf-chip"><span class="pf-chip-label">Price mode</span><span class="pf-chip-value">Raw price</span></div>
+      </div>
+    </header>
+
+    <section class="pf-main-layout">
+      <div class="pf-main-chart-col">
+        <section class="pf-chart-panel" aria-label="Price-first structural chart">
+          <div id="price-first-chart-root" class="pf-chart-root"></div>
+          <p class="pf-balance-help">This panel shows whether support or pressure is dominating through the session.</p>
+          <p id="pf-accessible-summary" class="pf-accessible-summary" role="status">NVNO on 2026-04-21. Current regime is Support-led.</p>
+        </section>
+      </div>
+      <aside class="pf-legend-panel" aria-label="Snapshot legend and relational readout"><div id="snapshot-legend-root" class="pf-legend-shell"></div></aside>
+    </section>
+
+    <section class="pf-secondary-stack">
+      <section class="pf-subpanel pf-heatmap-panel" aria-label="Structural heat map"><h2 class="pf-subpanel-title">Where Support and Pressure Were Concentrated</h2><div id="role-heatmap-root" class="pf-heatmap-root"></div></section>
+      
+    </section>
+
+    <section class="pf-notes-block" aria-label="Session notes"><h2 class="pf-notes-title">Session readout</h2><p class="pf-notes-text">Support is led by sigma15, OBp, and MFI, while pressure is led by Trend and r1. Current posture: Support-led.</p></section>
+    
+  </main>
+
+  <script src="./_assets/semanticTemplates.js"></script>
+  <script src="./_assets/relationalReadout.js"></script>
+  <script src="./_assets/RankingList.js"></script>
+  <script src="./_assets/EventSummaryBlock.js"></script>
+  <script src="./_assets/RelationalReadoutBlock.js"></script>
+  <script src="./_assets/SnapshotLegend.js"></script>
+  <script src="./_assets/PriceFirstStructuralChart.js"></script>
+  <script src="./_assets/RoleHeatmapPanel.js"></script>
+  <script src="./_assets/RoleScatterPanel.js"></script>
+  <script>
+    const semanticRegistryUrl = "./_assets/semantic_registry.json";
+    const scriptPaths = ["./_assets/semanticTemplates.js", "./_assets/relationalReadout.js", "./_assets/RankingList.js", "./_assets/EventSummaryBlock.js", "./_assets/RelationalReadoutBlock.js", "./_assets/SnapshotLegend.js", "./_assets/PriceFirstStructuralChart.js", "./_assets/RoleHeatmapPanel.js", "./_assets/RoleScatterPanel.js"];
+    const model = {"schema_version":"1.0","object_id":"nvno__intraday","object_label":"NVNO","session_date":"2026-04-21","session_label":"Intraday","object_question":"How is NVNO internal structure organizing the tape?","object_semantic_type":"single_ticker_price_behavior","value_kind":"price","y_axis_label":"Price","series":[{"ts":"2026-04-21T13:30:00+00:00","value":12.2757,"price_value":12.2757,"normalized_value":0.0,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":null,"dominant_pressure":null,"support_total":0.0,"pressure_total":0.0,"net_balance":0.0,"support_pressure_ratio":null,"balance_momentum":null,"event_short_label":null},{"ts":"2026-04-21T13:33:00+00:00","value":12.295,"price_value":12.295,"normalized_value":0.0015722117679644043,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":null,"dominant_pressure":"OBp","support_total":0.0,"pressure_total":0.6088593650139138,"net_balance":-0.6088593650139138,"support_pressure_ratio":0.0,"balance_momentum":-0.6088593650139138,"event_short_label":"Pressure broke decisively ahead"},{"ts":"2026-04-21T14:42:00+00:00","value":12.53,"price_value":12.53,"normalized_value":0.020715722932296954,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":null,"dominant_pressure":null,"support_total":0.0,"pressure_total":0.0,"net_balance":0.0,"support_pressure_ratio":null,"balance_momentum":0.6088593650139138,"event_short_label":"OBp lost structural role"},{"ts":"2026-04-21T14:55:00+00:00","value":12.3001,"price_value":12.3001,"normalized_value":0.001987666691105172,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"Vz","dominant_pressure":"MFI","support_total":0.02420406827816901,"pressure_total":1.2988776062225589,"net_balance":-1.2746735379443899,"support_pressure_ratio":0.01863460280030551,"balance_momentum":-1.2746735379443899,"event_short_label":"Support narrowed into Vz and Trend"},{"ts":"2026-04-21T15:34:00+00:00","value":13.44,"price_value":13.44,"normalized_value":0.0948459151005645,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":null,"dominant_pressure":"MFI","support_total":0.0,"pressure_total":5.051005916440604,"net_balance":-5.051005916440604,"support_pressure_ratio":0.0,"balance_momentum":-3.7763323784962144,"event_short_label":"Structure flipped to pressure-led"},{"ts":"2026-04-21T15:35:00+00:00","value":12.6,"price_value":12.6,"normalized_value":0.026418045406779278,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":null,"dominant_pressure":"r1","support_total":0.0,"pressure_total":6.275405577958477,"net_balance":-6.275405577958477,"support_pressure_ratio":0.0,"balance_momentum":-1.2243996615178725,"event_short_label":"r1 pressure"},{"ts":"2026-04-21T16:15:00+00:00","value":12.595,"price_value":12.595,"normalized_value":0.026010736658601985,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"OBp","dominant_pressure":"Trend","support_total":0.07166425401156296,"pressure_total":3.8886697009409805,"net_balance":-3.8170054469294175,"support_pressure_ratio":0.01842898973760143,"balance_momentum":2.4584001310290593,"event_short_label":"Support narrowed into OBp"},{"ts":"2026-04-21T16:55:00+00:00","value":12.595,"price_value":12.595,"normalized_value":0.026010736658601985,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"Trend","support_total":0.0791987489026083,"pressure_total":3.862944997318375,"net_balance":-3.783746248415767,"support_pressure_ratio":0.020502168412335,"balance_momentum":0.033259198513650556,"event_short_label":null},{"ts":"2026-04-21T17:19:00+00:00","value":12.4501,"price_value":12.4501,"normalized_value":0.014206929136423962,"regime":"pressure_led","regime_label":"Pressure-led","dominant_support":"OBp","dominant_pressure":"Trend","support_total":2.071719445402647,"pressure_total":2.9041830803366695,"net_balance":-0.8324636349340224,"support_pressure_ratio":0.713357039860752,"balance_momentum":2.9512826134817445,"event_short_label":"Pressure narrowed into Trend and r1"},{"ts":"2026-04-21T18:11:00+00:00","value":12.3191,"price_value":12.3191,"normalized_value":0.00353543993417893,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"MFI","dominant_pressure":"Trend","support_total":3.450229109276992,"pressure_total":1.4521853018027364,"net_balance":1.9980438074742557,"support_pressure_ratio":2.375887639816966,"balance_momentum":2.830507442408278,"event_short_label":"Support broke decisively ahead"},{"ts":"2026-04-21T18:15:00+00:00","value":12.595,"price_value":12.595,"normalized_value":0.026010736658601985,"regime":"support_led","regime_label":"Support-led","dominant_support":"MFI","dominant_pressure":null,"support_total":6.708619571812706,"pressure_total":0.0,"net_balance":6.708619571812706,"support_pressure_ratio":null,"balance_momentum":4.710575764338451,"event_short_label":"Support broadened beyond MFI"},{"ts":"2026-04-21T18:31:00+00:00","value":12.595,"price_value":12.595,"normalized_value":0.026010736658601985,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"MFI","dominant_pressure":null,"support_total":2.361580458139015,"pressure_total":0.0,"net_balance":2.361580458139015,"support_pressure_ratio":null,"balance_momentum":-4.3470391136736914,"event_short_label":"Object moved into mixed rotation"},{"ts":"2026-04-21T19:35:00+00:00","value":12.89,"price_value":12.89,"normalized_value":0.05004195280106227,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Vz","support_total":2.365002620226495,"pressure_total":0.18014515478370097,"net_balance":2.184857465442794,"support_pressure_ratio":13.128316568192673,"balance_momentum":-0.17672299269622105,"event_short_label":"Vz gained structural role"},{"ts":"2026-04-21T19:37:00+00:00","value":12.84,"price_value":12.84,"normalized_value":0.04596886531928934,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Vz","support_total":0.9836203595787232,"pressure_total":1.0968132808089346,"net_balance":-0.11319292123021141,"support_pressure_ratio":0.8967983674060475,"balance_momentum":-2.2980503866730055,"event_short_label":"Pressure broke decisively ahead"},{"ts":"2026-04-21T19:53:00+00:00","value":12.89,"price_value":12.89,"normalized_value":0.05004195280106227,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Vz","support_total":2.0989592825891075,"pressure_total":0.7772807039428788,"net_balance":1.3216785786462286,"support_pressure_ratio":2.700387738871949,"balance_momentum":1.43487149987644,"event_short_label":null},{"ts":"2026-04-21T19:54:00+00:00","value":12.65,"price_value":12.65,"normalized_value":0.030491132888552208,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"sigma15","dominant_pressure":"Trend","support_total":1.2015021043241203,"pressure_total":1.12387106436499,"net_balance":0.07763103995913023,"support_pressure_ratio":1.0690746851846331,"balance_momentum":-1.2440475386870984,"event_short_label":"Stress broadened beyond Vz"},{"ts":"2026-04-21T19:58:00+00:00","value":12.99,"price_value":12.99,"normalized_value":0.05818812776460813,"regime":"mixed_rotating","regime_label":"Mixed / rotating","dominant_support":"r5","dominant_pressure":"Vz","support_total":2.8147992646995945,"pressure_total":0.5865273591575927,"net_balance":2.2282719055420017,"support_pressure_ratio":4.799092865407652,"balance_momentum":2.1506408655828713,"event_short_label":"Vz pressure"},{"ts":"2026-04-21T19:59:00+00:00","value":13.0,"price_value":13.0,"normalized_value":0.05900274526096272,"regime":"support_led","regime_label":"Support-led","dominant_support":"r5","dominant_pressure":"Vz","support_total":3.9312931048861333,"pressure_total":0.4554420952752801,"net_balance":3.475851009610853,"support_pressure_ratio":8.631817624389694,"balance_momentum":1.2475791040688513,"event_short_label":"Support regained control"},{"ts":"2026-04-21T20:00:00+00:00","value":12.91,"price_value":12.91,"normalized_value":0.051671187793771445,"regime":"support_led","regime_label":"Support-led","dominant_support":"r5","dominant_pressure":"Vz","support_total":3.2306461957424992,"pressure_total":0.30219968909359,"net_balance":2.928446506648909,"support_pressure_ratio":10.690435206708573,"balance_momentum":-0.5474045029619439,"event_short_label":null}],"regime_segments":[{"start_ts":"2026-04-21T13:30:00+00:00","end_ts":"2026-04-21T13:33:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-21T13:33:00+00:00","end_ts":"2026-04-21T14:42:00+00:00","regime":"pressure_led"},{"start_ts":"2026-04-21T14:42:00+00:00","end_ts":"2026-04-21T15:34:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-21T15:34:00+00:00","end_ts":"2026-04-21T16:15:00+00:00","regime":"pressure_led"},{"start_ts":"2026-04-21T16:15:00+00:00","end_ts":"2026-04-21T16:55:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-21T16:55:00+00:00","end_ts":"2026-04-21T18:11:00+00:00","regime":"pressure_led"},{"start_ts":"2026-04-21T18:11:00+00:00","end_ts":"2026-04-21T18:15:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-21T18:15:00+00:00","end_ts":"2026-04-21T18:31:00+00:00","regime":"support_led"},{"start_ts":"2026-04-21T18:31:00+00:00","end_ts":"2026-04-21T19:59:00+00:00","regime":"mixed_rotating"},{"start_ts":"2026-04-21T19:59:00+00:00","end_ts":"2026-04-21T20:01:00+00:00","regime":"support_led"}],"events":[{"ts":"2026-04-21T13:33:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Pressure broke decisively ahead","short_label":"Pressure broke decisively ahead","significance":1.0,"channels_involved":["OBp"]},{"ts":"2026-04-21T13:33:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Pressure narrowed into OBp","short_label":"Pressure narrowed into OBp","significance":1.0,"channels_involved":["OBp"]},{"ts":"2026-04-21T13:33:00+00:00","event_type":"anchor_gained","event_family":"anchor","label":"OBp gained structural role","short_label":"OBp gained structural role","significance":0.8666666666666667,"channels_involved":["OBp"]},{"ts":"2026-04-21T13:33:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Structure flipped to pressure-led","short_label":"Structure flipped to pressure-led","significance":0.761071587661473,"channels_involved":["OBp"]},{"ts":"2026-04-21T14:42:00+00:00","event_type":"anchor_lost","event_family":"anchor","label":"OBp lost structural role","short_label":"OBp lost structural role","significance":0.8666666666666667,"channels_involved":["OBp"]},{"ts":"2026-04-21T14:55:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into Vz and Trend","short_label":"Support narrowed into Vz and Trend","significance":1.0,"channels_involved":["Vz","Trend"]},{"ts":"2026-04-21T15:34:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Structure flipped to pressure-led","short_label":"Structure flipped to pressure-led","significance":0.8918436898913359,"channels_involved":["MFI"]},{"ts":"2026-04-21T15:34:00+00:00","event_type":"anchor_gained","event_family":"anchor","label":"Trend gained structural role","short_label":"Trend gained structural role","significance":0.8666666666666667,"channels_involved":["Trend"]},{"ts":"2026-04-21T15:34:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Stress broadened beyond MFI","short_label":"Stress broadened beyond MFI","significance":0.8212633698006935,"channels_involved":["MFI","r1"]},{"ts":"2026-04-21T15:35:00+00:00","event_type":"dominant_pressure_changed","event_family":"pressure","label":"r1 became main pressure","short_label":"r1 pressure","significance":0.7166666666666666,"channels_involved":["MFI","r1"]},{"ts":"2026-04-21T16:15:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into OBp","short_label":"Support narrowed into OBp","significance":1.0,"channels_involved":["OBp"]},{"ts":"2026-04-21T16:15:00+00:00","event_type":"anchor_lost","event_family":"anchor","label":"OBp lost structural role","short_label":"OBp lost structural role","significance":0.8666666666666667,"channels_involved":["OBp"]},{"ts":"2026-04-21T16:15:00+00:00","event_type":"dominant_pressure_changed","event_family":"pressure","label":"Trend became main pressure","short_label":"Trend pressure","significance":0.8499999999999999,"channels_involved":["r1","Trend"]},{"ts":"2026-04-21T17:19:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Pressure narrowed into Trend and r1","short_label":"Pressure narrowed into Trend and r1","significance":0.904242339548746,"channels_involved":["Trend","r1"]},{"ts":"2026-04-21T17:19:00+00:00","event_type":"anchor_gained","event_family":"anchor","label":"OBp gained structural role","short_label":"OBp gained structural role","significance":0.8666666666666667,"channels_involved":["OBp"]},{"ts":"2026-04-21T18:11:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["MFI","Trend"]},{"ts":"2026-04-21T18:11:00+00:00","event_type":"dominant_support_changed","event_family":"support","label":"MFI became main support","short_label":"MFI main support","significance":0.8499999999999999,"channels_involved":["OBp","MFI"]},{"ts":"2026-04-21T18:11:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.757815863935331,"channels_involved":["MFI","Trend"]},{"ts":"2026-04-21T18:15:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support broadened beyond MFI","short_label":"Support broadened beyond MFI","significance":1.0,"channels_involved":["MFI","OBp"]},{"ts":"2026-04-21T18:15:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Stress broadened beyond Trend","short_label":"Stress broadened beyond Trend","significance":1.0,"channels_involved":[]},{"ts":"2026-04-21T18:15:00+00:00","event_type":"anchor_lost","event_family":"anchor","label":"Vz lost structural role","short_label":"Vz lost structural role","significance":0.8666666666666667,"channels_involved":["Vz"]},{"ts":"2026-04-21T18:31:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.9595291468889671,"channels_involved":["MFI"]},{"ts":"2026-04-21T19:35:00+00:00","event_type":"anchor_gained","event_family":"anchor","label":"Vz gained structural role","short_label":"Vz gained structural role","significance":0.8666666666666667,"channels_involved":["Vz"]},{"ts":"2026-04-21T19:35:00+00:00","event_type":"dominant_support_changed","event_family":"support","label":"sigma15 became main support","short_label":"sigma15 main support","significance":0.6264966823847951,"channels_involved":["MFI","sigma15"]},{"ts":"2026-04-21T19:37:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Pressure broke decisively ahead","short_label":"Pressure broke decisively ahead","significance":1.0,"channels_involved":["sigma15","Vz"]},{"ts":"2026-04-21T19:37:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into sigma15 and r1","short_label":"Support narrowed into sigma15 and r1","significance":1.0,"channels_involved":["sigma15","r1"]},{"ts":"2026-04-21T19:37:00+00:00","event_type":"anchor_lost","event_family":"anchor","label":"r5 lost structural role","short_label":"r5 lost structural role","significance":0.8200328486876547,"channels_involved":["r5"]},{"ts":"2026-04-21T19:37:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Stress broadened beyond Vz","short_label":"Stress broadened beyond Vz","significance":0.7590729291089727,"channels_involved":["Vz","OBp"]},{"ts":"2026-04-21T19:54:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Stress broadened beyond Vz","short_label":"Stress broadened beyond Vz","significance":1.0,"channels_involved":["Trend","Vz"]},{"ts":"2026-04-21T19:58:00+00:00","event_type":"dominant_pressure_changed","event_family":"pressure","label":"Vz became main pressure","short_label":"Vz pressure","significance":0.9490719828606281,"channels_involved":["Trend","Vz"]},{"ts":"2026-04-21T19:58:00+00:00","event_type":"anchor_lost","event_family":"anchor","label":"Trend lost structural role","short_label":"Trend lost structural role","significance":0.8666666666666667,"channels_involved":["Trend"]},{"ts":"2026-04-21T19:58:00+00:00","event_type":"dominant_support_changed","event_family":"support","label":"r5 became main support","short_label":"r5 main support","significance":0.8499999999999999,"channels_involved":["sigma15","r5"]},{"ts":"2026-04-21T19:59:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Support regained control","short_label":"Support regained control","significance":0.8693528285402219,"channels_involved":["r5","Vz"]},{"ts":"2026-04-21T19:59:00+00:00","event_type":"anchor_gained","event_family":"anchor","label":"Trend gained structural role","short_label":"Trend gained structural role","significance":0.8666666666666667,"channels_involved":["Trend"]}],"events_by_ts":{"2026-04-21T13:33:00+00:00":{"ts":"2026-04-21T13:33:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Pressure broke decisively ahead","short_label":"Pressure broke decisively ahead","significance":1.0,"channels_involved":["OBp"]},"2026-04-21T14:42:00+00:00":{"ts":"2026-04-21T14:42:00+00:00","event_type":"anchor_lost","event_family":"anchor","label":"OBp lost structural role","short_label":"OBp lost structural role","significance":0.8666666666666667,"channels_involved":["OBp"]},"2026-04-21T14:55:00+00:00":{"ts":"2026-04-21T14:55:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into Vz and Trend","short_label":"Support narrowed into Vz and Trend","significance":1.0,"channels_involved":["Vz","Trend"]},"2026-04-21T15:34:00+00:00":{"ts":"2026-04-21T15:34:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Structure flipped to pressure-led","short_label":"Structure flipped to pressure-led","significance":0.8918436898913359,"channels_involved":["MFI"]},"2026-04-21T15:35:00+00:00":{"ts":"2026-04-21T15:35:00+00:00","event_type":"dominant_pressure_changed","event_family":"pressure","label":"r1 became main pressure","short_label":"r1 pressure","significance":0.7166666666666666,"channels_involved":["MFI","r1"]},"2026-04-21T16:15:00+00:00":{"ts":"2026-04-21T16:15:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support narrowed into OBp","short_label":"Support narrowed into OBp","significance":1.0,"channels_involved":["OBp"]},"2026-04-21T17:19:00+00:00":{"ts":"2026-04-21T17:19:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Pressure narrowed into Trend and r1","short_label":"Pressure narrowed into Trend and r1","significance":0.904242339548746,"channels_involved":["Trend","r1"]},"2026-04-21T18:11:00+00:00":{"ts":"2026-04-21T18:11:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Support broke decisively ahead","short_label":"Support broke decisively ahead","significance":1.0,"channels_involved":["MFI","Trend"]},"2026-04-21T18:15:00+00:00":{"ts":"2026-04-21T18:15:00+00:00","event_type":"support_concentration_shift","event_family":"support","label":"Support broadened beyond MFI","short_label":"Support broadened beyond MFI","significance":1.0,"channels_involved":["MFI","OBp"]},"2026-04-21T18:31:00+00:00":{"ts":"2026-04-21T18:31:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Object moved into mixed rotation","short_label":"Object moved into mixed rotation","significance":0.9595291468889671,"channels_involved":["MFI"]},"2026-04-21T19:35:00+00:00":{"ts":"2026-04-21T19:35:00+00:00","event_type":"anchor_gained","event_family":"anchor","label":"Vz gained structural role","short_label":"Vz gained structural role","significance":0.8666666666666667,"channels_involved":["Vz"]},"2026-04-21T19:37:00+00:00":{"ts":"2026-04-21T19:37:00+00:00","event_type":"balance_threshold_cross","event_family":"balance","label":"Pressure broke decisively ahead","short_label":"Pressure broke decisively ahead","significance":1.0,"channels_involved":["sigma15","Vz"]},"2026-04-21T19:54:00+00:00":{"ts":"2026-04-21T19:54:00+00:00","event_type":"pressure_concentration_shift","event_family":"pressure","label":"Stress broadened beyond Vz","short_label":"Stress broadened beyond Vz","significance":1.0,"channels_involved":["Trend","Vz"]},"2026-04-21T19:58:00+00:00":{"ts":"2026-04-21T19:58:00+00:00","event_type":"dominant_pressure_changed","event_family":"pressure","label":"Vz became main pressure","short_label":"Vz pressure","significance":0.9490719828606281,"channels_involved":["Trend","Vz"]},"2026-04-21T19:59:00+00:00":{"ts":"2026-04-21T19:59:00+00:00","event_type":"regime_flip","event_family":"balance","label":"Support regained control","short_label":"Support regained control","significance":0.8693528285402219,"channels_involved":["r5","Vz"]}},"regime_summary":{"current_regime":"support_led","dominant_regime":"mixed_rotating","time_in_support_led":0.15789473684210525,"time_in_pressure_led":0.2631578947368421,"time_in_mixed_rotating":0.5789473684210527,"regime_flip_count":9,"longest_support_led_run":2,"longest_pressure_led_run":2,"longest_mixed_rotating_run":6},"event_summary":{"event_count":34,"regime_flip_count":5,"dominant_support_change_count":3,"dominant_pressure_change_count":3,"rotation_spike_count":0,"anchor_gain_count":5,"anchor_loss_count":5,"most_significant_event":{"ts":"2026-04-21T13:33:00+00:00","label":"Pressure broke decisively ahead","significance":1.0}},"channel_roles_by_ts":{"2026-04-21T13:30:00+00:00":{"r1":0.0,"r5":0.0,"sigma15":0.0,"Vz":0.0,"OBp":0.0,"MFI":0.0,"Trend":0.0},"2026-04-21T13:33:00+00:00":{"r1":0.0,"r5":0.0,"sigma15":0.0,"Vz":0.0,"OBp":0.6088593650139138,"MFI":0.0,"Trend":0.0},"2026-04-21T14:42:00+00:00":{"r1":0.0,"r5":0.0,"sigma15":0.0,"Vz":0.0,"OBp":0.0,"MFI":0.0,"Trend":0.0},"2026-04-21T14:55:00+00:00":{"r1":0.20385970566430367,"r5":0.08668969164362472,"sigma15":0.17588992774812295,"Vz":-0.012102034139084505,"OBp":0.4093738516846932,"MFI":0.42306442948181444,"Trend":-0.012102034139084505},"2026-04-21T15:34:00+00:00":{"r1":1.1414810208387158,"r5":0.0657324768396088,"sigma15":0.48749563675514035,"Vz":0.5225903304126793,"OBp":0.8107233828158146,"MFI":1.1799675660836995,"Trend":0.8430155026949456},"2026-04-21T15:35:00+00:00":{"r1":1.7355924562742024,"r5":0.05258598147168686,"sigma15":0.631751874441677,"Vz":0.828379158727683,"OBp":0.6806362546348315,"MFI":0.9933701469307049,"Trend":1.3530897054776911},"2026-04-21T16:15:00+00:00":{"r1":1.1580436829199927,"r5":0.05829922810843863,"sigma15":0.2668233535469872,"Vz":0.8304006484419493,"OBp":-0.07166425401156296,"MFI":0.21588521158687407,"Trend":1.3592175763367385},"2026-04-21T16:55:00+00:00":{"r1":1.1435475781833258,"r5":0.05719204395966365,"sigma15":0.2571100409387229,"Vz":0.830803080428427,"OBp":-0.0791987489026083,"MFI":0.20307908613250403,"Trend":1.3712131676757318},"2026-04-21T17:19:00+00:00":{"r1":1.0075888051967976,"r5":0.016012923013450614,"sigma15":-0.29497252062878376,"Vz":0.4988579469867005,"OBp":-0.9554550429977333,"MFI":-0.8212918817761299,"Trend":1.3817234051397207},"2026-04-21T18:11:00+00:00":{"r1":0.12274656523235505,"r5":0.0023607223733929095,"sigma15":-0.5430240812473637,"Vz":0.37408201631234883,"OBp":-1.3877434423274702,"MFI":-1.5194615857021585,"Trend":0.9529959978846396},"2026-04-21T18:15:00+00:00":{"r1":-1.3365267679616242,"r5":-0.5726736538214415,"sigma15":-1.1917774439763902,"Vz":-0.040741320008761406,"OBp":-1.4243174326332204,"MFI":-1.6091213519513654,"Trend":-0.5334616014599036},"2026-04-21T18:31:00+00:00":{"r1":-0.09615729044092947,"r5":-0.09214285381021825,"sigma15":-0.4521900058164958,"Vz":-0.047668407389390155,"OBp":-0.6769225216531906,"MFI":-0.8169002925775142,"Trend":-0.17959908645127687},"2026-04-21T19:35:00+00:00":{"r1":-0.11190806482751789,"r5":-0.14341908694079575,"sigma15":-0.7285078679556514,"Vz":0.18014515478370097,"OBp":-0.5363319121874308,"MFI":-0.7089873352542722,"Trend":-0.13584835306082754},"2026-04-21T19:37:00+00:00":{"r1":-0.17219251368985727,"r5":-0.0486618045392673,"sigma15":-0.6077086906807534,"Vz":0.7145222031570722,"OBp":0.23273220382981802,"MFI":0.1495588738220444,"Trend":-0.15505735066884524},"2026-04-21T19:53:00+00:00":{"r1":-0.2931552503050183,"r5":-0.3098220357318251,"sigma15":-0.8789777201062661,"Vz":0.4751831949470637,"OBp":0.3020975089958151,"MFI":-0.23458342133210075,"Trend":-0.38242085511389734},"2026-04-21T19:54:00+00:00":{"r1":-0.1431393606239652,"r5":-0.2759789910878528,"sigma15":-0.43850949112298593,"Vz":0.36991949576254485,"OBp":0.2986996803262696,"MFI":-0.3438742614893165,"Trend":0.4552518882761756},"2026-04-21T19:58:00+00:00":{"r1":-0.6910384276141335,"r5":-0.9551866841623751,"sigma15":-0.8299237699343367,"Vz":0.31401967815051535,"OBp":0.27250768100707734,"MFI":-0.31453885945701116,"Trend":-0.024111523531738455},"2026-04-21T19:59:00+00:00":{"r1":-0.7609454012603561,"r5":-1.2909922979102038,"sigma15":-0.5410614403153339,"Vz":0.4554420952752801,"OBp":-0.30040568086808145,"MFI":-0.43536524702997914,"Trend":-0.602523037502179},"2026-04-21T20:00:00+00:00":{"r1":-0.4037426088289411,"r5":-1.0606680431380882,"sigma15":-0.24185601309592836,"Vz":0.30219968909359,"OBp":-0.4707614326120406,"MFI":-0.45351826761633174,"Trend":-0.6000998304511692}},"snapshot_rankings":{"support":[{"channel":"sigma15","value":0.15789473684210525,"rank":1},{"channel":"OBp","value":0.10526315789473684,"rank":2},{"channel":"MFI","value":0.10526315789473684,"rank":3},{"channel":"r5","value":0.05263157894736842,"rank":4}],"pressure":[{"channel":"Trend","value":0.21052631578947367,"rank":1},{"channel":"r1","value":0.05263157894736842,"rank":2}]},"object_metadata":{"question":"How is NVNO internal structure organizing the tape?","semantic_type":"single_ticker_price_behavior","public_title_stub":"How NVNO Internal Structure Is Organizing","channel_labels":["r1","r5","sigma15","Vz","OBp","MFI","Trend"],"anchor_channels":["OBp","MFI","Trend","r5","sigma15","Vz"],"source_kind":"single_ticker","price_source":"baseline_close","has_canonical_price":true},"role_labels":{"support":"Support channels","pressure":"Pressure channels"},"chips":[{"label":"Session","value":"Intraday"},{"label":"What we pulled","value":"single_ticker"},{"label":"Why","value":"How is NVNO internal structure organizing the tape?"},{"label":"Posture","value":"Support-led"},{"label":"Structure","value":"Single ticker price behavior"},{"label":"Price mode","value":"Raw price"}],"balance_panel":{"title":"Support vs Pressure","show_net_balance":true,"semantic_help":"This panel shows whether support or pressure is dominating through the session."},"accessible_summary":"NVNO on 2026-04-21. Current regime is Support-led.","developer_warnings":[],"source_files_used":["NVNO_2026-04-21_baseline_as_is_all_pal_log.jsonl","analysis_summary.json","channel_labels_map.json","chart_payload.json","config.json","copy_guardrail_runtime.json","dashboard_timeseries.csv","market_dashboard_source_manifest.json","object_semantics_spec.json","regime_series.json","role_vector_timeseries.csv","state_membership_timeseries.csv"],"view_config_used":{"min_event_significance":0.6,"max_visible_events":40,"show_net_balance":true}};
+    const warnings = [];
+    const includeLegend = true;
+    const includeHeatmap = true;
+    const includeScatter = false;
+    const heatmapTitle = "Where Support and Pressure Were Concentrated";
+    const scatterTitle = "Channel Concentration Map";
+
+    const chartRoot = document.getElementById("price-first-chart-root");
+    const legendRoot = document.getElementById("snapshot-legend-root");
+    const heatmapRoot = document.getElementById("role-heatmap-root");
+    const scatterRoot = document.getElementById("role-scatter-root");
+
+    function showRuntimeError(title, detail) {
+      const box = document.createElement("div");
+      box.className = "pf-empty";
+      box.style.alignItems = "flex-start";
+      box.style.justifyContent = "flex-start";
+      box.style.flexDirection = "column";
+      box.style.gap = "8px";
+      const h = document.createElement("strong");
+      h.textContent = title;
+      const p = document.createElement("div");
+      p.textContent = detail;
+      p.style.whiteSpace = "pre-wrap";
+      p.style.fontFamily = "Consolas, Menlo, monospace";
+      p.style.fontSize = "12px";
+      box.appendChild(h);
+      box.appendChild(p);
+      if (chartRoot) {
+        chartRoot.innerHTML = "";
+        chartRoot.appendChild(box);
+      }
+    }
+
+    function lazyMount(target, mountFn) {
+      if (!target || typeof mountFn !== "function") {
+        return;
+      }
+      if (!("IntersectionObserver" in window)) {
+        mountFn();
+        return;
+      }
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            observer.disconnect();
+            mountFn();
+            break;
+          }
+        }
+      }, { rootMargin: "120px 0px 120px 0px" });
+      observer.observe(target);
+    }
+
+    async function loadSemanticRegistry() {
+      if (typeof window.setSemanticRegistry !== "function") {
+        return;
+      }
+      try {
+        const response = await fetch(semanticRegistryUrl, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const payload = await response.json();
+        const loaded = window.setSemanticRegistry(payload);
+        if (!loaded) {
+          console.warn("[Semantics] semantic registry loaded but empty; fallback wording will be used.");
+        }
+      } catch (err) {
+        console.warn("[Semantics] failed to load semantic registry; fallback wording will be used.", err);
+      }
+    }
+
+    async function boot() {
+      if (Array.isArray(warnings) && warnings.length > 0) {
+        for (const warning of warnings) {
+          console.warn(`[PriceFirstStructuralChart] ${warning}`);
+        }
+      }
+
+      await loadSemanticRegistry();
+
+      try {
+        let legendController = null;
+        if (includeLegend) {
+          const renderSnapshotLegend = window.renderSnapshotLegend;
+          if (typeof renderSnapshotLegend === "function" && legendRoot) {
+            legendController = renderSnapshotLegend(legendRoot, model, { maxRowsPerSide: 4 });
+          } else {
+            console.warn("[SnapshotLegend] renderSnapshotLegend is unavailable");
+          }
+        }
+
+        const renderPriceFirstStructuralChart = window.renderPriceFirstStructuralChart;
+        if (typeof renderPriceFirstStructuralChart !== "function") {
+          throw new Error("renderPriceFirstStructuralChart is missing.");
+        }
+
+        renderPriceFirstStructuralChart(chartRoot, model, {
+          height: 520,
+          onHoverPoint: (point, ctx) => {
+            if (!legendController || !point || !point.ts) {
+              return;
+            }
+            legendController.update(point.ts, ctx && ctx.event ? ctx.event : null);
+          },
+          onLeave: () => {
+            if (legendController) {
+              legendController.clearHover();
+            }
+          },
+        });
+
+        if (includeHeatmap && heatmapRoot) {
+          lazyMount(heatmapRoot, () => {
+            const renderHeatmap = window.renderRoleHeatmapPanel;
+            if (typeof renderHeatmap !== "function") {
+              console.warn("[RoleHeatmapPanel] renderer unavailable");
+              return;
+            }
+            renderHeatmap(heatmapRoot, model, { title: heatmapTitle });
+          });
+        }
+
+        if (includeScatter && scatterRoot) {
+          lazyMount(scatterRoot, () => {
+            const renderScatter = window.renderRoleScatterPanel;
+            if (typeof renderScatter !== "function") {
+              console.warn("[RoleScatterPanel] renderer unavailable");
+              return;
+            }
+            renderScatter(scatterRoot, model, { title: scatterTitle });
+          });
+        }
+      } catch (err) {
+        console.error("[PriceFirstStructuralChart] runtime script/render failure", err);
+        const detail = err && err.stack ? err.stack : String(err);
+        showRuntimeError(
+          "Chart failed to mount",
+          `Loaded scripts: ${Array.isArray(scriptPaths) ? scriptPaths.join(", ") : "unknown"}\n${detail}\n\nCheck console for script-load/runtime errors.`
+        );
+      }
+    }
+
+    boot();
+  </script>
+</body>
+</html>

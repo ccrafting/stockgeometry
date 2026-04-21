@@ -1,0 +1,16 @@
+{
+  "object_id": "nvno__intraday",
+  "object_label": "NVNO",
+  "session_date": "2026-04-21",
+  "object_question": "How is NVNO internal structure organizing the tape?",
+  "semantic_type": "single_ticker_price_behavior",
+  "posture": "support_led",
+  "url": "index.html",
+  "embed_url": "../../../embeds/nvno/2026-04-21/index.html",
+  "summary": "Support is led by sigma15, OBp, and MFI, while pressure is led by Trend and r1. Current posture: Support-led.",
+  "source_files": [
+    "chart_payload.json",
+    "regime_series.json",
+    "event_markers.json"
+  ]
+}
