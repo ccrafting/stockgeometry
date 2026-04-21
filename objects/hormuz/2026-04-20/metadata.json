@@ -2,6 +2,7 @@
   "object_id": "hormuz_transmission_intraday",
   "object_label": "Hormuz Transmission",
   "session_date": "2026-04-20",
+  "session_route": "2026-04-20",
   "object_question": "How is the event being transmitted across crude, gas, credit, dollar, airlines, defense, and energy equities?",
   "semantic_type": "transmission_routing",
   "posture": "pressure_led",

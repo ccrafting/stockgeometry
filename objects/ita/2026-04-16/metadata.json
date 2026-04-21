@@ -2,6 +2,7 @@
   "object_id": "ita__intraday",
   "object_label": "ITA",
   "session_date": "2026-04-16",
+  "session_route": "2026-04-16",
   "object_question": "Is defense being accumulated or just reactively repriced?",
   "semantic_type": "reactive_premium_quality",
   "posture": "mixed_rotating",

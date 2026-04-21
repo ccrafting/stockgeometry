@@ -2,6 +2,7 @@
   "object_id": "nvno__intraday",
   "object_label": "NVNO",
   "session_date": "2026-04-21",
+  "session_route": "2026-04-21",
   "object_question": "How is NVNO internal structure organizing the tape?",
   "semantic_type": "single_ticker_price_behavior",
   "posture": "support_led",

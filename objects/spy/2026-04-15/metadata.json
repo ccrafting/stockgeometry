@@ -2,6 +2,7 @@
   "object_id": "spy__intraday",
   "object_label": "SPY",
   "session_date": "2026-04-15",
+  "session_route": "2026-04-15",
   "object_question": "How is broad internal market quality organizing the tape?",
   "semantic_type": "broad_market_quality",
   "posture": "mixed_rotating",
